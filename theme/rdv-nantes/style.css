@@ -1,0 +1,220 @@
+/*
+Theme Name: Rendez-vous à Nantes
+Theme URI: https://rdv.levoyageanantes.fr/
+Author: Le Voyage à Nantes
+Description: Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : prendre un verre (quartiers + carte), manger, incontournables, footing, shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES).
+Version: 1.0.0
+Requires at least: 6.2
+Requires PHP: 7.4
+Text Domain: rdv-nantes
+Domain Path: /languages
+License: Propriétaire
+*/
+
+/* ===== Styles de la maquette V1 (repris tels quels) ===== */
+:root{--noir:#000;--blanc:#fff;--gris-txt:#6b6b6b;--fluo:rgb(0,255,0);--vert:rgb(140,237,211);--jaune:rgb(255,223,131);--rose:rgb(255,218,207);--gris:rgb(246,246,246);--gris-fond:rgb(239,238,236);--e:500ms cubic-bezier(.035,.625,0,1)}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#000;font-family:"Suisse Int'l",Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:#000}
+:where(body) button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0;text-align:left}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--fluo);outline-offset:2px}
+.wrap{width:92%;max-width:1240px;margin:0 auto}
+.label{margin:0;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--gris-txt)}
+.maj{display:inline-block;background:var(--jaune);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#000}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #000}
+.hdr{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;column-gap:20px;min-height:76px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand span{display:flex;flex-direction:column;line-height:1}
+.brand small{font-size:11px;font-weight:500;letter-spacing:.04em;text-transform:uppercase}
+.brand b{font-size:22px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase}
+.navbar{display:flex;gap:0}
+.navlink{font-size:15px;font-weight:500;padding:10px 10px;position:relative;white-space:nowrap;text-decoration:none}
+.navlink::after{content:"";position:absolute;left:10px;right:10px;bottom:4px;height:3px;background:var(--fluo);transform:scaleX(0);transform-origin:left;transition:transform var(--e)}
+.navlink:hover::after,.navlink.on::after{transform:none}
+.tools{display:flex;align-items:center;gap:16px}
+.langs{display:flex;gap:8px;font-size:13px;font-weight:500}
+.langs a{text-decoration:none;color:var(--gris-txt)}
+.langs a.on{color:#000;text-decoration:underline;text-underline-offset:3px}
+
+/* Boutons */
+.btn{display:inline-flex;align-items:center;gap:8px;border:2px solid #000;padding:11px 22px;font-weight:700;font-size:15px;min-height:44px;text-decoration:none;transition:background var(--e),color var(--e),border-color var(--e)}
+.btn:hover{background:#000;color:#fff}
+.btn.plein{background:#000;color:#fff}
+.btn.plein:hover{background:var(--fluo);color:#000;border-color:var(--fluo)}
+.btn.sm{padding:8px 16px;min-height:40px;font-size:14px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.seg{display:inline-flex;border:2px solid #000}
+.seg button{padding:11px 22px;font-weight:700;font-size:15px;min-height:44px;transition:background var(--e),color var(--e)}
+.seg button.on{background:#000;color:#fff}
+
+/* Bon plan */
+.bonplan{background:var(--jaune);padding:18px 0}
+.bonplan .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px}
+.bonplan .l{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.pastille{background:#000;color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+.bonplan p{margin:0;font-size:18px;font-weight:500}
+
+/* Titres */
+.hero{padding:72px 0 64px;text-align:center}
+.big{margin:0;font-size:76px;font-weight:500;line-height:1;letter-spacing:-.02em}
+.lead{margin:24px auto 0;max-width:640px;font-size:18px}
+.h2{margin:0 0 32px;font-size:34px;font-weight:500;text-align:center;line-height:1.15}
+.pagehead{padding:48px 0 40px;text-align:center}
+.pagehead .big{font-size:clamp(42px,6vw,64px);line-height:1.02}
+
+/* Tuiles */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px}
+.tile{background:var(--gris-fond);padding:26px 24px 22px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;width:100%;text-decoration:none;transition:background var(--e)}
+.tile:hover{background:var(--fluo)}
+.tile .n{font-size:13px;font-weight:500;color:#333}
+.tile .t{font-size:24px;font-weight:500;line-height:1.15;display:block}
+.tile .d{font-size:15px;display:block;margin-top:6px}
+.tile .fl{align-self:flex-end;font-size:22px;transition:transform var(--e)}
+.tile:hover .fl{transform:translateX(6px)}
+
+/* Parcours */
+.parcours{background:var(--gris);padding:72px 0;text-align:center}
+.parcours .h2{margin-bottom:8px}
+.parcours .sub{margin:0 0 28px;font-size:17px}
+.plan{list-style:none;padding:0;margin:28px auto 0;max-width:680px;text-align:left;border-top:1px solid #000}
+.plan a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:16px 4px;border-bottom:1px solid #000;font-size:18px;font-weight:500;text-decoration:none;transition:background var(--e),padding var(--e)}
+.plan a:hover{background:var(--fluo);padding-left:14px}
+.plan a span{font-size:14px;font-weight:400;color:#333;text-align:right}
+.plan-foot{margin:22px 0 0;font-size:15px}
+
+/* Fil d'Ariane */
+.crumb{padding-top:22px;font-size:14px;display:flex;gap:8px;flex-wrap:wrap}
+.crumb a{text-underline-offset:3px}
+.crumb a:hover{text-decoration-color:var(--fluo);text-decoration-thickness:3px}
+
+/* Plan Nantes */
+.map{position:relative;width:100%;max-width:900px;margin:0 auto;aspect-ratio:1840/1600;background:rgb(246,246,244);overflow:hidden;border:1px solid #000}
+.map img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.map .tag{position:absolute;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.map .soft{background:rgba(246,246,244,.85);padding:2px 6px}
+.map .cite{position:absolute;display:flex;align-items:center;gap:8px;background:#000;color:#fff;padding:6px 10px;font-size:13px;font-weight:700}
+.pin{position:absolute;display:inline-flex;align-items:center;gap:8px;transform:translate(-15px,-15px);min-height:44px;text-decoration:none}
+.pin-n{width:30px;height:30px;border-radius:50%;background:#000;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:none;transition:background var(--e),color var(--e)}
+.pin-l{background:#fff;border:2px solid #000;padding:4px 10px;font-size:14px;font-weight:600;white-space:nowrap;transition:background var(--e)}
+.pin:hover .pin-n{background:var(--fluo);color:#000}
+.pin:hover .pin-l{background:var(--fluo)}
+.credit{margin:10px auto 0;max-width:900px;font-size:13px;color:var(--gris-txt)}
+
+/* Cartes quartiers */
+.qgrid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.qcard{display:flex;flex-direction:column;background:#fff;border:2px solid #000;text-decoration:none;transition:background var(--e)}
+.qcard:hover{background:var(--fluo)}
+.qcard .ph{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:var(--gris-fond);color:var(--gris-txt);font-size:14px;position:relative;text-align:center;padding:0 12px}
+.qcard .num{position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:50%;background:#000;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
+.qcard .body{display:flex;flex-direction:column;gap:6px;padding:20px 20px 22px}
+.qcard .amb{font-size:24px;font-weight:500;line-height:1.15}
+.qcard .where{font-size:15px;color:#333}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.badges span{border:1px solid #000;border-radius:999px;padding:4px 11px;font-size:13px;font-weight:500}
+
+.others{background:var(--gris);padding:48px 0}
+.others .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.chip{display:inline-flex;align-items:center;border:1px solid #000;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500;min-height:36px;text-decoration:none;transition:background var(--e)}
+.chip:hover{background:var(--fluo)}
+
+/* Encadrés */
+.encart{border:2px solid #000;padding:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px}
+.encart.jaune{background:var(--jaune);border-color:var(--jaune)}
+.encart .txt{max-width:720px}
+.encart h2{margin:0 0 8px;font-size:24px;font-weight:500;line-height:1.15}
+.encart p{margin:0}
+
+/* Pages de détail */
+.qgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:64px;align-items:start}
+.musts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.must{background:var(--gris-fond);padding:24px;display:flex;flex-direction:column;gap:10px}
+.must h3{margin:0;font-size:22px;font-weight:500;line-height:1.15}
+.must p{margin:0;font-size:15px}
+.sec-title{margin:48px 0 16px}
+.sec-title.line{margin-bottom:0;padding-bottom:14px;border-bottom:1px solid #000}
+.prose{font-size:18px;max-width:680px}
+.prose p{margin:0 0 14px}
+.prose h2{margin:40px 0 12px;font-size:26px;font-weight:500;line-height:1.15}
+.prose ul{margin:0 0 14px;padding-left:20px}
+.prose li{margin-bottom:6px}
+.bar{border-bottom:1px solid #000}
+.bar summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 4px;font-size:19px;font-weight:500;cursor:pointer;min-height:44px;transition:background var(--e)}
+.bar summary::-webkit-details-marker{display:none}
+.bar summary:hover{background:var(--fluo)}
+.bar summary .sa{font-size:14px;font-weight:400;color:#333;margin-left:auto;text-align:right}
+.bar summary::after{content:"+";font-size:24px;font-weight:400;line-height:1;flex:none}
+.bar[open] summary::after{content:"–"}
+.bar[open] summary{font-weight:600}
+.bar .in{padding:2px 4px 22px;display:grid;gap:10px;max-width:640px}
+.bar .in p{margin:0;display:flex;gap:8px;align-items:center;font-size:15px}
+.bar .in p.desc{font-size:16px;display:block}
+.note{margin:24px 0 0;padding:20px 22px;background:var(--gris);font-size:16px}
+aside.infos{border:2px solid #000;padding:28px;display:flex;flex-direction:column;gap:20px;min-width:0}
+aside.infos .v{margin:4px 0 0;font-size:18px;font-weight:500;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--fluo);flex:none}
+.pager{border-top:1px solid #000}
+.pager .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:28px 0}
+
+/* Listes (manger, footing) */
+.liste{border-top:1px solid #000}
+.lrow{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding:22px 4px;border-bottom:1px solid #000}
+.lrow h3{margin:0;font-size:22px;font-weight:500;line-height:1.15}
+.lrow p{margin:6px 0 0;font-size:16px;max-width:640px}
+.lrow .meta{font-size:14px;color:#333;margin-top:4px}
+
+/* Tableau prix */
+.ptable{width:100%;border-collapse:collapse;font-size:16px;margin:8px 0 14px}
+.ptable th{text-align:left;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--gris-txt);border-bottom:1px solid #000;padding:8px 0}
+.ptable td{padding:10px 0;border-bottom:1px solid #E5E5E3}
+.ptable td.r,.ptable th.r{text-align:right;font-feature-settings:"tnum"}
+.ptable tr.tot td{font-weight:700;border-bottom:1px solid #000}
+
+/* Footer */
+footer{background:var(--vert);padding:56px 0 28px;font-size:15px}
+.foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+footer .t{margin:0 0 10px;font-weight:700}
+footer p{margin:0}
+.tel{display:inline-flex;border:2px solid #000}
+.tel b{font-size:20px;padding:4px 10px}
+.tel small{background:#000;color:#fff;font-size:10px;line-height:1.15;padding:5px 8px;display:flex;align-items:center}
+.legal{margin-top:40px;padding-top:18px;border-top:1px solid #000;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;font-weight:700}
+
+/* Responsive */
+@media (max-width:1180px){
+  .desk{display:none}
+  .navbar{order:3;width:100%;overflow-x:auto;scrollbar-width:none;margin-bottom:4px}
+  .hdr{padding-top:10px}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qgrid{grid-template-columns:minmax(0,1fr);gap:40px}
+}
+@media (max-width:640px){
+  .grid3{grid-template-columns:minmax(0,1fr)}
+  .tile{min-height:auto;flex-direction:row;align-items:center;padding:18px}
+  .tile .fl{align-self:center}
+  .foot{grid-template-columns:minmax(0,1fr)}
+  .seg button{padding:10px 14px}
+  .big{font-size:42px}
+  .hero,.parcours{padding:52px 0}
+  .pin-l{display:none}
+  .plan a,.lrow{flex-direction:column;gap:4px}
+  .plan a span{text-align:left}
+  .bar summary .sa{display:none}
+}
+
+
+/* ===== Compléments WordPress ===== */
+.screen-reader-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
+.skip-link:focus{position:fixed;left:8px;top:8px;width:auto;height:auto;clip:auto;z-index:100;background:#fff;padding:8px 12px;border:2px solid #000}
+.qcard .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.prose img{max-width:100%;height:auto}
+.prose table:not(.ptable){width:100%;border-collapse:collapse;font-size:16px;margin:8px 0 14px}
+.prose table:not(.ptable) td,.prose table:not(.ptable) th{padding:10px 8px 10px 0;border-bottom:1px solid #E5E5E3;text-align:left;vertical-align:top}
+.prose a{text-underline-offset:3px}
+.page-simple{padding:44px 0 72px}
+.page-simple .big{font-size:clamp(40px,5vw,60px);line-height:1.02;margin-bottom:28px}
+.e404{padding:96px 0;text-align:center}
+.e404 .btns{justify-content:center;margin-top:28px}
+.admin-bar header{top:32px}
+@media (max-width:782px){.admin-bar header{top:46px}}

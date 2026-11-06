@@ -1,0 +1,1697 @@
+{
+ "front": "accueil",
+ "items": [
+  {
+   "key": "accueil",
+   "type": "page",
+   "template": "",
+   "order": 0,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Accueil",
+     "slug": "accueil",
+     "content": "",
+     "meta": {
+      "bonplan_label": "Le bon plan",
+      "bonplan_text": "Pass Nantes dès 27 € : 50 activités et les transports, de 24 h à 7 jours.",
+      "bonplan_btn": "Découvrir le Pass Nantes | /24h-de-plus/pass-nantes/",
+      "hero_title": "Nantes en une heure<br>ou une demi-journée",
+      "hero_lead": "Bars, tables, incontournables : notre sélection, sans détour.",
+      "tiles_title": "Que voulez-vous faire ?",
+      "parcours_title": "Visiter Nantes à pied",
+      "parcours_sub": "Un parcours tout prêt, selon le temps dont vous disposez.",
+      "plan_foot": "Ou laissez-vous guider : <a href=\"/24h-de-plus/la-ligne-verte/\">suivez la ligne verte au sol</a>.",
+      "plans": "# 1 h\nLe Château des ducs de Bretagne | cour et remparts en accès libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nQuartier Bouffay | quartier médiéval, à 5 min | /incontournable/quartier-bouffay/\nLe Passage Pommeraye | galerie du XIXe siècle | /incontournable/le-passage-pommeraye/\n# 2 h\nLe Château des ducs de Bretagne | cour et remparts en accès libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nQuartier Bouffay | quartier médiéval | /incontournable/quartier-bouffay/\nLe Passage Pommeraye | galerie du XIXe siècle | /incontournable/le-passage-pommeraye/\nLe Mémorial de l’abolition de l’esclavage | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\n# Demi-journée\nLe Château des ducs de Bretagne | le musée d’histoire de Nantes | /incontournable/le-chateau-des-ducs-de-bretagne/\nQuartier Bouffay | quartier médiéval | /incontournable/quartier-bouffay/\nLe Mémorial de l’abolition de l’esclavage | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\nLes Machines de l’Île | traversée vers l’Île de Nantes | /incontournable/les-machines-de-lile/\nUn verre au Hangar à bananes | face à la Loire | /prendre-un-verre/quartier-ile-de-nantes/"
+     }
+    },
+    "en": {
+     "title": "Home",
+     "slug": "home",
+     "content": "",
+     "meta": {
+      "bonplan_label": "Good deal",
+      "bonplan_text": "Pass Nantes from €27: 50 activities and public transport, from 24 hours to 7 days.",
+      "bonplan_btn": "Discover the Pass Nantes | /24h-de-plus/pass-nantes/",
+      "hero_title": "Nantes in an hour<br>or half a day",
+      "hero_lead": "Bars, restaurants, must-sees: our selection, straight to the point.",
+      "tiles_title": "What would you like to do?",
+      "parcours_title": "Explore Nantes on foot",
+      "parcours_sub": "A ready-made route, depending on how much time you have.",
+      "plan_foot": "Or let yourself be guided: <a href=\"/24h-de-plus/la-ligne-verte/\">follow the green line on the ground</a>.",
+      "plans": "# 1 h\nThe Château des ducs de Bretagne | courtyard and ramparts free of charge | /incontournable/le-chateau-des-ducs-de-bretagne/\nBouffay district | medieval quarter, 5 min away | /incontournable/quartier-bouffay/\nPassage Pommeraye | 19th-century arcade | /incontournable/le-passage-pommeraye/\n# 2 h\nThe Château des ducs de Bretagne | courtyard and ramparts free of charge | /incontournable/le-chateau-des-ducs-de-bretagne/\nBouffay district | medieval quarter | /incontournable/quartier-bouffay/\nPassage Pommeraye | 19th-century arcade | /incontournable/le-passage-pommeraye/\nThe Memorial to the abolition of slavery | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\n# Half a day\nThe Château des ducs de Bretagne | the Nantes history museum | /incontournable/le-chateau-des-ducs-de-bretagne/\nBouffay district | medieval quarter | /incontournable/quartier-bouffay/\nThe Memorial to the abolition of slavery | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\nThe Machines de l’Île | across to the Île de Nantes | /incontournable/les-machines-de-lile/\nA drink at the Hangar à bananes | facing the Loire | /prendre-un-verre/quartier-ile-de-nantes/"
+     }
+    },
+    "es": {
+     "title": "Inicio",
+     "slug": "inicio",
+     "content": "",
+     "meta": {
+      "bonplan_label": "El buen plan",
+      "bonplan_text": "Pass Nantes desde 27 €: 50 actividades y el transporte, de 24 h a 7 días.",
+      "bonplan_btn": "Descubrir el Pass Nantes | /24h-de-plus/pass-nantes/",
+      "hero_title": "Nantes en una hora<br>o media jornada",
+      "hero_lead": "Bares, restaurantes, imprescindibles: nuestra selección, sin rodeos.",
+      "tiles_title": "¿Qué quiere hacer?",
+      "parcours_title": "Visitar Nantes a pie",
+      "parcours_sub": "Un recorrido listo, según el tiempo del que disponga.",
+      "plan_foot": "O déjese guiar: <a href=\"/24h-de-plus/la-ligne-verte/\">siga la línea verde en el suelo</a>.",
+      "plans": "# 1 h\nEl Castillo de los duques de Bretaña | patio y murallas de acceso libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nBarrio Bouffay | barrio medieval, a 5 min | /incontournable/quartier-bouffay/\nEl Passage Pommeraye | galería del siglo XIX | /incontournable/le-passage-pommeraye/\n# 2 h\nEl Castillo de los duques de Bretaña | patio y murallas de acceso libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nBarrio Bouffay | barrio medieval | /incontournable/quartier-bouffay/\nEl Passage Pommeraye | galería del siglo XIX | /incontournable/le-passage-pommeraye/\nEl Memorial de la abolición de la esclavitud | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\n# Media jornada\nEl Castillo de los duques de Bretaña | el museo de historia de Nantes | /incontournable/le-chateau-des-ducs-de-bretagne/\nBarrio Bouffay | barrio medieval | /incontournable/quartier-bouffay/\nEl Memorial de la abolición de la esclavitud | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\nLes Machines de l’Île | cruzando a la Île de Nantes | /incontournable/les-machines-de-lile/\nUna copa en el Hangar à bananes | frente al Loira | /prendre-un-verre/quartier-ile-de-nantes/"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-prendre-un-verre",
+   "type": "page",
+   "template": "page-templates/rubrique-quartiers.php",
+   "order": 1,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Prendre un verre",
+     "slug": "prendre-un-verre",
+     "content": "",
+     "meta": {
+      "num": "01",
+      "h1": "Prendre un verre",
+      "lead": "Notre sélection de bars et de lieux insolites où prendre un verre à Nantes, selon l’ambiance que vous cherchez.",
+      "tile_desc": "Terrasses, cocktails, pubs : quatre ambiances",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_quartier"
+     }
+    },
+    "en": {
+     "title": "Have a drink",
+     "slug": "have-a-drink",
+     "content": "",
+     "meta": {
+      "num": "01",
+      "h1": "Have a drink",
+      "lead": "Our selection of bars and unusual places for a drink in Nantes, depending on the atmosphere you are looking for.",
+      "tile_desc": "Terraces, cocktails, pubs: four atmospheres",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_quartier"
+     }
+    },
+    "es": {
+     "title": "Tomar una copa",
+     "slug": "tomar-una-copa",
+     "content": "",
+     "meta": {
+      "num": "01",
+      "h1": "Tomar una copa",
+      "lead": "Nuestra selección de bares y lugares insólitos para tomar una copa en Nantes, según el ambiente que busque.",
+      "tile_desc": "Terrazas, cócteles, pubs: cuatro ambientes",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_quartier"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-manger",
+   "type": "page",
+   "template": "page-templates/liste.php",
+   "order": 2,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Manger",
+     "slug": "manger",
+     "content": "",
+     "meta": {
+      "num": "02",
+      "h1": "Manger",
+      "lead": "À la recherche d’une bonne table ? Envie de savourer des spécialités nantaises ? Le guide Les Tables de Nantes rassemble 185 adresses testées et approuvées. Grâce à un moteur de recherche bien pensé, trouvez à coup sûr LA bonne adresse : entre collègues, végétarien, grande tablée, atypique, en terrasse, en cœur de ville, pour un brunch…",
+      "tile_desc": "Une sélection de bonnes tables nantaises",
+      "home": "1",
+      "nav": "1",
+      "list_title": "Quelques idées pour le dîner du lundi soir",
+      "link_label": "Voir la fiche",
+      "items": "Maison Bagarre |  | Des assiettes bistronomiques du marché gentiment créatives, aux assaisonnements fracassants, à base de bons produits locavores. | https://www.lestablesdenantes.fr/restaurants/maison-bagarre/\nRoza |  | Un restaurant qui a la cote ! Déco néo-bistrotière contemporaine et un chef dont le CV prestigieux éveille les papilles. | https://www.lestablesdenantes.fr/restaurants/roza\nCrêperie Heb Ken |  | L’emblématique Heb Ken remporte le match du fondant, en un ardent hommage à la crêpe bretonne perpétué depuis 40 ans. | https://www.lestablesdenantes.fr/restaurants/creperie-heb-ken/\nBalthazar |  | Entre bistrot, cave et épicerie, l’équipe fait festoyer les palais en toute simplicité. | https://www.lestablesdenantes.fr/restaurants/balthazar/\nLa Cigale |  | La plus célèbre adresse nantaise, avec son décor exubérant, qui pourrait bien être l’une des plus belles brasseries françaises ! | https://www.lestablesdenantes.fr/restaurants/brasserie-la-cigale\nLittle Atlantique Brewery – LAB |  | Microbrasserie artisanale dans un bâtiment du XIXe siècle en bord de Loire. | https://www.levoyageanantes.fr/lieux/little-atlantique-brewery/",
+      "cta": "Consulter lestablesdenantes.fr | https://www.lestablesdenantes.fr/",
+      "after_title": "Caves à manger",
+      "after_text": "Retrouvez aussi sur les Tables de Nantes notre sélection de bars à vins et de caves à manger.",
+      "after_btn1": "Voir la sélection | https://www.lestablesdenantes.fr/bons-plans/bars-a-vin/"
+     }
+    },
+    "en": {
+     "title": "Eat",
+     "slug": "eat",
+     "content": "",
+     "meta": {
+      "num": "02",
+      "h1": "Eat",
+      "lead": "Looking for a great place to eat? The Les Tables de Nantes guide book lists over one hundred tested and approved addresses. Using its well thought out search engine, you will surely find the right place: eating with colleagues, vegetarian, big groups, quirky, outdoor seating, in the heart of town… For all tastes and budgets.",
+      "tile_desc": "A selection of good Nantes restaurants",
+      "home": "1",
+      "nav": "1",
+      "cta": "Visit lestablesdenantes.fr | https://www.lestablesdenantes.fr/en/",
+      "list_title": "Some ideas for Monday evening dinner",
+      "link_label": "See the listing",
+      "after_title": "Wine bars serving food",
+      "after_text": "Also find on Les Tables de Nantes our selection of wine bars and cellars serving food and drinks.",
+      "after_btn1": "See the selection | https://www.lestablesdenantes.fr/en/good-tips/wine-bars-dining-cellars/",
+      "items": "Maison Bagarre |  | In his cozy bistro, Romain Eveno prepares dishes with sensational seasonings, using quality seasonal and local ingredients. | https://www.lestablesdenantes.fr/en/restaurants/maison-bagarre/\nRoza |  | Sophisticated, intuitive and delicate cuisine, served in a stylish setting (bearing the signature of Brune de la Guerrande), that will surely impress. | https://www.lestablesdenantes.fr/en/restaurants/roza\nCrêperie HEB KEN |  | These brave restaurateurs have been ardent defenders of the Breton crêpe for 40 years. | https://www.lestablesdenantes.fr/en/restaurants/creperie-heb-ken/\nBalthazar |  | Enjoy sublime meats grilled to perfection, and other delicacies cooked marvellously. And, lest we forget the fish chowder! | https://www.lestablesdenantes.fr/en/restaurants/balthazar/\nLa Cigale |  | Sought out for its sumptuous and protected heritage interior, this brasserie was once the headquarters for the Surrealists, and still never disappoints. | https://www.lestablesdenantes.fr/en/restaurants/brasserie-la-cigale\nLittle Atlantique Brewery - LAB |  | Craft micro-brewery in Bas Chantenay by the river Loire in a refurbished 19th industrial building. | https://www.levoyageanantes.fr/en/places/little-atlantique-brewery/"
+     }
+    },
+    "es": {
+     "title": "Comer",
+     "slug": "comer",
+     "content": "",
+     "meta": {
+      "num": "02",
+      "h1": "Comer",
+      "lead": "¿Busca un buen restaurante? La guía Les Tables de Nantes reúne más de cien direcciones probadas y aprobadas. Gracias a su buscador, encontrará sin duda LA buena dirección: con compañeros, vegetariano, grupos, original, con terraza, en el centro… Para todos los gustos y presupuestos.",
+      "tile_desc": "Una selección de buenos restaurantes",
+      "home": "1",
+      "nav": "1",
+      "cta": "Consultar lestablesdenantes.fr | https://www.lestablesdenantes.fr/",
+      "list_title": "Algunas ideas para la cena del lunes",
+      "link_label": "Ver la ficha",
+      "after_title": "Bares de vinos",
+      "after_text": "Encuentre también en Les Tables de Nantes nuestra selección de bares de vinos y bodegas donde comer.",
+      "after_btn1": "Ver la selección | https://www.lestablesdenantes.fr/bons-plans/bars-a-vin/",
+      "items": "Maison Bagarre |  | En su acogedor bistró, Romain Eveno sirve platos bistronómicos y creativos elaborados con productos frescos. | https://www.lestablesdenantes.fr/es/restaurants/maison-bagarre/\nRoza |  | Frente al jardín del museo, en su acogedor local diseñado por Brune de la Guerrande, el talentoso Jean-François Pantaleon elabora con estilo platos gastronómicos de júbilo con una combinación ganadora. | https://www.lestablesdenantes.fr/es/restaurants/roza/\nCrêperie HEB KEN |  | La emblemática Heb Ken, que podría traducirse como “Así es y no de otra manera” homenaje a la crepe bretona desde hace 40 años. | https://www.lestablesdenantes.fr/es/restaurants/creperie-heb-ken/\nBalthazar |  | Podrás disfrutar de una carne sublime asada a la perfección y otras delicias bien ejecutadas sin olvidar la cazuela de pescado. | https://www.lestablesdenantes.fr/es/restaurants/balthazar/\nLa Cigale |  | Toda una institución en Nantes desde 1895. Este bar-restaurante cuenta con una excepcional decoración Art Nouveau | https://www.lestablesdenantes.fr/es/?s=cigale&post_type=restaurant\nLittle Atlantique Brewery - LAB |  | Un edificio del siglo XIX, una micro-cervecería artesanal… usted está en las medias de Chantenay, en Little Atlantique Brewery ! | https://www.levoyageanantes.fr/es/lugares/little-atlantique-brewery/"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-incontournables",
+   "type": "page",
+   "template": "page-templates/rubrique-lieux.php",
+   "order": 3,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Incontournables",
+     "slug": "incontournable",
+     "content": "",
+     "meta": {
+      "num": "03",
+      "h1": "Les incontournables",
+      "lead": "Pour ne rien manquer des incontournables de la destination, rien de plus simple : à Nantes, il suffit de suivre la ligne verte tracée au sol. Un parcours de 22 kilomètres qui réunit les étapes culturelles, les principaux monuments, œuvres d’art et sites touristiques de la ville.",
+      "tile_desc": "10 bonnes raisons de faire le Voyage à Nantes",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_incontournable",
+      "encart_title": "Pass Nantes, voyagez librement",
+      "encart_text": "En formule de 24 h à 7 jours, il donne accès à plus de 50 prestations dont les transports en commun, la navette aéroport, les musées et sites incontournables, les visites, les croisières sur l’Erdre, etc.",
+      "encart_btn": "Découvrir le Pass Nantes | /24h-de-plus/pass-nantes/"
+     }
+    },
+    "en": {
+     "title": "Unmissables",
+     "slug": "unmissable",
+     "content": "",
+     "meta": {
+      "num": "03",
+      "h1": "The unmissables",
+      "lead": "To make sure you don’t miss any of the destination’s must-sees, nothing could be simpler: in Nantes, just follow the green line drawn on the ground. A 22-kilometre trail bringing together the cultural stops, main monuments, works of art and tourist sites of the city.",
+      "tile_desc": "10 good reasons to make the Voyage to Nantes",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_incontournable",
+      "encart_title": "Pass Nantes, travel freely",
+      "encart_text": "Available from 24 hours to 7 days, it gives access to more than 50 services including public transport, the airport shuttle, museums and must-see sites, tours, cruises on the Erdre and more.",
+      "encart_btn": "Discover the Pass Nantes | /24h-de-plus/pass-nantes/"
+     }
+    },
+    "es": {
+     "title": "Imprescindibles",
+     "slug": "imprescindibles",
+     "content": "",
+     "meta": {
+      "num": "03",
+      "h1": "Los imprescindibles",
+      "lead": "Es fácil no perderse ninguno de los imprescindibles del destino. En Nantes, basta con seguir la línea verde marcada en el suelo. Un recorrido de 22 kilómetros que reúne los hitos culturales, los principales monumentos, las obras de arte y las atracciones turísticas de la ciudad.",
+      "tile_desc": "10 buenas razones para hacer el Voyage à Nantes",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_incontournable",
+      "encart_title": "Pass Nantes, para viajar en libertad",
+      "encart_text": "Disponible de 24 horas a 7 días, da acceso a más de 50 servicios, como el transporte público, la lanzadera al aeropuerto, museos y lugares imprescindibles, visitas, cruceros por el Erdre y mucho más.",
+      "encart_btn": "Descubrir el Pass Nantes | /24h-de-plus/pass-nantes/"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-footing",
+   "type": "page",
+   "template": "page-templates/liste.php",
+   "order": 4,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Footing",
+     "slug": "footing",
+     "content": "",
+     "meta": {
+      "num": "04",
+      "h1": "Footing",
+      "lead": "De 5 à 15 km, une sélection de parcours pour tous les niveaux et toutes les envies.",
+      "tile_desc": "De 5 à 15 km, pour tous les niveaux",
+      "home": "1",
+      "nav": "1",
+      "list_title": "Nos parcours",
+      "link_label": "Voir le parcours",
+      "items": "Foulées de l’éléphant | 10,6 km · notre coup de cœur |  | https://www.openrunner.com/r/1773317\nÎle de Versailles | 6,5 km |  | https://www.openrunner.com/r/1355527\nTour du bras de la Madeleine | 5,8 km |  | https://www.openrunner.com/r/1351231\nBords de l’Erdre | 12,5 km |  | https://www.openrunner.com/r/3258363",
+      "after_title": "Pour aller plus loin",
+      "after_text": "Téléchargez l’application Runnin’City pour découvrir la ville de manière audioguidée, originale et sportive.",
+      "after_btn1": "Google Play | https://play.google.com/store/apps/details?id=com.lmsporttourism.runnincity&hl=fr",
+      "after_btn2": "App Store | https://itunes.apple.com/fr/app/runnincity-gps-audioguide/id1114473318?mt=8"
+     }
+    },
+    "en": {
+     "title": "Jogging",
+     "slug": "jogging",
+     "content": "",
+     "meta": {
+      "num": "04",
+      "h1": "Jogging",
+      "lead": "From 5 to 15 km, a selection of runs for all levels and all plans.",
+      "tile_desc": "From 5 to 15 km, for all levels",
+      "home": "1",
+      "nav": "1",
+      "list_title": "Our runs",
+      "link_label": "See the run",
+      "after_title": "Go even further",
+      "after_text": "Download the Runnin’City app and discover Nantes, audio-guided, original and sporty.",
+      "items": "Foulées de l’éléphant | 10.6 km · our favourite |  | https://www.openrunner.com/r/1773317\nÎle de Versailles | 6.5 km |  | https://www.openrunner.com/r/1355527\nTour du bras de la Madeleine | 5.8 km |  | https://www.openrunner.com/r/1351231\nBords de l’Erdre | 12.5 km |  | https://www.openrunner.com/r/3258363",
+      "after_btn1": "Google Play | https://play.google.com/store/apps/details?id=com.lmsporttourism.runnincity&hl=fr",
+      "after_btn2": "App Store | https://itunes.apple.com/fr/app/runnincity-gps-audioguide/id1114473318?mt=8"
+     }
+    },
+    "es": {
+     "title": "Footing",
+     "slug": "footing",
+     "content": "",
+     "meta": {
+      "num": "04",
+      "h1": "Footing",
+      "lead": "De 5 a 15 km, una selección de recorridos para todos los niveles y todas las ganas.",
+      "tile_desc": "De 5 a 15 km, para todos los niveles",
+      "home": "1",
+      "nav": "1",
+      "list_title": "Nuestros recorridos",
+      "link_label": "Ver el recorrido",
+      "after_title": "Para ir más lejos",
+      "after_text": "Descargue la aplicación Runnin’City para descubrir la ciudad de forma audioguiada, original y deportiva.",
+      "items": "Foulées de l’éléphant | 10,6 km · nuestro favorito |  | https://www.openrunner.com/r/1773317\nÎle de Versailles | 6,5 km |  | https://www.openrunner.com/r/1355527\nTour du bras de la Madeleine | 5,8 km |  | https://www.openrunner.com/r/1351231\nBords de l’Erdre | 12,5 km |  | https://www.openrunner.com/r/3258363",
+      "after_btn1": "Google Play | https://play.google.com/store/apps/details?id=com.lmsporttourism.runnincity&hl=fr",
+      "after_btn2": "App Store | https://itunes.apple.com/fr/app/runnincity-gps-audioguide/id1114473318?mt=8"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-shopping",
+   "type": "page",
+   "template": "page-templates/rubrique-lieux.php",
+   "order": 5,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Shopping",
+     "slug": "shopping",
+     "content": "",
+     "meta": {
+      "num": "05",
+      "h1": "Shopping",
+      "lead": "Cinq adresses pour faire les boutiques à Nantes, des enseignes chics du quartier Graslin aux souvenirs du Voyage à Nantes.",
+      "tile_desc": "Passages, rues commerçantes et marché",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_shopping"
+     }
+    },
+    "en": {
+     "title": "Shopping",
+     "slug": "shopping",
+     "content": "",
+     "meta": {
+      "num": "05",
+      "h1": "Shopping",
+      "lead": "Five addresses for shopping in Nantes, from the chic shops of the Graslin district to Le Voyage à Nantes souvenirs.",
+      "tile_desc": "Arcades, shopping streets and market",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_shopping"
+     }
+    },
+    "es": {
+     "title": "Shopping",
+     "slug": "shopping",
+     "content": "",
+     "meta": {
+      "num": "05",
+      "h1": "Shopping",
+      "lead": "Cinco direcciones para ir de compras en Nantes, de las tiendas elegantes del barrio Graslin a los recuerdos del Voyage à Nantes.",
+      "tile_desc": "Pasajes, calles comerciales y mercado",
+      "home": "1",
+      "nav": "1",
+      "post_type": "rdv_shopping"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-se-deplacer",
+   "type": "page",
+   "template": "page-templates/infos.php",
+   "order": 6,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Se déplacer",
+     "slug": "access",
+     "content": "<h2>La navette aéroport, 7j/7 (sauf 1er mai)</h2>\n      <p><span class=\"maj\" style=\"background:var(--vert)\">Inclus dans le Pass Nantes</span> Ticket aller/retour de la navette aéroport Naolib.</p>\n      <p>Liaison directe et rapide entre l’aéroport et le centre-ville de Nantes en 25 minutes. Transport avec vos bagages sans supplément de prix, elle dessert les principaux sites de la ville : centre-ville (place du Commerce), la Cité des Congrès (Lieu Unique) et la gare SNCF (accès Sud).</p>\n      <ul>\n        <li><strong>Du lundi au samedi</strong>, toutes les 20 minutes : de la gare de 5 h 30 à 22 h 30, de l’aéroport de 6 h 15 à 23 h 15.</li>\n        <li><strong>Dimanche et jours fériés</strong>, toutes les 30 minutes : de la gare de 6 h 10 à 22 h 40, de l’aéroport de 7 h à 23 h 30.</li>\n        <li><strong>Tarif</strong> : 10 € le ticket, valable 1 heure sur l’ensemble du réseau Naolib.</li>\n        <li><strong>Contact</strong> : 02 40 44 44 44</li>\n      </ul>\n      <h2>Les transports en commun</h2>\n      <p><span class=\"maj\" style=\"background:var(--vert)\">Inclus dans le Pass Nantes</span> Tous les transports en commun Naolib et les parkings relais (tramway, bus, Navibus, parking relais voiture). Transports en commun gratuits le week-end (sauf navette aéroport).</p>\n      <p>Le réseau Naolib compte 3 lignes de tramway (1, 2 et 3) qui se croisent en plein cœur du centre-ville. Pour accéder à ExpoNantes ou au stade de la Beaujoire, la ligne 1 (direction Beaujoire ou Ranzay) permet de voyager depuis le centre-ville (environ 25 minutes).</p>\n      <p><a href=\"https://plan-tan.fr\" target=\"_blank\" rel=\"noopener\">Plan des transports et calcul d’itinéraire</a></p>\n      <h2>Les taxis</h2>\n      <p>Pour trouver un taxi 24 h/24 et 7j/7, des stations sont matérialisées en différents lieux : station Commerce, allée Brancas, station Gare Sud SNCF. Une station délocalisée à ExpoNantes est également prévue sur toute la durée des salons.</p>\n      <ul>\n        <li>Taxi Nantes : 02 40 69 22 22</li>\n        <li>Hep! Taxis : 02 40 85 40 85</li>\n        <li>A+ Taxis Nantais : 02 53 35 38 58</li>\n      </ul>",
+     "meta": {
+      "num": "06",
+      "h1": "Se déplacer",
+      "lead": "Navette aéroport, transports en commun, taxis : tout pour circuler pendant votre séjour.",
+      "tile_desc": "Navette aéroport, tram, taxis",
+      "home": "1",
+      "nav": "1",
+      "infos": "Navette aéroport | 25 min jusqu’au centre\nTicket navette | 10 €\nTram | Gratuit le week-end | 1"
+     }
+    },
+    "en": {
+     "title": "Getting around",
+     "slug": "getting-around",
+     "content": "\n<h2>Airport shuttle 7d/7d (except on 1st May)</h2>\n<p><strong>&gt;&gt; Included in Pass Nantes : </strong><strong>1 round trip included during the period of validity of the pass. Compulsory validation of the journey on the Pass Nantes app.</strong></p>\n<p>Shuttle to and from Nantes’ airport: direct and quick service for all your trips.<br/>\nEvery day of the week, only 20 min long, the shuttle is the quickest way to connect the airport to the town centre.</p>\n<p><strong>Timetable:</strong></p>\n<ul>\n<li><strong>Every 20 minutes from Monday to Saturday.</strong> From the station from 05:30 to 22:30. From the airport 06:15 to 23:15.</li>\n<li><strong>Every 30 minutes Sundays and public holidays.</strong> From the station from 06 :10 to 22:40. From the airport 07:00 to 23:30.</li>\n<li><strong>Fares:</strong> 10€ a ticket, lasts for an hour on the entire public transport network (NAOLIB).</li>\n</ul>\n<ul>\n<li><i></i> Contact : <a href=\"tel:+33240444444\">+33 2 40 44 44 44</a></li>\n</ul>\n<h2>Public transport TAN (Greater Nantes Transport).</h2>\n<p><strong>&gt;&gt;Included in Pass Nantes : your Pass Nantes is valid on all public transport in Nantes (airport shuttle included). No extra ticket is needed. It may also be used on the river ferries Navibus.</strong></p>\n<p>The public transport system is managed by NAOLIB (Greater Nantes Transport).<br/>\nA multi-means network: <strong>3 tramway lines</strong> <strong>(1, 2 and 3)</strong> which criss-cross the very heart of the town centre.</p>\n<p>Take Line 1 from the town centre to Beaujoire Stadium or ExpoNantes (+/- 25 minutes)</p>\n<p><i></i><a href=\"https://plan-tan.fr\"><strong>Route Maps and Trip Calculator </strong></a></p>\n<h2>Taxis</h2>\n<p>Taxis 24h/24h – 7d/7d</p>\n<p>Dedicated ranks for waiting taxis are available in various parts of the town :</p>\n<ul>\n<li>Station Commerce</li>\n<li>Allée Brancas</li>\n<li>Railway Station S.N.C.F – South Exit</li>\n<li>A dedicated rank at Beaujoire Stadium and ExpoNantes  is plannned when the exihibition is on.</li>\n</ul>\n<p>You can also book a taxi directly from the following companies:</p>\n<ul>\n<li>Taxi Nantes<br/>\n<a href=\"tel:0240692222\">+33 2 40 69 22 22</a></li>\n<li>Hep! Taxis<br/>\n<a href=\"tel:0240854085\">+33 2 40 85 40 85</a></li>\n<li>A+ Taxis Nantais</li>\n<li><a href=\"tel:+33 253353858\">+33 2 40 85 40 85</a></li>\n</ul>\n<h2>In case of emergency : <strong>112</strong></h2>\n<p><strong>Please contact this European emergency number. </strong></p>\n<p>112 is the single European emergency number. The European Electronic Communications Code ensures that Europeans can call the European emergency number  wherever they are in Europe, ensuring: European citizens gain better access to 112 via new technologies.</p>",
+     "meta": {
+      "num": "06",
+      "h1": "Getting around",
+      "lead": "Airport shuttle, public transport, taxis: everything you need to get around during your stay.",
+      "tile_desc": "Airport shuttle, tram, taxis",
+      "home": "1",
+      "nav": "1",
+      "infos": "Airport shuttle | 20-25 min to the centre\nShuttle ticket | €10\nTram | Free at weekends | 1"
+     }
+    },
+    "es": {
+     "title": "Desplazarse",
+     "slug": "desplazarse",
+     "content": "\n<h2><strong>Aerobús Aeropuerto – todos los días (excepto el 1 de mayo)</strong></h2>\n<p><strong>&gt;&gt; Incluido en el Pass Nantes: Billete de ida y vuelta con el Aerobús Aeropuerto TAN.</strong></p>\n<p>Vía directa y rápida entre el aeropuerto y el centro de Nantes en 25 minutos. Transporta su equipaje sin coste adicional y llega a los principales lugares de interés de la ciudad: el centro (Place du Commerce), la Cité des Congrès (Lieu Unique) y la estación SNCF (acceso sur).</p>\n<p><strong><strong>Horarios :</strong></strong></p>\n<ul>\n<li><strong>Cada 20 minutos de lunes a sábado.</strong> Desde la estación, de 5:30am a 10:30pm. Desde el aeropuerto, de 6:15am a 11:15 pm.</li>\n<li><strong>Domingos y festivos, cada 30 minutos.</strong> Desde la estación de 6:10am a 10:40pm. Desde el aeropuerto, de 7:00am a 11:30pm.</li>\n<li><strong>Precios:</strong> 10€ por billete, válido durante 1 hora consecutiva en toda la red TAN.</li>\n<li>Contacto : <a href=\"tel:0240444444\">02 40 44 44 44</a></li>\n</ul>\n<h2><strong>Los transportes públicos</strong></h2>\n<p><strong>&gt;&gt; Incluido en el Pass Nantes: utilización de todos los transportes públicos y Parkings Relais NAOLIB (Tranvía, Autobús, Navibus, Parkings Relais).</strong></p>\n<p>La red de transportes públicos está gestionada por NAOLIB (Transports de l’Agglomération Nantaise).<br/>\nUna red diversificada: <strong>3 líneas de tranvía (1, 2 y 3)</strong> que se cruzan en el centro de la ciudad.</p>\n<p>Para acceder a <strong>ExpoNantes o Estadio de la Beaujoire</strong>, la línea 1 le permite desplazarse desde el centro de la ciudad (+/- 25 minutos).</p>\n<p><a href=\"https://plan-tan.fr\">Mapa de transportes y planificador de itinerarios</a></p>\n<h2>Les taxis</h2>\n<p>Para encontrar un taxi 24/24 y cada día.</p>\n<p>Las plazas reservadas a los taxis, agrupadas en estaciones, están delimitadas en diferentes lugares para que estos vehículos puedan aparcar mientras esperan un viaje.</p>\n<ul>\n<li>Estación Commerce</li>\n<li>Allée Brancas</li>\n<li>Estación Gare Sud S.N.C.F</li>\n<li>También está prevista una estación deslocalizada en ExpoNantes durante la duración del salón</li>\n</ul>\n<p>Puede llamar directamente a las compañías de taxis :</p>\n<ul>\n<li>Taxi Nantes<br/>\n<i></i> <a href=\"tel:0240692222\">02 40 69 22 22</a></li>\n<li>Hep! Taxis<br/>\n<i></i> <a href=\"tel:0240854085\">02 40 85 40 85</a></li>\n<li>A+ Taxis Nantais<br/>\n<a href=\"https://www.levoyageanantes.fr/sorganiser/venir-a-nantes/taxis/\">02 53 35 38 58</a></li>\n</ul>",
+     "meta": {
+      "num": "06",
+      "h1": "Desplazarse",
+      "lead": "Lanzadera aeropuerto, transporte público, taxis: todo para desplazarse durante su estancia.",
+      "tile_desc": "Lanzadera aeropuerto, tranvía, taxis",
+      "home": "1",
+      "nav": "1",
+      "infos": "Lanzadera aeropuerto | 20-25 min hasta el centro\nBillete lanzadera | 10 €\nTranvía | Gratis el fin de semana | 1"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-aide",
+   "type": "page",
+   "template": "page-templates/infos.php",
+   "order": 7,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Aide",
+     "slug": "aide",
+     "content": "<h2>L’Accueil du Voyage à Nantes</h2>\n      <p>Conseils et réservation 7j/7 : hébergement, restauration, documentation, billetteries, visites guidées, boutique, Pass Nantes. L’accueil des visiteurs du Voyage à Nantes réserve un accueil atypique, sous le signe de l’ouverture et de la convivialité.</p>\n      <table class=\"ptable\">\n        <thead><tr><th>Jours</th><th class=\"r\">Horaires</th></tr></thead>\n        <tbody>\n          <tr><td>Du lundi au samedi</td><td class=\"r\">10 h – 18 h</td></tr>\n          <tr><td>Le jeudi</td><td class=\"r\">à partir de 11 h</td></tr>\n          <tr><td>Dimanche et jours fériés</td><td class=\"r\">10 h – 17 h</td></tr>\n          <tr><td>Juillet – septembre <span class=\"maj\">2025 à mettre à jour</span></td><td class=\"r\">7j/7, 9 h – 19 h</td></tr>\n        </tbody>\n      </table>\n      <h2>Nous suivre toute l’année</h2>\n      <p>Suivez l’actualité de la destination grâce aux réseaux sociaux du Voyage à Nantes #LVAN : <a href=\"https://www.instagram.com/levoyageanantes/\" target=\"_blank\" rel=\"noopener\">Instagram</a> · <a href=\"https://www.facebook.com/voyageanantes/\" target=\"_blank\" rel=\"noopener\">Facebook</a></p>",
+     "meta": {
+      "num": "07",
+      "h1": "Besoin d’aide ?",
+      "lead": "L’Accueil du Voyage à Nantes vous conseille et vous réserve tout ce dont vous avez besoin, 7j/7.",
+      "tile_desc": "L’Accueil du Voyage à Nantes",
+      "home": "0",
+      "nav": "1",
+      "infos": "Adresse | 9 rue des États, face au Château des ducs de Bretagne\nTéléphone | 0 892 464 044\nMail | info@levoyageanantes.fr",
+      "maps": "https://www.google.com/maps/search/?api=1&query=9%20rue%20des%20%C3%89tats%2C%2044000%20Nantes"
+     }
+    },
+    "en": {
+     "title": "Help",
+     "slug": "need-a-hand",
+     "content": "<h2>Le Voyage à Nantes, a Nantes style welcome!</h2>\n<p>Advice and bookings 7 days a week: accommodation, dining, literature, ticketing, guided tours, shop, tourist passes. You’ll be welcomed at our Le Voyage à Nantes reception in true local style in the spirit of openness and conviviality.</p>\n<p><strong>From Abroad : </strong><br/>\n<strong>+ 33 (0)2 72 64 04 79</strong></p>\n<p><strong>+ Le Voyage à Nantes Office – 9, rue des Etats </strong></p>\n<p><em><b>Facing of the castle of the dukes of Brittany.</b></em></p>\n<table>\n<tbody>\n<tr>\n<th>Monday to Saturday</th>\n<td>10 am to 6 pm</td>\n</tr>\n<tr>\n<th>Except Thursday</th>\n<td>From 11 am</td>\n</tr>\n<tr>\n<th>Sundays  and public holidays</th>\n<td>10 am to 5 pm</td>\n</tr>\n<tr>\n<th>July – September 2025</th>\n<td>7 days a week,<br/>\n9 am – 7 pm</td>\n</tr>\n</tbody>\n</table>\n<p><a href=\"mailto:info@nantes-tourisme.com\">Contact by email</a></p>\n<h2>Follow us all year long</h2>\n<p>Follow the latest local news with social media of Le Voyage à Nantes<br/>\n<a href=\"https://www.instagram.com/levoyageanantes/\">Instagram</a> #LVAN<br/>\n<a href=\"https://www.facebook.com/voyageanantes/?locale=fr_FR\">Facebook</a></p>",
+     "meta": {
+      "num": "07",
+      "h1": "Need a hand?",
+      "lead": "Le Voyage à Nantes visitor centre advises you and books everything you need, 7 days a week.",
+      "tile_desc": "Le Voyage à Nantes visitor centre",
+      "home": "0",
+      "nav": "1",
+      "infos": "Address | 9 rue des États, opposite the Château des ducs de Bretagne\nPhone | 0 892 464 044\nEmail | info@levoyageanantes.fr",
+      "maps": "https://www.google.com/maps/search/?api=1&query=9%20rue%20des%20%C3%89tats%2C%2044000%20Nantes"
+     }
+    },
+    "es": {
+     "title": "Ayuda",
+     "slug": "ayuda",
+     "content": "<h2>La oficina – Le Voyage à Nantes</h2>\n<p>Asesoramiento y reservas 7 días a la semana: alojamiento, restaurantes, documentación, entradas, visitas guiadas, tienda, Pass Nantes. Los visitantes del Voyage à Nantes son recibidos de forma atípica, abierta y amistosa.</p>\n<p><strong>Desde extranjero : </strong><br/>\n<strong>+ 33 (0)2 72 64 04 79</strong></p>\n<p><strong>+ La oficina : 9, rue des États<br/>\n</strong><em><strong>Frente el castillo<br/>\n</strong></em></p>\n<table>\n<tbody>\n<tr>\n<th>De lunes a sábado<br/>\n</th>\n<td>10h à 18h</td>\n</tr>\n<tr>\n<th>Excepto jueves</th>\n<td>À partir de 11h</td>\n</tr>\n<tr>\n<th>Domingos y festivos</th>\n<td>10h à 17h</td>\n</tr>\n<tr>\n<th>Julio y septiembre 2025</th>\n<td>7/7 9h – 19h</td>\n</tr>\n</tbody>\n</table>\n<p><i></i> <a href=\"mailto:info@levoyageanantes.fr\">Contact par mail</a></p>\n<h2>Síganos todo el año</h2>\n<p><a href=\"https://www.instagram.com/levoyageanantes/\">Instagram</a> #LVAN<br/>\n<a href=\"https://www.facebook.com/voyageanantes/?locale=fr_FR\">Facebook</a></p>",
+     "meta": {
+      "num": "07",
+      "h1": "¿Ayuda?",
+      "lead": "La oficina del Voyage à Nantes le aconseja y le reserva todo lo que necesite, 7 días a la semana.",
+      "tile_desc": "La oficina del Voyage à Nantes",
+      "home": "0",
+      "nav": "1",
+      "infos": "Dirección | 9 rue des États, frente al Castillo de los duques de Bretaña\nTeléfono | 0 892 464 044\nCorreo | info@levoyageanantes.fr",
+      "maps": "https://www.google.com/maps/search/?api=1&query=9%20rue%20des%20%C3%89tats%2C%2044000%20Nantes"
+     }
+    }
+   }
+  },
+  {
+   "key": "rubrique-pass-nantes",
+   "type": "page",
+   "template": "page-templates/rubrique-lieux.php",
+   "order": 8,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Pass Nantes",
+     "slug": "24h-de-plus",
+     "content": "",
+     "meta": {
+      "num": "08",
+      "h1": "Acheter le Pass Nantes",
+      "lead": "Pour tout savoir sur Nantes, consultez aussi le guide touristique « Nantes, le voyage permanent ».",
+      "tile_desc": "Dès 27 €, de 24 h à 7 jours",
+      "home": "0",
+      "nav": "0",
+      "post_type": "rdv_pass"
+     }
+    },
+    "en": {
+     "title": "Pass Nantes",
+     "slug": "24h-more",
+     "content": "",
+     "meta": {
+      "num": "08",
+      "h1": "Buy a City Pass",
+      "lead": "To find out all about Nantes, also see the tourist guide “Nantes, the permanent voyage”.",
+      "tile_desc": "From €27, from 24 hours to 7 days",
+      "home": "0",
+      "nav": "0",
+      "post_type": "rdv_pass"
+     }
+    },
+    "es": {
+     "title": "Pass Nantes",
+     "slug": "24h-mas",
+     "content": "",
+     "meta": {
+      "num": "08",
+      "h1": "Comprar un City Pass",
+      "lead": "Para saberlo todo sobre Nantes, consulte también la guía turística «Nantes, el viaje permanente».",
+      "tile_desc": "Desde 27 €, de 24 h a 7 días",
+      "home": "0",
+      "nav": "0",
+      "post_type": "rdv_pass"
+     }
+    }
+   }
+  },
+  {
+   "key": "quartier-ile-de-nantes",
+   "type": "rdv_quartier",
+   "template": "",
+   "order": 1,
+   "image": "quartier-ile-de-nantes.jpg",
+   "langs": {
+    "fr": {
+     "title": "Quartier Île de Nantes",
+     "slug": "quartier-ile-de-nantes",
+     "content": "",
+     "meta": {
+      "num": "1",
+      "map_x": "10%",
+      "map_y": "63%",
+      "amb": "Terrasses face à la Loire",
+      "where": "Île de Nantes · Hangar à bananes",
+      "img_alt": "[Photo Hangar à bananes]",
+      "badges": "[X] min à pied de la Cité des Congrès\nJusqu’à 5 h 30",
+      "lead": "Le long de la Loire et des Anneaux de Buren, le Hangar à bananes est le spot idéal pour boire un verre en terrasse ou écouter un concert. De nombreux bars aux ambiances variées se succèdent dans ce bâtiment industriel réhabilité.",
+      "musts": "La Cantine du Voyage | Ses baby-foot et transats vue Loire ! | Dates 2024 à mettre à jour\nBar l’Absence | L’œuvre au pied de l’école d’architecture.",
+      "infos": "Adresse | Quai des Antilles\nAmbiance | Couche-tard et festive\nHoraires | Certains bars ouverts jusqu’à 5 h 30 | 1",
+      "groups": "## Nos suggestions\nLe Ferrailleur | Quai des Antilles\nLe Point Bar | Quai des Antilles\nLe SAO | Quai des Antilles\nLa Calle | Quai des Antilles\nCanaille Café | Quai des Antilles\nLe Dock Yard – Irish Pub | Quai des Antilles\nLe D3 | Quai des Antilles\nLe Warehouse | Quai des Antilles",
+      "note": ""
+     }
+    },
+    "en": {
+     "title": "Ile de Nantes district",
+     "slug": "ile-de-nantes-quarter",
+     "content": "",
+     "meta": {
+      "num": "1",
+      "map_x": "10%",
+      "map_y": "63%",
+      "amb": "Terraces facing the Loire",
+      "where": "Île de Nantes · Hangar à bananes",
+      "img_alt": "",
+      "badges": "[X] min walk from the Cité des Congrès\nUntil 5.30 am",
+      "lead": "Along the Loire, near the Buren Rings is the Hangar à Bananes, an ideal spot for a drink outsite while listening to a band play. Plenty of bars and atmospheres in this rehabilitated industrial building.",
+      "musts": "La Cantine du Voyage | With its table football and deckchairs facing the Loire! | Dates 2024 to be updated\nBar l’Absence | The bar of the School of Architecture, an artwork by Atelier Van Lieshout.",
+      "infos": "Address | Quai des Antilles\nAtmosphere | Late night and buzzing\nOpening hours | Some bars open until 5.30 am | 1",
+      "groups": "## A few suggestions\nLe Ferrailleur | Quai des Antilles\nLe Point Bar | Quai des Antilles\nLe SAO | Quai des Antilles\nLa Calle | Quai des Antilles\nCanaille Café | Quai des Antilles\nLe Dock Yard – Irish Pub | Quai des Antilles\nLe D3 | Quai des Antilles\nLe Warehouse | Quai des Antilles",
+      "note": ""
+     }
+    },
+    "es": {
+     "title": "Barrio Île de Nantes",
+     "slug": "barrio-ile-de-nantes",
+     "content": "",
+     "meta": {
+      "num": "1",
+      "map_x": "10%",
+      "map_y": "63%",
+      "amb": "Terrazas frente al Loira",
+      "where": "Île de Nantes · Hangar à bananes",
+      "img_alt": "",
+      "badges": "A [X] min a pie de la Cité des Congrès\nHasta las 5.30 h",
+      "lead": "Siguiendo el Loira, frente a los Anneaux (Buren), el Hangar à Bananes es un destino ideal para tomar algo, asistir a un concierto y seguir hasta la noche. Este edificio tiene numerosos bares de distintos ambientes.",
+      "musts": "La Cantine du Voyage | ¡Su futbolín y sus tumbonas con vistas al Loira! | Fechas 2024 por actualizar\nBar l’Absence | La obra al pie de la Escuela de Arquitectura.",
+      "infos": "Dirección | Quai des Antilles\nAmbiente | Nocturno y festivo\nHorarios | Algunos bares abren hasta las 5.30 h | 1",
+      "groups": "## Algunas sugerencias\nLe Ferrailleur | Quai des Antilles\nLe Point Bar | Quai des Antilles\nLe SAO | Quai des Antilles\nLa Calle | Quai des Antilles\nCanaille Café | Quai des Antilles\nLe Dock Yard – Irish Pub | Quai des Antilles\nLe D3 | Quai des Antilles\nLe Warehouse | Quai des Antilles",
+      "note": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "quartier-graslin",
+   "type": "rdv_quartier",
+   "template": "",
+   "order": 2,
+   "image": "quartier-graslin.jpg",
+   "langs": {
+    "fr": {
+     "title": "Quartier Graslin",
+     "slug": "quartier-graslin",
+     "content": "",
+     "meta": {
+      "num": "2",
+      "map_x": "25.5%",
+      "map_y": "40%",
+      "amb": "Cocktails chic et cosy",
+      "where": "Graslin · autour du théâtre",
+      "img_alt": "[Photo quartier Graslin]",
+      "badges": "[X] min à pied de la Cité des Congrès\nBars à cocktails",
+      "lead": "Tout autour du théâtre Graslin, dans les rues piétonnes, bars et institutions nantaises proposent les meilleurs cocktails de la ville.",
+      "musts": "",
+      "infos": "Où | Autour du théâtre Graslin\nAmbiance | Chic et cosy garantie\nAu programme | Bar à vins, cave à bière, bar dansant",
+      "groups": "## Nos suggestions\nLe Molière | 2 rue Racine\nLe Mariole | 11 rue Jean-Jacques Rousseau\nL’Univers speakeasy | 16 rue Jean-Jacques Rousseau\nLe Graslin de Folie | 1 rue Racine\nLe Sur Mesure | 5 rue Jean-Jacques Rousseau\nChez les garçons | 16 rue Jean-Jacques Rousseau\nLe 19:33 | 8 rue Voltaire\nLa Passagère | Passage Pommeraye\nPeter Mc Cool – Irish Pub | 22 rue Scribe\nLe Mac – Irish Pub Nantes | 1 rue Rameau",
+      "note": ""
+     }
+    },
+    "en": {
+     "title": "Graslin district",
+     "slug": "graslin-quarter",
+     "content": "",
+     "meta": {
+      "num": "2",
+      "map_x": "25.5%",
+      "map_y": "40%",
+      "amb": "Chic and cosy cocktails",
+      "where": "Graslin · around the theatre",
+      "img_alt": "",
+      "badges": "[X] min walk from the Cité des Congrès\nCocktail bars",
+      "lead": "In the area around the Graslin Theatre, along its pedestrianised streets, the bars and local institutions make the best cocktails in town.",
+      "musts": "",
+      "infos": "Where | Around the Graslin Theatre\nAtmosphere | Guaranteed chic and cosy\nOn the menu | Wine bars, beer cellars, bars with music",
+      "groups": "## A few suggestions\nLe Molière | 2 rue Racine\nLe Mariole | 11 rue Jean-Jacques Rousseau\nL’Univers speakeasy | 16 rue Jean-Jacques Rousseau\nLe Graslin de Folie | 1 rue Racine\nLe Sur Mesure | 5 rue Jean-Jacques Rousseau\nChez les garçons | 16 rue Jean-Jacques Rousseau\nLe 19:33 | 8 rue Voltaire\nLa Passagère | Passage Pommeraye\nPeter Mc Cool – Irish Pub | 22 rue Scribe\nLe Mac – Irish Pub Nantes | 1 rue Rameau",
+      "note": ""
+     }
+    },
+    "es": {
+     "title": "Barrio Graslin",
+     "slug": "barrio-graslin",
+     "content": "",
+     "meta": {
+      "num": "2",
+      "map_x": "25.5%",
+      "map_y": "40%",
+      "amb": "Cócteles elegantes y acogedores",
+      "where": "Graslin · alrededor del teatro",
+      "img_alt": "",
+      "badges": "A [X] min a pie de la Cité des Congrès\nBares de cócteles",
+      "lead": "Alrededor del teatro Graslin, en las calles peatonales, los bares e instituciones de Nantes ofrecen los mejores cócteles de la ciudad.",
+      "musts": "",
+      "infos": "Dónde | Alrededor del teatro Graslin\nAmbiente | El buen ambiente y la elegancia\nPrograma | Vinoteca, cervecería, bar de baile",
+      "groups": "## Algunas sugerencias\nLe Molière | 2 rue Racine\nLe Mariole | 11 rue Jean-Jacques Rousseau\nL’Univers speakeasy | 16 rue Jean-Jacques Rousseau\nLe Graslin de Folie | 1 rue Racine\nLe Sur Mesure | 5 rue Jean-Jacques Rousseau\nChez les garçons | 16 rue Jean-Jacques Rousseau\nLe 19:33 | 8 rue Voltaire\nLa Passagère | Passage Pommeraye\nPeter Mc Cool – Irish Pub | 22 rue Scribe\nLe Mac – Irish Pub Nantes | 1 rue Rameau",
+      "note": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "quartier-bouffay",
+   "type": "rdv_quartier",
+   "template": "",
+   "order": 3,
+   "image": "quartier-bouffay.jpg",
+   "langs": {
+    "fr": {
+     "title": "Quartier Bouffay",
+     "slug": "quartier-bouffay",
+     "content": "",
+     "meta": {
+      "num": "3",
+      "map_x": "43%",
+      "map_y": "36%",
+      "amb": "Terrasses et pubs animés",
+      "where": "Bouffay · quartier médiéval",
+      "img_alt": "[Photo place du Bouffay]",
+      "badges": "[X] min à pied de la Cité des Congrès\nSoirs de match",
+      "lead": "On y va pour les terrasses de la place du Bouffay, toute l’année au soleil, pour les pubs particulièrement animés les soirs de match et ses bars à cocktail.",
+      "musts": "",
+      "infos": "Où | Autour de la place du Bouffay\nAmbiance | Jeune et décontractée\nAu programme | Terrasses, pubs, bars à cocktail",
+      "groups": "## Nos suggestions\nLe Bar du Coin | 21 rue de la Juiverie\nLe 17.45 | 18 rue Briord\nLe Pti Zinc | 10 rue de l’Emery\nLe Live Bar | 7 rue des États\nAu Chien Stupide | 4 rue des Carmélites\nCafé Cult’ | 2 rue des Carmes\nLe 13 et 3 | 1 place du Bouffay\nLe Marlowe | 1 rue Saint-Vincent\n## Quelques Irish pubs\nJohn Mc Byrne | 21 rue des Petites Écuries & 13 rue de la Juiverie\nBuck Mulligan’s | 12 rue du Château\nGigg’s Irish Pub | 4 place Saint-Pierre\nLe Rabelais | 3 rue du Bouffay\nFlemings | 22 rue des Carmes\nDe Dannan Celtic Pub | 2 rue Kervégan\nBrady’s Irish Pub | 22 allée du Commandant Charcot",
+      "note": "Non loin du quartier, Le Lieu Unique : café, bar, DJ, restaurant, terrasse en bord du canal Saint-Félix, dans la célèbre biscuiterie nantaise transformée en lieu culturel incontournable."
+     }
+    },
+    "en": {
+     "title": "Bouffay district",
+     "slug": "bouffay-quarter",
+     "content": "",
+     "meta": {
+      "num": "3",
+      "map_x": "43%",
+      "map_y": "36%",
+      "amb": "Terraces and lively pubs",
+      "where": "Bouffay · medieval quarter",
+      "img_alt": "",
+      "badges": "[X] min walk from the Cité des Congrès\nMatch nights",
+      "lead": "The Place du Bouffay is a hotspot for ones who want to enjoy its terraces, its particularly lively pubs on match nights and for its cocktail bars.",
+      "musts": "",
+      "infos": "Where | Around the Place du Bouffay\nAtmosphere | Young and relaxed\nOn the menu | Terraces, pubs, cocktail bars",
+      "groups": "## A few suggestions\nLe Bar du Coin | 21 rue de la Juiverie\nLe 17.45 | 18 rue Briord\nLe Pti Zinc | 10 rue de l’Emery\nLe Live Bar | 7 rue des États\nAu Chien Stupide | 4 rue des Carmélites\nCafé Cult’ | 2 rue des Carmes\nLe 13 et 3 | 1 place du Bouffay\nLe Marlowe | 1 rue Saint-Vincent\n## A few Irish pubs\nJohn Mc Byrne | 21 rue des Petites Écuries & 13 rue de la Juiverie\nBuck Mulligan’s | 12 rue du Château\nGigg’s Irish Pub | 4 place Saint-Pierre\nLe Rabelais | 3 rue du Bouffay\nFlemings | 22 rue des Carmes\nDe Dannan Celtic Pub | 2 rue Kervégan\nBrady’s Irish Pub | 22 allée du Commandant Charcot",
+      "note": "Just a short stroll from the district is the unmissable Lieu Unique: A café, bar, DJ, restaurant and terrace overlooking the St-Felix Canal. The former Nantes biscuit factory now an unmissable cultural place."
+     }
+    },
+    "es": {
+     "title": "Barrio Bouffay",
+     "slug": "barrio-bouffay",
+     "content": "",
+     "meta": {
+      "num": "3",
+      "map_x": "43%",
+      "map_y": "36%",
+      "amb": "Terrazas y pubs animados",
+      "where": "Bouffay · barrio medieval",
+      "img_alt": "",
+      "badges": "A [X] min a pie de la Cité des Congrès\nNoches de partido",
+      "lead": "Vamos por las terrazas de la plaza del Bouffay, donde brilla el sol todo el año, por los pubs que están especialmente animados las noches de partido y por los bares de copas.",
+      "musts": "",
+      "infos": "Dónde | Alrededor de la plaza del Bouffay\nAmbiente | Joven y desenfadado\nPrograma | Terrazas, pubs, bares de cócteles",
+      "groups": "## Algunas sugerencias\nLe Bar du Coin | 21 rue de la Juiverie\nLe 17.45 | 18 rue Briord\nLe Pti Zinc | 10 rue de l’Emery\nLe Live Bar | 7 rue des États\nAu Chien Stupide | 4 rue des Carmélites\nCafé Cult’ | 2 rue des Carmes\nLe 13 et 3 | 1 place du Bouffay\nLe Marlowe | 1 rue Saint-Vincent\n## Algunos Irish pubs\nJohn Mc Byrne | 21 rue des Petites Écuries & 13 rue de la Juiverie\nBuck Mulligan’s | 12 rue du Château\nGigg’s Irish Pub | 4 place Saint-Pierre\nLe Rabelais | 3 rue du Bouffay\nFlemings | 22 rue des Carmes\nDe Dannan Celtic Pub | 2 rue Kervégan\nBrady’s Irish Pub | 22 allée du Commandant Charcot",
+      "note": "No muy lejos del distrito, Le Lieu Unique: café, bar, DJ, restaurante y terraza a orillas del Canal de San Félix, en la famosa fábrica de galletas de Nantes transformada en un lugar cultural que no hay que perderse."
+     }
+    }
+   }
+  },
+  {
+   "key": "quartier-guinguettes",
+   "type": "rdv_quartier",
+   "template": "",
+   "order": 4,
+   "image": "les-guinguettes.jpg",
+   "langs": {
+    "fr": {
+     "title": "Esprit guinguette pour les beaux jours",
+     "slug": "les-guinguettes",
+     "content": "",
+     "meta": {
+      "num": "4",
+      "map_x": "",
+      "map_y": "",
+      "amb": "Guinguettes aux beaux jours",
+      "where": "En ville et aux environs",
+      "img_alt": "[Photo guinguette]",
+      "badges": "Saisonnier\nPlusieurs lieux",
+      "lead": "Au cœur de la ville ou dans ses environs, quelques guinguettes temporaires et conviviales sont ouvertes pour les Nantais et les visiteurs. L’occasion de prendre l’air dans un esprit vacances !",
+      "musts": "",
+      "infos": "Où | En ville et aux environs\nAmbiance | Esprit vacances\nQuand | Aux beaux jours, selon les lieux",
+      "groups": "## Nos suggestions\nLa Cantine du Voyage |  | Dates 2024 à mettre à jour\nLa Station Nuage |  | Réouverture 2025 à mettre à jour\nLa Guinguette du Belvédère |  | Réouverture 2025 à mettre à jour\nLe Bateau Lavoir |  | Réouverture 2025 à mettre à jour",
+      "note": ""
+     }
+    },
+    "en": {
+     "title": "Guinguette spirit for sunny days",
+     "slug": "guinguette-spirit-for-sunny-days",
+     "content": "",
+     "meta": {
+      "num": "4",
+      "map_x": "",
+      "map_y": "",
+      "amb": "Guinguettes on sunny days",
+      "where": "In town and nearby",
+      "img_alt": "",
+      "badges": "Seasonal\nSeveral places",
+      "lead": "In and around Nantes, a few temporary and friendly guinguettes are open to locals and visitors.",
+      "musts": "",
+      "infos": "Where | In town and nearby\nAtmosphere | Holiday mood\nWhen | On sunny days, depending on the place",
+      "groups": "## A few suggestions\nLa Cantine du Voyage |  | Dates 2024 to be updated\nLa Station Nuage |  | Reopening 2025 to be updated\nLa Guinguette du Belvédère |  | Reopening 2025 to be updated\nLe Bateau Lavoir |  | Reopening 2025 to be updated",
+      "note": ""
+     }
+    },
+    "es": {
+     "title": "Espíritu Guinguette para los buenos días",
+     "slug": "espiritu-guinguette-para-los-buenos-dias",
+     "content": "",
+     "meta": {
+      "num": "4",
+      "map_x": "",
+      "map_y": "",
+      "amb": "Guinguettes con buen tiempo",
+      "where": "En la ciudad y alrededores",
+      "img_alt": "",
+      "badges": "De temporada\nVarios lugares",
+      "lead": "No hay nada mejor que una guinguette en la ciudad para tomar el aire y disfrutar de un ambiente festivo junto al agua.",
+      "musts": "",
+      "infos": "Dónde | En la ciudad y alrededores\nAmbiente | Espíritu vacaciones\nCuándo | Con buen tiempo, según el lugar",
+      "groups": "## Algunas sugerencias\nLa Cantine du Voyage |  | Fechas 2024 por actualizar\nLa Station Nuage |  | Reapertura 2025 por actualizar\nLa Guinguette du Belvédère |  | Reapertura 2025 por actualizar\nLe Bateau Lavoir |  | Reapertura 2025 por actualizar",
+      "note": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-chateau-des-ducs-de-bretagne",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 1,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Château des ducs de Bretagne",
+     "slug": "le-chateau-des-ducs-de-bretagne",
+     "content": "<p>Avec ses bâtiments du XVe au XVIIIe siècle, il est un monument-phare du patrimoine. La cour, les remparts, les douves sont en accès libre. Au musée d’histoire de Nantes, la ville se raconte en un parcours croisant les grands moments de l’Histoire européenne et mondiale, notamment la traite atlantique et les deux guerres mondiales.</p>",
+     "meta": {
+      "subtitle": "Musée d’histoire de Nantes",
+      "infos": "Adresse | 4 place Marc Elder, 44000 Nantes\nTarifs | 9 € plein · 5 € réduit\nÀ savoir | Gratuit pour les moins de 18 ans",
+      "maps": "https://www.google.com/maps/dir//chateau+nantes/@47.2162696,-1.5837901,13z",
+      "more": "https://www.levoyageanantes.fr/lieux/chateau-des-ducs-de-bretagne-musee-dhistoire-de-nantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "The Château des Ducs de Bretagne",
+     "slug": "the-chateau-des-ducs-de-bretagne",
+     "content": "<p>The final castle of the banks of the Loire before the ocean, this Breton monument has the magic of taking a genuine step back into history. An amazing fortress and the History of Nantes museum.</p>\n<p><strong>Free for under -18</strong>.</p>",
+     "meta": {
+      "subtitle": "The Nantes History Museum",
+      "infos": "Address | 4 Place Marc Elder, 44000 Nantes\nPrices | 9 € (full price) · 5 € (concessions) · details available",
+      "maps": "https://www.google.com/maps/dir//chateau+nantes/@47.2162696,-1.5837901,13z",
+      "more": "https://www.nantes-tourisme.com/en/heritage/chateau-des-ducs-de-bretagne-musee-d-histoire-de-nantes",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "El Castillo de los duques de Bretaña",
+     "slug": "el-castillo-de-los-duques-de-bretana",
+     "content": "<p>Este es el monumento histórico destacado de la ciudad. Fue edificado entre los siglos XV y XVIII. La entrada al patio de armas, las murallas y los fosos es libre. Dentro se halla el Museo de Historia de Nantes donde se reconstruye la historia de Nantes con un recorrido que nos coloca ante los grandes momentos de la historia mundial, en particular, la trata de esclavos y las dos guerras mundiales.</p>\n<p><strong>Gratis para menores de 18 años</strong></p>",
+     "meta": {
+      "subtitle": "El Museo de Historia de Nantes",
+      "infos": "Dirección | 4 Place Marc Elder, 44000 Nantes\nTarifas | 9 € (completo) · 5 € (reducido) · tarifas detalladas",
+      "maps": "https://www.google.com/maps/dir//chateau+nantes/@47.2162696,-1.5837901,13z",
+      "more": "https://www.levoyageanantes.fr/es/lugares/castillo-de-los-duques-de-bretana/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-musee-darts",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 2,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Musée d’arts",
+     "slug": "le-musee-darts",
+     "content": "<p>Le Musée d’arts de Nantes a réouvert ses portes en juin 2017 avec un nouveau bâtiment dédié à l’art contemporain, plus de 2 000 m² de surfaces d’exposition supplémentaires, des façades et verrières restaurées, un restaurant… La collection du musée, l’une des plus riches de France, s’étend de l’art ancien à l’art contemporain, toutes formes de création confondues.</p>",
+     "meta": {
+      "subtitle": "12 000 œuvres, de l’art ancien à l’art contemporain",
+      "infos": "Adresse | Rue Georges Clemenceau, Nantes\nTarifs | 8 € plein · 4 € réduit",
+      "maps": "https://www.google.com/maps/dir//mus%C3%A9e+d%27arts+nantes/@47.219711,-1.5824603,13z",
+      "more": "https://www.levoyageanantes.fr/lieux/musee-darts-de-nantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "The musée d’arts – Arts Museum",
+     "slug": "the-musee-darts-arts-museum",
+     "content": "<p>After 7 years of renovation, the Musée d’Arts in Nantes re-opened in 2017 with a new 2,000 m² building dedicated to contemporary art. Artists include; De La Tour, Ingres, Ernst, Delaunay, Chaissac and Picasso…. The collection ranges from ancient to contemporary art.</p>",
+     "meta": {
+      "subtitle": "12,000 artworks from Ancient to Contemporary Art.",
+      "infos": "Address | Rue Georges Clémenceau, Nantes\nPrices | 9 € (full price) · 4 € (concessions) · details available",
+      "maps": "https://www.google.com/maps/dir//musée+d'arts+nantes/@47.219711,-1.5824603,13z",
+      "more": "https://www.nantes-tourisme.com/en/museum/nantes-arts-museum",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "El Museo de Bellas Artes de Nantes",
+     "slug": "el-museo-de-bellas-artes-de-nantes",
+     "content": "<p>El Museo de Artes de Nantes reabrió sus puertas en junio de 2017 con un nuevo edificio dedicado al arte contemporáneo, más de 2.000 m2 adicionales de exposición, fachadas y cubiertas acristaladas restauradas, un restaurante… La colección del museo, una de las más ricas de Francia, abarca desde el arte antiguo hasta el contemporáneo, todas las formas de creación reunidas.</p>",
+     "meta": {
+      "subtitle": "12 000 obras, desde el arte antiguo hasta el contemporáneo",
+      "infos": "Dirección | Rue Georges Clémenceau, Nantes\nTarifas | 9 € (completo) · 4 € (reducido) · tarifas detalladas",
+      "maps": "https://www.google.com/maps/dir//musée+d'arts+nantes/@47.219711,-1.5824603,13z",
+      "more": "https://www.levoyageanantes.fr/es/lugares/museo-de-arte-de-nantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-quartier-bouffay",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 3,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Quartier Bouffay",
+     "slug": "quartier-bouffay",
+     "content": "<p>Quartier médiéval de la ville. Outre les maisons à colombages et vestiges d’édifices des XVe et XVIe siècles, ce quartier regorge de petites boutiques, bars et restaurants de tous styles. Il y fourmille toujours une foule continuelle et une ambiance incomparable.</p>",
+     "meta": {
+      "subtitle": "Quartier médiéval et son château",
+      "infos": "Adresse | Quartier Bouffay, Nantes",
+      "maps": "https://www.google.com/maps/dir//Place+du+Bouffay,+44036+Nantes/@47.2146044,-1.5540442,17.75z",
+      "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-du-bouffay/",
+      "buy": "",
+      "buy_label": "",
+      "link": "Prendre un verre au Bouffay | /prendre-un-verre/quartier-bouffay/"
+     }
+    },
+    "en": {
+     "title": "Bouffay district",
+     "slug": "bouffay",
+     "content": "<p>The medieval district of Nantes. In addition to the half-timbered houses and remains of fifteenth and sixteenth century buildings, this district is full of small shops, bars and restaurants in all shapes and styles. There is a constant buzz in this lively part of town and an incomparable atmosphere.</p>",
+     "meta": {
+      "subtitle": "The medieval quarter",
+      "infos": "Address | Quartier Bouffay, Nantes",
+      "maps": "https://www.google.com/maps/dir//Place+du+Bouffay,+44036+Nantes/@47.2146044,-1.5540442,17.75z",
+      "more": "https://www.levoyageanantes.fr/en/to-see/the-endless-journey/the-districts-of-nantes/bouffay-district/",
+      "buy": "",
+      "buy_label": "",
+      "link": "Have a drink in Bouffay | /prendre-un-verre/quartier-bouffay/"
+     }
+    },
+    "es": {
+     "title": "Barrio de Bouffay con el castillo",
+     "slug": "barrio-de-bouffay",
+     "content": "<p>Por su imponente silueta y su historia, la catedral y el castillo son los emblemas del barrio, aunque cuenta con otros monumentos de visita imprescindible. Bouffay también es un laberinto de calles donde bullía la ciudad medieval y donde actualmente resulta maravilloso callejear.</p>",
+     "meta": {
+      "subtitle": "El corazón de la ciudad medieval",
+      "infos": "Dirección | Quartier Bouffay, Nantes",
+      "maps": "https://www.google.com/maps/dir//Place+du+Bouffay,+44036+Nantes/@47.2146044,-1.5540442,17.75z",
+      "more": "https://www.levoyageanantes.fr/es/barrio-de-bouffay/",
+      "buy": "",
+      "buy_label": "",
+      "link": "Tomar una copa en Bouffay | /prendre-un-verre/quartier-bouffay/"
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-le-lieu-unique",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 4,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Lieu Unique",
+     "slug": "le-lieu-unique",
+     "content": "<p>Installé dans les anciennes biscuiteries LU, le lieu unique est un espace d’exploration artistique, de bouillonnement culturel et de convivialité qui mélange les genres, les cultures et les publics.</p>",
+     "meta": {
+      "subtitle": "Ancienne biscuiterie LU, proche gare",
+      "infos": "Adresse | 2 quai Ferdinand Favre, 44000 Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Le%20Lieu%20Unique%2C%202%20quai%20Ferdinand%20Favre%2C%20Nantes",
+      "more": "https://www.levoyageanantes.fr/lieux/le-lieu-unique/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Le Lieu Unique",
+     "slug": "the-lieu-unique",
+     "content": "<p>Housed in the former LU biscuit factory, le lieu unique is a venue for artistic exploration, as well as a friendly cultural hotspot that mixes genres, cultures and all sorts of people.</p>",
+     "meta": {
+      "subtitle": "The former LU biscuit factory - Central station district",
+      "infos": "",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Le%20Lieu%20Unique%2C%202%20quai%20Ferdinand%20Favre%2C%20Nantes",
+      "more": "https://df.com",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "El Lieu Unique",
+     "slug": "le-lieu-unique",
+     "content": "<p>Le lieu unique es un espacio cultural, un teatro, un lugar de exploración artística, un hervidero cultural y de mezcla de géneros, culturas y públicos. Se halla en la antigua sede de la fábrica de galletas LU.</p>",
+     "meta": {
+      "subtitle": "La antigua fábrica de galletas LU",
+      "infos": "Dirección | 2 Quai Ferdinand Favre, 44000 Nantes",
+      "maps": "https://www.google.fr/maps/place/Bar+Restaurant+le+Lieu+Unique/@47.215517,-1.545655,72m/data=!3m1!1e3!4m5!3m4!1s0x4805ef949ac1665f:0x2494dd6d023452fb!8m2!3d47.2154775!4d-1.5453911",
+      "more": "https://www.levoyageanantes.fr/es/lugares/le-lieu-unique/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-jardin-des-plantes",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 5,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Jardin des Plantes",
+     "slug": "le-jardin-des-plantes",
+     "content": "<p>Avec 7 hectares de verdure en plein centre-ville, plus de 10 000 espèces vivantes, 800 m² de serres, le Jardin des Plantes figure parmi les quatre grands jardins botaniques de France.</p>",
+     "meta": {
+      "subtitle": "Écrin de verdure face à la gare, sortie Nord",
+      "infos": "Adresse | Rue Stanislas Baudry, 44000 Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Jardin%20des%20Plantes%2C%20rue%20Stanislas%20Baudry%2C%20Nantes",
+      "more": "https://www.levoyageanantes.fr/lieux/jardin-des-plantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "The botanical garden",
+     "slug": "le-jardin-des-plantes-en",
+     "content": "<p>With its 7 hectares (17 acres) of greenery right in the heart of the city, over 10,000 living species, 800 m2 (8,600 sq. ft.) of greenhouses, Nantes’ botanical garden is considered to be one of the four most beautiful in France.</p>",
+     "meta": {
+      "subtitle": "Three centuries of botanical adventures",
+      "infos": "",
+      "maps": "https://www.google.fr/maps/place/Jardin+des+Plantes/@47.2155247,-1.5497588,1152m/data=!3m1!1e3!4m9!1m2!2m1!1sjardin+des+plantes!3m5!1s0x4805eecc70b02587:0x26b0eaea03636f33!8m2!3d47.2193911!4d-1.5425608!15sChJqYXJkaW4gZGVzIHBsYW50ZXNaFCISamFyZGluIGRlcyBwbGFudGVzkgEQYm90YW5pY2FsX2dhcmRlbpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbk9GQjVXRnBuRUFF",
+      "more": "https://www.levoyageanantes.fr/en/places/jardin-des-plantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Jardín de las plantas",
+     "slug": "jardin-de-las-plantas",
+     "content": "<p>El jardín botánico de Nantes ocupa una superficie de 7 hectáreas en pleno corazón de la ciudad. Posee más de 10.000 especies vivas, 800 m2 de invernaderos y está considerado uno de los cuatro mas bonitos jardines botánicos de Francia.</p>",
+     "meta": {
+      "subtitle": "Escaparate verde enfrente de la estación de tren (salida Norte).",
+      "infos": "Dirección | Rue Stanislas Baudry, 44000 Nantes",
+      "maps": "https://www.google.fr/maps/place/Jardin+des+Plantes/@47.2155247,-1.5497588,1152m/data=!3m1!1e3!4m9!1m2!2m1!1sjardin+des+plantes!3m5!1s0x4805eecc70b02587:0x26b0eaea03636f33!8m2!3d47.2193911!4d-1.5425608!15sChJqYXJkaW4gZGVzIHBsYW50ZXNaFCISamFyZGluIGRlcyBwbGFudGVzkgEQYm90YW5pY2FsX2dhcmRlbpoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSbk9GQjVXRnB",
+      "more": "https://www.levoyageanantes.fr/es/lugares/jardin-des-plantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-passage-pommeraye",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 6,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Passage Pommeraye",
+     "slug": "le-passage-pommeraye",
+     "content": "<p>Très rares sont les villes d’Europe pouvant se flatter de posséder un passage couvert d’une telle valeur architecturale : le Passage Pommeraye, galerie commerçante du XIXe siècle.</p>",
+     "meta": {
+      "subtitle": "Arcades de shopping du XIXe siècle",
+      "infos": "Adresse | 20 passage Pommeraye, 44000 Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Passage%20Pommeraye%2C%20Nantes",
+      "more": "https://www.levoyageanantes.fr/lieux/passage-pommeraye/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Passage Pommeraye",
+     "slug": "le-passage-pommeraye-en",
+     "content": "<p>There aren’t many European towns that can claim to have a more architecturally-rich shopping arcade: Passage Pommeraye, a 19th century covered gallery.</p>",
+     "meta": {
+      "subtitle": "A 19th century covered alleyway",
+      "infos": "Address | 20 Passage Pommeraye, 44000 Nantes",
+      "maps": "https://www.google.fr/maps/place/Passage+Pommeraye/@47.213463,-1.5618479,576m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4805eea7e0f92ba7:0x17cef206656dd030!8m2!3d47.2134594!4d-1.5596592",
+      "more": "https://www.levoyageanantes.fr/en/places/passage-pommeraye/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "El Passage Pommeraye",
+     "slug": "le-passage-pommeraye",
+     "content": "<p>Pocas ciudades europeas pueden presumir de un pasaje cubierto con semejante valor arquitectónico. El Pasaje Pommeraye es una galería comercial preciosa del siglo XIX.</p>",
+     "meta": {
+      "subtitle": "Galería comercial preciosa del siglo XIX.",
+      "infos": "Dirección | 20 Passage Pommeraye, 44000 Nantes",
+      "maps": "https://www.google.fr/maps/place/Passage+Pommeraye/@47.213463,-1.5618479,576m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4805eea7e0f92ba7:0x17cef206656dd030!8m2!3d47.2134594!4d-1.5596592",
+      "more": "https://www.levoyageanantes.fr/es/lugares/passage-pommeraye/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-machines-de-lile",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 7,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Les Machines de l’Île",
+     "slug": "les-machines-de-lile",
+     "content": "<p>Un bestiaire de machines vivantes et monumentales. Un projet artistique totalement inédit, qui a reçu le prix de l’attraction la plus originale du monde. À la croisée des « mondes inventés » de Jules Verne, de l’univers mécanique de Léonard de Vinci et de l’histoire industrielle de Nantes, sur le site exceptionnel des anciens chantiers navals.</p>",
+     "meta": {
+      "subtitle": "Galerie des Machines, Carrousel des Mondes Marins, le Grand Éléphant",
+      "infos": "Adresse | Parc des Chantiers, boulevard Léon Bureau, 44200 Nantes\nTarifs | 11 € plein · 8,70 € réduit",
+      "maps": "https://www.google.com/maps/dir//machines+de+l%27ile/@47.2086849,-1.5661141,17z",
+      "more": "https://www.levoyageanantes.fr/activites/galerie-des-machines-de-lile/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "The Machines de l’Île",
+     "slug": "the-machines-de-lile",
+     "content": "<p>The emblematic Machines de l’Île are at the top of everyone’s ‘to do’ list when they come to discover Nantes. The 12m high Elephant, the 25m Carousel dedicated to the marine world, etc.</p>",
+     "meta": {
+      "subtitle": "The Machines Gallery, the Carrousel of the Marine Worlds, The Grand Elephant.",
+      "infos": "Address | Parc des Chantiers, Boulevard Léon Bureau, 44200 Nantes\nPrices | 11 € (full price) · 8.7 € (concessions) · details available",
+      "maps": "https://www.google.com/maps/dir//machines+de+l'ile/@47.2086849,-1.5661141,17z",
+      "more": "https://www.levoyageanantes.fr/en/activities/galerie-des-machines-de-lile/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Les Machines de l’Île",
+     "slug": "les-machines-de-lile",
+     "content": "<p>Aquí vive un impresionante bestiario de máquinas vivas monumentales. Se trata de un proyecto artístico totalmente inédito que ha sido premiado como la Atracción más Original del Mundo. Es el resultado de los “mundos inéditos” de Julio Verne, el universo mecánico de Leonardo Da Vinci y el pasado industrial de Nantes. Les Machines de l’Île se halla en un lugar excepcional: los antiguos astilleros de Nantes.</p>",
+     "meta": {
+      "subtitle": "Galería de las Máquinas - Carrusel de los Mundos Marinos - El Gran Elefante",
+      "infos": "Dirección | Parc des Chantiers, Boulevard Léon Bureau, 44200 Nantes\nTarifas | 11 € (completo) · 8.7 € (reducido) · tarifas detalladas",
+      "maps": "https://www.google.com/maps/dir//machines+de+l'ile/@47.2086849,-1.5661141,17z",
+      "more": "https://www.levoyageanantes.fr/es/actividades/la-galerie-des-machines-de-lile/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-parc-des-chantiers",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 8,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Parc des Chantiers",
+     "slug": "quartier-creation-ile-nantes",
+     "content": "<p>Le Hangar à bananes, les Anneaux de Buren ou le Grand Éléphant : ce parc permet à tous de s’approcher du fleuve à l’occasion de flâneries aux tonalités culturelles ou sportives, d’explorer les espaces historiques au gré des événements et des activités proposées.</p>",
+     "meta": {
+      "subtitle": "Architecture contemporaine, Machines de l’île et bords de Loire",
+      "infos": "Adresse | Île de Nantes, Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Parc%20des%20Chantiers%2C%20%C3%8Ele%20de%20Nantes",
+      "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-ile-de-nantes/",
+      "buy": "",
+      "buy_label": "",
+      "link": "Prendre un verre sur l’Île de Nantes | /prendre-un-verre/quartier-ile-de-nantes/"
+     }
+    },
+    "en": {
+     "title": "The Creative Quarter, l’Île de Nantes",
+     "slug": "the-creative-quarter-lile-de-nantes",
+     "content": "<p>An area resolutely open to culture, modern architecture and design, the new Nantes and contemporary projects, the Machines de l’île, the banks of the Loire, artworks in the open-air, a genuine play area !</p>",
+     "meta": {
+      "subtitle": "Modern Architecture, the Machines de l’île and the banks of the Loire",
+      "infos": "Address | Île de Nantes, Nantes",
+      "maps": "https://www.google.com/maps/dir//Île+de+Nantes,+Nantes/@47.20422,-1.5822413,13z",
+      "more": "https://www.levoyageanantes.fr/en/to-see/the-endless-journey/the-districts-of-nantes/ile-de-nantes-district/",
+      "buy": "",
+      "buy_label": "",
+      "link": "Have a drink on the Île de Nantes | /prendre-un-verre/quartier-ile-de-nantes/"
+     }
+    },
+    "es": {
+     "title": "El parque de los astilleros",
+     "slug": "el-parque-de-los-astilleros",
+     "content": "<p>El parque de los astilleros congrega el Hangar à Bananes, la obra contemporánea Les Anneaux y el Gran Elefante. Este parque permite que todos puedan acercarse al río dando un paseo con un toque cultural o deportivo o explorar los espacios históricos al ritmo de los eventos programados.</p>",
+     "meta": {
+      "subtitle": "Arquitectura contemporánea, Machines de l'île al largo de la Loira",
+      "infos": "Dirección | Île de Nantes, Nantes",
+      "maps": "https://www.google.com/maps/dir//Île+de+Nantes,+Nantes/@47.20422,-1.5822413,13z",
+      "more": "https://www.levoyageanantes.fr/es/lugares/parque-del-astillero/",
+      "buy": "",
+      "buy_label": "",
+      "link": "Tomar una copa en la Île de Nantes | /prendre-un-verre/quartier-ile-de-nantes/"
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-quartier-chantenay",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 9,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Quartier Chantenay",
+     "slug": "quartier-chantenay",
+     "content": "<p>Sur les hauteurs du quartier, six belvédères ainsi que celui, monumental, signé Tadashi Kawamata, offrent un exceptionnel panorama. La balade emmène du Musée Jules Verne au Jardin extraordinaire, pour se poursuivre en traversant la Loire jusqu’à Trentemoult.</p>",
+     "meta": {
+      "subtitle": "Vue panoramique sur la Loire",
+      "infos": "Adresse | 7 rue de l’Hermitage, 44100 Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Belv%C3%A9d%C3%A8re%20de%20l%E2%80%99Hermitage%2C%207%20rue%20de%20l%E2%80%99Hermitage%2C%20Nantes",
+      "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-chantenay/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Chantenay district",
+     "slug": "quartier-chantenay",
+     "content": "<p>Towering above this district are six belvederes – including a monumental one by Tadashi Kawamata – all offering an exceptional panoramic view of the city. This walking tour will take you from Musée Jules Verne to the brand-new “Jardin extraordinaire”, all the way across the Loire to the town of Trentemoult.</p>",
+     "meta": {
+      "subtitle": "Panoramic view of the Loire",
+      "infos": "",
+      "maps": "https://www.google.com/maps/place/Belv%C3%A9d%C3%A8re+de+l'Hermitage/@47.2010511,-1.5782213,15z/data=!4m5!3m4!1s0x0:0x1c1c3ea89126e591!8m2!3d47.2010511!4d-1.5782213",
+      "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-chantenay/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Barrio Chantenay",
+     "slug": "barrio-chantenay",
+     "content": "<p>Un barrio excepcional para las vistas: hay seis puntos panorámicos. Uno de ellos es el mirador monumental del artista Kawamata. El paseo conduce hasta las puertas del Museo Julio Verne y hasta el nuevo Jardín Extraordinario. Después, la caminata invita a cruzar el Loira para llegar a la otra orilla y a la bonita población marinera de Trentemoult.</p>",
+     "meta": {
+      "subtitle": "Vista panorámica sobre la Loira",
+      "infos": "Dirección | 7 Rue de l'Hermitage, 44100 Nantes",
+      "maps": "https://www.google.com/maps/place/Belv%C3%A9d%C3%A8re+de+l'Hermitage/@47.2010511,-1.5782213,15z/data=!4m5!3m4!1s0x0:0x1c1c3ea89126e591!8m2!3d47.2010511!4d-1.5782213",
+      "more": "https://www.levoyageanantes.fr/es/barrio-chantenay/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "incontournables-memorial-abolition-esclavage",
+   "type": "rdv_incontournable",
+   "template": "",
+   "order": 10,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Mémorial de l’abolition de l’esclavage",
+     "slug": "le-memorial-de-labolition-de-lesclavage",
+     "content": "<p>Unique en Europe, ce parcours méditatif, sur et sous le quai au niveau de la Loire, présente des citations dans toutes les langues, de tous temps et de tous lieux. 2 000 plaques commémoratives rappellent les expéditions négrières parties de Nantes.</p>",
+     "meta": {
+      "subtitle": "Parcours méditatif unique en Europe",
+      "infos": "Adresse | Passerelle Victor-Schoelcher, quai de la Fosse, 44000 Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=M%C3%A9morial%20de%20l%E2%80%99abolition%20de%20l%E2%80%99esclavage%2C%20Nantes",
+      "more": "https://www.levoyageanantes.fr/lieux/memorial-de-labolition-de-lesclavage/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Memorial to the abolition of slavery",
+     "slug": "le-memorial-de-labolition-de-lesclavage",
+     "content": "<p>Unique in Europe, this contemplative space, spread above and below this stretch of road along the Loire, presents quotations in every language,from every historical period, and every country. Its 2,000 commemorative plaques are a reminder of every slave ship that ever left Nantes</p>",
+     "meta": {
+      "subtitle": "Contemplative walkway unique in Europe",
+      "infos": "Address | Near the Passerelle Victor-Schoelcher, Quai de la Fosse, 44000 Nantes",
+      "maps": "https://www.google.com/maps/place/M%C3%A9morial+de+l'Abolition+de+l'Esclavage/@47.2092119,-1.5657745,15z/data=!4m5!3m4!1s0x0:0x5900cef6b131721c!8m2!3d47.2092119!4d-1.5657745",
+      "more": "https://www.levoyageanantes.fr/lieux/memorial-de-labolition-de-lesclavage/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Memorial de la Abolición de la esclavitud",
+     "slug": "memorial-de-la-abolicion-de-la-esclavitud",
+     "content": "<p>Este es un monumento único en Europa. Es un itinerario de meditación situado en la parte superior e inferior del muelle, a nivel del Loira. Presenta citas en todas las lenguas, de todos los tiempos y de todos los lugares. 2.000 placas conmemorativas recuerdan las<br/>\nexpediciones negreras que zarparon de Nantes.</p>",
+     "meta": {
+      "subtitle": "Recorrido de meditación único en Europa",
+      "infos": "",
+      "maps": "https://www.google.com/maps/place/M%C3%A9morial+de+l'Abolition+de+l'Esclavage/@47.2092119,-1.5657745,15z/data=!4m5!3m4!1s0x0:0x5900cef6b131721c!8m2!3d47.2092119!4d-1.5657745",
+      "more": "https://www.levoyageanantes.fr/es/lugares/monumento-a-la-abolicion-de-la-esclavitud/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "shopping-quartier-graslin",
+   "type": "rdv_shopping",
+   "template": "",
+   "order": 1,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le quartier Graslin",
+     "slug": "quartier-graslin",
+     "content": "<p>Le quartier Graslin est réputé pour ses enseignes chics, ses tables gourmandes, son passage Pommeraye – l’un des plus beaux passages couverts d’Europe – et ses rues commerçantes (rue Crébillon, rue Santeuil, rue Grétry par exemple).</p>",
+     "meta": {
+      "subtitle": "Rue Crébillon, passage Pommeraye",
+      "infos": "Où | Rue Crébillon, rue Santeuil, rue Grétry",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Quartier%20Graslin%2C%20Nantes",
+      "more": "https://www.nantes-tourisme.com/fr/quartier-graslin",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Graslin district",
+     "slug": "graslin",
+     "content": "<p>The Graslin district is famous for its chic stores, its gourmet restaurants, the Pommeraye shopping arcade – one of the most beautiful covered arcades in Europe – and its shopping streets (including rue Crébillon, rue Santeuil, rue Grétry).</p>",
+     "meta": {
+      "subtitle": "Rue Crébillon, Passage Pommeraye",
+      "infos": "",
+      "maps": "https://www.google.com/maps/dir//Graslin,+44036+Nantes/@47.2137716,-1.5701272,15z",
+      "more": "https://www.nantes-tourisme.com/en/graslin-quarter",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Barrio Graslin",
+     "slug": "barrio-graslin",
+     "content": "<p>El barrio Graslin es famoso por sus boutiques, sus restaurantes elegantes, el pasaje Pommeraye – una de las galerías comerciales más bonitas de Europa – y sus calles comerciales (calle Crébillon, calle Santeuil, calle Grétry por ejemplo).</p>",
+     "meta": {
+      "subtitle": "Rue Crébillon, Passage Pommeraye",
+      "infos": "",
+      "maps": "https://www.google.com/maps/dir//Graslin,+44036+Nantes/@47.2137716,-1.5701272,15z",
+      "more": "https://www.nantes-tourisme.com/fr/quartier-graslin",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "shopping-quartier-decre",
+   "type": "rdv_shopping",
+   "template": "",
+   "order": 2,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Quartier Decré",
+     "slug": "quartier-decre",
+     "content": "<p>Situé au cœur du quartier médiéval, au milieu d’un dédale de rues pavées, le quartier Decré propose de nombreuses boutiques, grandes enseignes, commerces indépendants, déco made in France. Rue de la Marne, rue des Chapeliers, rue du Château, rue des Carmes, rue de la Paix…</p>",
+     "meta": {
+      "subtitle": "Galeries Lafayette et petites boutiques",
+      "infos": "Où | Rue de la Marne, rue des Chapeliers, rue du Château",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Galeries%20Lafayette%20Nantes",
+      "more": "https://www.levoyageanantes.fr/lieux/galeries-lafayette/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Bouffay distric also known as Decré district",
+     "slug": "decre",
+     "content": "<p>Situated in the heart of the medieval district, in a maze of cobblestone streets, the Decré district is full of boutiques, major retailers, independent shops, home furnishings.</p>\n<p>Rue de la Marne, rue des Chapeliers, rue du Chateau, rue des Carmes, rue de la Paix ….</p>",
+     "meta": {
+      "subtitle": "Galeries Lafayette and independent shops",
+      "infos": "",
+      "maps": "https://www.google.com/maps/dir//Parking+Decr%C3%A9-Bouffay,+18+Rue+du+Moulin,+44000+Nantes/@47.2167296,-1.5892434,13z",
+      "more": "https://www.nantes-tourisme.com/en/shopping/galeries-lafayette",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Barrio Decré",
+     "slug": "barrio-decre",
+     "content": "<p>Situado en el corazón del barrio medieval, en medio de un laberinto de calles adoquinadas, el barrio Decré ofrece numerosas tiendas, comercios independientes, decoración Made In France (Calle de la Marne, calle des Chapeliers, calle du Château, calle des Carmes, calle de la Paix…).</p>",
+     "meta": {
+      "subtitle": "Galeries Lafayettes y pequeñas tiendas",
+      "infos": "",
+      "maps": "https://www.google.com/maps/dir//Parking+Decr%C3%A9-Bouffay,+18+Rue+du+Moulin,+44000+Nantes/@47.2167296,-1.5892434,13z",
+      "more": "https://www.levoyageanantes.fr/lieux/galeries-lafayette/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "shopping-rue-dorleans",
+   "type": "rdv_shopping",
+   "template": "",
+   "order": 3,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Rue d’Orléans",
+     "slug": "rue-dorleans",
+     "content": "<p>Une dizaine de chausseurs jalonnent les 200 mètres de la rue d’Orléans, pour trouver chaussure à son pied.</p>",
+     "meta": {
+      "subtitle": "La rue des chausseurs",
+      "infos": "Où | Rue d’Orléans, Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Rue%20d%E2%80%99Orl%C3%A9ans%2C%20Nantes",
+      "more": "https://www.nantes-tourisme.com/fr/shopping-nantes",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Street – Rue d’Orléans",
+     "slug": "street-rue-dorleans",
+     "content": "<p>With a dozen footwear retailers lining the 200 metres of rue d’Orléans – you’re sure to find the perfect fit.</p>",
+     "meta": {
+      "subtitle": "",
+      "infos": "",
+      "maps": "https://www.google.com/maps/dir//Rue+d'Orl%C3%A9ans,+44036+Nantes/@47.2146204,-1.5593811,17z",
+      "more": "https://www.nantes-tourisme.com/en/shopping-in-nantes",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Calle – Rue d’Orléans",
+     "slug": "calle-rue-dorleans",
+     "content": "<p>Una decena de zapaterías se alinean a lo largo de los 200 metros de la calle d’Orléans, para encontrar el zapato adecuado.</p>",
+     "meta": {
+      "subtitle": "ESP - La rue des chausseurs",
+      "infos": "Dirección | Rue d'Orléans",
+      "maps": "https://www.google.com/maps/dir//Rue+d'Orl%C3%A9ans,+44036+Nantes/@47.2146204,-1.5593811,17z",
+      "more": "https://www.nantes-tourisme.com/fr/shopping-nantes",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "shopping-marche-de-talensac",
+   "type": "rdv_shopping",
+   "template": "",
+   "order": 4,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Marché de Talensac",
+     "slug": "marche-de-talensac",
+     "content": "<p>Reconnu pour sa diversité, c’est le marché le plus ancien et le plus important de la ville. On y trouve les meilleurs artisans.</p>",
+     "meta": {
+      "subtitle": "Une véritable institution nantaise",
+      "infos": "Horaires | Tous les matins de 8 h à 13 h, sauf le lundi | 1",
+      "maps": "https://www.google.com/maps/search/?api=1&query=March%C3%A9%20de%20Talensac%2C%20Nantes",
+      "more": "https://www.levoyageanantes.fr/lieux/marche-de-talensac/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Talensac Market",
+     "slug": "talensac-market",
+     "content": "<p>Celebrated for the diversity of its products and the quality of its artisans, it is the oldest and most important market in Nantes. Open every morning of the week except Mondays.</p>",
+     "meta": {
+      "subtitle": "An institution in town",
+      "infos": "Address | Rue de Talensac 44000 Nantes",
+      "maps": "https://www.google.com/maps/dir//marché+talensac+nantes/@47.0240161,-1.2191584,9z",
+      "more": "https://www.nantes-tourisme.com/en/food-and-wine/talensac-market",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Mercato de Talensac",
+     "slug": "mercado-de-talensac",
+     "content": "<p>El mercado de Talensac no solo es el más antiguo (1937), sino también el más interesante y concurrido de Nantes. Es una verdadera institución en productos frescos del mar cuya fama supera las fronteras de la ciudad.<br/>\nAbierto todos los días de 8.00 a 13.00, excepto los lunes.<br/>\n</p>",
+     "meta": {
+      "subtitle": "Una auténtica institución",
+      "infos": "Dirección | Rue de Talensac 44000 Nantes",
+      "maps": "https://www.google.com/maps/dir//marché+talensac+nantes/@47.0240161,-1.2191584,9z",
+      "more": "https://www.levoyageanantes.fr/es/lugares/mercado-de-talensac/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "shopping-bazar-officiel",
+   "type": "rdv_shopping",
+   "template": "",
+   "order": 5,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Le Bazar officiel du Voyage à Nantes",
+     "slug": "bazar-officiel-voyage",
+     "content": "<p>Souvenirs d’un Voyage… Le Voyage à Nantes propose un large panel d’objets insolites, gourmands ou collectors pour laisser à vos invités un souvenir inédit de la ville. De nombreux objets pensés par des artistes et des illustrateurs de renom (Docteur Paper, Studio LVL, Jean Jullien…). Rendez-vous à la boutique face au château des ducs de Bretagne !</p>",
+     "meta": {
+      "subtitle": "Des souvenirs dessinés par des artistes nantais",
+      "infos": "Adresse | 9 rue des États, 44000 Nantes",
+      "maps": "https://www.google.com/maps/search/?api=1&query=9%20rue%20des%20%C3%89tats%2C%2044000%20Nantes",
+      "more": "https://www.levoyageanantes.fr/a-faire/shopping/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "The Official Voyage à Nantes Gift Shop",
+     "slug": "the-official-voyage-a-nantes-gift-shop",
+     "content": "<h3>Souvenirs of a voyage …</h3>\n<p>Our shop is full of objects designed by Nantes artists and Made in France: posters, magnets and postcards signed <em>Jean Jullien</em>, postcards and posters <em>Antoine Corbineau or Doctor Paper, LU Petits Beurre Nantes, </em>“Berlingots” and caramels (local treat), vintage mugs, notebooks, backpacks…</p>\n<p>Find one-of-a-kind gifts at the L<em>e Voyage à Nantes</em> reception !</p>",
+     "meta": {
+      "subtitle": "",
+      "infos": "",
+      "maps": "https://www.google.fr/maps/dir//9+Rue+des+États,+44000+Nantes/@47.2156744,-1.5529374,17z",
+      "more": "https://www.levoyageanantes.fr/a-faire/shopping/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "Voyage à Nantes – El Bazar oficial",
+     "slug": "voyage-a-nantes-el-bazar-oficial",
+     "content": "<h3>Recuerdo de un viaje …</h3>\n<p>¡Llévate un recuerdo original Made in Le Voyage à Nantes!<br/>\nEn la oficina Le Voyage à Nantes encontrarás una sorprendente gama de objetos y regalos.</p>",
+     "meta": {
+      "subtitle": "Muchos regalos de diseño",
+      "infos": "",
+      "maps": "https://www.google.com/maps/place/Le+Voyage+%C3%A0+Nantes+-+accueil+du+public/@47.2156933,-1.5549509,17z/data=!4m10!1m2!2m1!1svoyage+a+nantes!3m6!1s0x4805eea35f716b35:0x824df81d98604abf!8m2!3d47.2156933!4d-1.5505735!15sCg92b3lhZ2UgYSBuYW50ZXOSARp0b3VyaXN0X2luZm9ybWF0aW9uX2NlbnRlcuABAA!16s%2Fg%2F1tg5bh1k",
+      "more": "https://www.levoyageanantes.fr/es/lugares/regalos-voyage-a-nantes/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "pass-nantes-pass-nantes",
+   "type": "rdv_pass",
+   "template": "",
+   "order": 1,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Pass Nantes dès 27 €",
+     "slug": "pass-nantes",
+     "content": "<p>Le Pass Nantes permet d’accéder à 50 activités incontournables : musées, expositions, visites guidées, croisières, dégustations, transports dont la navette aéroport.</p>\n        <h2>Exemple de séjour 24 h</h2>\n        <table class=\"ptable\">\n          <thead><tr><th>Activité</th><th class=\"r\">Prix</th></tr></thead>\n          <tbody>\n            <tr><td>Ticket TAN 24 h (transports en commun)</td><td class=\"r\">6,50 €</td></tr>\n            <tr><td>Château des ducs de Bretagne : musée + audioguide</td><td class=\"r\">11 €</td></tr>\n            <tr><td>Croisière promenade sur l’Erdre</td><td class=\"r\">16,50 €</td></tr>\n            <tr><td>Machines de l’île : Galerie des Machines</td><td class=\"r\">11 €</td></tr>\n            <tr><td>Machines de l’île : Carrousel des Mondes Marins</td><td class=\"r\">9 €</td></tr>\n            <tr class=\"tot\"><td>Sans le Pass Nantes</td><td class=\"r\">54 €</td></tr>\n            <tr class=\"tot\"><td>Avec le Pass Nantes 24 h</td><td class=\"r\">27 €</td></tr>\n          </tbody>\n        </table>\n        <h2>Tarifs plein</h2>\n        <ul>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173101\" target=\"_blank\" rel=\"noopener\">Pass 24 h : 27 €</a> (tarifs réduit et famille disponibles)</li>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173102\" target=\"_blank\" rel=\"noopener\">Pass 48 h : 37 €</a></li>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173103\" target=\"_blank\" rel=\"noopener\">Pass 72 h : 45 €</a></li>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173104\" target=\"_blank\" rel=\"noopener\">Pass 7 jours : 75 €</a></li>\n        </ul>\n        <h2>Où l’acheter ?</h2>\n        <p><strong>En ligne :</strong> e-ticket envoyé par mail dans les 2 h après la réservation, à activer ensuite sur l’application Pass Nantes (<a href=\"https://play.google.com/store/apps/details?id=com.otipass.passnantes\" target=\"_blank\" rel=\"noopener\">Android</a> ou <a href=\"https://apps.apple.com/fr/app/pass-nantes/id1300073060\" target=\"_blank\" rel=\"noopener\">Apple</a>).</p>\n        <p><strong>Sur place :</strong> à l’Accueil du Voyage à Nantes, 9 rue des États (face au Château des ducs de Bretagne), ou à l’accueil de l’aéroport Nantes Atlantique.</p>",
+     "meta": {
+      "subtitle": "Le temps d’une journée, d’un week-end ou même d’une semaine, faites le voyage à votre rythme.",
+      "infos": "Durée | De 24 h à 7 jours\nÀ partir de | 27 €\nInclus | 50 activités et les transports en commun | 1",
+      "maps": "",
+      "more": "",
+      "buy": "https://www.levoyageanantes.fr/a-faire/pass-nantes/",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Pass Nantes from 27 €",
+     "slug": "pass-nantes",
+     "content": "<p>The Pass Nantes gives free admission to more than 50 sights and sites and includes public transport, the airport shuttle included.</p>\n<p>Free admission: all the museums and exhibitions, the Machines de l’Île, public transport, river cruises, bus tours, visits…</p>\n<h2>24h stay example</h2>\n<table class=\"ptable\"><thead><tr><th>Activity</th><th class=\"r\">Price</th></tr></thead><tbody>\n<tr><td>24h TAN ticket (public transport)</td><td class=\"r\">€6.50</td></tr>\n<tr><td>Castle of the Dukes of Brittany: museum + audioguide</td><td class=\"r\">€11</td></tr>\n<tr><td>River cruise on the Erdre</td><td class=\"r\">€16.50</td></tr>\n<tr><td>Machines de l’île: Galerie des Machines</td><td class=\"r\">€11</td></tr>\n<tr><td>Machines de l’île: Carrousel des Mondes Marins</td><td class=\"r\">€9</td></tr>\n<tr class=\"tot\"><td>Without the Pass Nantes</td><td class=\"r\">€54</td></tr>\n<tr class=\"tot\"><td>With the 24h Pass Nantes</td><td class=\"r\">€27</td></tr>\n</tbody></table>\n<h2>Prices</h2>\n<ul><li>Pass 24h: €27</li><li>Pass 48h: €37</li><li>Pass 72h: €45</li><li>Pass 7 days: €85</li></ul>\n<p><a href=\"https://www.nantes-tourisme.com/en/visit/nantes-pass\">Everything you need to know about the Pass Nantes</a></p>",
+     "meta": {
+      "subtitle": "For 1, 2, 3 or 7 days, all the must-sees in Nantes at the best price!",
+      "infos": "Duration | From 24 hours to 7 days\nFrom | €27\nIncluded | 50 activities and public transport | 1",
+      "maps": "",
+      "more": "https://www.nantes-tourisme.com/en/visit/nantes-pass",
+      "buy": "https://www.levoyageanantes.fr/a-faire/pass-nantes/",
+      "buy_label": "Buy online"
+     }
+    },
+    "es": {
+     "title": "Pass Nantes desde 27 €",
+     "slug": "pass-nantes",
+     "content": "<p>Durante un día, un fin de semana, un puente o incluso una semana, viaje a su ritmo. El Pass Nantes le da acceso a 50 actividades imprescindibles: museos, exposiciones, visitas guiadas, cruceros, degustaciones y transportes, incluida la lanzadera al aeropuerto.</p>\n<h2>Ejemplo de estancia de 24 h</h2>\n<table class=\"ptable\"><thead><tr><th>Actividad</th><th class=\"r\">Precio</th></tr></thead><tbody>\n<tr><td>Billete TAN 24 h (transporte público)</td><td class=\"r\">6,50 €</td></tr>\n<tr><td>Castillo de los duques de Bretaña: museo + audioguía</td><td class=\"r\">11 €</td></tr>\n<tr><td>Crucero por el Erdre</td><td class=\"r\">16,50 €</td></tr>\n<tr><td>Machines de l’île: Galerie des Machines</td><td class=\"r\">11 €</td></tr>\n<tr><td>Machines de l’île: Carrousel des Mondes Marins</td><td class=\"r\">9 €</td></tr>\n<tr class=\"tot\"><td>Sin el Pass Nantes</td><td class=\"r\">54 €</td></tr>\n<tr class=\"tot\"><td>Con el Pass Nantes 24 h</td><td class=\"r\">27 €</td></tr>\n</tbody></table>\n<h2>Tarifas</h2>\n<ul><li>Pass 24 h: 27 €</li><li>Pass 48 h: 37 €</li><li>Pass 72 h: 45 €</li><li>Pass 7 días: 85 €</li></ul>\n<p><a href=\"https://www.levoyageanantes.fr/es/hacer/pass-nantes/\">Ver todos los servicios del Pass Nantes</a></p>",
+     "meta": {
+      "subtitle": "Durante un día, un fin de semana o una semana, viaje a su ritmo.",
+      "infos": "Duración | De 24 h a 7 días\nDesde | 27 €\nIncluido | 50 actividades y el transporte público | 1",
+      "maps": "",
+      "more": "https://www.levoyageanantes.fr/es/hacer/pass-nantes/",
+      "buy": "https://www.levoyageanantes.fr/a-faire/pass-nantes/",
+      "buy_label": "Comprar en línea"
+     }
+    }
+   }
+  },
+  {
+   "key": "pass-nantes-la-ligne-verte",
+   "type": "rdv_pass",
+   "template": "",
+   "order": 2,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Suivez la ligne verte au sol !",
+     "slug": "la-ligne-verte",
+     "content": "<p>Envie de se laisser porter, de se mettre au rythme de la ville, de se perdre comme un véritable Nantais ?… Rien de plus simple, il suffit de suivre la ligne verte tracée au sol. Idéal pour découvrir l’essentiel de la ville, ce parcours réunit les étapes culturelles, les principaux monuments, les œuvres d’art et les sites incontournables de la ville.</p>",
+     "meta": {
+      "subtitle": "L’essentiel de la ville, sans plan ni guide",
+      "infos": "Longueur | 22 km\nPrix | Gratuit",
+      "maps": "",
+      "more": "https://www.levoyageanantes.fr/parcours-images",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "en": {
+     "title": "Follow the Green Line",
+     "slug": "the-green-line",
+     "content": "<p>Let yourself be carried along to the rhythm of the city, lose yourself like a real Nantais …</p>\n<p>Nothing could be simpler, just follow the green line drawn on the ground. Ideal for discovering the essence of the city. This 22-kilometre trail brings Nantes’ cultural sights together, its major monuments, works of art and must-see sites.</p>",
+     "meta": {
+      "subtitle": "The essence of the city, without map or guide",
+      "infos": "Length | 22 km\nPrice | Free",
+      "maps": "",
+      "more": "https://www.levoyageanantes.fr/en/parcours-images/",
+      "buy": "",
+      "buy_label": ""
+     }
+    },
+    "es": {
+     "title": "La linea verde",
+     "slug": "la-linea-verde",
+     "content": "<p>Siguiendo la línea verde ! Para no perderte nada del recorrido del Voyage à Nantes sigue la línea verde: todas las etapas culturales, todos los monumentos imprescindibles, todos los lugares emblemáticos de la ciudad.<br role=\"presentation\"/>Esta veintena de kilómetros marcados en el suelo con la línea verde reviven cada año con un evento estival extraordinario: dos meses para disfrutar de la ciudad al ritmo del arte.</p>",
+     "meta": {
+      "subtitle": "Lo esencial de la ciudad, sin plano ni guía",
+      "infos": "Longitud | 22 km\nPrecio | Gratis",
+      "maps": "",
+      "more": "https://www.levoyageanantes.fr/en/parcours-images/",
+      "buy": "",
+      "buy_label": ""
+     }
+    }
+   }
+  },
+  {
+   "key": "pass-nantes-sur-le-chemin-des-plages",
+   "type": "rdv_pass",
+   "template": "",
+   "order": 3,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Sur le chemin des plages",
+     "slug": "sur-le-chemin-des-plages",
+     "content": "<h2>La côte Atlantique</h2>\n        <p>Des plages de Loire aux plages de sable fin de la côte atlantique, découvrez les joies du bord de mer à moins d’une heure de Nantes.</p>\n        <ul>\n          <li><strong>Les plages de Loire</strong> (baignade interdite) : La Sablière (du 15 mars au 15 novembre), Mauves Balnéaire, Parc des Chantiers.</li>\n          <li><strong>Les plages de la côte Atlantique</strong> : La Baule, Pornichet, Saint-Nazaire, Saint-Brevin, Pornic.</li>\n        </ul>\n        <p><a href=\"https://www.levoyageanantes.fr/a-voir/escapades/des-plages-pres-de-nantes/\" target=\"_blank\" rel=\"noopener\">+ d’infos sur les plages</a></p>\n        <h2>La collection Estuaire</h2>\n        <p>Le paysage, l’art et le fleuve. Partez du centre-ville pour découvrir l’estuaire jusqu’à l’océan et les 30 œuvres de la collection permanente de ce parcours d’art contemporain. À Nantes, Saint-Nazaire et sur les 60 kilomètres de l’estuaire de la Loire qui les relient, le musée à ciel ouvert d’Estuaire vous emmène à la découverte d’un territoire fascinant, de ses richesses environnementales et patrimoniales.</p>\n        <h2>Croisières Estuaire Nantes ↔ Saint-Nazaire</h2>\n        <p>Profitez d’une croisière pour aller là où la Loire termine sa course, dans l’océan, et découvrez l’estuaire d’un point de vue unique, celui du fleuve : des activités portuaires, des zones naturelles remarquables, et les œuvres Estuaire qui dialoguent avec les paysages.</p>",
+     "meta": {
+      "subtitle": "La Loire, l’estuaire et l’océan à moins d’une heure",
+      "infos": "Durée de la croisière | 2 h 45\nSaison | D’avril à octobre\nDépart | De Nantes ou de Saint-Nazaire",
+      "maps": "",
+      "more": "",
+      "buy": "https://www.levoyageanantes.fr/activites/croisiere-estuaire-nantes-saint-nazaire/",
+      "buy_label": "Réserver la croisière"
+     }
+    },
+    "en": {
+     "title": "Off To The Beaches",
+     "slug": "off-to-the-beaches",
+     "content": "<h2>The Atlantic Coast</h2>\n<p>From the beaches of the Loire to the sandy beaches of the Atlantic coast, discover the joys of the seaside less than an hour from Nantes.</p>\n<p>The Loire (swimming prohibited): La Sablière (from 15<sup>th</sup> March to 15<sup>th</sup> November), Mauves Resort, Parc des Chantiers.</p>\n<p>The beaches of the Atlantic coast: La Baule, Pornichet, Saint-Nazaire, Saint-Brévin, Pornic.</p>\n<p>More info: <a href=\"https://www.levoyageanantes.fr/lieux/la-baule/\">https://www.nantes-tourisme.com/en/atlantic-coast</a></p>\n<h2>The Estuaire collection</h2>\n<p>Landscape, art &amp; the river<br/>\nLeave the town behind you and discover the estuary all the way to the ocean and the 33 art installations from the permanent contemporary art trail. The Estuaire open-air museum takes you on a fascinating discovery of the area and its environmental and heritage richness. In Nantes, Saint-Nazaire and all along the 60 kilometres of the Loire estuary that connects the two of them.</p>\n<p>More info: <a href=\"https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/estuaire-nantes-saint-nazaire/\">https://www.nantes-tourisme.com/en/estuaire-trail</a></p>\n<h2>Estuary cruises Nantes &lt;&gt; Saint-Nazaire</h2>\n<p>On a cruise, go where the Loire runs into the ocean and discover the estuary from river: working ports, remarkable natural areas, and Estuary artworks that interact with the landscape.</p>\n<ul>\n<li><i></i> Duration: 2 hours 45 mins.</li>\n<li><i></i> From April to October.</li>\n<li><i></i> Departure from Nantes or Saint-Nazaire.</li>\n</ul>\n<p><a href=\"https://www.levoyageanantes.fr/activites/croisiere-estuaire-nantes-saint-nazaire/\">BOOK NOW</a></p>",
+     "meta": {
+      "subtitle": "The Loire, the estuary and the ocean less than an hour away",
+      "infos": "Cruise duration | 2 h 45\nSeason | April to October\nDeparture | From Nantes or Saint-Nazaire",
+      "maps": "",
+      "more": "",
+      "buy": "https://www.levoyageanantes.fr/activites/croisiere-estuaire-nantes-saint-nazaire/",
+      "buy_label": "Book the cruise"
+     }
+    },
+    "es": {
+     "title": "A la playa",
+     "slug": "playa",
+     "content": "<h2><strong>La Costa Atlántica</strong></h2>\n<p>De las playas del Loira a las playas de arena fina de la costa atlántica, descubra los placeres del mar a menos de una hora de Nantes.<br/>\n<strong>Las playas del Loira (prohibido bañarse):</strong> La Sablière (del 15 de marzo al 15 de noviembre), Mauves Balnéaire, Parc des Chantiers.<br/>\n<strong>Las playas de la costa Atlántica :</strong> La Baule, Pornichet, Saint-Nazaire, Saint-Brévin, Pornic.</p>\n<p>+ más información : <a href=\"https://rdv.levoyageanantes.fr/es/24h-mas/playa/\">Costa Atlántica</a></p>\n<h2><strong>Colección Estuaire – </strong>Paisaje, arte y río</h2>\n<p>Salga del centro de la ciudad para descubrir el estuario hasta el océano y las 30 obras de la colección permanente de este recorrido de arte contemporáneo. En Nantes, Saint-Nazaire y a lo largo de los 60 kilómetros de estuario del Loira que los unen, el museo al aire libre del Estuaire le lleva a descubrir un territorio fascinante, sus riquezas medioambientales y patrimoniales.</p>\n<p>+ más información : <a href=\"https://www.levoyageanantes.fr/es/itinerarios/etapas-y-mapa-de-la-ruta-estuario-nantes-saint-nazaire/\">Estuaire</a></p>\n<h2><strong>Crucero Estuaire Nantes &lt;&gt; Saint-Nazaire</strong></h2>\n<p>Aproveche un crucero para ir al lugar al que el río Loira termina, su camino, en el océano, y descubrir el estuario desde un punto de vista único, el del río: actividades portuarias, espacios naturales notables y las obras Estuaire que dialogan con los paisajes.</p>\n<p>Duración: 2h45.<br/>\nDe abril a octubre.<br/>\nSalida desde Nantes o Saint-Nazaire.</p>\n<p>+ más información : <a href=\"https://www.levoyageanantes.fr/es/actividades/croisiere-estuaire-nantes-saint-nazaire/\">Reservar</a></p>",
+     "meta": {
+      "subtitle": "El Loira, el estuario y el océano a menos de una hora",
+      "infos": "Duración del crucero | 2 h 45\nTemporada | De abril a octubre\nSalida | Desde Nantes o Saint-Nazaire",
+      "maps": "",
+      "more": "",
+      "buy": "https://www.levoyageanantes.fr/activites/croisiere-estuaire-nantes-saint-nazaire/",
+      "buy_label": "Reservar el crucero"
+     }
+    }
+   }
+  },
+  {
+   "key": "mentions-legales",
+   "type": "page",
+   "template": "",
+   "order": 90,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "Mentions légales",
+     "slug": "mentions-legales",
+     "content": "<h3><strong>1 – Présentation du Site</strong></h3>\n<p>En vertu de l’article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>\n<p>Propriétaire : Société publique locale Le Voyage à Nantes au capital social de 1 000 000 euros – 1-3 rue Crucy 44 000 Nantes.<br/>\nTéléphone : 0 892 464 044 (0,35 €/min).<br/>\nAdresse électronique : <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a></p>\n<p>Enregistrée au Registre du Commerce et des Sociétés de Nantes sous le numéro : 482 414 216.</p>\n<p>TVA intracommunautaire : FR41482414216</p>\n<p>N° d’immatriculation au Registre des opérateurs de voyage et de séjours : IM044110017.<br/>\nAssureur : Compagnie HISCOX EUROPE UNDERWRITING LIMITED (19 rue Louis Le Grand 75002 Paris) par le biais du cabinet Sarre et Moselle (17 avenue Poincaré 57400 Sarrebourg).<br/>\nGarantie financière souscrite auprès de l’APST (15 avenue Carnot 75017 Paris) en application de l‘article L. 211-18 II a) du Code du tourisme.</p>\n<p>Responsable publication : Stéphanie Olivier – SPL Le Voyage à Nantes.<br/>\nAdresse électronique : <a href=\"mailto:stephanie.olivier@lvan.fr\">stephanie.olivier@lvan.fr</a></p>\n<p>Hébergeur : GANDI SAS – 63-65 boulevard Masséna 75013 paris.<br/>\nImmatriculation au Registre du Commerce et des Sociétés de PARIS sous le n° 423 093 459, numéro de TVA intracommunautaire : FR81423093459.<br/>\nAdresse e-mail de l’hébergeur : direction@gandi.net<br/>\nNuméro de téléphone de l’hébergeur : +33 (0) 1 70.37.76.61</p>\n<p>Le site Internet <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> est la propriété exclusive du Voyage à Nantes.<br/>\nLe graphisme du site internet a été conçu et réalisé par Le Voyage à Nantes et Anima.productions (www.animaproductions.com) et a été développé Le Voyage à Nantes.</p>\n<h3><strong>2 – Conditions générales d’utilisation du site et des services proposés</strong></h3>\n<p>L’utilisation du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> sont donc invités à les consulter de manière régulière.<br/>\nCe site est normalement accessible à tout moment aux utilisateurs.<br/>\nL’utilisateur s’engage d’ores et déjà à faire des informations contenues sur le site un usage personnel et non commercial. En cas de non-respect des dispositions des présentes, par l’utilisateur, sa responsabilité civile et/ou pénale pourrai(en)t se voir engagée(s).<br/>\nLe site exploité par le Voyage à Nantes présente la structure de Nantes tourisme et a pour objet de fournir une information concernant l’ensemble de sa programmation et ses différentes activités.</p>\n<h3><strong>3 – Propriété intellectuelle</strong></h3>\n<p>Le Site constitue une œuvre dont Le Voyage à Nantes est l’auteur au sens des articles L.111-1 et suivants du Code de la propriété intellectuelle. Ainsi Le Voyage à Nantes est le titulaire exclusif ou détient des droits d’usage de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> notamment les textes, images, graphismes, logos, icônes, sons, logiciels et ce dans le monde entier.<br/>\nIl est rappelé que les photographies présentes sur le Site sont considérées comme des œuvres de l’esprit bénéficiant de la protection au titre du droit d’auteur. Toute utilisation non autorisée de l’une ou l’autre des photographies est constitutif d’un acte de contrefaçon comme le prévoit l’article L.335-3 du Code de la propriété intellectuelle. Les identités visuelles, les images animées ou non et leurs mises en forme apparaissant sur le Site sont la propriété du Voyage à Nantes et sont protégées à ce titre par les dispositions du Code de la propriété intellectuelle.<br/>\nTout internaute s’engage à ne pas les utiliser et à ne permettre à quiconque d’utiliser ces contenus à des fins illégales.<br/>\nToute représentation ou reproduction, totale ou partielle, permanente ou temporaire, sur un support informatique et/ou papier, et par quelque procédé que ce soit (notamment par voie de framing*), de l’un ou l’autre des éléments du Site ou des services proposés à la vente, sans l’accord préalable et exprès du Voyage à Nantes est interdite, et constitue un acte de contrefaçon, qui pourra entraîner des condamnations civiles et/ou pénales. Seule l’impression papier est autorisée aux fins de copie privée à l’usage exclusif du copiste au sens de l’article L.122-5 2° du Code de la propriété intellectuelle.<br/>\nAucun lien hypertexte vers le Site ne peut être installé sans l’accord préalable et exprès du Voyage à Nantes.<br/>\nLa photographie des œuvres présentées est autorisée à des fins personnelles. Toute reproduction, représentation, diffusion ou vente sans droit, que ce soit à titre privé ou à titre commercial, dans quelque pays que ce soit, des photographies ainsi effectuées, constituerait une contrefaçon pouvant engager la responsabilité civile et pénale de son auteur conformément aux articles L.331-1, L.335-2 et L.335-4 du Code de la Propriété Intellectuelle.<br/>\n* Action de capter le contenu de pages d’un site Internet pour le transférer sur son propre site Internet par le biais d’un lien hypertexte, en faisant apparaître ledit contenu comme le sien.</p>\n<h3><strong>4 – Protection des données personnelles</strong></h3>\n<p>L’internaute peut être amené à déposer certaines données personnelles en répondant aux formulaires qui lui sont proposés. La saisie de ces données est nécessaire au traitement de la demande de l’internaute, par Le Voyage à Nantes.<br/>\nLe Voyage à Nantes s’engage à respecter les dispositions de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiées à prendre toute précaution nécessaire pour préserver la sécurité des informations nominatives des internautes. Aucune information à caractère personnel ne sera communiquée à des sociétés tierces sans l’accord préalable et éclairé de l’utilisateur.<br/>\nL’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’obligation ou non de lui fournir ces informations.<br/>\nL’internaute peut à tout moment exercer son droit d’accès, de rectification, de suppression ou d’opposition concernant les informations qu’il fournit lors de son inscription ou ultérieurement, auprès du Voyage à Nantes par email à <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a> en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.<br/>\nCookie : vous êtes informé que, lors de vos visites sur le site Internet, un ou plusieurs témoins de navigation (ou cookies) peuvent s’installer automatiquement sur votre terminal dans le but d’enregistrer certaines informations concernant votre navigation (pages consultées, date et heure de consultation, etc.). Ces cookies servent uniquement à optimiser votre navigation sur le site.</p>\n<h3><strong>5 – Responsabilité</strong></h3>\n<p>Le Voyage à Nantes décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur le Site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci.<br/>\nLes éléments présentés sur le Site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.<br/>\nLa présence de liens hypertextes présents sur le Site – quel que soit l’existence préalable ou non de l’accord du Voyage à Nantes – ne crée pas une solidarité de responsabilité entre celui-ci et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute.<br/>\nLe Voyage à Nantes ne peut garantir l’exhaustivité et la véracité des informations présentes sur le Site. De la même manière, il ne peut garantir l’absence de modification par un tiers (intrusion, virus).<br/>\nEn outre, l’internaute est seul responsable de l’utilisation qu’il fait du contenu du Site. Sauf faute grave exclusive du Voyage à Nantes, sa responsabilité ne peut être engagée pour des dommages directs et indirects liés à l’utilisation des informations produites sur le Site.</p>\n<h3><strong>6 – Loi applicable et compétence judiciaire</strong></h3>\n<p>L’ensemble des informations diffusé sur le Site et l’utilisation qui en est faite son soumis exclusivement au droit français. Seuls les tribunaux relevant du ressort de la Cour d’appel de Nantes sont compétents pour connaître des éventuels litiges à l’utilisation du Site.</p>",
+     "meta": {}
+    },
+    "en": {
+     "title": "Legal information",
+     "slug": "legal-information",
+     "content": "<h3><strong>1 – Présentation du Site</strong></h3>\n<p>En vertu de l’article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>\n<p>Propriétaire : Société publique locale Le Voyage à Nantes au capital social de 1 000 000 euros – 1-3 rue Crucy 44 000 Nantes.<br/>\nTéléphone : 0 892 464 044 (0,35 €/min).<br/>\nAdresse électronique : <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a></p>\n<p>Enregistrée au Registre du Commerce et des Sociétés de Nantes sous le numéro : 482 414 216.</p>\n<p>TVA intracommunautaire : FR41482414216</p>\n<p>N° d’immatriculation au Registre des opérateurs de voyage et de séjours : IM044110017.<br/>\nAssureur : Compagnie HISCOX EUROPE UNDERWRITING LIMITED (19 rue Louis Le Grand 75002 Paris) par le biais du cabinet Sarre et Moselle (17 avenue Poincaré 57400 Sarrebourg).<br/>\nGarantie financière souscrite auprès de l’APST (15 avenue Carnot 75017 Paris) en application de l‘article L. 211-18 II a) du Code du tourisme.</p>\n<p>Responsable publication : Stéphanie Olivier – SPL Le Voyage à Nantes.<br/>\nAdresse électronique : <a href=\"mailto:stephanie.olivier@lvan.fr\">stephanie.olivier@lvan.fr</a></p>\n<p>Hébergeur : GANDI SAS – 63-65 boulevard Masséna 75013 paris.<br/>\nImmatriculation au Registre du Commerce et des Sociétés de PARIS sous le n° 423 093 459, numéro de TVA intracommunautaire : FR81423093459.<br/>\nAdresse e-mail de l’hébergeur : direction@gandi.net<br/>\nNuméro de téléphone de l’hébergeur : +33 (0) 1 70.37.76.61</p>\n<p>Le site Internet <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> est la propriété exclusive du Voyage à Nantes.<br/>\nLe graphisme du site internet a été conçu et réalisé par Le Voyage à Nantes et Anima.productions (<a href=\"http://www.animaproductions.com/\">www.animaproductions.com</a>) et a été développé Le Voyage à Nantes.</p>\n<h3><strong>2 – Conditions générales d’utilisation du site et des services proposés</strong></h3>\n<p>L’utilisation du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> sont donc invités à les consulter de manière régulière.<br/>\nCe site est normalement accessible à tout moment aux utilisateurs.<br/>\nL’utilisateur s’engage d’ores et déjà à faire des informations contenues sur le site un usage personnel et non commercial. En cas de non-respect des dispositions des présentes, par l’utilisateur, sa responsabilité civile et/ou pénale pourrai(en)t se voir engagée(s).<br/>\nLe site exploité par le Voyage à Nantes présente la structure de Nantes tourisme et a pour objet de fournir une information concernant l’ensemble de sa programmation et ses différentes activités.</p>\n<h3><strong>3 – Propriété intellectuelle</strong></h3>\n<p>Le Site constitue une oeuvre dont Le Voyage à Nantes est l’auteur au sens des articles L.111-1 et suivants du Code de la propriété intellectuelle. Ainsi Le Voyage à Nantes est le titulaire exclusif ou détient des droits d’usage de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.fr</a> notamment les textes, images, graphismes, logos, icônes, sons, logiciels et ce dans le monde entier.<br/>\nIl est rappelé que les photographies présentes sur le Site sont considérées comme des œuvres de l’esprit bénéficiant de la protection au titre du droit d’auteur. Toute utilisation non autorisée de l’une ou l’autre des photographies est constitutif d’un acte de contrefaçon comme le prévoit l’article L.335-3 du Code de la propriété intellectuelle. Les identités visuelles, les images animées ou non et leurs mises en forme apparaissant sur le Site sont la propriété du Voyage à Nantes et sont protégées à ce titre par les dispositions du Code de la propriété intellectuelle.<br/>\nTout internaute s’engage à ne pas les utiliser et à ne permettre à quiconque d’utiliser ces contenus à des fins illégales.<br/>\nToute représentation ou reproduction, totale ou partielle, permanente ou temporaire, sur un support informatique et/ou papier, et par quelque procédé que ce soit (notamment par voie de framing*), de l’un ou l’autre des éléments du Site ou des services proposés à la vente, sans l’accord préalable et exprès du Voyage à Nantes est interdite, et constitue un acte de contrefaçon, qui pourra entraîner des condamnations civiles et/ou pénales. Seule l’impression papier est autorisée aux fins de copie privée à l’usage exclusif du copiste au sens de l’article L.122-5 2° du Code de la propriété intellectuelle.<br/>\nAucun lien hypertexte vers le Site ne peut être installé sans l’accord préalable et exprès du Voyage à Nantes.<br/>\nLa photographie des œuvres présentées est autorisée à des fins personnelles. Toute reproduction, représentation, diffusion ou vente sans droit, que ce soit à titre privé ou à titre commercial, dans quelque pays que ce soit, des photographies ainsi effectuées, constituerait une contrefaçon pouvant engager la responsabilité civile et pénale de son auteur conformément aux articles L.331-1, L.335-2 et L.335-4 du Code de la Propriété Intellectuelle.<br/>\n* Action de capter le contenu de pages d’un site Internet pour le transférer sur son propre site Internet par le biais d’un lien hypertexte, en faisant apparaître ledit contenu comme le sien.</p>\n<h3><strong>4 – Protection des données personnelles</strong></h3>\n<p>L’internaute peut être amené à déposer certaines données personnelles en répondant aux formulaires qui lui sont proposés. La saisie de ces données est nécessaire au traitement de la demande de l’internaute, par Le Voyage à Nantes.<br/>\nLe Voyage à Nantes s’engage à respecter les dispositions de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiées à prendre toute précaution nécessaire pour préserver la sécurité des informations nominatives des internautes. Aucune information à caractère personnel ne sera communiquée à des sociétés tierces sans l’accord préalable et éclairé de l’utilisateur.<br/>\nL’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.fr</a> l’obligation ou non de lui fournir ces informations.<br/>\nL’internaute peut à tout moment exercer son droit d’accès, de rectification, de suppression ou d’opposition concernant les informations qu’il fournit lors de son inscription ou ultérieurement, auprès du Voyage à Nantes par email à <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a> en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.<br/>\nCookie : vous êtes informé que, lors de vos visites sur le site Internet, un ou plusieurs témoins de navigation (ou cookies) peuvent s’installer automatiquement sur votre terminal dans le but d’enregistrer certaines informations concernant votre navigation (pages consultées, date et heure de consultation, etc.). Ces cookies servent uniquement à optimiser votre navigation sur le site.</p>\n<h3><strong>5 – Responsabilité</strong></h3>\n<p>Le Voyage à Nantes décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur le Site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci.<br/>\nLes éléments présentés sur le Site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.<br/>\nLa présence de liens hypertextes présents sur le Site – quel que soit l’existence préalable ou non de l’accord du Voyage à Nantes – ne crée pas une solidarité de responsabilité entre celui-ci et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute.<br/>\nLe Voyage à Nantes ne peut garantir l’exhaustivité et la véracité des informations présentes sur le Site. De la même manière, il ne peut garantir l’absence de modification par un tiers (intrusion, virus).<br/>\nEn outre, l’internaute est seul responsable de l’utilisation qu’il fait du contenu du Site. Sauf faute grave exclusive du Voyage à Nantes, sa responsabilité ne peut être engagée pour des dommages directs et indirects liés à l’utilisation des informations produites sur le Site.</p>\n<h3><strong>6 – Loi applicable et compétence judiciaire</strong></h3>\n<p>L’ensemble des informations diffusé sur le Site et l’utilisation qui en est faite son soumis exclusivement au droit français. Seuls les tribunaux relevant du ressort de la Cour d’appel de Nantes sont compétents pour connaître des éventuels litiges à l’utilisation du Site.</p>",
+     "meta": {}
+    },
+    "es": {
+     "title": "Menciones legales",
+     "slug": "mentions-legales",
+     "content": "<h3><strong>1 – Présentation du Site</strong></h3>\n<p>En vertu de l’article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>\n<p>Propriétaire : Société publique locale Le Voyage à Nantes au capital social de 1 000 000 euros – 1-3 rue Crucy 44 000 Nantes.<br/>\nTéléphone : 0 892 464 044 (0,35 €/min).<br/>\nAdresse électronique : <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a></p>\n<p>Enregistrée au Registre du Commerce et des Sociétés de Nantes sous le numéro : 482 414 216.</p>\n<p>TVA intracommunautaire : FR41482414216</p>\n<p>N° d’immatriculation au Registre des opérateurs de voyage et de séjours : IM044110017.<br/>\nAssureur : Compagnie HISCOX EUROPE UNDERWRITING LIMITED (19 rue Louis Le Grand 75002 Paris) par le biais du cabinet Sarre et Moselle (17 avenue Poincaré 57400 Sarrebourg).<br/>\nGarantie financière souscrite auprès de l’APST (15 avenue Carnot 75017 Paris) en application de l‘article L. 211-18 II a) du Code du tourisme.</p>\n<p>Responsable publication : Stéphanie Olivier – SPL Le Voyage à Nantes.<br/>\nAdresse électronique : <a href=\"mailto:stephanie.olivier@lvan.fr\">stephanie.olivier@lvan.fr</a></p>\n<p>Hébergeur : GANDI SAS – 63-65 boulevard Masséna 75013 paris.<br/>\nImmatriculation au Registre du Commerce et des Sociétés de PARIS sous le n° 423 093 459, numéro de TVA intracommunautaire : FR81423093459.<br/>\nAdresse e-mail de l’hébergeur : direction@gandi.net<br/>\nNuméro de téléphone de l’hébergeur : +33 (0) 1 70.37.76.61</p>\n<p>Le site Internet <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> est la propriété exclusive du Voyage à Nantes.<br/>\nLe graphisme du site internet a été conçu et réalisé par Le Voyage à Nantes et Anima.productions (www.animaproductions.com) et a été développé Le Voyage à Nantes.</p>\n<h3><strong>2 – Conditions générales d’utilisation du site et des services proposés</strong></h3>\n<p>L’utilisation du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> sont donc invités à les consulter de manière régulière.<br/>\nCe site est normalement accessible à tout moment aux utilisateurs.<br/>\nL’utilisateur s’engage d’ores et déjà à faire des informations contenues sur le site un usage personnel et non commercial. En cas de non-respect des dispositions des présentes, par l’utilisateur, sa responsabilité civile et/ou pénale pourrai(en)t se voir engagée(s).<br/>\nLe site exploité par le Voyage à Nantes présente la structure de Nantes tourisme et a pour objet de fournir une information concernant l’ensemble de sa programmation et ses différentes activités.</p>\n<h3><strong>3 – Propriété intellectuelle</strong></h3>\n<p>Le Site constitue une œuvre dont Le Voyage à Nantes est l’auteur au sens des articles L.111-1 et suivants du Code de la propriété intellectuelle. Ainsi Le Voyage à Nantes est le titulaire exclusif ou détient des droits d’usage de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> notamment les textes, images, graphismes, logos, icônes, sons, logiciels et ce dans le monde entier.<br/>\nIl est rappelé que les photographies présentes sur le Site sont considérées comme des œuvres de l’esprit bénéficiant de la protection au titre du droit d’auteur. Toute utilisation non autorisée de l’une ou l’autre des photographies est constitutif d’un acte de contrefaçon comme le prévoit l’article L.335-3 du Code de la propriété intellectuelle. Les identités visuelles, les images animées ou non et leurs mises en forme apparaissant sur le Site sont la propriété du Voyage à Nantes et sont protégées à ce titre par les dispositions du Code de la propriété intellectuelle.<br/>\nTout internaute s’engage à ne pas les utiliser et à ne permettre à quiconque d’utiliser ces contenus à des fins illégales.<br/>\nToute représentation ou reproduction, totale ou partielle, permanente ou temporaire, sur un support informatique et/ou papier, et par quelque procédé que ce soit (notamment par voie de framing*), de l’un ou l’autre des éléments du Site ou des services proposés à la vente, sans l’accord préalable et exprès du Voyage à Nantes est interdite, et constitue un acte de contrefaçon, qui pourra entraîner des condamnations civiles et/ou pénales. Seule l’impression papier est autorisée aux fins de copie privée à l’usage exclusif du copiste au sens de l’article L.122-5 2° du Code de la propriété intellectuelle.<br/>\nAucun lien hypertexte vers le Site ne peut être installé sans l’accord préalable et exprès du Voyage à Nantes.<br/>\nLa photographie des œuvres présentées est autorisée à des fins personnelles. Toute reproduction, représentation, diffusion ou vente sans droit, que ce soit à titre privé ou à titre commercial, dans quelque pays que ce soit, des photographies ainsi effectuées, constituerait une contrefaçon pouvant engager la responsabilité civile et pénale de son auteur conformément aux articles L.331-1, L.335-2 et L.335-4 du Code de la Propriété Intellectuelle.<br/>\n* Action de capter le contenu de pages d’un site Internet pour le transférer sur son propre site Internet par le biais d’un lien hypertexte, en faisant apparaître ledit contenu comme le sien.</p>\n<h3><strong>4 – Protection des données personnelles</strong></h3>\n<p>L’internaute peut être amené à déposer certaines données personnelles en répondant aux formulaires qui lui sont proposés. La saisie de ces données est nécessaire au traitement de la demande de l’internaute, par Le Voyage à Nantes.<br/>\nLe Voyage à Nantes s’engage à respecter les dispositions de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiées à prendre toute précaution nécessaire pour préserver la sécurité des informations nominatives des internautes. Aucune information à caractère personnel ne sera communiquée à des sociétés tierces sans l’accord préalable et éclairé de l’utilisateur.<br/>\nL’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’obligation ou non de lui fournir ces informations.<br/>\nL’internaute peut à tout moment exercer son droit d’accès, de rectification, de suppression ou d’opposition concernant les informations qu’il fournit lors de son inscription ou ultérieurement, auprès du Voyage à Nantes par email à <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a> en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.<br/>\nCookie : vous êtes informé que, lors de vos visites sur le site Internet, un ou plusieurs témoins de navigation (ou cookies) peuvent s’installer automatiquement sur votre terminal dans le but d’enregistrer certaines informations concernant votre navigation (pages consultées, date et heure de consultation, etc.). Ces cookies servent uniquement à optimiser votre navigation sur le site.</p>\n<h3><strong>5 – Responsabilité</strong></h3>\n<p>Le Voyage à Nantes décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur le Site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci.<br/>\nLes éléments présentés sur le Site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.<br/>\nLa présence de liens hypertextes présents sur le Site – quel que soit l’existence préalable ou non de l’accord du Voyage à Nantes – ne crée pas une solidarité de responsabilité entre celui-ci et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute.<br/>\nLe Voyage à Nantes ne peut garantir l’exhaustivité et la véracité des informations présentes sur le Site. De la même manière, il ne peut garantir l’absence de modification par un tiers (intrusion, virus).<br/>\nEn outre, l’internaute est seul responsable de l’utilisation qu’il fait du contenu du Site. Sauf faute grave exclusive du Voyage à Nantes, sa responsabilité ne peut être engagée pour des dommages directs et indirects liés à l’utilisation des informations produites sur le Site.</p>\n<h3><strong>6 – Loi applicable et compétence judiciaire</strong></h3>\n<p>L’ensemble des informations diffusé sur le Site et l’utilisation qui en est faite son soumis exclusivement au droit français. Seuls les tribunaux relevant du ressort de la Cour d’appel de Nantes sont compétents pour connaître des éventuels litiges à l’utilisation du Site.</p>",
+     "meta": {}
+    }
+   }
+  },
+  {
+   "key": "cookies",
+   "type": "page",
+   "template": "",
+   "order": 90,
+   "image": "",
+   "langs": {
+    "fr": {
+     "title": "A propos des cookies",
+     "slug": "cookiespolicy",
+     "content": "<h2>Cookies</h2>\n<p>Afin de vous permettre de prendre la mesure de l’utilité que représente pour vous tel ou tel cookie, une présentation des différents types de cookies suit.</p>\n<h3><strong>Cookies de performance</strong></h3>\n<p>Ces cookies recueillent des informations sur la façon dont les visiteurs utilisent un site Web. Par exemple, les pages les plus visitées et si des messages d’erreur sont émis. Les cookies ne recueillent pas de données permettant d’identifier les visiteurs. Dans la mesure où toutes les informations recueillies par ces cookies sont rassemblées, elles demeurent anonymes. Ces cookies sont uniquement destinés à améliorer le fonctionnement du site Web.</p>\n<p>Ces cookies permettent de mesurer le trafic ou l’audience, associé à notre site internet, aux pages visitées et aux interactions réalisées sur le site lors de votre visite. Les désactiver empêche donc toute collecte d’informations relatives à votre navigation sur notre site et donc la proposition de contenus éditoriaux adaptés en fonction de votre navigation.</p>\n<h3><strong>Cookies de fonctionnalités</strong></h3>\n<p>Ces cookies permettent au site de mémoriser les choix que vous avez effectués (comme la langue choisie ou la région où vous vous trouvez, la version du site que vous visitez). Ces cookies peuvent aussi être utilisés pour mémoriser les modifications apportées par l’utilisateur, comme la taille du texte ou la police de caractères. Les informations collectées par ces cookies peuvent être rendues anonymes et ne peuvent pas suivre votre activité de navigation sur d’autres sites.</p>\n<h2>Contenu embarqué depuis d’autres sites</h2>\n<p>Les articles de ce site peuvent inclure des contenus intégrés (par exemple des vidéos, images, articles, cartes…). Le contenu intégré depuis d’autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site.</p>\n<p>Ces sites web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers, suivre vos interactions avec ces contenus embarqués si vous disposez d’un compte connecté sur leur site web.</p>",
+     "meta": {}
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,274 @@
+# Copyright (C) 2026 Le Voyage à Nantes
+# This file is distributed under the Propriétaire.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rendez-vous à Nantes 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rdv-nantes\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en_US\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-06T14:08:07+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: rdv-nantes\n"
+
+#. Theme Name of the theme
+#: style.css:2
+msgid "Rendez-vous à Nantes"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css:3
+msgid "https://rdv.levoyageanantes.fr/"
+msgstr ""
+
+#. Description of the theme
+#: style.css:5
+msgid "Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : prendre un verre (quartiers + carte), manger, incontournables, footing, shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES)."
+msgstr ""
+
+#. Author of the theme
+#: style.css:4
+msgid "Le Voyage à Nantes"
+msgstr ""
+
+#: 404.php:13
+msgid "Page introuvable"
+msgstr "Page not found"
+
+#: 404.php:14
+msgid "Cette page n’existe pas ou plus. Repartez de l’accueil ou choisissez une rubrique."
+msgstr "This page does not exist or no longer exists. Start again from the home page or choose a section."
+
+#: 404.php:15
+msgid "Retour à l’accueil"
+msgstr "Back to home"
+
+#: footer.php:16
+msgid "L’Accueil du Voyage à Nantes"
+msgstr "Le Voyage à Nantes visitor centre"
+
+#: footer.php:17
+msgid "9 rue des États, face au Château des ducs de Bretagne"
+msgstr "9 rue des États, opposite the Château des ducs de Bretagne"
+
+#: footer.php:17
+msgid "Du lundi au samedi : 10 h – 18 h (jeudi à partir de 11 h)"
+msgstr "Monday to Saturday: 10 am – 6 pm (Thursday from 11 am)"
+
+#: footer.php:17
+msgid "Dimanche et jours fériés : 10 h – 17 h"
+msgstr "Sundays and public holidays: 10 am – 5 pm"
+
+#: footer.php:20
+msgid "Par téléphone"
+msgstr "By phone"
+
+#: footer.php:21
+msgid "Service 0,35 € / min"
+msgstr "Service €0.35 / min"
+
+#: footer.php:21
+msgid "+ prix appel"
+msgstr "+ call price"
+
+#: footer.php:22
+msgid "Par mail :"
+msgstr "By email:"
+
+#: footer.php:25
+msgid "Un site du Voyage à Nantes"
+msgstr "A Voyage à Nantes website"
+
+#: footer.php:26
+msgid "Actus, infos, bons plans :"
+msgstr "News, info, good deals:"
+
+#: footer.php:26
+msgid "https://levoyageanantes.fr"
+msgstr "https://www.levoyageanantes.fr/en/"
+
+#: footer.php:27
+msgid "Besoin d’aide ?"
+msgstr "Need a hand?"
+
+#: footer.php:31
+msgid "Mentions légales"
+msgstr "Legal information"
+
+#: footer.php:33
+msgid "Accessibilité"
+msgstr "Accessibility"
+
+#: footer.php:35
+msgid "Cookies"
+msgstr "Cookies"
+
+#: front-page.php:38
+msgid "Temps disponible"
+msgstr "Time available"
+
+#: header.php:19
+msgid "Aller au contenu"
+msgstr "Skip to content"
+
+#: header.php:23
+msgid "Accueil Rendez-vous à Nantes"
+msgstr "Rendez-vous à Nantes home"
+
+#: header.php:25
+msgid "Rendez-vous à"
+msgstr "Rendez-vous à"
+
+#: header.php:27
+msgid "Rubriques"
+msgstr "Sections"
+
+#: header.php:34
+#: inc/post-types.php:24
+msgid "Pass Nantes"
+msgstr "Pass Nantes"
+
+#: inc/post-types.php:21
+msgid "Prendre un verre"
+msgstr ""
+
+#: inc/post-types.php:21
+msgid "Quartier"
+msgstr ""
+
+#: inc/post-types.php:22
+msgid "Incontournables"
+msgstr ""
+
+#: inc/post-types.php:22
+msgid "Incontournable"
+msgstr ""
+
+#: inc/post-types.php:23
+msgid "Shopping"
+msgstr ""
+
+#: inc/post-types.php:23
+msgid "Adresse shopping"
+msgstr ""
+
+#: inc/post-types.php:24
+msgid "Fiche Pass Nantes"
+msgstr ""
+
+#. translators: %s: libellé
+#: inc/post-types.php:44
+#, php-format
+msgid "Ajouter : %s"
+msgstr ""
+
+#. translators: %s: libellé
+#: inc/post-types.php:45
+#, php-format
+msgid "Modifier : %s"
+msgstr ""
+
+#: inc/template-tags.php:170
+msgid "Accueil"
+msgstr "Home"
+
+#: inc/template-tags.php:215
+msgid "Autres rubriques"
+msgstr "Other sections"
+
+#: index.php:17
+msgid "Aucun contenu."
+msgstr "No content."
+
+#. Template Name of the theme
+#: page-templates/infos.php:3
+msgid "Rubrique — page d'infos"
+msgstr ""
+
+#: page-templates/infos.php:22
+#: single-rdv_quartier.php:50
+#: single-rdv_quartier.php:62
+#: single.php:17
+msgid "Itinéraire"
+msgstr "Directions"
+
+#. Template Name of the theme
+#: page-templates/liste.php:3
+msgid "Rubrique — liste d'adresses"
+msgstr ""
+
+#: page-templates/liste.php:25
+msgid "Voir"
+msgstr "See"
+
+#. Template Name of the theme
+#: page-templates/rubrique-lieux.php:3
+msgid "Rubrique — liste de fiches"
+msgstr ""
+
+#. Template Name of the theme
+#: page-templates/rubrique-quartiers.php:3
+msgid "Rubrique — quartiers avec carte"
+msgstr ""
+
+#: page-templates/rubrique-quartiers.php:19
+msgid "Plan du centre de Nantes et de l’Île de Nantes"
+msgstr "Map of central Nantes and the Île de Nantes"
+
+#: page-templates/rubrique-quartiers.php:20
+msgid "La Loire"
+msgstr "The Loire"
+
+#: page-templates/rubrique-quartiers.php:21
+msgid "Île de Nantes"
+msgstr "Île de Nantes"
+
+#: page-templates/rubrique-quartiers.php:22
+msgid "Château"
+msgstr "Castle"
+
+#: page-templates/rubrique-quartiers.php:23
+msgid "Cité des Congrès"
+msgstr "Cité des Congrès"
+
+#: page-templates/rubrique-quartiers.php:37
+msgid "© OpenStreetMap contributors · Les guinguettes sont réparties en ville et aux environs."
+msgstr "© OpenStreetMap contributors · The guinguettes are spread around town and nearby."
+
+#: single-rdv_quartier.php:27
+msgid "Étapes incontournables"
+msgstr "Unmissable stops"
+
+#: single-rdv_quartier.php:67
+msgid "Tous les quartiers"
+msgstr "All districts"
+
+#: single-rdv_quartier.php:69
+msgid "Revenir au début"
+msgstr "Back to the start"
+
+#. translators: %s: ambiance du quartier suivant
+#. translators: %s: fiche suivante
+#: single-rdv_quartier.php:69
+#: single.php:42
+#, php-format
+msgid "Suivant : %s"
+msgstr "Next: %s"
+
+#: single.php:20
+msgid "Acheter en ligne"
+msgstr "Buy online"
+
+#: single.php:23
+msgid "En savoir plus"
+msgstr "Learn more"
+
+#. translators: 1: rubrique, 2: position, 3: total
+#: single.php:31
+#, php-format
+msgid "%1$s · %2$d sur %3$d"
+msgstr "%1$s · %2$d of %3$d"

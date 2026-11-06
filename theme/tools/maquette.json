@@ -1,0 +1,910 @@
+{
+ "CATS": [
+  {
+   "id": "prendre-un-verre",
+   "n": "01",
+   "t": "Prendre un verre",
+   "d": "Terrasses, cocktails, pubs : quatre ambiances",
+   "h": "Prendre un verre",
+   "lead": "Notre sélection de bars et de lieux insolites où prendre un verre à Nantes, selon l’ambiance que vous cherchez.",
+   "type": "quartiers",
+   "home": true,
+   "nav": true
+  },
+  {
+   "id": "manger",
+   "n": "02",
+   "t": "Manger",
+   "d": "Une sélection de bonnes tables nantaises",
+   "h": "Manger",
+   "type": "liste",
+   "home": true,
+   "nav": true
+  },
+  {
+   "id": "incontournables",
+   "n": "03",
+   "t": "Incontournables",
+   "d": "10 bonnes raisons de faire le Voyage à Nantes",
+   "h": "Les incontournables",
+   "type": "lieux",
+   "home": true,
+   "nav": true,
+   "lead": "Pour ne rien manquer des incontournables de la destination, rien de plus simple : à Nantes, il suffit de suivre la ligne verte tracée au sol. Un parcours de 22 kilomètres qui réunit les étapes culturelles, les principaux monuments, œuvres d’art et sites touristiques de la ville."
+  },
+  {
+   "id": "footing",
+   "n": "04",
+   "t": "Footing",
+   "d": "De 5 à 15 km, pour tous les niveaux",
+   "h": "Footing",
+   "type": "liste",
+   "home": true,
+   "nav": true
+  },
+  {
+   "id": "shopping",
+   "n": "05",
+   "t": "Shopping",
+   "d": "Passages, rues commerçantes et marché",
+   "h": "Shopping",
+   "type": "lieux",
+   "home": true,
+   "nav": true,
+   "lead": "Cinq adresses pour faire les boutiques à Nantes, des enseignes chics du quartier Graslin aux souvenirs du Voyage à Nantes."
+  },
+  {
+   "id": "se-deplacer",
+   "n": "06",
+   "t": "Se déplacer",
+   "d": "Navette aéroport, tram, taxis",
+   "h": "Se déplacer",
+   "type": "infos",
+   "home": true,
+   "nav": true
+  },
+  {
+   "id": "aide",
+   "n": "07",
+   "t": "Aide",
+   "d": "L’Accueil du Voyage à Nantes",
+   "h": "Besoin d’aide ?",
+   "type": "infos",
+   "nav": true
+  },
+  {
+   "id": "pass-nantes",
+   "n": "08",
+   "t": "Pass Nantes",
+   "d": "Dès 27 €, de 24 h à 7 jours",
+   "h": "Acheter le Pass Nantes",
+   "type": "lieux",
+   "lead": "Pour tout savoir sur Nantes, consultez aussi le guide touristique « Nantes, le voyage permanent »."
+  }
+ ],
+ "QUARTIERS": [
+  {
+   "n": "1",
+   "id": "ile-de-nantes",
+   "t": "Quartier Île de Nantes",
+   "amb": "Terrasses face à la Loire",
+   "where": "Île de Nantes · Hangar à bananes",
+   "x": "10%",
+   "y": "63%",
+   "img": "[Photo Hangar à bananes]",
+   "badges": [
+    "[X] min à pied de la Cité des Congrès",
+    "Jusqu’à 5 h 30"
+   ],
+   "lead": "Le long de la Loire et des Anneaux de Buren, le Hangar à bananes est le spot idéal pour boire un verre en terrasse ou écouter un concert. De nombreux bars aux ambiances variées se succèdent dans ce bâtiment industriel réhabilité.",
+   "musts": [
+    {
+     "t": "La Cantine du Voyage",
+     "d": "Ses baby-foot et transats vue Loire !",
+     "tag": "Dates 2024 à mettre à jour"
+    },
+    {
+     "t": "Bar l’Absence",
+     "d": "L’œuvre au pied de l’école d’architecture."
+    }
+   ],
+   "infos": [
+    [
+     "Adresse",
+     "Quai des Antilles"
+    ],
+    [
+     "Ambiance",
+     "Couche-tard et festive"
+    ],
+    [
+     "Horaires",
+     "Certains bars ouverts jusqu’à 5 h 30",
+     true
+    ]
+   ],
+   "groups": [
+    {
+     "t": "Nos suggestions",
+     "bars": [
+      {
+       "n": "Le Ferrailleur",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "Le Point Bar",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "Le SAO",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "La Calle",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "Canaille Café",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "Le Dock Yard – Irish Pub",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "Le D3",
+       "a": "Quai des Antilles"
+      },
+      {
+       "n": "Le Warehouse",
+       "a": "Quai des Antilles"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "2",
+   "id": "graslin",
+   "t": "Quartier Graslin",
+   "amb": "Cocktails chic et cosy",
+   "where": "Graslin · autour du théâtre",
+   "x": "25.5%",
+   "y": "40%",
+   "img": "[Photo quartier Graslin]",
+   "badges": [
+    "[X] min à pied de la Cité des Congrès",
+    "Bars à cocktails"
+   ],
+   "lead": "Tout autour du théâtre Graslin, dans les rues piétonnes, bars et institutions nantaises proposent les meilleurs cocktails de la ville.",
+   "infos": [
+    [
+     "Où",
+     "Autour du théâtre Graslin"
+    ],
+    [
+     "Ambiance",
+     "Chic et cosy garantie"
+    ],
+    [
+     "Au programme",
+     "Bar à vins, cave à bière, bar dansant"
+    ]
+   ],
+   "groups": [
+    {
+     "t": "Nos suggestions",
+     "bars": [
+      {
+       "n": "Le Molière",
+       "a": "2 rue Racine"
+      },
+      {
+       "n": "Le Mariole",
+       "a": "11 rue Jean-Jacques Rousseau"
+      },
+      {
+       "n": "L’Univers speakeasy",
+       "a": "16 rue Jean-Jacques Rousseau"
+      },
+      {
+       "n": "Le Graslin de Folie",
+       "a": "1 rue Racine"
+      },
+      {
+       "n": "Le Sur Mesure",
+       "a": "5 rue Jean-Jacques Rousseau"
+      },
+      {
+       "n": "Chez les garçons",
+       "a": "16 rue Jean-Jacques Rousseau"
+      },
+      {
+       "n": "Le 19:33",
+       "a": "8 rue Voltaire"
+      },
+      {
+       "n": "La Passagère",
+       "a": "Passage Pommeraye"
+      },
+      {
+       "n": "Peter Mc Cool – Irish Pub",
+       "a": "22 rue Scribe"
+      },
+      {
+       "n": "Le Mac – Irish Pub Nantes",
+       "a": "1 rue Rameau"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "n": "3",
+   "id": "bouffay",
+   "t": "Quartier Bouffay",
+   "amb": "Terrasses et pubs animés",
+   "where": "Bouffay · quartier médiéval",
+   "x": "43%",
+   "y": "36%",
+   "img": "[Photo place du Bouffay]",
+   "badges": [
+    "[X] min à pied de la Cité des Congrès",
+    "Soirs de match"
+   ],
+   "lead": "On y va pour les terrasses de la place du Bouffay, toute l’année au soleil, pour les pubs particulièrement animés les soirs de match et ses bars à cocktail.",
+   "infos": [
+    [
+     "Où",
+     "Autour de la place du Bouffay"
+    ],
+    [
+     "Ambiance",
+     "Jeune et décontractée"
+    ],
+    [
+     "Au programme",
+     "Terrasses, pubs, bars à cocktail"
+    ]
+   ],
+   "groups": [
+    {
+     "t": "Nos suggestions",
+     "bars": [
+      {
+       "n": "Le Bar du Coin",
+       "a": "21 rue de la Juiverie"
+      },
+      {
+       "n": "Le 17.45",
+       "a": "18 rue Briord"
+      },
+      {
+       "n": "Le Pti Zinc",
+       "a": "10 rue de l’Emery"
+      },
+      {
+       "n": "Le Live Bar",
+       "a": "7 rue des États"
+      },
+      {
+       "n": "Au Chien Stupide",
+       "a": "4 rue des Carmélites"
+      },
+      {
+       "n": "Café Cult’",
+       "a": "2 rue des Carmes"
+      },
+      {
+       "n": "Le 13 et 3",
+       "a": "1 place du Bouffay"
+      },
+      {
+       "n": "Le Marlowe",
+       "a": "1 rue Saint-Vincent"
+      }
+     ]
+    },
+    {
+     "t": "Quelques Irish pubs",
+     "bars": [
+      {
+       "n": "John Mc Byrne",
+       "a": "21 rue des Petites Écuries & 13 rue de la Juiverie"
+      },
+      {
+       "n": "Buck Mulligan’s",
+       "a": "12 rue du Château"
+      },
+      {
+       "n": "Gigg’s Irish Pub",
+       "a": "4 place Saint-Pierre"
+      },
+      {
+       "n": "Le Rabelais",
+       "a": "3 rue du Bouffay"
+      },
+      {
+       "n": "Flemings",
+       "a": "22 rue des Carmes"
+      },
+      {
+       "n": "De Dannan Celtic Pub",
+       "a": "2 rue Kervégan"
+      },
+      {
+       "n": "Brady’s Irish Pub",
+       "a": "22 allée du Commandant Charcot"
+      }
+     ]
+    }
+   ],
+   "note": "Non loin du quartier, Le Lieu Unique : café, bar, DJ, restaurant, terrasse en bord du canal Saint-Félix, dans la célèbre biscuiterie nantaise transformée en lieu culturel incontournable."
+  },
+  {
+   "n": "4",
+   "id": "guinguettes",
+   "t": "Esprit guinguette pour les beaux jours",
+   "amb": "Guinguettes aux beaux jours",
+   "where": "En ville et aux environs",
+   "img": "[Photo guinguette]",
+   "badges": [
+    "Saisonnier",
+    "Plusieurs lieux"
+   ],
+   "lead": "Au cœur de la ville ou dans ses environs, quelques guinguettes temporaires et conviviales sont ouvertes pour les Nantais et les visiteurs. L’occasion de prendre l’air dans un esprit vacances !",
+   "infos": [
+    [
+     "Où",
+     "En ville et aux environs"
+    ],
+    [
+     "Ambiance",
+     "Esprit vacances"
+    ],
+    [
+     "Quand",
+     "Aux beaux jours, selon les lieux"
+    ]
+   ],
+   "groups": [
+    {
+     "t": "Nos suggestions",
+     "bars": [
+      {
+       "n": "La Cantine du Voyage",
+       "a": "",
+       "tag": "Dates 2024 à mettre à jour"
+      },
+      {
+       "n": "La Station Nuage",
+       "a": "",
+       "tag": "Réouverture 2025 à mettre à jour"
+      },
+      {
+       "n": "La Guinguette du Belvédère",
+       "a": "",
+       "tag": "Réouverture 2025 à mettre à jour"
+      },
+      {
+       "n": "Le Bateau Lavoir",
+       "a": "",
+       "tag": "Réouverture 2025 à mettre à jour"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "LIEUX": {
+  "incontournables": [
+   {
+    "id": "chateau-des-ducs-de-bretagne",
+    "t": "Le Château des ducs de Bretagne",
+    "s": "Musée d’histoire de Nantes",
+    "txt": "Avec ses bâtiments du XVe au XVIIIe siècle, il est un monument-phare du patrimoine. La cour, les remparts, les douves sont en accès libre. Au musée d’histoire de Nantes, la ville se raconte en un parcours croisant les grands moments de l’Histoire européenne et mondiale, notamment la traite atlantique et les deux guerres mondiales.",
+    "infos": [
+     [
+      "Adresse",
+      "4 place Marc Elder, 44000 Nantes"
+     ],
+     [
+      "Tarifs",
+      "9 € plein · 5 € réduit"
+     ],
+     [
+      "À savoir",
+      "Gratuit pour les moins de 18 ans"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/dir//chateau+nantes/@47.2162696,-1.5837901,13z",
+    "more": "https://www.levoyageanantes.fr/lieux/chateau-des-ducs-de-bretagne-musee-dhistoire-de-nantes/"
+   },
+   {
+    "id": "musee-darts",
+    "t": "Le Musée d’arts",
+    "s": "12 000 œuvres, de l’art ancien à l’art contemporain",
+    "txt": "Le Musée d’arts de Nantes a réouvert ses portes en juin 2017 avec un nouveau bâtiment dédié à l’art contemporain, plus de 2 000 m² de surfaces d’exposition supplémentaires, des façades et verrières restaurées, un restaurant… La collection du musée, l’une des plus riches de France, s’étend de l’art ancien à l’art contemporain, toutes formes de création confondues.",
+    "infos": [
+     [
+      "Adresse",
+      "Rue Georges Clemenceau, Nantes"
+     ],
+     [
+      "Tarifs",
+      "8 € plein · 4 € réduit"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/dir//mus%C3%A9e+d%27arts+nantes/@47.219711,-1.5824603,13z",
+    "more": "https://www.levoyageanantes.fr/lieux/musee-darts-de-nantes/"
+   },
+   {
+    "id": "quartier-bouffay",
+    "t": "Quartier Bouffay",
+    "s": "Quartier médiéval et son château",
+    "txt": "Quartier médiéval de la ville. Outre les maisons à colombages et vestiges d’édifices des XVe et XVIe siècles, ce quartier regorge de petites boutiques, bars et restaurants de tous styles. Il y fourmille toujours une foule continuelle et une ambiance incomparable.",
+    "infos": [
+     [
+      "Adresse",
+      "Quartier Bouffay, Nantes"
+     ]
+    ],
+    "link": [
+     "Prendre un verre au Bouffay",
+     "#/prendre-un-verre/bouffay"
+    ],
+    "maps": "https://www.google.com/maps/dir//Place+du+Bouffay,+44036+Nantes/@47.2146044,-1.5540442,17.75z",
+    "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-du-bouffay/"
+   },
+   {
+    "id": "le-lieu-unique",
+    "t": "Le Lieu Unique",
+    "s": "Ancienne biscuiterie LU, proche gare",
+    "txt": "Installé dans les anciennes biscuiteries LU, le lieu unique est un espace d’exploration artistique, de bouillonnement culturel et de convivialité qui mélange les genres, les cultures et les publics.",
+    "infos": [
+     [
+      "Adresse",
+      "2 quai Ferdinand Favre, 44000 Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Le%20Lieu%20Unique%2C%202%20quai%20Ferdinand%20Favre%2C%20Nantes",
+    "more": "https://www.levoyageanantes.fr/lieux/le-lieu-unique/"
+   },
+   {
+    "id": "jardin-des-plantes",
+    "t": "Le Jardin des Plantes",
+    "s": "Écrin de verdure face à la gare, sortie Nord",
+    "txt": "Avec 7 hectares de verdure en plein centre-ville, plus de 10 000 espèces vivantes, 800 m² de serres, le Jardin des Plantes figure parmi les quatre grands jardins botaniques de France.",
+    "infos": [
+     [
+      "Adresse",
+      "Rue Stanislas Baudry, 44000 Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Jardin%20des%20Plantes%2C%20rue%20Stanislas%20Baudry%2C%20Nantes",
+    "more": "https://www.levoyageanantes.fr/lieux/jardin-des-plantes/"
+   },
+   {
+    "id": "passage-pommeraye",
+    "t": "Le Passage Pommeraye",
+    "s": "Arcades de shopping du XIXe siècle",
+    "txt": "Très rares sont les villes d’Europe pouvant se flatter de posséder un passage couvert d’une telle valeur architecturale : le Passage Pommeraye, galerie commerçante du XIXe siècle.",
+    "infos": [
+     [
+      "Adresse",
+      "20 passage Pommeraye, 44000 Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Passage%20Pommeraye%2C%20Nantes",
+    "more": "https://www.levoyageanantes.fr/lieux/passage-pommeraye/"
+   },
+   {
+    "id": "machines-de-lile",
+    "t": "Les Machines de l’Île",
+    "s": "Galerie des Machines, Carrousel des Mondes Marins, le Grand Éléphant",
+    "txt": "Un bestiaire de machines vivantes et monumentales. Un projet artistique totalement inédit, qui a reçu le prix de l’attraction la plus originale du monde. À la croisée des « mondes inventés » de Jules Verne, de l’univers mécanique de Léonard de Vinci et de l’histoire industrielle de Nantes, sur le site exceptionnel des anciens chantiers navals.",
+    "infos": [
+     [
+      "Adresse",
+      "Parc des Chantiers, boulevard Léon Bureau, 44200 Nantes"
+     ],
+     [
+      "Tarifs",
+      "11 € plein · 8,70 € réduit"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/dir//machines+de+l%27ile/@47.2086849,-1.5661141,17z",
+    "more": "https://www.levoyageanantes.fr/activites/galerie-des-machines-de-lile/"
+   },
+   {
+    "id": "parc-des-chantiers",
+    "t": "Le Parc des Chantiers",
+    "s": "Architecture contemporaine, Machines de l’île et bords de Loire",
+    "txt": "Le Hangar à bananes, les Anneaux de Buren ou le Grand Éléphant : ce parc permet à tous de s’approcher du fleuve à l’occasion de flâneries aux tonalités culturelles ou sportives, d’explorer les espaces historiques au gré des événements et des activités proposées.",
+    "infos": [
+     [
+      "Adresse",
+      "Île de Nantes, Nantes"
+     ]
+    ],
+    "link": [
+     "Prendre un verre sur l’Île de Nantes",
+     "#/prendre-un-verre/ile-de-nantes"
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Parc%20des%20Chantiers%2C%20%C3%8Ele%20de%20Nantes",
+    "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-ile-de-nantes/"
+   },
+   {
+    "id": "quartier-chantenay",
+    "t": "Quartier Chantenay",
+    "s": "Vue panoramique sur la Loire",
+    "txt": "Sur les hauteurs du quartier, six belvédères ainsi que celui, monumental, signé Tadashi Kawamata, offrent un exceptionnel panorama. La balade emmène du Musée Jules Verne au Jardin extraordinaire, pour se poursuivre en traversant la Loire jusqu’à Trentemoult.",
+    "infos": [
+     [
+      "Adresse",
+      "7 rue de l’Hermitage, 44100 Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Belv%C3%A9d%C3%A8re%20de%20l%E2%80%99Hermitage%2C%207%20rue%20de%20l%E2%80%99Hermitage%2C%20Nantes",
+    "more": "https://www.levoyageanantes.fr/a-voir/le-voyage-permanent/les-quartiers-de-nantes/quartier-chantenay/"
+   },
+   {
+    "id": "memorial-abolition-esclavage",
+    "t": "Le Mémorial de l’abolition de l’esclavage",
+    "s": "Parcours méditatif unique en Europe",
+    "txt": "Unique en Europe, ce parcours méditatif, sur et sous le quai au niveau de la Loire, présente des citations dans toutes les langues, de tous temps et de tous lieux. 2 000 plaques commémoratives rappellent les expéditions négrières parties de Nantes.",
+    "infos": [
+     [
+      "Adresse",
+      "Passerelle Victor-Schoelcher, quai de la Fosse, 44000 Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=M%C3%A9morial%20de%20l%E2%80%99abolition%20de%20l%E2%80%99esclavage%2C%20Nantes",
+    "more": "https://www.levoyageanantes.fr/lieux/memorial-de-labolition-de-lesclavage/"
+   }
+  ],
+  "shopping": [
+   {
+    "id": "quartier-graslin",
+    "t": "Le quartier Graslin",
+    "s": "Rue Crébillon, passage Pommeraye",
+    "txt": "Le quartier Graslin est réputé pour ses enseignes chics, ses tables gourmandes, son passage Pommeraye – l’un des plus beaux passages couverts d’Europe – et ses rues commerçantes (rue Crébillon, rue Santeuil, rue Grétry par exemple).",
+    "infos": [
+     [
+      "Où",
+      "Rue Crébillon, rue Santeuil, rue Grétry"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Quartier%20Graslin%2C%20Nantes",
+    "more": "https://www.nantes-tourisme.com/fr/quartier-graslin"
+   },
+   {
+    "id": "quartier-decre",
+    "t": "Quartier Decré",
+    "s": "Galeries Lafayette et petites boutiques",
+    "txt": "Situé au cœur du quartier médiéval, au milieu d’un dédale de rues pavées, le quartier Decré propose de nombreuses boutiques, grandes enseignes, commerces indépendants, déco made in France. Rue de la Marne, rue des Chapeliers, rue du Château, rue des Carmes, rue de la Paix…",
+    "infos": [
+     [
+      "Où",
+      "Rue de la Marne, rue des Chapeliers, rue du Château"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Galeries%20Lafayette%20Nantes",
+    "more": "https://www.levoyageanantes.fr/lieux/galeries-lafayette/"
+   },
+   {
+    "id": "rue-dorleans",
+    "t": "Rue d’Orléans",
+    "s": "La rue des chausseurs",
+    "txt": "Une dizaine de chausseurs jalonnent les 200 mètres de la rue d’Orléans, pour trouver chaussure à son pied.",
+    "infos": [
+     [
+      "Où",
+      "Rue d’Orléans, Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=Rue%20d%E2%80%99Orl%C3%A9ans%2C%20Nantes",
+    "more": "https://www.nantes-tourisme.com/fr/shopping-nantes"
+   },
+   {
+    "id": "marche-de-talensac",
+    "t": "Marché de Talensac",
+    "s": "Une véritable institution nantaise",
+    "txt": "Reconnu pour sa diversité, c’est le marché le plus ancien et le plus important de la ville. On y trouve les meilleurs artisans.",
+    "infos": [
+     [
+      "Horaires",
+      "Tous les matins de 8 h à 13 h, sauf le lundi",
+      true
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=March%C3%A9%20de%20Talensac%2C%20Nantes",
+    "more": "https://www.levoyageanantes.fr/lieux/marche-de-talensac/"
+   },
+   {
+    "id": "bazar-officiel",
+    "t": "Le Bazar officiel du Voyage à Nantes",
+    "s": "Des souvenirs dessinés par des artistes nantais",
+    "txt": "Souvenirs d’un Voyage… Le Voyage à Nantes propose un large panel d’objets insolites, gourmands ou collectors pour laisser à vos invités un souvenir inédit de la ville. De nombreux objets pensés par des artistes et des illustrateurs de renom (Docteur Paper, Studio LVL, Jean Jullien…). Rendez-vous à la boutique face au château des ducs de Bretagne !",
+    "infos": [
+     [
+      "Adresse",
+      "9 rue des États, 44000 Nantes"
+     ]
+    ],
+    "maps": "https://www.google.com/maps/search/?api=1&query=9%20rue%20des%20%C3%89tats%2C%2044000%20Nantes",
+    "more": "https://www.levoyageanantes.fr/a-faire/shopping/"
+   }
+  ],
+  "pass-nantes": [
+   {
+    "id": "pass-nantes",
+    "t": "Pass Nantes dès 27 €",
+    "s": "Le temps d’une journée, d’un week-end ou même d’une semaine, faites le voyage à votre rythme.",
+    "html": "\n        <p>Le Pass Nantes permet d’accéder à 50 activités incontournables : musées, expositions, visites guidées, croisières, dégustations, transports dont la navette aéroport.</p>\n        <h2>Exemple de séjour 24 h</h2>\n        <table class=\"ptable\">\n          <thead><tr><th>Activité</th><th class=\"r\">Prix</th></tr></thead>\n          <tbody>\n            <tr><td>Ticket TAN 24 h (transports en commun)</td><td class=\"r\">6,50 €</td></tr>\n            <tr><td>Château des ducs de Bretagne : musée + audioguide</td><td class=\"r\">11 €</td></tr>\n            <tr><td>Croisière promenade sur l’Erdre</td><td class=\"r\">16,50 €</td></tr>\n            <tr><td>Machines de l’île : Galerie des Machines</td><td class=\"r\">11 €</td></tr>\n            <tr><td>Machines de l’île : Carrousel des Mondes Marins</td><td class=\"r\">9 €</td></tr>\n            <tr class=\"tot\"><td>Sans le Pass Nantes</td><td class=\"r\">54 €</td></tr>\n            <tr class=\"tot\"><td>Avec le Pass Nantes 24 h</td><td class=\"r\">27 €</td></tr>\n          </tbody>\n        </table>\n        <h2>Tarifs plein</h2>\n        <ul>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173101\" target=\"_blank\" rel=\"noopener\">Pass 24 h : 27 €</a> (tarifs réduit et famille disponibles)</li>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173102\" target=\"_blank\" rel=\"noopener\">Pass 48 h : 37 €</a></li>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173103\" target=\"_blank\" rel=\"noopener\">Pass 72 h : 45 €</a></li>\n          <li><a href=\"https://reservation.levoyageanantes.fr/selection/timeslotpass?productId=10229163173104\" target=\"_blank\" rel=\"noopener\">Pass 7 jours : 75 €</a></li>\n        </ul>\n        <h2>Où l’acheter ?</h2>\n        <p><strong>En ligne :</strong> e-ticket envoyé par mail dans les 2 h après la réservation, à activer ensuite sur l’application Pass Nantes (<a href=\"https://play.google.com/store/apps/details?id=com.otipass.passnantes\" target=\"_blank\" rel=\"noopener\">Android</a> ou <a href=\"https://apps.apple.com/fr/app/pass-nantes/id1300073060\" target=\"_blank\" rel=\"noopener\">Apple</a>).</p>\n        <p><strong>Sur place :</strong> à l’Accueil du Voyage à Nantes, 9 rue des États (face au Château des ducs de Bretagne), ou à l’accueil de l’aéroport Nantes Atlantique.</p>",
+    "infos": [
+     [
+      "Durée",
+      "De 24 h à 7 jours"
+     ],
+     [
+      "À partir de",
+      "27 €"
+     ],
+     [
+      "Inclus",
+      "50 activités et les transports en commun",
+      true
+     ]
+    ],
+    "buy": "https://www.levoyageanantes.fr/a-faire/pass-nantes/"
+   },
+   {
+    "id": "la-ligne-verte",
+    "t": "Suivez la ligne verte au sol !",
+    "s": "L’essentiel de la ville, sans plan ni guide",
+    "txt": "Envie de se laisser porter, de se mettre au rythme de la ville, de se perdre comme un véritable Nantais ?… Rien de plus simple, il suffit de suivre la ligne verte tracée au sol. Idéal pour découvrir l’essentiel de la ville, ce parcours réunit les étapes culturelles, les principaux monuments, les œuvres d’art et les sites incontournables de la ville.",
+    "infos": [
+     [
+      "Longueur",
+      "22 km"
+     ],
+     [
+      "Prix",
+      "Gratuit"
+     ]
+    ],
+    "more": "https://www.levoyageanantes.fr/parcours-images"
+   },
+   {
+    "id": "sur-le-chemin-des-plages",
+    "t": "Sur le chemin des plages",
+    "s": "La Loire, l’estuaire et l’océan à moins d’une heure",
+    "html": "\n        <h2>La côte Atlantique</h2>\n        <p>Des plages de Loire aux plages de sable fin de la côte atlantique, découvrez les joies du bord de mer à moins d’une heure de Nantes.</p>\n        <ul>\n          <li><strong>Les plages de Loire</strong> (baignade interdite) : La Sablière (du 15 mars au 15 novembre), Mauves Balnéaire, Parc des Chantiers.</li>\n          <li><strong>Les plages de la côte Atlantique</strong> : La Baule, Pornichet, Saint-Nazaire, Saint-Brevin, Pornic.</li>\n        </ul>\n        <p><a href=\"https://www.levoyageanantes.fr/a-voir/escapades/des-plages-pres-de-nantes/\" target=\"_blank\" rel=\"noopener\">+ d’infos sur les plages</a></p>\n        <h2>La collection Estuaire</h2>\n        <p>Le paysage, l’art et le fleuve. Partez du centre-ville pour découvrir l’estuaire jusqu’à l’océan et les 30 œuvres de la collection permanente de ce parcours d’art contemporain. À Nantes, Saint-Nazaire et sur les 60 kilomètres de l’estuaire de la Loire qui les relient, le musée à ciel ouvert d’Estuaire vous emmène à la découverte d’un territoire fascinant, de ses richesses environnementales et patrimoniales.</p>\n        <h2>Croisières Estuaire Nantes ↔ Saint-Nazaire</h2>\n        <p>Profitez d’une croisière pour aller là où la Loire termine sa course, dans l’océan, et découvrez l’estuaire d’un point de vue unique, celui du fleuve : des activités portuaires, des zones naturelles remarquables, et les œuvres Estuaire qui dialoguent avec les paysages.</p>",
+    "infos": [
+     [
+      "Durée de la croisière",
+      "2 h 45"
+     ],
+     [
+      "Saison",
+      "D’avril à octobre"
+     ],
+     [
+      "Départ",
+      "De Nantes ou de Saint-Nazaire"
+     ]
+    ],
+    "buy": "https://www.levoyageanantes.fr/activites/croisiere-estuaire-nantes-saint-nazaire/",
+    "buyLabel": "Réserver la croisière"
+   }
+  ]
+ },
+ "LISTES": {
+  "manger": {
+   "lead": "À la recherche d’une bonne table ? Envie de savourer des spécialités nantaises ? Le guide Les Tables de Nantes rassemble 185 adresses testées et approuvées. Grâce à un moteur de recherche bien pensé, trouvez à coup sûr LA bonne adresse : entre collègues, végétarien, grande tablée, atypique, en terrasse, en cœur de ville, pour un brunch…",
+   "cta": [
+    "Consulter lestablesdenantes.fr",
+    "https://www.lestablesdenantes.fr/"
+   ],
+   "title": "Quelques idées pour le dîner du lundi soir",
+   "items": [
+    {
+     "t": "Maison Bagarre",
+     "d": "Des assiettes bistronomiques du marché gentiment créatives, aux assaisonnements fracassants, à base de bons produits locavores.",
+     "u": "https://www.lestablesdenantes.fr/restaurants/maison-bagarre/"
+    },
+    {
+     "t": "Roza",
+     "d": "Un restaurant qui a la cote ! Déco néo-bistrotière contemporaine et un chef dont le CV prestigieux éveille les papilles.",
+     "u": "https://www.lestablesdenantes.fr/restaurants/roza"
+    },
+    {
+     "t": "Crêperie Heb Ken",
+     "d": "L’emblématique Heb Ken remporte le match du fondant, en un ardent hommage à la crêpe bretonne perpétué depuis 40 ans.",
+     "u": "https://www.lestablesdenantes.fr/restaurants/creperie-heb-ken/"
+    },
+    {
+     "t": "Balthazar",
+     "d": "Entre bistrot, cave et épicerie, l’équipe fait festoyer les palais en toute simplicité.",
+     "u": "https://www.lestablesdenantes.fr/restaurants/balthazar/"
+    },
+    {
+     "t": "La Cigale",
+     "d": "La plus célèbre adresse nantaise, avec son décor exubérant, qui pourrait bien être l’une des plus belles brasseries françaises !",
+     "u": "https://www.lestablesdenantes.fr/restaurants/brasserie-la-cigale"
+    },
+    {
+     "t": "Little Atlantique Brewery – LAB",
+     "d": "Microbrasserie artisanale dans un bâtiment du XIXe siècle en bord de Loire.",
+     "u": "https://www.levoyageanantes.fr/lieux/little-atlantique-brewery/"
+    }
+   ],
+   "linkLabel": "Voir la fiche",
+   "after": {
+    "t": "Caves à manger",
+    "d": "Retrouvez aussi sur les Tables de Nantes notre sélection de bars à vins et de caves à manger.",
+    "l": [
+     "Voir la sélection",
+     "https://www.lestablesdenantes.fr/bons-plans/bars-a-vin/"
+    ]
+   }
+  },
+  "footing": {
+   "lead": "De 5 à 15 km, une sélection de parcours pour tous les niveaux et toutes les envies.",
+   "title": "Nos parcours",
+   "items": [
+    {
+     "t": "Foulées de l’éléphant",
+     "m": "10,6 km · notre coup de cœur",
+     "u": "https://www.openrunner.com/r/1773317"
+    },
+    {
+     "t": "Île de Versailles",
+     "m": "6,5 km",
+     "u": "https://www.openrunner.com/r/1355527"
+    },
+    {
+     "t": "Tour du bras de la Madeleine",
+     "m": "5,8 km",
+     "u": "https://www.openrunner.com/r/1351231"
+    },
+    {
+     "t": "Bords de l’Erdre",
+     "m": "12,5 km",
+     "u": "https://www.openrunner.com/r/3258363"
+    }
+   ],
+   "linkLabel": "Voir le parcours",
+   "after": {
+    "t": "Pour aller plus loin",
+    "d": "Téléchargez l’application Runnin’City pour découvrir la ville de manière audioguidée, originale et sportive.",
+    "l": [
+     "Google Play",
+     "https://play.google.com/store/apps/details?id=com.lmsporttourism.runnincity&hl=fr"
+    ],
+    "l2": [
+     "App Store",
+     "https://itunes.apple.com/fr/app/runnincity-gps-audioguide/id1114473318?mt=8"
+    ]
+   }
+  }
+ },
+ "INFOS": {
+  "se-deplacer": {
+   "lead": "Navette aéroport, transports en commun, taxis : tout pour circuler pendant votre séjour.",
+   "html": "\n      <h2>La navette aéroport, 7j/7 (sauf 1er mai)</h2>\n      <p><span class=\"maj\" style=\"background:var(--vert)\">Inclus dans le Pass Nantes</span> Ticket aller/retour de la navette aéroport Naolib.</p>\n      <p>Liaison directe et rapide entre l’aéroport et le centre-ville de Nantes en 25 minutes. Transport avec vos bagages sans supplément de prix, elle dessert les principaux sites de la ville : centre-ville (place du Commerce), la Cité des Congrès (Lieu Unique) et la gare SNCF (accès Sud).</p>\n      <ul>\n        <li><strong>Du lundi au samedi</strong>, toutes les 20 minutes : de la gare de 5 h 30 à 22 h 30, de l’aéroport de 6 h 15 à 23 h 15.</li>\n        <li><strong>Dimanche et jours fériés</strong>, toutes les 30 minutes : de la gare de 6 h 10 à 22 h 40, de l’aéroport de 7 h à 23 h 30.</li>\n        <li><strong>Tarif</strong> : 10 € le ticket, valable 1 heure sur l’ensemble du réseau Naolib.</li>\n        <li><strong>Contact</strong> : 02 40 44 44 44</li>\n      </ul>\n      <h2>Les transports en commun</h2>\n      <p><span class=\"maj\" style=\"background:var(--vert)\">Inclus dans le Pass Nantes</span> Tous les transports en commun Naolib et les parkings relais (tramway, bus, Navibus, parking relais voiture). Transports en commun gratuits le week-end (sauf navette aéroport).</p>\n      <p>Le réseau Naolib compte 3 lignes de tramway (1, 2 et 3) qui se croisent en plein cœur du centre-ville. Pour accéder à ExpoNantes ou au stade de la Beaujoire, la ligne 1 (direction Beaujoire ou Ranzay) permet de voyager depuis le centre-ville (environ 25 minutes).</p>\n      <p><a href=\"https://plan-tan.fr\" target=\"_blank\" rel=\"noopener\">Plan des transports et calcul d’itinéraire</a></p>\n      <h2>Les taxis</h2>\n      <p>Pour trouver un taxi 24 h/24 et 7j/7, des stations sont matérialisées en différents lieux : station Commerce, allée Brancas, station Gare Sud SNCF. Une station délocalisée à ExpoNantes est également prévue sur toute la durée des salons.</p>\n      <ul>\n        <li>Taxi Nantes : 02 40 69 22 22</li>\n        <li>Hep! Taxis : 02 40 85 40 85</li>\n        <li>A+ Taxis Nantais : 02 53 35 38 58</li>\n      </ul>",
+   "infos": [
+    [
+     "Navette aéroport",
+     "25 min jusqu’au centre"
+    ],
+    [
+     "Ticket navette",
+     "10 €"
+    ],
+    [
+     "Tram",
+     "Gratuit le week-end",
+     true
+    ]
+   ]
+  },
+  "aide": {
+   "lead": "L’Accueil du Voyage à Nantes vous conseille et vous réserve tout ce dont vous avez besoin, 7j/7.",
+   "html": "\n      <h2>L’Accueil du Voyage à Nantes</h2>\n      <p>Conseils et réservation 7j/7 : hébergement, restauration, documentation, billetteries, visites guidées, boutique, Pass Nantes. L’accueil des visiteurs du Voyage à Nantes réserve un accueil atypique, sous le signe de l’ouverture et de la convivialité.</p>\n      <table class=\"ptable\">\n        <thead><tr><th>Jours</th><th class=\"r\">Horaires</th></tr></thead>\n        <tbody>\n          <tr><td>Du lundi au samedi</td><td class=\"r\">10 h – 18 h</td></tr>\n          <tr><td>Le jeudi</td><td class=\"r\">à partir de 11 h</td></tr>\n          <tr><td>Dimanche et jours fériés</td><td class=\"r\">10 h – 17 h</td></tr>\n          <tr><td>Juillet – septembre <span class=\"maj\">2025 à mettre à jour</span></td><td class=\"r\">7j/7, 9 h – 19 h</td></tr>\n        </tbody>\n      </table>\n      <h2>Nous suivre toute l’année</h2>\n      <p>Suivez l’actualité de la destination grâce aux réseaux sociaux du Voyage à Nantes #LVAN : <a href=\"https://www.instagram.com/levoyageanantes/\" target=\"_blank\" rel=\"noopener\">Instagram</a> · <a href=\"https://www.facebook.com/voyageanantes/\" target=\"_blank\" rel=\"noopener\">Facebook</a></p>",
+   "infos": [
+    [
+     "Adresse",
+     "9 rue des États, face au Château des ducs de Bretagne"
+    ],
+    [
+     "Téléphone",
+     "0 892 464 044"
+    ],
+    [
+     "Mail",
+     "info@levoyageanantes.fr"
+    ]
+   ],
+   "maps": "https://www.google.com/maps/search/?api=1&query=9%20rue%20des%20%C3%89tats%2C%2044000%20Nantes"
+  }
+ },
+ "PLANS": [
+  {
+   "label": "1 h",
+   "items": [
+    [
+     "Le Château des ducs de Bretagne",
+     "cour et remparts en accès libre",
+     "#/incontournables/chateau-des-ducs-de-bretagne"
+    ],
+    [
+     "Quartier Bouffay",
+     "quartier médiéval, à 5 min",
+     "#/incontournables/quartier-bouffay"
+    ],
+    [
+     "Le Passage Pommeraye",
+     "galerie du XIXe siècle",
+     "#/incontournables/passage-pommeraye"
+    ]
+   ]
+  },
+  {
+   "label": "2 h",
+   "items": [
+    [
+     "Le Château des ducs de Bretagne",
+     "cour et remparts en accès libre",
+     "#/incontournables/chateau-des-ducs-de-bretagne"
+    ],
+    [
+     "Quartier Bouffay",
+     "quartier médiéval",
+     "#/incontournables/quartier-bouffay"
+    ],
+    [
+     "Le Passage Pommeraye",
+     "galerie du XIXe siècle",
+     "#/incontournables/passage-pommeraye"
+    ],
+    [
+     "Le Mémorial de l’abolition de l’esclavage",
+     "quai de la Fosse",
+     "#/incontournables/memorial-abolition-esclavage"
+    ]
+   ]
+  },
+  {
+   "label": "Demi-journée",
+   "items": [
+    [
+     "Le Château des ducs de Bretagne",
+     "le musée d’histoire de Nantes",
+     "#/incontournables/chateau-des-ducs-de-bretagne"
+    ],
+    [
+     "Quartier Bouffay",
+     "quartier médiéval",
+     "#/incontournables/quartier-bouffay"
+    ],
+    [
+     "Le Mémorial de l’abolition de l’esclavage",
+     "quai de la Fosse",
+     "#/incontournables/memorial-abolition-esclavage"
+    ],
+    [
+     "Les Machines de l’Île",
+     "traversée vers l’Île de Nantes",
+     "#/incontournables/machines-de-lile"
+    ],
+    [
+     "Un verre au Hangar à bananes",
+     "face à la Loire",
+     "#/prendre-un-verre/ile-de-nantes"
+    ]
+   ]
+  }
+ ]
+}
