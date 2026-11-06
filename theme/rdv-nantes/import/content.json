@@ -7,6 +7,7 @@
    "template": "",
    "order": 0,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Accueil",
@@ -23,6 +24,10 @@
       "parcours_sub": "Un parcours tout prêt, selon le temps dont vous disposez.",
       "plan_foot": "Ou laissez-vous guider : <a href=\"/24h-de-plus/la-ligne-verte/\">suivez la ligne verte au sol</a>.",
       "plans": "# 1 h\nLe Château des ducs de Bretagne | cour et remparts en accès libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nQuartier Bouffay | quartier médiéval, à 5 min | /incontournable/quartier-bouffay/\nLe Passage Pommeraye | galerie du XIXe siècle | /incontournable/le-passage-pommeraye/\n# 2 h\nLe Château des ducs de Bretagne | cour et remparts en accès libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nQuartier Bouffay | quartier médiéval | /incontournable/quartier-bouffay/\nLe Passage Pommeraye | galerie du XIXe siècle | /incontournable/le-passage-pommeraye/\nLe Mémorial de l’abolition de l’esclavage | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\n# Demi-journée\nLe Château des ducs de Bretagne | le musée d’histoire de Nantes | /incontournable/le-chateau-des-ducs-de-bretagne/\nQuartier Bouffay | quartier médiéval | /incontournable/quartier-bouffay/\nLe Mémorial de l’abolition de l’esclavage | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\nLes Machines de l’Île | traversée vers l’Île de Nantes | /incontournable/les-machines-de-lile/\nUn verre au Hangar à bananes | face à la Loire | /prendre-un-verre/quartier-ile-de-nantes/"
+     },
+     "seo": {
+      "title": "Le Voyage à Nantes %%sep%% L'essentiel de la ville en 1 clic",
+      "metadesc": "Retrouvez une sélection de lieux incontournables et insolites pour votre séjour à Nantes. Bars, restaurants, visites, shopping et même plus !"
      }
     },
     "en": {
@@ -40,6 +45,10 @@
       "parcours_sub": "A ready-made route, depending on how much time you have.",
       "plan_foot": "Or let yourself be guided: <a href=\"/24h-de-plus/la-ligne-verte/\">follow the green line on the ground</a>.",
       "plans": "# 1 h\nThe Château des ducs de Bretagne | courtyard and ramparts free of charge | /incontournable/le-chateau-des-ducs-de-bretagne/\nBouffay district | medieval quarter, 5 min away | /incontournable/quartier-bouffay/\nPassage Pommeraye | 19th-century arcade | /incontournable/le-passage-pommeraye/\n# 2 h\nThe Château des ducs de Bretagne | courtyard and ramparts free of charge | /incontournable/le-chateau-des-ducs-de-bretagne/\nBouffay district | medieval quarter | /incontournable/quartier-bouffay/\nPassage Pommeraye | 19th-century arcade | /incontournable/le-passage-pommeraye/\nThe Memorial to the abolition of slavery | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\n# Half a day\nThe Château des ducs de Bretagne | the Nantes history museum | /incontournable/le-chateau-des-ducs-de-bretagne/\nBouffay district | medieval quarter | /incontournable/quartier-bouffay/\nThe Memorial to the abolition of slavery | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\nThe Machines de l’Île | across to the Île de Nantes | /incontournable/les-machines-de-lile/\nA drink at the Hangar à bananes | facing the Loire | /prendre-un-verre/quartier-ile-de-nantes/"
+     },
+     "seo": {
+      "title": "Le Voyage à Nantes %%sep%% The most of your stay with 1 click",
+      "metadesc": "Find a selection of unmissable and unusual places for your stay in Nantes. Bars, restaurants, tours, shopping and more!"
      }
     },
     "es": {
@@ -57,6 +66,10 @@
       "parcours_sub": "Un recorrido listo, según el tiempo del que disponga.",
       "plan_foot": "O déjese guiar: <a href=\"/24h-de-plus/la-ligne-verte/\">siga la línea verde en el suelo</a>.",
       "plans": "# 1 h\nEl Castillo de los duques de Bretaña | patio y murallas de acceso libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nBarrio Bouffay | barrio medieval, a 5 min | /incontournable/quartier-bouffay/\nEl Passage Pommeraye | galería del siglo XIX | /incontournable/le-passage-pommeraye/\n# 2 h\nEl Castillo de los duques de Bretaña | patio y murallas de acceso libre | /incontournable/le-chateau-des-ducs-de-bretagne/\nBarrio Bouffay | barrio medieval | /incontournable/quartier-bouffay/\nEl Passage Pommeraye | galería del siglo XIX | /incontournable/le-passage-pommeraye/\nEl Memorial de la abolición de la esclavitud | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\n# Media jornada\nEl Castillo de los duques de Bretaña | el museo de historia de Nantes | /incontournable/le-chateau-des-ducs-de-bretagne/\nBarrio Bouffay | barrio medieval | /incontournable/quartier-bouffay/\nEl Memorial de la abolición de la esclavitud | quai de la Fosse | /incontournable/le-memorial-de-labolition-de-lesclavage/\nLes Machines de l’Île | cruzando a la Île de Nantes | /incontournable/les-machines-de-lile/\nUna copa en el Hangar à bananes | frente al Loira | /prendre-un-verre/quartier-ile-de-nantes/"
+     },
+     "seo": {
+      "metadesc": "Nuestra sugerencia para descubrir los lugares imprescindibles durante uno o dos días",
+      "title": "Le Voyage à Nantes - Los imprescindibles de la ciudad a un clic"
      }
     }
    }
@@ -67,6 +80,7 @@
    "template": "page-templates/rubrique-quartiers.php",
    "order": 1,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Prendre un verre",
@@ -118,6 +132,7 @@
    "template": "page-templates/liste.php",
    "order": 2,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Manger",
@@ -187,6 +202,7 @@
    "template": "page-templates/rubrique-lieux.php",
    "order": 3,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Incontournables",
@@ -247,6 +263,7 @@
    "template": "page-templates/liste.php",
    "order": 4,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Footing",
@@ -316,6 +333,7 @@
    "template": "page-templates/rubrique-lieux.php",
    "order": 5,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Shopping",
@@ -367,6 +385,7 @@
    "template": "page-templates/infos.php",
    "order": 6,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Se déplacer",
@@ -418,6 +437,7 @@
    "template": "page-templates/infos.php",
    "order": 7,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Aide",
@@ -472,6 +492,7 @@
    "template": "page-templates/rubrique-lieux.php",
    "order": 8,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Pass Nantes",
@@ -523,6 +544,10 @@
    "template": "",
    "order": 1,
    "image": "quartier-ile-de-nantes.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "© Chama Chereau / Les Tables de Nantes"
+   },
    "langs": {
     "fr": {
      "title": "Quartier Île de Nantes",
@@ -589,6 +614,10 @@
    "template": "",
    "order": 2,
    "image": "quartier-graslin.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Quartier Graslin",
@@ -655,6 +684,10 @@
    "template": "",
    "order": 3,
    "image": "quartier-bouffay.jpg",
+   "image_meta": {
+    "alt": "Bouffay",
+    "caption": "Nantes, Quartier Bouffay © Xavier Saint-Hillier / LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Quartier Bouffay",
@@ -721,6 +754,10 @@
    "template": "",
    "order": 4,
    "image": "les-guinguettes.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "Station Nuage, Yok Yok, Le Voyage à Nantes 2021 © Philippe Piron / LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Esprit guinguette pour les beaux jours",
@@ -787,6 +824,7 @@
    "template": "",
    "order": 1,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Château des ducs de Bretagne",
@@ -835,6 +873,7 @@
    "template": "",
    "order": 2,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Musée d’arts",
@@ -883,6 +922,7 @@
    "template": "",
    "order": 3,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Quartier Bouffay",
@@ -934,6 +974,7 @@
    "template": "",
    "order": 4,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Lieu Unique",
@@ -982,6 +1023,7 @@
    "template": "",
    "order": 5,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Jardin des Plantes",
@@ -1030,6 +1072,7 @@
    "template": "",
    "order": 6,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Passage Pommeraye",
@@ -1078,6 +1121,7 @@
    "template": "",
    "order": 7,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Les Machines de l’Île",
@@ -1126,6 +1170,7 @@
    "template": "",
    "order": 8,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Parc des Chantiers",
@@ -1177,6 +1222,7 @@
    "template": "",
    "order": 9,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Quartier Chantenay",
@@ -1225,6 +1271,7 @@
    "template": "",
    "order": 10,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Mémorial de l’abolition de l’esclavage",
@@ -1273,6 +1320,7 @@
    "template": "",
    "order": 1,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le quartier Graslin",
@@ -1321,6 +1369,7 @@
    "template": "",
    "order": 2,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Quartier Decré",
@@ -1369,6 +1418,7 @@
    "template": "",
    "order": 3,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Rue d’Orléans",
@@ -1417,6 +1467,7 @@
    "template": "",
    "order": 4,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Marché de Talensac",
@@ -1465,6 +1516,7 @@
    "template": "",
    "order": 5,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Le Bazar officiel du Voyage à Nantes",
@@ -1513,6 +1565,7 @@
    "template": "",
    "order": 1,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Pass Nantes dès 27 €",
@@ -1561,6 +1614,7 @@
    "template": "",
    "order": 2,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Suivez la ligne verte au sol !",
@@ -1609,6 +1663,7 @@
    "template": "",
    "order": 3,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Sur le chemin des plages",
@@ -1657,24 +1712,32 @@
    "template": "",
    "order": 90,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "Mentions légales",
      "slug": "mentions-legales",
      "content": "<h3><strong>1 – Présentation du Site</strong></h3>\n<p>En vertu de l’article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>\n<p>Propriétaire : Société publique locale Le Voyage à Nantes au capital social de 1 000 000 euros – 1-3 rue Crucy 44 000 Nantes.<br/>\nTéléphone : 0 892 464 044 (0,35 €/min).<br/>\nAdresse électronique : <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a></p>\n<p>Enregistrée au Registre du Commerce et des Sociétés de Nantes sous le numéro : 482 414 216.</p>\n<p>TVA intracommunautaire : FR41482414216</p>\n<p>N° d’immatriculation au Registre des opérateurs de voyage et de séjours : IM044110017.<br/>\nAssureur : Compagnie HISCOX EUROPE UNDERWRITING LIMITED (19 rue Louis Le Grand 75002 Paris) par le biais du cabinet Sarre et Moselle (17 avenue Poincaré 57400 Sarrebourg).<br/>\nGarantie financière souscrite auprès de l’APST (15 avenue Carnot 75017 Paris) en application de l‘article L. 211-18 II a) du Code du tourisme.</p>\n<p>Responsable publication : Stéphanie Olivier – SPL Le Voyage à Nantes.<br/>\nAdresse électronique : <a href=\"mailto:stephanie.olivier@lvan.fr\">stephanie.olivier@lvan.fr</a></p>\n<p>Hébergeur : GANDI SAS – 63-65 boulevard Masséna 75013 paris.<br/>\nImmatriculation au Registre du Commerce et des Sociétés de PARIS sous le n° 423 093 459, numéro de TVA intracommunautaire : FR81423093459.<br/>\nAdresse e-mail de l’hébergeur : direction@gandi.net<br/>\nNuméro de téléphone de l’hébergeur : +33 (0) 1 70.37.76.61</p>\n<p>Le site Internet <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> est la propriété exclusive du Voyage à Nantes.<br/>\nLe graphisme du site internet a été conçu et réalisé par Le Voyage à Nantes et Anima.productions (www.animaproductions.com) et a été développé Le Voyage à Nantes.</p>\n<h3><strong>2 – Conditions générales d’utilisation du site et des services proposés</strong></h3>\n<p>L’utilisation du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> sont donc invités à les consulter de manière régulière.<br/>\nCe site est normalement accessible à tout moment aux utilisateurs.<br/>\nL’utilisateur s’engage d’ores et déjà à faire des informations contenues sur le site un usage personnel et non commercial. En cas de non-respect des dispositions des présentes, par l’utilisateur, sa responsabilité civile et/ou pénale pourrai(en)t se voir engagée(s).<br/>\nLe site exploité par le Voyage à Nantes présente la structure de Nantes tourisme et a pour objet de fournir une information concernant l’ensemble de sa programmation et ses différentes activités.</p>\n<h3><strong>3 – Propriété intellectuelle</strong></h3>\n<p>Le Site constitue une œuvre dont Le Voyage à Nantes est l’auteur au sens des articles L.111-1 et suivants du Code de la propriété intellectuelle. Ainsi Le Voyage à Nantes est le titulaire exclusif ou détient des droits d’usage de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> notamment les textes, images, graphismes, logos, icônes, sons, logiciels et ce dans le monde entier.<br/>\nIl est rappelé que les photographies présentes sur le Site sont considérées comme des œuvres de l’esprit bénéficiant de la protection au titre du droit d’auteur. Toute utilisation non autorisée de l’une ou l’autre des photographies est constitutif d’un acte de contrefaçon comme le prévoit l’article L.335-3 du Code de la propriété intellectuelle. Les identités visuelles, les images animées ou non et leurs mises en forme apparaissant sur le Site sont la propriété du Voyage à Nantes et sont protégées à ce titre par les dispositions du Code de la propriété intellectuelle.<br/>\nTout internaute s’engage à ne pas les utiliser et à ne permettre à quiconque d’utiliser ces contenus à des fins illégales.<br/>\nToute représentation ou reproduction, totale ou partielle, permanente ou temporaire, sur un support informatique et/ou papier, et par quelque procédé que ce soit (notamment par voie de framing*), de l’un ou l’autre des éléments du Site ou des services proposés à la vente, sans l’accord préalable et exprès du Voyage à Nantes est interdite, et constitue un acte de contrefaçon, qui pourra entraîner des condamnations civiles et/ou pénales. Seule l’impression papier est autorisée aux fins de copie privée à l’usage exclusif du copiste au sens de l’article L.122-5 2° du Code de la propriété intellectuelle.<br/>\nAucun lien hypertexte vers le Site ne peut être installé sans l’accord préalable et exprès du Voyage à Nantes.<br/>\nLa photographie des œuvres présentées est autorisée à des fins personnelles. Toute reproduction, représentation, diffusion ou vente sans droit, que ce soit à titre privé ou à titre commercial, dans quelque pays que ce soit, des photographies ainsi effectuées, constituerait une contrefaçon pouvant engager la responsabilité civile et pénale de son auteur conformément aux articles L.331-1, L.335-2 et L.335-4 du Code de la Propriété Intellectuelle.<br/>\n* Action de capter le contenu de pages d’un site Internet pour le transférer sur son propre site Internet par le biais d’un lien hypertexte, en faisant apparaître ledit contenu comme le sien.</p>\n<h3><strong>4 – Protection des données personnelles</strong></h3>\n<p>L’internaute peut être amené à déposer certaines données personnelles en répondant aux formulaires qui lui sont proposés. La saisie de ces données est nécessaire au traitement de la demande de l’internaute, par Le Voyage à Nantes.<br/>\nLe Voyage à Nantes s’engage à respecter les dispositions de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiées à prendre toute précaution nécessaire pour préserver la sécurité des informations nominatives des internautes. Aucune information à caractère personnel ne sera communiquée à des sociétés tierces sans l’accord préalable et éclairé de l’utilisateur.<br/>\nL’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’obligation ou non de lui fournir ces informations.<br/>\nL’internaute peut à tout moment exercer son droit d’accès, de rectification, de suppression ou d’opposition concernant les informations qu’il fournit lors de son inscription ou ultérieurement, auprès du Voyage à Nantes par email à <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a> en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.<br/>\nCookie : vous êtes informé que, lors de vos visites sur le site Internet, un ou plusieurs témoins de navigation (ou cookies) peuvent s’installer automatiquement sur votre terminal dans le but d’enregistrer certaines informations concernant votre navigation (pages consultées, date et heure de consultation, etc.). Ces cookies servent uniquement à optimiser votre navigation sur le site.</p>\n<h3><strong>5 – Responsabilité</strong></h3>\n<p>Le Voyage à Nantes décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur le Site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci.<br/>\nLes éléments présentés sur le Site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.<br/>\nLa présence de liens hypertextes présents sur le Site – quel que soit l’existence préalable ou non de l’accord du Voyage à Nantes – ne crée pas une solidarité de responsabilité entre celui-ci et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute.<br/>\nLe Voyage à Nantes ne peut garantir l’exhaustivité et la véracité des informations présentes sur le Site. De la même manière, il ne peut garantir l’absence de modification par un tiers (intrusion, virus).<br/>\nEn outre, l’internaute est seul responsable de l’utilisation qu’il fait du contenu du Site. Sauf faute grave exclusive du Voyage à Nantes, sa responsabilité ne peut être engagée pour des dommages directs et indirects liés à l’utilisation des informations produites sur le Site.</p>\n<h3><strong>6 – Loi applicable et compétence judiciaire</strong></h3>\n<p>L’ensemble des informations diffusé sur le Site et l’utilisation qui en est faite son soumis exclusivement au droit français. Seuls les tribunaux relevant du ressort de la Cour d’appel de Nantes sont compétents pour connaître des éventuels litiges à l’utilisation du Site.</p>",
-     "meta": {}
+     "meta": {},
+     "seo": {
+      "meta-robots-noindex": "1"
+     }
     },
     "en": {
      "title": "Legal information",
      "slug": "legal-information",
      "content": "<h3><strong>1 – Présentation du Site</strong></h3>\n<p>En vertu de l’article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>\n<p>Propriétaire : Société publique locale Le Voyage à Nantes au capital social de 1 000 000 euros – 1-3 rue Crucy 44 000 Nantes.<br/>\nTéléphone : 0 892 464 044 (0,35 €/min).<br/>\nAdresse électronique : <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a></p>\n<p>Enregistrée au Registre du Commerce et des Sociétés de Nantes sous le numéro : 482 414 216.</p>\n<p>TVA intracommunautaire : FR41482414216</p>\n<p>N° d’immatriculation au Registre des opérateurs de voyage et de séjours : IM044110017.<br/>\nAssureur : Compagnie HISCOX EUROPE UNDERWRITING LIMITED (19 rue Louis Le Grand 75002 Paris) par le biais du cabinet Sarre et Moselle (17 avenue Poincaré 57400 Sarrebourg).<br/>\nGarantie financière souscrite auprès de l’APST (15 avenue Carnot 75017 Paris) en application de l‘article L. 211-18 II a) du Code du tourisme.</p>\n<p>Responsable publication : Stéphanie Olivier – SPL Le Voyage à Nantes.<br/>\nAdresse électronique : <a href=\"mailto:stephanie.olivier@lvan.fr\">stephanie.olivier@lvan.fr</a></p>\n<p>Hébergeur : GANDI SAS – 63-65 boulevard Masséna 75013 paris.<br/>\nImmatriculation au Registre du Commerce et des Sociétés de PARIS sous le n° 423 093 459, numéro de TVA intracommunautaire : FR81423093459.<br/>\nAdresse e-mail de l’hébergeur : direction@gandi.net<br/>\nNuméro de téléphone de l’hébergeur : +33 (0) 1 70.37.76.61</p>\n<p>Le site Internet <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> est la propriété exclusive du Voyage à Nantes.<br/>\nLe graphisme du site internet a été conçu et réalisé par Le Voyage à Nantes et Anima.productions (<a href=\"http://www.animaproductions.com/\">www.animaproductions.com</a>) et a été développé Le Voyage à Nantes.</p>\n<h3><strong>2 – Conditions générales d’utilisation du site et des services proposés</strong></h3>\n<p>L’utilisation du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.com</a> sont donc invités à les consulter de manière régulière.<br/>\nCe site est normalement accessible à tout moment aux utilisateurs.<br/>\nL’utilisateur s’engage d’ores et déjà à faire des informations contenues sur le site un usage personnel et non commercial. En cas de non-respect des dispositions des présentes, par l’utilisateur, sa responsabilité civile et/ou pénale pourrai(en)t se voir engagée(s).<br/>\nLe site exploité par le Voyage à Nantes présente la structure de Nantes tourisme et a pour objet de fournir une information concernant l’ensemble de sa programmation et ses différentes activités.</p>\n<h3><strong>3 – Propriété intellectuelle</strong></h3>\n<p>Le Site constitue une oeuvre dont Le Voyage à Nantes est l’auteur au sens des articles L.111-1 et suivants du Code de la propriété intellectuelle. Ainsi Le Voyage à Nantes est le titulaire exclusif ou détient des droits d’usage de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.fr</a> notamment les textes, images, graphismes, logos, icônes, sons, logiciels et ce dans le monde entier.<br/>\nIl est rappelé que les photographies présentes sur le Site sont considérées comme des œuvres de l’esprit bénéficiant de la protection au titre du droit d’auteur. Toute utilisation non autorisée de l’une ou l’autre des photographies est constitutif d’un acte de contrefaçon comme le prévoit l’article L.335-3 du Code de la propriété intellectuelle. Les identités visuelles, les images animées ou non et leurs mises en forme apparaissant sur le Site sont la propriété du Voyage à Nantes et sont protégées à ce titre par les dispositions du Code de la propriété intellectuelle.<br/>\nTout internaute s’engage à ne pas les utiliser et à ne permettre à quiconque d’utiliser ces contenus à des fins illégales.<br/>\nToute représentation ou reproduction, totale ou partielle, permanente ou temporaire, sur un support informatique et/ou papier, et par quelque procédé que ce soit (notamment par voie de framing*), de l’un ou l’autre des éléments du Site ou des services proposés à la vente, sans l’accord préalable et exprès du Voyage à Nantes est interdite, et constitue un acte de contrefaçon, qui pourra entraîner des condamnations civiles et/ou pénales. Seule l’impression papier est autorisée aux fins de copie privée à l’usage exclusif du copiste au sens de l’article L.122-5 2° du Code de la propriété intellectuelle.<br/>\nAucun lien hypertexte vers le Site ne peut être installé sans l’accord préalable et exprès du Voyage à Nantes.<br/>\nLa photographie des œuvres présentées est autorisée à des fins personnelles. Toute reproduction, représentation, diffusion ou vente sans droit, que ce soit à titre privé ou à titre commercial, dans quelque pays que ce soit, des photographies ainsi effectuées, constituerait une contrefaçon pouvant engager la responsabilité civile et pénale de son auteur conformément aux articles L.331-1, L.335-2 et L.335-4 du Code de la Propriété Intellectuelle.<br/>\n* Action de capter le contenu de pages d’un site Internet pour le transférer sur son propre site Internet par le biais d’un lien hypertexte, en faisant apparaître ledit contenu comme le sien.</p>\n<h3><strong>4 – Protection des données personnelles</strong></h3>\n<p>L’internaute peut être amené à déposer certaines données personnelles en répondant aux formulaires qui lui sont proposés. La saisie de ces données est nécessaire au traitement de la demande de l’internaute, par Le Voyage à Nantes.<br/>\nLe Voyage à Nantes s’engage à respecter les dispositions de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiées à prendre toute précaution nécessaire pour préserver la sécurité des informations nominatives des internautes. Aucune information à caractère personnel ne sera communiquée à des sociétés tierces sans l’accord préalable et éclairé de l’utilisateur.<br/>\nL’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site <a href=\"https://rdv.nantes-tourisme.com/\">rdv.nantes-tourisme.fr</a> l’obligation ou non de lui fournir ces informations.<br/>\nL’internaute peut à tout moment exercer son droit d’accès, de rectification, de suppression ou d’opposition concernant les informations qu’il fournit lors de son inscription ou ultérieurement, auprès du Voyage à Nantes par email à <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a> en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.<br/>\nCookie : vous êtes informé que, lors de vos visites sur le site Internet, un ou plusieurs témoins de navigation (ou cookies) peuvent s’installer automatiquement sur votre terminal dans le but d’enregistrer certaines informations concernant votre navigation (pages consultées, date et heure de consultation, etc.). Ces cookies servent uniquement à optimiser votre navigation sur le site.</p>\n<h3><strong>5 – Responsabilité</strong></h3>\n<p>Le Voyage à Nantes décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur le Site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci.<br/>\nLes éléments présentés sur le Site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.<br/>\nLa présence de liens hypertextes présents sur le Site – quel que soit l’existence préalable ou non de l’accord du Voyage à Nantes – ne crée pas une solidarité de responsabilité entre celui-ci et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute.<br/>\nLe Voyage à Nantes ne peut garantir l’exhaustivité et la véracité des informations présentes sur le Site. De la même manière, il ne peut garantir l’absence de modification par un tiers (intrusion, virus).<br/>\nEn outre, l’internaute est seul responsable de l’utilisation qu’il fait du contenu du Site. Sauf faute grave exclusive du Voyage à Nantes, sa responsabilité ne peut être engagée pour des dommages directs et indirects liés à l’utilisation des informations produites sur le Site.</p>\n<h3><strong>6 – Loi applicable et compétence judiciaire</strong></h3>\n<p>L’ensemble des informations diffusé sur le Site et l’utilisation qui en est faite son soumis exclusivement au droit français. Seuls les tribunaux relevant du ressort de la Cour d’appel de Nantes sont compétents pour connaître des éventuels litiges à l’utilisation du Site.</p>",
-     "meta": {}
+     "meta": {},
+     "seo": {
+      "meta-robots-noindex": "1"
+     }
     },
     "es": {
      "title": "Menciones legales",
      "slug": "mentions-legales",
      "content": "<h3><strong>1 – Présentation du Site</strong></h3>\n<p>En vertu de l’article 6 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique, il est précisé aux utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>\n<p>Propriétaire : Société publique locale Le Voyage à Nantes au capital social de 1 000 000 euros – 1-3 rue Crucy 44 000 Nantes.<br/>\nTéléphone : 0 892 464 044 (0,35 €/min).<br/>\nAdresse électronique : <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a></p>\n<p>Enregistrée au Registre du Commerce et des Sociétés de Nantes sous le numéro : 482 414 216.</p>\n<p>TVA intracommunautaire : FR41482414216</p>\n<p>N° d’immatriculation au Registre des opérateurs de voyage et de séjours : IM044110017.<br/>\nAssureur : Compagnie HISCOX EUROPE UNDERWRITING LIMITED (19 rue Louis Le Grand 75002 Paris) par le biais du cabinet Sarre et Moselle (17 avenue Poincaré 57400 Sarrebourg).<br/>\nGarantie financière souscrite auprès de l’APST (15 avenue Carnot 75017 Paris) en application de l‘article L. 211-18 II a) du Code du tourisme.</p>\n<p>Responsable publication : Stéphanie Olivier – SPL Le Voyage à Nantes.<br/>\nAdresse électronique : <a href=\"mailto:stephanie.olivier@lvan.fr\">stephanie.olivier@lvan.fr</a></p>\n<p>Hébergeur : GANDI SAS – 63-65 boulevard Masséna 75013 paris.<br/>\nImmatriculation au Registre du Commerce et des Sociétés de PARIS sous le n° 423 093 459, numéro de TVA intracommunautaire : FR81423093459.<br/>\nAdresse e-mail de l’hébergeur : direction@gandi.net<br/>\nNuméro de téléphone de l’hébergeur : +33 (0) 1 70.37.76.61</p>\n<p>Le site Internet <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> est la propriété exclusive du Voyage à Nantes.<br/>\nLe graphisme du site internet a été conçu et réalisé par Le Voyage à Nantes et Anima.productions (www.animaproductions.com) et a été développé Le Voyage à Nantes.</p>\n<h3><strong>2 – Conditions générales d’utilisation du site et des services proposés</strong></h3>\n<p>L’utilisation du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> sont donc invités à les consulter de manière régulière.<br/>\nCe site est normalement accessible à tout moment aux utilisateurs.<br/>\nL’utilisateur s’engage d’ores et déjà à faire des informations contenues sur le site un usage personnel et non commercial. En cas de non-respect des dispositions des présentes, par l’utilisateur, sa responsabilité civile et/ou pénale pourrai(en)t se voir engagée(s).<br/>\nLe site exploité par le Voyage à Nantes présente la structure de Nantes tourisme et a pour objet de fournir une information concernant l’ensemble de sa programmation et ses différentes activités.</p>\n<h3><strong>3 – Propriété intellectuelle</strong></h3>\n<p>Le Site constitue une œuvre dont Le Voyage à Nantes est l’auteur au sens des articles L.111-1 et suivants du Code de la propriété intellectuelle. Ainsi Le Voyage à Nantes est le titulaire exclusif ou détient des droits d’usage de tous les droits de propriété intellectuelle portant tant sur la structure que sur le contenu du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> notamment les textes, images, graphismes, logos, icônes, sons, logiciels et ce dans le monde entier.<br/>\nIl est rappelé que les photographies présentes sur le Site sont considérées comme des œuvres de l’esprit bénéficiant de la protection au titre du droit d’auteur. Toute utilisation non autorisée de l’une ou l’autre des photographies est constitutif d’un acte de contrefaçon comme le prévoit l’article L.335-3 du Code de la propriété intellectuelle. Les identités visuelles, les images animées ou non et leurs mises en forme apparaissant sur le Site sont la propriété du Voyage à Nantes et sont protégées à ce titre par les dispositions du Code de la propriété intellectuelle.<br/>\nTout internaute s’engage à ne pas les utiliser et à ne permettre à quiconque d’utiliser ces contenus à des fins illégales.<br/>\nToute représentation ou reproduction, totale ou partielle, permanente ou temporaire, sur un support informatique et/ou papier, et par quelque procédé que ce soit (notamment par voie de framing*), de l’un ou l’autre des éléments du Site ou des services proposés à la vente, sans l’accord préalable et exprès du Voyage à Nantes est interdite, et constitue un acte de contrefaçon, qui pourra entraîner des condamnations civiles et/ou pénales. Seule l’impression papier est autorisée aux fins de copie privée à l’usage exclusif du copiste au sens de l’article L.122-5 2° du Code de la propriété intellectuelle.<br/>\nAucun lien hypertexte vers le Site ne peut être installé sans l’accord préalable et exprès du Voyage à Nantes.<br/>\nLa photographie des œuvres présentées est autorisée à des fins personnelles. Toute reproduction, représentation, diffusion ou vente sans droit, que ce soit à titre privé ou à titre commercial, dans quelque pays que ce soit, des photographies ainsi effectuées, constituerait une contrefaçon pouvant engager la responsabilité civile et pénale de son auteur conformément aux articles L.331-1, L.335-2 et L.335-4 du Code de la Propriété Intellectuelle.<br/>\n* Action de capter le contenu de pages d’un site Internet pour le transférer sur son propre site Internet par le biais d’un lien hypertexte, en faisant apparaître ledit contenu comme le sien.</p>\n<h3><strong>4 – Protection des données personnelles</strong></h3>\n<p>L’internaute peut être amené à déposer certaines données personnelles en répondant aux formulaires qui lui sont proposés. La saisie de ces données est nécessaire au traitement de la demande de l’internaute, par Le Voyage à Nantes.<br/>\nLe Voyage à Nantes s’engage à respecter les dispositions de la loi n°78-17 du 6 janvier 1978 relative à l’informatique, aux fichiers et aux libertés modifiées à prendre toute précaution nécessaire pour préserver la sécurité des informations nominatives des internautes. Aucune information à caractère personnel ne sera communiquée à des sociétés tierces sans l’accord préalable et éclairé de l’utilisateur.<br/>\nL’utilisateur fournit ces informations en toute connaissance de cause, notamment lorsqu’il procède par lui-même à leur saisie. Il est alors précisé à l’utilisateur du site <a href=\"https://rdv.levoyageanantes.fr\">rdv.levoyageanantes.fr</a> l’obligation ou non de lui fournir ces informations.<br/>\nL’internaute peut à tout moment exercer son droit d’accès, de rectification, de suppression ou d’opposition concernant les informations qu’il fournit lors de son inscription ou ultérieurement, auprès du Voyage à Nantes par email à <a href=\"mailto:contact@lvan.fr\">contact@lvan.fr</a> en effectuant sa demande écrite et signée, accompagnée d’une copie du titre d’identité avec signature du titulaire de la pièce, en précisant l’adresse à laquelle la réponse doit être envoyée.<br/>\nCookie : vous êtes informé que, lors de vos visites sur le site Internet, un ou plusieurs témoins de navigation (ou cookies) peuvent s’installer automatiquement sur votre terminal dans le but d’enregistrer certaines informations concernant votre navigation (pages consultées, date et heure de consultation, etc.). Ces cookies servent uniquement à optimiser votre navigation sur le site.</p>\n<h3><strong>5 – Responsabilité</strong></h3>\n<p>Le Voyage à Nantes décline toute responsabilité quant aux éventuels dysfonctionnements pouvant survenir sur le Site et entraîner une perte de données ou une indisponibilité de l’accès aux informations produites sur celui-ci.<br/>\nLes éléments présentés sur le Site sont susceptibles de modification sans préavis et sont mis à la disposition des internautes, sans aucune garantie d’aucune sorte, expresse ou tacite.<br/>\nLa présence de liens hypertextes présents sur le Site – quel que soit l’existence préalable ou non de l’accord du Voyage à Nantes – ne crée pas une solidarité de responsabilité entre celui-ci et les propriétaires des autres sites, quant au contenu des sites sur lesquels est redirigé l’internaute.<br/>\nLe Voyage à Nantes ne peut garantir l’exhaustivité et la véracité des informations présentes sur le Site. De la même manière, il ne peut garantir l’absence de modification par un tiers (intrusion, virus).<br/>\nEn outre, l’internaute est seul responsable de l’utilisation qu’il fait du contenu du Site. Sauf faute grave exclusive du Voyage à Nantes, sa responsabilité ne peut être engagée pour des dommages directs et indirects liés à l’utilisation des informations produites sur le Site.</p>\n<h3><strong>6 – Loi applicable et compétence judiciaire</strong></h3>\n<p>L’ensemble des informations diffusé sur le Site et l’utilisation qui en est faite son soumis exclusivement au droit français. Seuls les tribunaux relevant du ressort de la Cour d’appel de Nantes sont compétents pour connaître des éventuels litiges à l’utilisation du Site.</p>",
-     "meta": {}
+     "meta": {},
+     "seo": {}
     }
    }
   },
@@ -1684,12 +1747,14 @@
    "template": "",
    "order": 90,
    "image": "",
+   "image_meta": {},
    "langs": {
     "fr": {
      "title": "A propos des cookies",
      "slug": "cookiespolicy",
      "content": "<h2>Cookies</h2>\n<p>Afin de vous permettre de prendre la mesure de l’utilité que représente pour vous tel ou tel cookie, une présentation des différents types de cookies suit.</p>\n<h3><strong>Cookies de performance</strong></h3>\n<p>Ces cookies recueillent des informations sur la façon dont les visiteurs utilisent un site Web. Par exemple, les pages les plus visitées et si des messages d’erreur sont émis. Les cookies ne recueillent pas de données permettant d’identifier les visiteurs. Dans la mesure où toutes les informations recueillies par ces cookies sont rassemblées, elles demeurent anonymes. Ces cookies sont uniquement destinés à améliorer le fonctionnement du site Web.</p>\n<p>Ces cookies permettent de mesurer le trafic ou l’audience, associé à notre site internet, aux pages visitées et aux interactions réalisées sur le site lors de votre visite. Les désactiver empêche donc toute collecte d’informations relatives à votre navigation sur notre site et donc la proposition de contenus éditoriaux adaptés en fonction de votre navigation.</p>\n<h3><strong>Cookies de fonctionnalités</strong></h3>\n<p>Ces cookies permettent au site de mémoriser les choix que vous avez effectués (comme la langue choisie ou la région où vous vous trouvez, la version du site que vous visitez). Ces cookies peuvent aussi être utilisés pour mémoriser les modifications apportées par l’utilisateur, comme la taille du texte ou la police de caractères. Les informations collectées par ces cookies peuvent être rendues anonymes et ne peuvent pas suivre votre activité de navigation sur d’autres sites.</p>\n<h2>Contenu embarqué depuis d’autres sites</h2>\n<p>Les articles de ce site peuvent inclure des contenus intégrés (par exemple des vidéos, images, articles, cartes…). Le contenu intégré depuis d’autres sites se comporte de la même manière que si le visiteur se rendait sur cet autre site.</p>\n<p>Ces sites web pourraient collecter des données sur vous, utiliser des cookies, embarquer des outils de suivis tiers, suivre vos interactions avec ces contenus embarqués si vous disposez d’un compte connecté sur leur site web.</p>",
-     "meta": {}
+     "meta": {},
+     "seo": {}
     }
    }
   }

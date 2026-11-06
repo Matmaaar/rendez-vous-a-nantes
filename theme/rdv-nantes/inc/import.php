@@ -66,7 +66,7 @@ function rdv_import( $with_images = true ) {
 				$fr_id = $id;
 			}
 			if ( $with_images && ! empty( $item['image'] ) ) {
-				rdv_import_thumbnail( $id, $item['image'] );
+				rdv_import_thumbnail( $id, $item['image'], isset( $item['image_meta'] ) ? $item['image_meta'] : array() );
 			}
 			$ids[ $item['key'] ][ $lang ] = $id;
 			$log[]                       = sprintf( '%s (%s) → #%d %s', $item['key'], $lang, $id, $l['title'] );
@@ -139,16 +139,21 @@ function rdv_import_post( $item, $lang, $l ) {
 	foreach ( $l['meta'] as $k => $v ) {
 		update_post_meta( $id, '_rdv_' . $k, wp_slash( $v ) );
 	}
+	// Réglages SEO du site actuel, au format Yoast (lus aussi par le thème si Yoast est absent).
+	foreach ( ( isset( $l['seo'] ) ? $l['seo'] : array() ) as $k => $v ) {
+		update_post_meta( $id, '_yoast_wpseo_' . $k, wp_slash( $v ) );
+	}
 	return $id;
 }
 
 /**
- * Associe une image à la une (téléversée une seule fois).
+ * Associe une image à la une (téléversée une seule fois), avec texte alternatif et crédit en légende.
  *
  * @param int    $post_id Contenu.
  * @param string $file    Nom du fichier dans import/images.
+ * @param array  $meta    alt / caption.
  */
-function rdv_import_thumbnail( $post_id, $file ) {
+function rdv_import_thumbnail( $post_id, $file, $meta = array() ) {
 	$found = get_posts( array(
 		'post_type'      => 'attachment',
 		'post_status'    => 'inherit',
@@ -160,6 +165,7 @@ function rdv_import_thumbnail( $post_id, $file ) {
 	) );
 	if ( $found ) {
 		set_post_thumbnail( $post_id, $found[0] );
+		rdv_import_media_meta( $found[0], $meta );
 		return;
 	}
 	require_once ABSPATH . 'wp-admin/includes/file.php';
@@ -173,6 +179,22 @@ function rdv_import_thumbnail( $post_id, $file ) {
 	}
 	update_post_meta( $att, '_rdv_import_file', $file );
 	set_post_thumbnail( $post_id, $att );
+	rdv_import_media_meta( $att, $meta );
+}
+
+/**
+ * Texte alternatif et légende (crédit photo) d'un média importé.
+ *
+ * @param int   $att  Média.
+ * @param array $meta alt / caption.
+ */
+function rdv_import_media_meta( $att, $meta ) {
+	if ( ! empty( $meta['alt'] ) ) {
+		update_post_meta( $att, '_wp_attachment_image_alt', $meta['alt'] );
+	}
+	if ( ! empty( $meta['caption'] ) ) {
+		wp_update_post( array( 'ID' => $att, 'post_excerpt' => $meta['caption'] ) );
+	}
 }
 
 if ( defined( 'WP_CLI' ) && WP_CLI ) {

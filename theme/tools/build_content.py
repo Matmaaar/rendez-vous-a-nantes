@@ -17,6 +17,10 @@ B = 'https://rdv.levoyageanantes.fr'
 M = json.load(open(sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(os.path.abspath(__file__)), 'maquette.json')))
 PAGES = {p['url']: p for p in json.load(open(os.path.join(CONTENU, 'data', 'pages.json')))}
 MANIFEST = json.load(open(os.path.join(CONTENU, 'images', '_manifest.json')))
+# Issus de l'export WordPress (contenu/outils/wxr_extract.py) : crédits photo et réglages Yoast.
+CREDITS = json.load(open(os.path.join(CONTENU, 'images', '_credits.json')))
+SEO = json.load(open(os.path.join(CONTENU, 'wordpress', 'seo.json')))
+SEO_FRONT = {'fr': '/', 'en': '/en/rendez-vous-a-nantes/', 'es': '/es/rendez-vous-a-nantes/'}
 
 def page(path):
     return PAGES[B + path]
@@ -111,8 +115,8 @@ def scraped_links(p):
 
 ITEMS = []
 
-def add(key, type_, order, langs, template='', image=''):
-    ITEMS.append({'key': key, 'type': type_, 'template': template, 'order': order, 'image': image, 'langs': langs})
+def add(key, type_, order, langs, template='', image='', image_meta=None):
+    ITEMS.append({'key': key, 'type': type_, 'template': template, 'order': order, 'image': image, 'image_meta': image_meta or {}, 'langs': langs})
 
 # ---------------------------------------------------------------- textes traduits (maquette -> EN/ES)
 T = {
@@ -277,7 +281,7 @@ langs = {}
 for lang, f in FRONT.items():
     meta = {k: v for k, v in f.items() if k not in ('title', 'slug')}
     meta['plans'] = plans(lang)
-    langs[lang] = {'title': f['title'], 'slug': f['slug'], 'content': '', 'meta': meta}
+    langs[lang] = {'title': f['title'], 'slug': f['slug'], 'content': '', 'meta': meta, 'seo': SEO.get(SEO_FRONT[lang], {})}
 add('accueil', 'page', 0, langs)
 
 # ---------------------------------------------------------------- 2. rubriques
@@ -358,23 +362,30 @@ def paragraphs(md):
 
 # Image à la une : 1re photo du diaporama du site actuel, sauf choix plus parlant.
 IMAGE_SOURCE = {'/prendre-un-verre/quartier-bouffay/': '/incontournable/quartier-bouffay/'}
+# Crédits remis en forme quand l'export n'a que le nom de fichier (contenu/images/_credits.json).
+IMAGE_CREDIT = {
+    'quartier-ile-de-nantes.jpg': '© Chama Chereau / Les Tables de Nantes',
+    'les-guinguettes.jpg': 'Station Nuage, Yok Yok, Le Voyage à Nantes 2021 © Philippe Piron / LVAN',
+}
 
 def quartier_image(fr_path):
     """Copie (redimensionnée en JPEG 1600 px) la photo d'un quartier dans import/images."""
     from PIL import Image
     imgs = page(IMAGE_SOURCE.get(fr_path, fr_path)).get('images') or []
     if not imgs:
-        return ''
+        return '', {}
     src = imgs[0]['src'].replace('rdv.nantes-tourisme.com', 'rdv.levoyageanantes.fr')
     local = MANIFEST.get(src)
     if not local:
-        return ''
+        return '', {}
     name = fr_path.strip('/').split('/')[-1] + '.jpg'
     os.makedirs(os.path.join(THEME, 'import', 'images'), exist_ok=True)
     im = Image.open(os.path.join(CONTENU, local)).convert('RGB')
     im.thumbnail((1600, 1600))
     im.save(os.path.join(THEME, 'import', 'images', name), 'JPEG', quality=82, optimize=True)
-    return name
+    c = CREDITS.get(local, {})
+    credit = IMAGE_CREDIT.get(name) or c.get('legende') or ''
+    return name, {'alt': c.get('alt') or imgs[0].get('alt', ''), 'caption': credit}
 
 def groups_text(groups):
     out = []
@@ -411,7 +422,8 @@ for order, q in enumerate(M['QUARTIERS'], start=1):
             'amb': t['amb'], 'where': t['where'], 'img_alt': '', 'badges': '\n'.join(t['badges']), 'lead': paras[0] if paras else '',
             'musts': '\n'.join(' | '.join(m).rstrip(' |') for m in t.get('musts', [])),
             'infos': infos_lines(t['infos']), 'groups': groups_text(groups), 'note': note})}
-    add('quartier-' + q['id'], 'rdv_quartier', order, langs, image=quartier_image(fr_path))
+    img, img_meta = quartier_image(fr_path)
+    add('quartier-' + q['id'], 'rdv_quartier', order, langs, image=img, image_meta=img_meta)
 
 # ---------------------------------------------------------------- 4. fiches lieux
 LINK_TR = {'Prendre un verre au Bouffay': {'en': 'Have a drink in Bouffay', 'es': 'Tomar una copa en Bouffay'},
@@ -492,7 +504,8 @@ for key, fr_path in (('mentions-legales', '/mentions-legales/'), ('cookies', '/c
         sp = page(fr_path) if lang == 'fr' else tr(fr_path, lang)
         if not sp:
             continue
-        langs[lang] = {'title': sp['h1'] or sp['title'].split(' - ')[0], 'slug': slug_of(sp['url']), 'content': article_html(sp), 'meta': {}}
+        langs[lang] = {'title': sp['h1'] or sp['title'].split(' - ')[0], 'slug': slug_of(sp['url']), 'content': article_html(sp), 'meta': {},
+                       'seo': SEO.get(sp['url'].replace(B, ''), {})}
     add(key, 'page', 90, langs)
 
 out = os.path.join(THEME, 'import', 'content.json')

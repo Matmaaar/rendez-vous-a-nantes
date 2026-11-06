@@ -13,6 +13,8 @@ Extraction réalisée le 06/11/2026 par crawl du site public (WordPress + WPML, 
 | `fr/`, `en/`, `es/` | Une page = un fichier Markdown, rangé selon l'URL d'origine (`/incontournable/le-musee-darts/` → `fr/incontournable/le-musee-darts.md`) |
 | `data/pages.json` | Toutes les pages en données structurées (titre, accroche, texte, infos pratiques, liste, boutons, images, menu, traductions, SEO…) — pratique pour un import |
 | `images/` | Toutes les images du site (uploads WordPress + pictos/logos du thème dans `images/theme/`). `images/_manifest.json` = URL d'origine → fichier local |
+| [`wordpress/`](wordpress/README.md) | Synthèse de l'export WordPress et ACF du site actuel : inventaire, champs ACF, SEO, **28 contenus non publiés** (brouillons / en attente), constats |
+| `images/_credits.json` | Texte alternatif, légende (crédit photo) et titre des images, d'après l'export WordPress |
 | `html-brut/` | HTML d'origine de chaque page, pour référence |
 
 ## Format d'une page Markdown

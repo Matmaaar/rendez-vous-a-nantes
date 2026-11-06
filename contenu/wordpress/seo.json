@@ -1,0 +1,20 @@
+{
+ "/": {
+  "title": "Le Voyage à Nantes %%sep%% L'essentiel de la ville en 1 clic",
+  "metadesc": "Retrouvez une sélection de lieux incontournables et insolites pour votre séjour à Nantes. Bars, restaurants, visites, shopping et même plus !"
+ },
+ "/mentions-legales/": {
+  "meta-robots-noindex": "1"
+ },
+ "/en/rendez-vous-a-nantes/": {
+  "title": "Le Voyage à Nantes %%sep%% The most of your stay with 1 click",
+  "metadesc": "Find a selection of unmissable and unusual places for your stay in Nantes. Bars, restaurants, tours, shopping and more!"
+ },
+ "/en/legal-information/": {
+  "meta-robots-noindex": "1"
+ },
+ "/es/rendez-vous-a-nantes/": {
+  "metadesc": "Nuestra sugerencia para descubrir los lugares imprescindibles durante uno o dos días",
+  "title": "Le Voyage à Nantes - Los imprescindibles de la ciudad a un clic"
+ }
+}

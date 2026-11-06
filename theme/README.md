@@ -39,7 +39,9 @@ Fiches : types de contenu `rdv_quartier` (`/prendre-un-verre/…`), `rdv_inconto
 
 **À régler dans WPML** pour retrouver exactement les anciennes URL de fiches en EN/ES (sinon elles fonctionnent en `/en/incontournable/…`) : WPML → Paramètres → Types de contenu → « Traduire les slugs » : `incontournable` → `unmissable` / `imprescindibles`, `prendre-un-verre` → `have-a-drink` / `tomar-una-copa`, `24h-de-plus` → `24h-more` / `24h-mas`.
 
-Slugs corrigés par rapport au site actuel (prévoir des redirections 301) : `/shopping/uartier-decre/` → `/shopping/quartier-decre/`, `/en/unmissable/1279/` → `…/the-lieu-unique/`, `/es/shopping/mercato-detalensac/` → `…/mercado-de-talensac/`.
+Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/shopping/quartier-decre/` (son slug d'origine), `/en/unmissable/1279/` → `…/the-lieu-unique/`, `/es/shopping/mercato-detalensac/` → `…/mercado-de-talensac/`.
+
+**Redirections 301** : [`redirections.csv`](redirections.csv) (29 règles, à importer dans le plugin *Redirection* : Outils → Redirection → Import/Export). Elles couvrent les anciens slugs mémorisés par WordPress, les slugs corrigés, les pages événementielles et JO 2024 non reprises (→ accueil de la langue) et le lien cassé `/24h-mas/`. Le site actuel n'en avait aucune.
 
 ## Édition du contenu
 
@@ -55,6 +57,8 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 ## Traductions
 
 - **Contenus** : FR = textes de la maquette ; EN / ES = textes du site actuel, transposés dans la structure de la maquette. Les textes courts propres à la maquette (accroches des tuiles, ambiances, étiquettes, encadrés, parcours de l'accueil) ont été traduits pour l'occasion : **à faire relire**.
+- **SEO** : titre et meta description de l'accueil (FR/EN/ES) et `noindex` des mentions légales repris du site actuel (champs Yoast). Sans Yoast, le thème affiche quand même la meta description et le `noindex`.
+- **Crédits photo** : les images à la une importées portent leur texte alternatif et leur crédit en légende (export WordPress du site actuel). Graslin n'a pas de crédit connu ; celui de l'Île de Nantes est déduit du nom de fichier : à vérifier.
 - **Interface** (pied de page, boutons, carte…) : `languages/en_US.mo` et `es_ES.mo` (sources `.po`, modèle `.pot`). Modifiables aussi via WPML String Translation.
 
 ## Points à valider
@@ -69,6 +73,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 
 - `tools/extract_maquette.py` : maquette HTML → `tools/maquette.json` + carte `assets/img/plan-nantes.webp`.
 - `tools/build_content.py` : `maquette.json` + `../contenu/` → `rdv-nantes/import/content.json` et images des quartiers.
+- `../contenu/outils/wxr_extract.py <export.xml> <acf.json>` : exploite l'export WordPress / ACF du site actuel (crédits, SEO, redirections, contenus non publiés). Les exports bruts ne sont pas versionnés.
 - Zip d'installation : `cd theme && zip -r rdv-nantes.zip rdv-nantes`.
 
 Testé sur WordPress 6.4 (sans WPML) : toutes les pages répondent, rendu identique à la maquette à 1280 px et 390 px (écart < 0,5 % des pixels, hors photos des quartiers), import rejouable, enregistrement des champs dans l'admin.

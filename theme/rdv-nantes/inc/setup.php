@@ -44,3 +44,24 @@ add_action( 'admin_menu', function () {
 add_filter( 'document_title_separator', function () {
 	return '—';
 } );
+
+/*
+ * Sans Yoast SEO : on reprend quand même la meta description et le « noindex » importés
+ * du site actuel (champs _yoast_wpseo_metadesc et _yoast_wpseo_meta-robots-noindex).
+ */
+add_action( 'wp_head', function () {
+	if ( defined( 'WPSEO_VERSION' ) || ! is_singular() ) {
+		return;
+	}
+	$desc = get_post_meta( get_queried_object_id(), '_yoast_wpseo_metadesc', true );
+	if ( $desc ) {
+		echo '<meta name="description" content="' . esc_attr( $desc ) . '">' . "\n";
+	}
+}, 1 );
+
+add_filter( 'wp_robots', function ( $robots ) {
+	if ( ! defined( 'WPSEO_VERSION' ) && is_singular() && '1' === get_post_meta( get_queried_object_id(), '_yoast_wpseo_meta-robots-noindex', true ) ) {
+		$robots['noindex'] = true;
+	}
+	return $robots;
+} );
