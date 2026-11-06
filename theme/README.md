@@ -5,6 +5,10 @@ Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quell
 - WordPress ≥ 6.2, PHP ≥ 7.4
 - **Aucun plugin requis** (champs personnalisés natifs). **WPML** recommandé pour EN / ES.
 
+## Démo en ligne
+
+[Ouvrir dans WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/matmaaar/rendez-vous-a-nantes/claude/elegant-ride-bswwdv/blueprint.json) : WordPress jetable dans le navigateur, thème installé et contenu FR importé (WPML n'étant pas disponible sur Playground, seul le français y est visible). Configuration : [`blueprint.json`](../blueprint.json). Le blueprint installe `theme/rdv-nantes.zip` : le régénérer après chaque modification du thème.
+
 ## Installation
 
 1. Copier le dossier `rdv-nantes/` dans `wp-content/themes/` (ou téléverser `rdv-nantes.zip` via Apparence → Thèmes → Ajouter).
