@@ -1,0 +1,153 @@
+# Sitemap du site actuel
+
+Sitemap généré par Yoast SEO : https://rdv.levoyageanantes.fr/sitemap_index.xml (fichiers XML d'origine dans ce dossier, avec `robots.txt`).
+
+| Sous-sitemap | Type WordPress | URL | Dernière modif. |
+| --- | --- | --- | --- |
+| `lieu_verre-sitemap.xml` | lieu_verre | 15 | 2024-09-25 |
+| `incontournable-sitemap.xml` | incontournable | 33 | 2024-09-25 |
+| `24h-sitemap.xml` | 24h | 12 | 2024-06-26 |
+| `rugby2023-sitemap.xml` | rugby2023 | 21 | 2024-07-12 |
+
+**Total : 81 URL.**
+
+## lieu_verre-sitemap.xml
+
+- https://rdv.levoyageanantes.fr/prendre-un-verre/ — [fr/prendre-un-verre.md](../fr/prendre-un-verre.md)
+- https://rdv.levoyageanantes.fr/en/have-a-drink/ — [en/have-a-drink.md](../en/have-a-drink.md)
+- https://rdv.levoyageanantes.fr/es/tomar-una-copa/ — [es/tomar-una-copa.md](../es/tomar-una-copa.md)
+- https://rdv.levoyageanantes.fr/en/have-a-drink/graslin-quarter/ — [en/have-a-drink/graslin-quarter.md](../en/have-a-drink/graslin-quarter.md)
+- https://rdv.levoyageanantes.fr/en/have-a-drink/bouffay-quarter/ — [en/have-a-drink/bouffay-quarter.md](../en/have-a-drink/bouffay-quarter.md)
+- https://rdv.levoyageanantes.fr/es/tomar-una-copa/barrio-bouffay/ — [es/tomar-una-copa/barrio-bouffay.md](../es/tomar-una-copa/barrio-bouffay.md)
+- https://rdv.levoyageanantes.fr/es/tomar-una-copa/barrio-graslin/ — [es/tomar-una-copa/barrio-graslin.md](../es/tomar-una-copa/barrio-graslin.md)
+- https://rdv.levoyageanantes.fr/prendre-un-verre/quartier-ile-de-nantes/ — [fr/prendre-un-verre/quartier-ile-de-nantes.md](../fr/prendre-un-verre/quartier-ile-de-nantes.md)
+- https://rdv.levoyageanantes.fr/en/have-a-drink/ile-de-nantes-quarter/ — [en/have-a-drink/ile-de-nantes-quarter.md](../en/have-a-drink/ile-de-nantes-quarter.md)
+- https://rdv.levoyageanantes.fr/es/tomar-una-copa/barrio-ile-de-nantes/ — [es/tomar-una-copa/barrio-ile-de-nantes.md](../es/tomar-una-copa/barrio-ile-de-nantes.md)
+- https://rdv.levoyageanantes.fr/prendre-un-verre/quartier-graslin/ — [fr/prendre-un-verre/quartier-graslin.md](../fr/prendre-un-verre/quartier-graslin.md)
+- https://rdv.levoyageanantes.fr/prendre-un-verre/quartier-bouffay/ — [fr/prendre-un-verre/quartier-bouffay.md](../fr/prendre-un-verre/quartier-bouffay.md)
+- https://rdv.levoyageanantes.fr/es/tomar-una-copa/espiritu-guinguette-para-los-buenos-dias/ — [es/tomar-una-copa/espiritu-guinguette-para-los-buenos-dias.md](../es/tomar-una-copa/espiritu-guinguette-para-los-buenos-dias.md)
+- https://rdv.levoyageanantes.fr/prendre-un-verre/les-guinguettes/ — [fr/prendre-un-verre/les-guinguettes.md](../fr/prendre-un-verre/les-guinguettes.md)
+- https://rdv.levoyageanantes.fr/en/have-a-drink/guinguette-spirit-for-sunny-days/ — [en/have-a-drink/guinguette-spirit-for-sunny-days.md](../en/have-a-drink/guinguette-spirit-for-sunny-days.md)
+
+## incontournable-sitemap.xml
+
+- https://rdv.levoyageanantes.fr/incontournable/ — [fr/incontournable.md](../fr/incontournable.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/ — [en/unmissable.md](../en/unmissable.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/ — [es/imprescindibles.md](../es/imprescindibles.md)
+- https://rdv.levoyageanantes.fr/incontournable/le-musee-darts/ — [fr/incontournable/le-musee-darts.md](../fr/incontournable/le-musee-darts.md)
+- https://rdv.levoyageanantes.fr/incontournable/le-memorial-de-labolition-de-lesclavage/ — [fr/incontournable/le-memorial-de-labolition-de-lesclavage.md](../fr/incontournable/le-memorial-de-labolition-de-lesclavage.md)
+- https://rdv.levoyageanantes.fr/incontournable/quartier-chantenay/ — [fr/incontournable/quartier-chantenay.md](../fr/incontournable/quartier-chantenay.md)
+- https://rdv.levoyageanantes.fr/incontournable/quartier-creation-ile-nantes/ — [fr/incontournable/quartier-creation-ile-nantes.md](../fr/incontournable/quartier-creation-ile-nantes.md)
+- https://rdv.levoyageanantes.fr/incontournable/quartier-bouffay/ — [fr/incontournable/quartier-bouffay.md](../fr/incontournable/quartier-bouffay.md)
+- https://rdv.levoyageanantes.fr/incontournable/le-passage-pommeraye/ — [fr/incontournable/le-passage-pommeraye.md](../fr/incontournable/le-passage-pommeraye.md)
+- https://rdv.levoyageanantes.fr/incontournable/le-jardin-des-plantes/ — [fr/incontournable/le-jardin-des-plantes.md](../fr/incontournable/le-jardin-des-plantes.md)
+- https://rdv.levoyageanantes.fr/incontournable/le-lieu-unique/ — [fr/incontournable/le-lieu-unique.md](../fr/incontournable/le-lieu-unique.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/1279/ — [en/unmissable/1279.md](../en/unmissable/1279.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/le-jardin-des-plantes-en/ — [en/unmissable/le-jardin-des-plantes-en.md](../en/unmissable/le-jardin-des-plantes-en.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/le-passage-pommeraye-en/ — [en/unmissable/le-passage-pommeraye-en.md](../en/unmissable/le-passage-pommeraye-en.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/quartier-chantenay/ — [en/unmissable/quartier-chantenay.md](../en/unmissable/quartier-chantenay.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/memorial-de-la-abolicion-de-la-esclavitud/ — [es/imprescindibles/memorial-de-la-abolicion-de-la-esclavitud.md](../es/imprescindibles/memorial-de-la-abolicion-de-la-esclavitud.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/barrio-de-bouffay/ — [es/imprescindibles/barrio-de-bouffay.md](../es/imprescindibles/barrio-de-bouffay.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/le-lieu-unique/ — [es/imprescindibles/le-lieu-unique.md](../es/imprescindibles/le-lieu-unique.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/le-passage-pommeraye/ — [es/imprescindibles/le-passage-pommeraye.md](../es/imprescindibles/le-passage-pommeraye.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/el-parque-de-los-astilleros/ — [es/imprescindibles/el-parque-de-los-astilleros.md](../es/imprescindibles/el-parque-de-los-astilleros.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/barrio-chantenay/ — [es/imprescindibles/barrio-chantenay.md](../es/imprescindibles/barrio-chantenay.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/jardin-de-las-plantas/ — [es/imprescindibles/jardin-de-las-plantas.md](../es/imprescindibles/jardin-de-las-plantas.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/bouffay/ — [en/unmissable/bouffay.md](../en/unmissable/bouffay.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/the-creative-quarter-lile-de-nantes/ — [en/unmissable/the-creative-quarter-lile-de-nantes.md](../en/unmissable/the-creative-quarter-lile-de-nantes.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/le-memorial-de-labolition-de-lesclavage/ — [en/unmissable/le-memorial-de-labolition-de-lesclavage.md](../en/unmissable/le-memorial-de-labolition-de-lesclavage.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/el-museo-de-bellas-artes-de-nantes/ — [es/imprescindibles/el-museo-de-bellas-artes-de-nantes.md](../es/imprescindibles/el-museo-de-bellas-artes-de-nantes.md)
+- https://rdv.levoyageanantes.fr/incontournable/le-chateau-des-ducs-de-bretagne/ — [fr/incontournable/le-chateau-des-ducs-de-bretagne.md](../fr/incontournable/le-chateau-des-ducs-de-bretagne.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/el-castillo-de-los-duques-de-bretana/ — [es/imprescindibles/el-castillo-de-los-duques-de-bretana.md](../es/imprescindibles/el-castillo-de-los-duques-de-bretana.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/the-chateau-des-ducs-de-bretagne/ — [en/unmissable/the-chateau-des-ducs-de-bretagne.md](../en/unmissable/the-chateau-des-ducs-de-bretagne.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/the-musee-darts-arts-museum/ — [en/unmissable/the-musee-darts-arts-museum.md](../en/unmissable/the-musee-darts-arts-museum.md)
+- https://rdv.levoyageanantes.fr/incontournable/les-machines-de-lile/ — [fr/incontournable/les-machines-de-lile.md](../fr/incontournable/les-machines-de-lile.md)
+- https://rdv.levoyageanantes.fr/en/unmissable/the-machines-de-lile/ — [en/unmissable/the-machines-de-lile.md](../en/unmissable/the-machines-de-lile.md)
+- https://rdv.levoyageanantes.fr/es/imprescindibles/les-machines-de-lile/ — [es/imprescindibles/les-machines-de-lile.md](../es/imprescindibles/les-machines-de-lile.md)
+
+## 24h-sitemap.xml
+
+- https://rdv.levoyageanantes.fr/24h-de-plus/ — [fr/24h-de-plus.md](../fr/24h-de-plus.md)
+- https://rdv.levoyageanantes.fr/en/24h-more/ — [en/24h-more.md](../en/24h-more.md)
+- https://rdv.levoyageanantes.fr/es/24h-mas/ — [es/24h-mas.md](../es/24h-mas.md)
+- https://rdv.levoyageanantes.fr/es/24h-mas/la-linea-verde/ — [es/24h-mas/la-linea-verde.md](../es/24h-mas/la-linea-verde.md)
+- https://rdv.levoyageanantes.fr/24h-de-plus/sur-le-chemin-des-plages/ — [fr/24h-de-plus/sur-le-chemin-des-plages.md](../fr/24h-de-plus/sur-le-chemin-des-plages.md)
+- https://rdv.levoyageanantes.fr/en/24h-more/off-to-the-beaches/ — [en/24h-more/off-to-the-beaches.md](../en/24h-more/off-to-the-beaches.md)
+- https://rdv.levoyageanantes.fr/es/24h-mas/playa/ — [es/24h-mas/playa.md](../es/24h-mas/playa.md)
+- https://rdv.levoyageanantes.fr/24h-de-plus/la-ligne-verte/ — [fr/24h-de-plus/la-ligne-verte.md](../fr/24h-de-plus/la-ligne-verte.md)
+- https://rdv.levoyageanantes.fr/24h-de-plus/pass-nantes/ — [fr/24h-de-plus/pass-nantes.md](../fr/24h-de-plus/pass-nantes.md)
+- https://rdv.levoyageanantes.fr/en/24h-more/pass-nantes/ — [en/24h-more/pass-nantes.md](../en/24h-more/pass-nantes.md)
+- https://rdv.levoyageanantes.fr/es/24h-mas/pass-nantes/ — [es/24h-mas/pass-nantes.md](../es/24h-mas/pass-nantes.md)
+- https://rdv.levoyageanantes.fr/en/24h-more/the-green-line/ — [en/24h-more/the-green-line.md](../en/24h-more/the-green-line.md)
+
+## rugby2023-sitemap.xml
+
+- https://rdv.levoyageanantes.fr/jo-paris-2024/ — [fr/jo-paris-2024.md](../fr/jo-paris-2024.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/ — [en/jo-paris-2024.md](../en/jo-paris-2024.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/ — [es/jo-paris-2024.md](../es/jo-paris-2024.md)
+- https://rdv.levoyageanantes.fr/jo-paris-2024/comment-aller-au-stade-de-la-beaujoire/ — [fr/jo-paris-2024/comment-aller-au-stade-de-la-beaujoire.md](../fr/jo-paris-2024/comment-aller-au-stade-de-la-beaujoire.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/how-to-get-to-beaujoire-stadium/ — [en/jo-paris-2024/how-to-get-to-beaujoire-stadium.md](../en/jo-paris-2024/how-to-get-to-beaujoire-stadium.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/como-llegar-al-estadio-de-la-beaujoire/ — [es/jo-paris-2024/como-llegar-al-estadio-de-la-beaujoire.md](../es/jo-paris-2024/como-llegar-al-estadio-de-la-beaujoire.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/guided-tour-of-nantes-45-minutes/ — [en/jo-paris-2024/guided-tour-of-nantes-45-minutes.md](../en/jo-paris-2024/guided-tour-of-nantes-45-minutes.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/watch-og-at-la-cantine-du-voyage/ — [en/jo-paris-2024/watch-og-at-la-cantine-du-voyage.md](../en/jo-paris-2024/watch-og-at-la-cantine-du-voyage.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/mirar-oo-gg-en-la-cantine-du-voyage/ — [es/jo-paris-2024/mirar-oo-gg-en-la-cantine-du-voyage.md](../es/jo-paris-2024/mirar-oo-gg-en-la-cantine-du-voyage.md)
+- https://rdv.levoyageanantes.fr/jo-paris-2024/regarder-les-jo-a-la-cantine-du-voyage/ — [fr/jo-paris-2024/regarder-les-jo-a-la-cantine-du-voyage.md](../fr/jo-paris-2024/regarder-les-jo-a-la-cantine-du-voyage.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/information-in-japanese-ようこそ/ — [en/jo-paris-2024/information-in-japanese-ようこそ.md](../en/jo-paris-2024/information-in-japanese-ようこそ.md)
+- https://rdv.levoyageanantes.fr/jo-paris-2024/information-en-japonais/ — [fr/jo-paris-2024/information-en-japonais.md](../fr/jo-paris-2024/information-en-japonais.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/information-in-japanese-ようこそ/ — [es/jo-paris-2024/information-in-japanese-ようこそ.md](../es/jo-paris-2024/information-in-japanese-ようこそ.md)
+- https://rdv.levoyageanantes.fr/jo-paris-2024/foire-aux-questions-coupe-du-monde-rugby-2023-stade/ — [fr/jo-paris-2024/foire-aux-questions-coupe-du-monde-rugby-2023-stade.md](../fr/jo-paris-2024/foire-aux-questions-coupe-du-monde-rugby-2023-stade.md)
+- https://rdv.levoyageanantes.fr/jo-paris-2024/nantes-village-club-2024/ — [fr/jo-paris-2024/nantes-village-club-2024.md](../fr/jo-paris-2024/nantes-village-club-2024.md)
+- https://rdv.levoyageanantes.fr/jo-paris-2024/nantes-visite-guidee-45-minutes/ — [fr/jo-paris-2024/nantes-visite-guidee-45-minutes.md](../fr/jo-paris-2024/nantes-visite-guidee-45-minutes.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/frequently-asked-questions-beaujoire-stadium/ — [en/jo-paris-2024/frequently-asked-questions-beaujoire-stadium.md](../en/jo-paris-2024/frequently-asked-questions-beaujoire-stadium.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/visita-guiada-de-nantes-45-minutos/ — [es/jo-paris-2024/visita-guiada-de-nantes-45-minutos.md](../es/jo-paris-2024/visita-guiada-de-nantes-45-minutos.md)
+- https://rdv.levoyageanantes.fr/en/jo-paris-2024/nantes-village-club-2024/ — [en/jo-paris-2024/nantes-village-club-2024.md](../en/jo-paris-2024/nantes-village-club-2024.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/nantes-village-club-2024/ — [es/jo-paris-2024/nantes-village-club-2024.md](../es/jo-paris-2024/nantes-village-club-2024.md)
+- https://rdv.levoyageanantes.fr/es/jo-paris-2024/preguntas-frecuentes-estadio-de-la-beaujoire/ — [es/jo-paris-2024/preguntas-frecuentes-estadio-de-la-beaujoire.md](../es/jo-paris-2024/preguntas-frecuentes-estadio-de-la-beaujoire.md)
+
+## Pages du site absentes du sitemap
+
+43 pages existent sur le site mais ne sont pas dans le sitemap (types `page` et `shopping` exclus dans Yoast) :
+
+- https://rdv.levoyageanantes.fr/en/ — [en/accueil.md](../en/accueil.md)
+- https://rdv.levoyageanantes.fr/en/eat/ — [en/eat.md](../en/eat.md)
+- https://rdv.levoyageanantes.fr/en/getting-around/ — [en/getting-around.md](../en/getting-around.md)
+- https://rdv.levoyageanantes.fr/en/jogging/ — [en/jogging.md](../en/jogging.md)
+- https://rdv.levoyageanantes.fr/en/legal-information/ — [en/legal-information.md](../en/legal-information.md)
+- https://rdv.levoyageanantes.fr/en/need-a-hand/ — [en/need-a-hand.md](../en/need-a-hand.md)
+- https://rdv.levoyageanantes.fr/en/rendezvousenfrance/ — [en/rendezvousenfrance.md](../en/rendezvousenfrance.md)
+- https://rdv.levoyageanantes.fr/en/shopping/ — [en/shopping.md](../en/shopping.md)
+- https://rdv.levoyageanantes.fr/en/shopping/decre/ — [en/shopping/decre.md](../en/shopping/decre.md)
+- https://rdv.levoyageanantes.fr/en/shopping/graslin/ — [en/shopping/graslin.md](../en/shopping/graslin.md)
+- https://rdv.levoyageanantes.fr/en/shopping/street-rue-dorleans/ — [en/shopping/street-rue-dorleans.md](../en/shopping/street-rue-dorleans.md)
+- https://rdv.levoyageanantes.fr/en/shopping/talensac-market/ — [en/shopping/talensac-market.md](../en/shopping/talensac-market.md)
+- https://rdv.levoyageanantes.fr/en/shopping/the-official-voyage-a-nantes-gift-shop/ — [en/shopping/the-official-voyage-a-nantes-gift-shop.md](../en/shopping/the-official-voyage-a-nantes-gift-shop.md)
+- https://rdv.levoyageanantes.fr/en/the-nantes-marathon-2023/ — [en/the-nantes-marathon-2023.md](../en/the-nantes-marathon-2023.md)
+- https://rdv.levoyageanantes.fr/en/welcome-to-japanese/ — [en/welcome-to-japanese.md](../en/welcome-to-japanese.md)
+- https://rdv.levoyageanantes.fr/es/ — [es/accueil.md](../es/accueil.md)
+- https://rdv.levoyageanantes.fr/es/ayuda/ — [es/ayuda.md](../es/ayuda.md)
+- https://rdv.levoyageanantes.fr/es/comer/ — [es/comer.md](../es/comer.md)
+- https://rdv.levoyageanantes.fr/es/desplazarse/ — [es/desplazarse.md](../es/desplazarse.md)
+- https://rdv.levoyageanantes.fr/es/footing/ — [es/footing.md](../es/footing.md)
+- https://rdv.levoyageanantes.fr/es/maraton-de-nantes-2023/ — [es/maraton-de-nantes-2023.md](../es/maraton-de-nantes-2023.md)
+- https://rdv.levoyageanantes.fr/es/mentions-legales/ — [es/mentions-legales.md](../es/mentions-legales.md)
+- https://rdv.levoyageanantes.fr/es/shopping/ — [es/shopping.md](../es/shopping.md)
+- https://rdv.levoyageanantes.fr/es/shopping/barrio-decre/ — [es/shopping/barrio-decre.md](../es/shopping/barrio-decre.md)
+- https://rdv.levoyageanantes.fr/es/shopping/barrio-graslin/ — [es/shopping/barrio-graslin.md](../es/shopping/barrio-graslin.md)
+- https://rdv.levoyageanantes.fr/es/shopping/calle-rue-dorleans/ — [es/shopping/calle-rue-dorleans.md](../es/shopping/calle-rue-dorleans.md)
+- https://rdv.levoyageanantes.fr/es/shopping/mercato-detalensac/ — [es/shopping/mercato-detalensac.md](../es/shopping/mercato-detalensac.md)
+- https://rdv.levoyageanantes.fr/es/shopping/voyage-a-nantes-el-bazar-oficial/ — [es/shopping/voyage-a-nantes-el-bazar-oficial.md](../es/shopping/voyage-a-nantes-el-bazar-oficial.md)
+- https://rdv.levoyageanantes.fr/access/ — [fr/access.md](../fr/access.md)
+- https://rdv.levoyageanantes.fr/ — [fr/accueil.md](../fr/accueil.md)
+- https://rdv.levoyageanantes.fr/aide/ — [fr/aide.md](../fr/aide.md)
+- https://rdv.levoyageanantes.fr/cookiespolicy/ — [fr/cookiespolicy.md](../fr/cookiespolicy.md)
+- https://rdv.levoyageanantes.fr/footing/ — [fr/footing.md](../fr/footing.md)
+- https://rdv.levoyageanantes.fr/manger/ — [fr/manger.md](../fr/manger.md)
+- https://rdv.levoyageanantes.fr/marathon-nantes-2023/ — [fr/marathon-nantes-2023.md](../fr/marathon-nantes-2023.md)
+- https://rdv.levoyageanantes.fr/mentions-legales/ — [fr/mentions-legales.md](../fr/mentions-legales.md)
+- https://rdv.levoyageanantes.fr/opensquash2022/ — [fr/opensquash2022.md](../fr/opensquash2022.md)
+- https://rdv.levoyageanantes.fr/shopping/ — [fr/shopping.md](../fr/shopping.md)
+- https://rdv.levoyageanantes.fr/shopping/bazar-officiel-voyage/ — [fr/shopping/bazar-officiel-voyage.md](../fr/shopping/bazar-officiel-voyage.md)
+- https://rdv.levoyageanantes.fr/shopping/marche-de-talensac/ — [fr/shopping/marche-de-talensac.md](../fr/shopping/marche-de-talensac.md)
+- https://rdv.levoyageanantes.fr/shopping/quartier-graslin/ — [fr/shopping/quartier-graslin.md](../fr/shopping/quartier-graslin.md)
+- https://rdv.levoyageanantes.fr/shopping/rue-dorleans/ — [fr/shopping/rue-dorleans.md](../fr/shopping/rue-dorleans.md)
+- https://rdv.levoyageanantes.fr/shopping/uartier-decre/ — [fr/shopping/uartier-decre.md](../fr/shopping/uartier-decre.md)

@@ -5,6 +5,9 @@ os.makedirs(OUT,exist_ok=True)
 seeds=[BASE+'/',BASE+'/en/',BASE+'/es/']
 for l in ['fr','en','es']:
     for p in json.load(open(os.path.join(os.path.dirname(OUT),f'raw/pages_{l}.json'))): seeds.append(p['link'])
+import glob
+for f in glob.glob(os.path.join(os.path.dirname(OUT),'sitemap','*-sitemap.xml')):
+    seeds += re.findall(r'<loc>([^<]+)</loc>', open(f).read())
 SKIP=re.compile(r'/(wp-content|wp-json|wp-admin|wp-includes|feed|xmlrpc|comments)|\.(jpe?g|png|gif|svg|pdf|webp|css|js|xml|ico|mp4)(\?|$)|\?|#',re.I)
 def norm(u):
     u=u.split('#')[0]

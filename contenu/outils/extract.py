@@ -22,7 +22,7 @@ def lang_of(url):
     return 'en' if p.startswith('/en/') else 'es' if p.startswith('/es/') else 'fr'
 
 def rel_path(url):
-    p = urllib.parse.urlsplit(url).path.strip('/')
+    p = urllib.parse.unquote(urllib.parse.urlsplit(url).path).strip('/')
     lang = lang_of(url)
     if lang != 'fr': p = p[len(lang):].strip('/')
     p = re.sub(r'/+', '/', p)
