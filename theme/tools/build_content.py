@@ -113,6 +113,22 @@ def scraped_links(p):
             more = more or u
     return maps, more
 
+# Tarifs du Pass Nantes (grille 2026-2027) : promo −10 % sur le tarif plein jusqu'au 31 mars 2027.
+PASS_PRICES = [('24 h', '27', '30'), ('48 h', '36', '40'), ('72 h', '44', '49'), ('7 jours', '67', '75')]
+
+def pass_prices_fr(html):
+    """Remplace la liste « Tarifs plein » de la maquette par la grille actuelle, liens de réservation conservés."""
+    links = re.findall(r'<a href="([^"]+)"[^>]*>Pass [^<]+</a>', html)
+    items = []
+    for i, (dur, price, full) in enumerate(PASS_PRICES):
+        extra = ' (tarifs réduit et famille disponibles)' if i == 0 else ''
+        items.append('          <li><a href="%s" target="_blank" rel="noopener">Pass %s : %s €</a> au lieu de %s €%s</li>' % (links[i], dur, price, full, extra))
+    block = ('<h2>Tarifs</h2>\n        <p><strong>Promo −10 % sur le tarif plein jusqu’au 31 mars 2027.</strong></p>\n        <ul>\n'
+             + '\n'.join(items) + '\n        </ul>')
+    new = re.sub(r'<h2>Tarifs plein</h2>\s*<ul>.*?</ul>', lambda m: block, html, count=1, flags=re.S)
+    assert new != html, 'liste des tarifs du Pass introuvable dans la maquette'
+    return new
+
 ITEMS = []
 
 def add(key, type_, order, langs, template='', image='', image_meta=None):
@@ -500,7 +516,8 @@ PASS_HTML = {
 <tr class="tot"><td>With the 24h Pass Nantes</td><td class="r">€27</td></tr>
 </tbody></table>
 <h2>Prices</h2>
-<ul><li>Pass 24h: €27</li><li>Pass 48h: €37</li><li>Pass 72h: €45</li><li>Pass 7 days: €85</li></ul>
+<p><strong>Promo: 10% off the full price until 31 March 2027.</strong></p>
+<ul><li>Pass 24h: €27 instead of €30</li><li>Pass 48h: €36 instead of €40</li><li>Pass 72h: €44 instead of €49</li><li>Pass 7 days: €67 instead of €75</li></ul>
 <p><a href="https://www.nantes-tourisme.com/en/visit/nantes-pass">Everything you need to know about the Pass Nantes</a></p>''',
            'sur-le-chemin-des-plages': None},
     'es': {'pass-nantes': '''<p>Durante un día, un fin de semana, un puente o incluso una semana, viaje a su ritmo. El Pass Nantes le da acceso a 50 actividades imprescindibles: museos, exposiciones, visitas guiadas, cruceros, degustaciones y transportes, incluida la lanzadera al aeropuerto.</p>
@@ -515,7 +532,8 @@ PASS_HTML = {
 <tr class="tot"><td>Con el Pass Nantes 24 h</td><td class="r">27 €</td></tr>
 </tbody></table>
 <h2>Tarifas</h2>
-<ul><li>Pass 24 h: 27 €</li><li>Pass 48 h: 37 €</li><li>Pass 72 h: 45 €</li><li>Pass 7 días: 85 €</li></ul>
+<p><strong>Promoción: −10 % sobre la tarifa completa hasta el 31 de marzo de 2027.</strong></p>
+<ul><li>Pass 24 h: 27 € en lugar de 30 €</li><li>Pass 48 h: 36 € en lugar de 40 €</li><li>Pass 72 h: 44 € en lugar de 49 €</li><li>Pass 7 días: 67 € en lugar de 75 €</li></ul>
 <p><a href="https://www.levoyageanantes.fr/es/hacer/pass-nantes/">Ver todos los servicios del Pass Nantes</a></p>''',
            'sur-le-chemin-des-plages': None},
 }
@@ -533,6 +551,8 @@ for cid, (ptype, base) in CAT_BASE.items():
         fr_slug = LIEU_SLUGS[l['id']]
         fr_path = '/%s/%s/' % (base, fr_slug)
         content = l.get('html') or '<p>%s</p>' % l['txt']
+        if l['id'] == 'pass-nantes':
+            content = pass_prices_fr(content)
         meta = {'subtitle': l['s'], 'infos': infos_lines(l['infos']), 'maps': l.get('maps', ''), 'more': l.get('more', ''), 'buy': l.get('buy', ''), 'buy_label': l.get('buyLabel', '')}
         if l.get('link'):
             meta['link'] = l['link'][0] + ' | ' + mockup_path(l['link'][1])
