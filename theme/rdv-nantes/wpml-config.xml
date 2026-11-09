@@ -46,12 +46,9 @@
     <custom-field action="translate">_rdv_more</custom-field>
     <custom-field action="translate">_rdv_buy</custom-field>
     <!-- Réglages : copiés depuis le français -->
-    <custom-field action="copy">_rdv_num</custom-field>
     <custom-field action="copy">_rdv_home</custom-field>
     <custom-field action="copy">_rdv_nav</custom-field>
     <custom-field action="copy">_rdv_post_type</custom-field>
-    <custom-field action="copy">_rdv_map_x</custom-field>
-    <custom-field action="copy">_rdv_map_y</custom-field>
     <custom-field action="ignore">_rdv_import_key</custom-field>
   </custom-fields>
 </wpml-config>

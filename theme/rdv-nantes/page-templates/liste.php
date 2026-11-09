@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 get_header();
 the_post();
 rdv_crumb( array( array( get_the_title() ) ) );
-rdv_head( rdv_rubrique_label( get_the_ID() ), rdv_meta( 'h1' ) ? rdv_meta( 'h1' ) : get_the_title(), rdv_meta( 'lead' ) );
+rdv_head( rdv_meta( 'h1' ) ? rdv_meta( 'h1' ) : get_the_title(), rdv_meta( 'lead' ) );
 $rdv_cta    = rdv_btn_field( rdv_meta( 'cta' ) );
 $rdv_rows   = array_map( function ( $r ) {
 	return array_pad( $r, 5, '' );

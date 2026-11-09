@@ -25,7 +25,7 @@ Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quell
 | Rubrique | Gabarit | FR | EN | ES |
 | --- | --- | --- | --- | --- |
 | Accueil | `front-page.php` | `/` | `/en/` | `/es/` |
-| 01 Prendre un verre (carte + 4 quartiers) | Rubrique — quartiers avec carte | `/prendre-un-verre/` | `/en/have-a-drink/` | `/es/tomar-una-copa/` |
+| Prendre un verre (4 quartiers) | Rubrique — quartiers | `/prendre-un-verre/` | `/en/have-a-drink/` | `/es/tomar-una-copa/` |
 | 02 Manger | Rubrique — liste d'adresses | `/manger/` | `/en/eat/` | `/es/comer/` |
 | 03 Incontournables (10 fiches) | Rubrique — liste de fiches | `/incontournable/` | `/en/unmissable/` | `/es/imprescindibles/` |
 | 04 Footing | Rubrique — liste d'adresses | `/footing/` | `/en/jogging/` | `/es/footing/` |
@@ -43,6 +43,11 @@ Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/sh
 
 **Redirections 301** : [`redirections.csv`](redirections.csv) (29 règles, à importer dans le plugin *Redirection* : Outils → Redirection → Import/Export). Elles couvrent les anciens slugs mémorisés par WordPress, les slugs corrigés, les pages événementielles et JO 2024 non reprises (→ accueil de la langue) et le lien cassé `/24h-mas/`. Le site actuel n'en avait aucune.
 
+## Choix de mise en page par rapport à la maquette
+
+- Pas de surtitre au-dessus du titre des rubriques et des pages d'infos (il répétait le titre). Les fiches gardent le leur (rubrique · position, ou rubrique · ambiance).
+- Pas de carte sur Prendre un verre : les quartiers sont présentés en mosaïque photo.
+
 ## Mosaïque photo
 
 Les grilles de cases (accueil, Prendre un verre, Incontournables, Shopping, Pass Nantes) sont des **mosaïques photo** : photo pleine case en 3/2, cases collées, titre et accroche en blanc sur un halo sombre très diffus, soulignement vert fluo au survol. 4 colonnes à partir de 8 cases (et pour les 4 quartiers), sinon 3 ; 2 colonnes sur tablette, 1 sur mobile. Fonction : `rdv_mosaic()` dans `inc/template-tags.php`.
@@ -57,10 +62,10 @@ Les restaurants de la page Manger s'affichent en **liste illustrée** (photo, no
 
 Tout se modifie dans l'admin, dans les encadrés sous l'éditeur :
 
-- **Pages de rubrique** : choisir le gabarit, enregistrer, puis remplir « Rubrique » (numéro, grand titre, chapô, texte de tuile, cases « accueil » et « menu ») et l'encadré propre au gabarit. Le **titre de la page** est le libellé court (menu, fil d'Ariane, tuiles). L'ordre des rubriques = champ **Ordre** de la page.
+- **Pages de rubrique** : choisir le gabarit, enregistrer, puis remplir « Rubrique » (grand titre, chapô, texte de tuile, cases « accueil » et « menu ») et l'encadré propre au gabarit. Le **titre de la page** est le libellé court (menu, fil d'Ariane, tuiles). L'ordre des rubriques = champ **Ordre** de la page.
 - **Accueil** : bandeau jaune, grand titre, parcours « Visiter Nantes à pied ».
 - **Fiches** : sous-titre, infos pratiques, liens Itinéraire / En savoir plus / achat. Ordre = champ **Ordre**.
-- **Quartiers** : ambiance, localisation, position sur la carte (en %), étiquettes, bars, image à la une (vignette).
+- **Quartiers** : ambiance, localisation, lien Itinéraire (facultatif), étiquettes, bars, image à la une (vignette).
 
 Conventions des champs multi-lignes : **une ligne = un élément**, colonnes séparées par `|`, par ex. infos pratiques `Adresse | 4 place Marc Elder | 1` (le `1` final affiche la pastille verte). Les liens internes s'écrivent en **chemin français** (`/incontournable/quartier-bouffay/`) : le thème les convertit vers la bonne langue.
 
@@ -69,7 +74,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 - **Contenus** : FR = textes de la maquette ; EN / ES = **textes du site actuel** partout où ils existent (fiches, quartiers, chapôs, encadrés, listes, noms de rubriques, coquilles évidentes du site corrigées). Seuls les textes **créés par la maquette**, sans équivalent sur le site actuel (accroche et parcours de l'accueil, textes des tuiles, ambiances et localisations des quartiers…), ont été traduits : liste à faire relire dans [`TRADUCTIONS-A-RELIRE.md`](TRADUCTIONS-A-RELIRE.md).
 - **SEO** : titre et meta description de l'accueil (FR/EN/ES) et `noindex` des mentions légales repris du site actuel (champs Yoast). Sans Yoast, le thème affiche quand même la meta description et le `noindex`.
 - **Crédits photo** : les images à la une importées portent leur texte alternatif et leur crédit en légende (export WordPress du site actuel). Graslin n'a pas de crédit connu ; celui de l'Île de Nantes est déduit du nom de fichier : à vérifier.
-- **Interface** (pied de page, boutons, carte…) : `languages/en_US.mo` et `es_ES.mo` (sources `.po`, modèle `.pot`). Modifiables aussi via WPML String Translation.
+- **Interface** (pied de page, boutons…) : `languages/en_US.mo` et `es_ES.mo` (sources `.po`, modèle `.pot`). Modifiables aussi via WPML String Translation.
 
 ## Points à valider
 
@@ -81,7 +86,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 
 ## Développement
 
-- `tools/extract_maquette.py` : maquette HTML → `tools/maquette.json` + carte `assets/img/plan-nantes.webp`.
+- `tools/extract_maquette.py` : maquette HTML → `tools/maquette.json`.
 - `tools/build_content.py` : `maquette.json` + `../contenu/` → `rdv-nantes/import/content.json` et images des quartiers.
 - `../contenu/outils/wxr_extract.py <export.xml> <acf.json>` : exploite l'export WordPress / ACF du site actuel (crédits, SEO, redirections, contenus non publiés). Les exports bruts ne sont pas versionnés.
 - Zip d'installation : `cd theme && zip -r rdv-nantes.zip rdv-nantes`.

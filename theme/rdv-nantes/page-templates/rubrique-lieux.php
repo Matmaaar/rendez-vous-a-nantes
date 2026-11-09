@@ -13,7 +13,7 @@ the_post();
 $rdv_type  = rdv_meta( 'post_type' );
 $rdv_items = $rdv_type ? rdv_items( $rdv_type ) : array();
 rdv_crumb( array( array( get_the_title() ) ) );
-rdv_head( rdv_rubrique_label( get_the_ID() ), rdv_meta( 'h1' ) ? rdv_meta( 'h1' ) : get_the_title(), rdv_meta( 'lead' ) );
+rdv_head( rdv_meta( 'h1' ) ? rdv_meta( 'h1' ) : get_the_title(), rdv_meta( 'lead' ) );
 ?>
 <section style="padding:0 0 48px"><div class="wrap">
   <?php

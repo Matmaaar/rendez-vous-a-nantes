@@ -18,7 +18,6 @@ defined( 'ABSPATH' ) || exit;
  */
 function rdv_field_groups() {
 	$rubrique = array(
-		array( 'num', 'Numéro de rubrique', 'text', 'Ex. « 03 » (affiché dans l\'en-tête et sur la tuile d\'accueil).' ),
 		array( 'h1', 'Grand titre', 'text', 'Titre affiché en tête de page. Le titre WordPress sert de libellé court (menu, fil d\'Ariane, tuiles).' ),
 		array( 'lead', 'Chapô', 'textarea', '' ),
 		array( 'tile_desc', 'Texte de la tuile d\'accueil', 'text', 'Ex. « 10 bonnes raisons de faire le Voyage à Nantes ».' ),
@@ -79,11 +78,9 @@ function rdv_field_groups() {
 		'rdv_quartier'  => array(
 			'title'  => 'Quartier',
 			'fields' => array(
-				array( 'num', 'Numéro', 'text', 'Affiché sur la carte et la vignette.' ),
 				array( 'amb', 'Ambiance (titre de la vignette)', 'text', 'Ex. « Cocktails chic et cosy ».' ),
-				array( 'where', 'Localisation', 'text', 'Ex. « Graslin · autour du théâtre ». La partie avant « · » sert d\'étiquette sur la carte.' ),
-				array( 'map_x', 'Carte : position horizontale', 'text', 'En %, ex. « 25.5% ». Laisser vide pour ne pas placer de repère.' ),
-				array( 'map_y', 'Carte : position verticale', 'text', 'En %, ex. « 40% ».' ),
+				array( 'where', 'Localisation', 'text', 'Ex. « Graslin · autour du théâtre ».' ),
+				array( 'maps', 'Lien « Itinéraire »', 'text', 'Lien Google Maps. Laisser vide pour ne pas afficher de bouton (ex. lieux répartis dans la ville).' ),
 				array( 'img_alt', 'Texte si pas d\'image à la une', 'text', 'Ex. « [Photo quartier Graslin] ».' ),
 				array( 'badges', 'Étiquettes de la vignette', 'textarea', 'Une par ligne.' ),
 				array( 'lead', 'Chapô', 'textarea', '' ),

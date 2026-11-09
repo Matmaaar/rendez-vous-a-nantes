@@ -181,25 +181,13 @@ function rdv_crumb( $items ) {
 }
 
 /**
- * Libellé « 03 · Incontournables » d'une rubrique.
+ * En-tête de page de rubrique : titre et chapô (sans surtitre, qui répétait le titre).
  *
- * @param int $id Page de rubrique.
- * @return string
- */
-function rdv_rubrique_label( $id ) {
-	$num = rdv_meta( 'num', $id );
-	return ( $num ? $num . ' · ' : '' ) . get_the_title( $id );
-}
-
-/**
- * En-tête de page de rubrique (maquette : head()).
- *
- * @param string $label Surtitre.
  * @param string $title Titre.
  * @param string $lead  Chapô.
  */
-function rdv_head( $label, $title, $lead = '' ) {
-	echo '<section class="pagehead"><div class="wrap"><p class="label" style="margin-bottom:18px">' . esc_html( $label ) . '</p><h1 class="big">' . esc_html( $title ) . '</h1>';
+function rdv_head( $title, $lead = '' ) {
+	echo '<section class="pagehead"><div class="wrap"><h1 class="big">' . esc_html( $title ) . '</h1>';
 	if ( $lead ) {
 		echo '<p class="lead" style="margin-top:22px">' . wp_kses_post( $lead ) . '</p>';
 	}

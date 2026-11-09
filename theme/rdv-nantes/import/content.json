@@ -90,7 +90,6 @@
      "slug": "prendre-un-verre",
      "content": "",
      "meta": {
-      "num": "01",
       "h1": "Prendre un verre",
       "lead": "Notre sélection de bars et de lieux insolites où prendre un verre à Nantes, selon l’ambiance que vous cherchez.",
       "tile_desc": "Terrasses, cocktails, pubs : quatre ambiances",
@@ -104,7 +103,6 @@
      "slug": "have-a-drink",
      "content": "",
      "meta": {
-      "num": "01",
       "h1": "Have a drink",
       "lead": "Our selection of bars and unusual places for a drink in Nantes, depending on the atmosphere you are looking for.",
       "tile_desc": "Terraces, cocktails, pubs: four atmospheres",
@@ -118,7 +116,6 @@
      "slug": "tomar-una-copa",
      "content": "",
      "meta": {
-      "num": "01",
       "h1": "Tomar una copa",
       "lead": "Nuestra selección de bares y lugares insólitos para tomar una copa en Nantes, según el ambiente que busque.",
       "tile_desc": "Terrazas, cócteles, pubs: cuatro ambientes",
@@ -145,7 +142,6 @@
      "slug": "manger",
      "content": "",
      "meta": {
-      "num": "02",
       "h1": "Manger",
       "lead": "À la recherche d’une bonne table ? Envie de savourer des spécialités nantaises ? Le guide Les Tables de Nantes rassemble 185 adresses testées et approuvées. Grâce à un moteur de recherche bien pensé, trouvez à coup sûr LA bonne adresse : entre collègues, végétarien, grande tablée, atypique, en terrasse, en cœur de ville, pour un brunch…",
       "tile_desc": "Une sélection de bonnes tables nantaises",
@@ -165,7 +161,6 @@
      "slug": "eat",
      "content": "",
      "meta": {
-      "num": "02",
       "h1": "Eat",
       "lead": "Looking for a great place to eat? Les Tables de Nantes guide book lists over one hundred tested and approved addresses. Using this well thought out search engine, you will surely find the right place for you: eating with colleagues, vegetarian, big groups, quirky, out-door seating, in the heart of town, etc… For all tastes and budgets.",
       "tile_desc": "A selection of good Nantes restaurants",
@@ -185,7 +180,6 @@
      "slug": "comer",
      "content": "",
      "meta": {
-      "num": "02",
       "h1": "Comer",
       "lead": "Selección de restaurantes en Nantes. Tables de Nantes recopila y selecciona los mejores restaurantes de la ciudad (más de un centenar probados y aprobados). Seguro que encuentras el restaurante que necesitas: estrellas Michelin y Gault&Millau, gastrobares, creperías, restaurantes familiares…",
       "tile_desc": "Una selección de buenos restaurantes",
@@ -218,7 +212,6 @@
      "slug": "incontournable",
      "content": "",
      "meta": {
-      "num": "03",
       "h1": "Les incontournables",
       "lead": "Pour ne rien manquer des incontournables de la destination, rien de plus simple : à Nantes, il suffit de suivre la ligne verte tracée au sol. Un parcours de 22 kilomètres qui réunit les étapes culturelles, les principaux monuments, œuvres d’art et sites touristiques de la ville.",
       "tile_desc": "10 bonnes raisons de faire le Voyage à Nantes",
@@ -235,7 +228,6 @@
      "slug": "unmissable",
      "content": "",
      "meta": {
-      "num": "03",
       "h1": "The unmissables",
       "lead": "It couldn’t be easier to see everything you’d want to in Nantes and not miss a thing. In town, just follow the green line drawn on the ground. A 22-kilometer route that connects the cultural sights, the best monuments, works of art and tourist spots.",
       "tile_desc": "10 good reasons to make the Voyage to Nantes",
@@ -252,7 +244,6 @@
      "slug": "imprescindibles",
      "content": "",
      "meta": {
-      "num": "03",
       "h1": "Los imprescindibles",
       "lead": "Es fácil no perderse ninguno de los imprescindibles del destino. En Nantes, basta con seguir la línea verde marcada en el suelo. Un recorrido de 22 kilómetros que reúne los hitos culturales, los principales monumentos, las obras de arte y las atracciones turísticas de la ciudad.",
       "tile_desc": "10 buenas razones para hacer el Voyage à Nantes",
@@ -282,7 +273,6 @@
      "slug": "footing",
      "content": "",
      "meta": {
-      "num": "04",
       "h1": "Footing",
       "lead": "De 5 à 15 km, une sélection de parcours pour tous les niveaux et toutes les envies.",
       "tile_desc": "De 5 à 15 km, pour tous les niveaux",
@@ -302,7 +292,6 @@
      "slug": "jogging",
      "content": "",
      "meta": {
-      "num": "04",
       "h1": "Jogging",
       "lead": "From 5 to 15 km, a selection of runs for all levels and all plans.",
       "tile_desc": "From 5 to 15 km, for all levels",
@@ -322,7 +311,6 @@
      "slug": "footing",
      "content": "",
      "meta": {
-      "num": "04",
       "h1": "Footing",
       "lead": "De 5 a 15 km, una selección de rutas para todos los niveles y gustos.",
       "tile_desc": "De 5 a 15 km, para todos los niveles",
@@ -355,7 +343,6 @@
      "slug": "shopping",
      "content": "",
      "meta": {
-      "num": "05",
       "h1": "Shopping",
       "lead": "Cinq adresses pour faire les boutiques à Nantes, des enseignes chics du quartier Graslin aux souvenirs du Voyage à Nantes.",
       "tile_desc": "Passages, rues commerçantes et marché",
@@ -369,7 +356,6 @@
      "slug": "shopping",
      "content": "",
      "meta": {
-      "num": "05",
       "h1": "Shopping",
       "lead": "Five addresses for shopping in Nantes, from the chic shops of the Graslin district to Le Voyage à Nantes souvenirs.",
       "tile_desc": "Arcades, shopping streets and market",
@@ -383,7 +369,6 @@
      "slug": "shopping",
      "content": "",
      "meta": {
-      "num": "05",
       "h1": "Shopping",
       "lead": "Cinco direcciones para ir de compras en Nantes, de las tiendas elegantes del barrio Graslin a los recuerdos del Voyage à Nantes.",
       "tile_desc": "Pasajes, calles comerciales y mercado",
@@ -410,7 +395,6 @@
      "slug": "access",
      "content": "<h2>La navette aéroport, 7j/7 (sauf 1er mai)</h2>\n      <p><span class=\"maj\" style=\"background:var(--vert)\">Inclus dans le Pass Nantes</span> Ticket aller/retour de la navette aéroport Naolib.</p>\n      <p>Liaison directe et rapide entre l’aéroport et le centre-ville de Nantes en 25 minutes. Transport avec vos bagages sans supplément de prix, elle dessert les principaux sites de la ville : centre-ville (place du Commerce), la Cité des Congrès (Lieu Unique) et la gare SNCF (accès Sud).</p>\n      <ul>\n        <li><strong>Du lundi au samedi</strong>, toutes les 20 minutes : de la gare de 5 h 30 à 22 h 30, de l’aéroport de 6 h 15 à 23 h 15.</li>\n        <li><strong>Dimanche et jours fériés</strong>, toutes les 30 minutes : de la gare de 6 h 10 à 22 h 40, de l’aéroport de 7 h à 23 h 30.</li>\n        <li><strong>Tarif</strong> : 10 € le ticket, valable 1 heure sur l’ensemble du réseau Naolib.</li>\n        <li><strong>Contact</strong> : 02 40 44 44 44</li>\n      </ul>\n      <h2>Les transports en commun</h2>\n      <p><span class=\"maj\" style=\"background:var(--vert)\">Inclus dans le Pass Nantes</span> Tous les transports en commun Naolib et les parkings relais (tramway, bus, Navibus, parking relais voiture). Transports en commun gratuits le week-end (sauf navette aéroport).</p>\n      <p>Le réseau Naolib compte 3 lignes de tramway (1, 2 et 3) qui se croisent en plein cœur du centre-ville. Pour accéder à ExpoNantes ou au stade de la Beaujoire, la ligne 1 (direction Beaujoire ou Ranzay) permet de voyager depuis le centre-ville (environ 25 minutes).</p>\n      <p><a href=\"https://plan-tan.fr\" target=\"_blank\" rel=\"noopener\">Plan des transports et calcul d’itinéraire</a></p>\n      <h2>Les taxis</h2>\n      <p>Pour trouver un taxi 24 h/24 et 7j/7, des stations sont matérialisées en différents lieux : station Commerce, allée Brancas, station Gare Sud SNCF. Une station délocalisée à ExpoNantes est également prévue sur toute la durée des salons.</p>\n      <ul>\n        <li>Taxi Nantes : 02 40 69 22 22</li>\n        <li>Hep! Taxis : 02 40 85 40 85</li>\n        <li>A+ Taxis Nantais : 02 53 35 38 58</li>\n      </ul>",
      "meta": {
-      "num": "06",
       "h1": "Se déplacer",
       "lead": "Navette aéroport, transports en commun, taxis : tout pour circuler pendant votre séjour.",
       "tile_desc": "Navette aéroport, tram, taxis",
@@ -424,7 +408,6 @@
      "slug": "getting-around",
      "content": "\n<h2>Airport shuttle 7d/7d (except on 1st May)</h2>\n<p><strong>&gt;&gt; Included in Pass Nantes : </strong><strong>1 round trip included during the period of validity of the pass. Compulsory validation of the journey on the Pass Nantes app.</strong></p>\n<p>Shuttle to and from Nantes’ airport: direct and quick service for all your trips.<br/>\nEvery day of the week, only 20 min long, the shuttle is the quickest way to connect the airport to the town centre.</p>\n<p><strong>Timetable:</strong></p>\n<ul>\n<li><strong>Every 20 minutes from Monday to Saturday.</strong> From the station from 05:30 to 22:30. From the airport 06:15 to 23:15.</li>\n<li><strong>Every 30 minutes Sundays and public holidays.</strong> From the station from 06 :10 to 22:40. From the airport 07:00 to 23:30.</li>\n<li><strong>Fares:</strong> 10€ a ticket, lasts for an hour on the entire public transport network (NAOLIB).</li>\n</ul>\n<ul>\n<li><i></i> Contact : <a href=\"tel:+33240444444\">+33 2 40 44 44 44</a></li>\n</ul>\n<h2>Public transport TAN (Greater Nantes Transport).</h2>\n<p><strong>&gt;&gt;Included in Pass Nantes : your Pass Nantes is valid on all public transport in Nantes (airport shuttle included). No extra ticket is needed. It may also be used on the river ferries Navibus.</strong></p>\n<p>The public transport system is managed by NAOLIB (Greater Nantes Transport).<br/>\nA multi-means network: <strong>3 tramway lines</strong> <strong>(1, 2 and 3)</strong> which criss-cross the very heart of the town centre.</p>\n<p>Take Line 1 from the town centre to Beaujoire Stadium or ExpoNantes (+/- 25 minutes)</p>\n<p><i></i><a href=\"https://plan-tan.fr\"><strong>Route Maps and Trip Calculator </strong></a></p>\n<h2>Taxis</h2>\n<p>Taxis 24h/24h – 7d/7d</p>\n<p>Dedicated ranks for waiting taxis are available in various parts of the town :</p>\n<ul>\n<li>Station Commerce</li>\n<li>Allée Brancas</li>\n<li>Railway Station S.N.C.F – South Exit</li>\n<li>A dedicated rank at Beaujoire Stadium and ExpoNantes  is plannned when the exihibition is on.</li>\n</ul>\n<p>You can also book a taxi directly from the following companies:</p>\n<ul>\n<li>Taxi Nantes<br/>\n<a href=\"tel:0240692222\">+33 2 40 69 22 22</a></li>\n<li>Hep! Taxis<br/>\n<a href=\"tel:0240854085\">+33 2 40 85 40 85</a></li>\n<li>A+ Taxis Nantais</li>\n<li><a href=\"tel:+33 253353858\">+33 2 40 85 40 85</a></li>\n</ul>\n<h2>In case of emergency : <strong>112</strong></h2>\n<p><strong>Please contact this European emergency number. </strong></p>\n<p>112 is the single European emergency number. The European Electronic Communications Code ensures that Europeans can call the European emergency number  wherever they are in Europe, ensuring: European citizens gain better access to 112 via new technologies.</p>",
      "meta": {
-      "num": "06",
       "h1": "Getting around",
       "lead": "Airport shuttle, public transport, taxis: everything you need to get around during your stay.",
       "tile_desc": "Airport shuttle, tram, taxis",
@@ -438,7 +421,6 @@
      "slug": "desplazarse",
      "content": "\n<h2><strong>Aerobús Aeropuerto – todos los días (excepto el 1 de mayo)</strong></h2>\n<p><strong>&gt;&gt; Incluido en el Pass Nantes: Billete de ida y vuelta con el Aerobús Aeropuerto TAN.</strong></p>\n<p>Vía directa y rápida entre el aeropuerto y el centro de Nantes en 25 minutos. Transporta su equipaje sin coste adicional y llega a los principales lugares de interés de la ciudad: el centro (Place du Commerce), la Cité des Congrès (Lieu Unique) y la estación SNCF (acceso sur).</p>\n<p><strong><strong>Horarios :</strong></strong></p>\n<ul>\n<li><strong>Cada 20 minutos de lunes a sábado.</strong> Desde la estación, de 5:30am a 10:30pm. Desde el aeropuerto, de 6:15am a 11:15 pm.</li>\n<li><strong>Domingos y festivos, cada 30 minutos.</strong> Desde la estación de 6:10am a 10:40pm. Desde el aeropuerto, de 7:00am a 11:30pm.</li>\n<li><strong>Precios:</strong> 10€ por billete, válido durante 1 hora consecutiva en toda la red TAN.</li>\n<li>Contacto : <a href=\"tel:0240444444\">02 40 44 44 44</a></li>\n</ul>\n<h2><strong>Los transportes públicos</strong></h2>\n<p><strong>&gt;&gt; Incluido en el Pass Nantes: utilización de todos los transportes públicos y Parkings Relais NAOLIB (Tranvía, Autobús, Navibus, Parkings Relais).</strong></p>\n<p>La red de transportes públicos está gestionada por NAOLIB (Transports de l’Agglomération Nantaise).<br/>\nUna red diversificada: <strong>3 líneas de tranvía (1, 2 y 3)</strong> que se cruzan en el centro de la ciudad.</p>\n<p>Para acceder a <strong>ExpoNantes o Estadio de la Beaujoire</strong>, la línea 1 le permite desplazarse desde el centro de la ciudad (+/- 25 minutos).</p>\n<p><a href=\"https://plan-tan.fr\">Mapa de transportes y planificador de itinerarios</a></p>\n<h2>Les taxis</h2>\n<p>Para encontrar un taxi 24/24 y cada día.</p>\n<p>Las plazas reservadas a los taxis, agrupadas en estaciones, están delimitadas en diferentes lugares para que estos vehículos puedan aparcar mientras esperan un viaje.</p>\n<ul>\n<li>Estación Commerce</li>\n<li>Allée Brancas</li>\n<li>Estación Gare Sud S.N.C.F</li>\n<li>También está prevista una estación deslocalizada en ExpoNantes durante la duración del salón</li>\n</ul>\n<p>Puede llamar directamente a las compañías de taxis :</p>\n<ul>\n<li>Taxi Nantes<br/>\n<i></i> <a href=\"tel:0240692222\">02 40 69 22 22</a></li>\n<li>Hep! Taxis<br/>\n<i></i> <a href=\"tel:0240854085\">02 40 85 40 85</a></li>\n<li>A+ Taxis Nantais<br/>\n<a href=\"https://www.levoyageanantes.fr/sorganiser/venir-a-nantes/taxis/\">02 53 35 38 58</a></li>\n</ul>",
      "meta": {
-      "num": "06",
       "h1": "Desplazarse",
       "lead": "Lanzadera aeropuerto, transporte público, taxis: todo para desplazarse durante su estancia.",
       "tile_desc": "Lanzadera aeropuerto, tranvía, taxis",
@@ -465,7 +447,6 @@
      "slug": "aide",
      "content": "<h2>L’Accueil du Voyage à Nantes</h2>\n      <p>Conseils et réservation 7j/7 : hébergement, restauration, documentation, billetteries, visites guidées, boutique, Pass Nantes. L’accueil des visiteurs du Voyage à Nantes réserve un accueil atypique, sous le signe de l’ouverture et de la convivialité.</p>\n      <table class=\"ptable\">\n        <thead><tr><th>Jours</th><th class=\"r\">Horaires</th></tr></thead>\n        <tbody>\n          <tr><td>Du lundi au samedi</td><td class=\"r\">10 h – 18 h</td></tr>\n          <tr><td>Le jeudi</td><td class=\"r\">à partir de 11 h</td></tr>\n          <tr><td>Dimanche et jours fériés</td><td class=\"r\">10 h – 17 h</td></tr>\n          <tr><td>Juillet – septembre <span class=\"maj\">2025 à mettre à jour</span></td><td class=\"r\">7j/7, 9 h – 19 h</td></tr>\n        </tbody>\n      </table>\n      <h2>Nous suivre toute l’année</h2>\n      <p>Suivez l’actualité de la destination grâce aux réseaux sociaux du Voyage à Nantes #LVAN : <a href=\"https://www.instagram.com/levoyageanantes/\" target=\"_blank\" rel=\"noopener\">Instagram</a> · <a href=\"https://www.facebook.com/voyageanantes/\" target=\"_blank\" rel=\"noopener\">Facebook</a></p>",
      "meta": {
-      "num": "07",
       "h1": "Besoin d’aide ?",
       "lead": "L’Accueil du Voyage à Nantes vous conseille et vous réserve tout ce dont vous avez besoin, 7j/7.",
       "tile_desc": "L’Accueil du Voyage à Nantes",
@@ -480,7 +461,6 @@
      "slug": "need-a-hand",
      "content": "<h2>Le Voyage à Nantes, a Nantes style welcome!</h2>\n<p>Advice and bookings 7 days a week: accommodation, dining, literature, ticketing, guided tours, shop, tourist passes. You’ll be welcomed at our Le Voyage à Nantes reception in true local style in the spirit of openness and conviviality.</p>\n<p><strong>From Abroad : </strong><br/>\n<strong>+ 33 (0)2 72 64 04 79</strong></p>\n<p><strong>+ Le Voyage à Nantes Office – 9, rue des Etats </strong></p>\n<p><em><b>Facing of the castle of the dukes of Brittany.</b></em></p>\n<table>\n<tbody>\n<tr>\n<th>Monday to Saturday</th>\n<td>10 am to 6 pm</td>\n</tr>\n<tr>\n<th>Except Thursday</th>\n<td>From 11 am</td>\n</tr>\n<tr>\n<th>Sundays  and public holidays</th>\n<td>10 am to 5 pm</td>\n</tr>\n<tr>\n<th>July – September 2025</th>\n<td>7 days a week,<br/>\n9 am – 7 pm</td>\n</tr>\n</tbody>\n</table>\n<p><a href=\"mailto:info@nantes-tourisme.com\">Contact by email</a></p>\n<h2>Follow us all year long</h2>\n<p>Follow the latest local news with social media of Le Voyage à Nantes<br/>\n<a href=\"https://www.instagram.com/levoyageanantes/\">Instagram</a> #LVAN<br/>\n<a href=\"https://www.facebook.com/voyageanantes/?locale=fr_FR\">Facebook</a></p>",
      "meta": {
-      "num": "07",
       "h1": "Need a hand?",
       "lead": "Le Voyage à Nantes visitor centre advises you and books everything you need, 7 days a week.",
       "tile_desc": "Le Voyage à Nantes visitor centre",
@@ -495,7 +475,6 @@
      "slug": "ayuda",
      "content": "<h2>La oficina – Le Voyage à Nantes</h2>\n<p>Asesoramiento y reservas 7 días a la semana: alojamiento, restaurantes, documentación, entradas, visitas guiadas, tienda, Pass Nantes. Los visitantes del Voyage à Nantes son recibidos de forma atípica, abierta y amistosa.</p>\n<p><strong>Desde extranjero : </strong><br/>\n<strong>+ 33 (0)2 72 64 04 79</strong></p>\n<p><strong>+ La oficina : 9, rue des États<br/>\n</strong><em><strong>Frente el castillo<br/>\n</strong></em></p>\n<table>\n<tbody>\n<tr>\n<th>De lunes a sábado<br/>\n</th>\n<td>10h à 18h</td>\n</tr>\n<tr>\n<th>Excepto jueves</th>\n<td>À partir de 11h</td>\n</tr>\n<tr>\n<th>Domingos y festivos</th>\n<td>10h à 17h</td>\n</tr>\n<tr>\n<th>Julio y septiembre 2025</th>\n<td>7/7 9h – 19h</td>\n</tr>\n</tbody>\n</table>\n<p><i></i> <a href=\"mailto:info@levoyageanantes.fr\">Contact par mail</a></p>\n<h2>Síganos todo el año</h2>\n<p><a href=\"https://www.instagram.com/levoyageanantes/\">Instagram</a> #LVAN<br/>\n<a href=\"https://www.facebook.com/voyageanantes/?locale=fr_FR\">Facebook</a></p>",
      "meta": {
-      "num": "07",
       "h1": "¿Ayuda?",
       "lead": "La oficina del Voyage à Nantes le aconseja y le reserva todo lo que necesite, 7 días a la semana.",
       "tile_desc": "La oficina del Voyage à Nantes",
@@ -523,7 +502,6 @@
      "slug": "24h-de-plus",
      "content": "",
      "meta": {
-      "num": "08",
       "h1": "Acheter le Pass Nantes",
       "lead": "Pour tout savoir sur Nantes, consultez aussi le guide touristique « Nantes, le voyage permanent ».",
       "tile_desc": "Dès 27 €, de 24 h à 7 jours",
@@ -537,7 +515,6 @@
      "slug": "24h-more",
      "content": "",
      "meta": {
-      "num": "08",
       "h1": "Buy a City Pass",
       "lead": "To find out all about Nantes, also see the tourist guide “Nantes, the permanent voyage”.",
       "tile_desc": "From €27, from 24 hours to 7 days",
@@ -551,7 +528,6 @@
      "slug": "24h-mas",
      "content": "",
      "meta": {
-      "num": "08",
       "h1": "Comprar un City Pass",
       "lead": "Para saberlo todo sobre Nantes, consulte también la guía turística «Nantes, el viaje permanente».",
       "tile_desc": "Desde 27 €, de 24 h a 7 días",
@@ -578,9 +554,7 @@
      "slug": "quartier-ile-de-nantes",
      "content": "",
      "meta": {
-      "num": "1",
-      "map_x": "10%",
-      "map_y": "63%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Quai%20des%20Antilles%2C%20Nantes",
       "amb": "Terrasses face à la Loire",
       "where": "Île de Nantes · Hangar à bananes",
       "img_alt": "[Photo Hangar à bananes]",
@@ -597,9 +571,7 @@
      "slug": "ile-de-nantes-quarter",
      "content": "",
      "meta": {
-      "num": "1",
-      "map_x": "10%",
-      "map_y": "63%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Quai%20des%20Antilles%2C%20Nantes",
       "amb": "Terraces facing the Loire",
       "where": "Île de Nantes · Hangar à bananes",
       "img_alt": "",
@@ -616,9 +588,7 @@
      "slug": "barrio-ile-de-nantes",
      "content": "",
      "meta": {
-      "num": "1",
-      "map_x": "10%",
-      "map_y": "63%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Quai%20des%20Antilles%2C%20Nantes",
       "amb": "Terrazas frente al Loira",
       "where": "Île de Nantes · Hangar à bananes",
       "img_alt": "",
@@ -648,9 +618,7 @@
      "slug": "quartier-graslin",
      "content": "",
      "meta": {
-      "num": "2",
-      "map_x": "25.5%",
-      "map_y": "40%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Place%20Graslin%2C%20Nantes",
       "amb": "Cocktails chic et cosy",
       "where": "Graslin · autour du théâtre",
       "img_alt": "[Photo quartier Graslin]",
@@ -667,9 +635,7 @@
      "slug": "graslin-quarter",
      "content": "",
      "meta": {
-      "num": "2",
-      "map_x": "25.5%",
-      "map_y": "40%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Place%20Graslin%2C%20Nantes",
       "amb": "Chic and cosy cocktails",
       "where": "Graslin · around the theatre",
       "img_alt": "",
@@ -686,9 +652,7 @@
      "slug": "barrio-graslin",
      "content": "",
      "meta": {
-      "num": "2",
-      "map_x": "25.5%",
-      "map_y": "40%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Place%20Graslin%2C%20Nantes",
       "amb": "Cócteles elegantes y acogedores",
       "where": "Graslin · alrededor del teatro",
       "img_alt": "",
@@ -718,9 +682,7 @@
      "slug": "quartier-bouffay",
      "content": "",
      "meta": {
-      "num": "3",
-      "map_x": "43%",
-      "map_y": "36%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Place%20du%20Bouffay%2C%20Nantes",
       "amb": "Terrasses et pubs animés",
       "where": "Bouffay · quartier médiéval",
       "img_alt": "[Photo place du Bouffay]",
@@ -737,9 +699,7 @@
      "slug": "bouffay-quarter",
      "content": "",
      "meta": {
-      "num": "3",
-      "map_x": "43%",
-      "map_y": "36%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Place%20du%20Bouffay%2C%20Nantes",
       "amb": "Terraces and lively pubs",
       "where": "Bouffay · medieval quarter",
       "img_alt": "",
@@ -756,9 +716,7 @@
      "slug": "barrio-bouffay",
      "content": "",
      "meta": {
-      "num": "3",
-      "map_x": "43%",
-      "map_y": "36%",
+      "maps": "https://www.google.com/maps/search/?api=1&query=Place%20du%20Bouffay%2C%20Nantes",
       "amb": "Terrazas y pubs animados",
       "where": "Bouffay · barrio medieval",
       "img_alt": "",
@@ -788,9 +746,7 @@
      "slug": "les-guinguettes",
      "content": "",
      "meta": {
-      "num": "4",
-      "map_x": "",
-      "map_y": "",
+      "maps": "",
       "amb": "Guinguettes aux beaux jours",
       "where": "En ville et aux environs",
       "img_alt": "[Photo guinguette]",
@@ -807,9 +763,7 @@
      "slug": "guinguette-spirit-for-sunny-days",
      "content": "",
      "meta": {
-      "num": "4",
-      "map_x": "",
-      "map_y": "",
+      "maps": "",
       "amb": "Guinguettes on sunny days",
       "where": "In town and nearby",
       "img_alt": "",
@@ -826,9 +780,7 @@
      "slug": "espiritu-guinguette-para-los-buenos-dias",
      "content": "",
      "meta": {
-      "num": "4",
-      "map_x": "",
-      "map_y": "",
+      "maps": "",
       "amb": "Guinguettes con buen tiempo",
       "where": "En la ciudad y alrededores",
       "img_alt": "",

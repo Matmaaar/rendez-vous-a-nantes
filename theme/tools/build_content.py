@@ -7,7 +7,7 @@ dans la structure de la maquette. Les textes courts propres à la maquette (accr
 
 Usage : python3 -I theme/tools/build_content.py [maquette.json]  (par défaut theme/tools/maquette.json)
 """
-import json, os, re, sys
+import json, os, re, sys, urllib.parse
 from bs4 import BeautifulSoup
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -166,7 +166,7 @@ def cat_meta(c, lang):
     else:
         title, tile, h1 = T['cats'][c['id']][lang]
         lead = LEADS.get(c['id'], {}).get(lang, '')
-    meta = {'num': c['n'], 'h1': h1, 'lead': lead, 'tile_desc': tile, 'home': '1' if c.get('home') else '0', 'nav': '1' if c.get('nav') else '0'}
+    meta = {'h1': h1, 'lead': lead, 'tile_desc': tile, 'home': '1' if c.get('home') else '0', 'nav': '1' if c.get('nav') else '0'}
     pt = CAT_PAGE[c['id']][2]
     if pt:
         meta['post_type'] = pt
@@ -452,7 +452,10 @@ def groups_text(groups):
 
 for order, q in enumerate(M['QUARTIERS'], start=1):
     fr_path = '/prendre-un-verre/%s/' % QUARTIER_SLUGS[q['id']]
-    common = {'num': q['n'], 'map_x': q.get('x', ''), 'map_y': q.get('y', '')}
+    # Bouton « Itinéraire » : quartiers à adresse précise (ceux qui avaient un repère sur la carte de la maquette) ;
+    # pas pour les guinguettes, réparties dans la ville.
+    dest = {'ile-de-nantes': 'Quai des Antilles, Nantes', 'graslin': 'Place Graslin, Nantes', 'bouffay': 'Place du Bouffay, Nantes'}.get(q['id'])
+    common = {'maps': ('https://www.google.com/maps/search/?api=1&query=' + urllib.parse.quote(dest, safe='')) if dest else ''}
     langs = {'fr': {'title': q['t'], 'slug': QUARTIER_SLUGS[q['id']], 'content': '', 'meta': dict(common, **{
         'amb': q['amb'], 'where': q['where'], 'img_alt': q['img'], 'badges': badges_text(q['badges']), 'lead': q['lead'],
         'musts': '\n'.join(' | '.join([m['t'], m['d'], m.get('tag', '')]).rstrip(' |') for m in q.get('musts', [])),

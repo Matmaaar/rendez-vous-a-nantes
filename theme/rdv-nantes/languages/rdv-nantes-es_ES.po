@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rendez-vous à Nantes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rdv-nantes\n"
+"POT-Creation-Date: 2026-11-09T15:57:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Language: es_ES\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-06T14:08:07+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rdv-nantes\n"
 
@@ -27,7 +27,10 @@ msgstr ""
 
 #. Description of the theme
 #: style.css:5
-msgid "Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : prendre un verre (quartiers + carte), manger, incontournables, footing, shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES)."
+msgid ""
+"Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : "
+"prendre un verre (quartiers + carte), manger, incontournables, footing, "
+"shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES)."
 msgstr ""
 
 #. Author of the theme
@@ -40,8 +43,12 @@ msgid "Page introuvable"
 msgstr "Página no encontrada"
 
 #: 404.php:14
-msgid "Cette page n’existe pas ou plus. Repartez de l’accueil ou choisissez une rubrique."
-msgstr "Esta página no existe o ya no existe. Vuelva a la página de inicio o elija una sección."
+msgid ""
+"Cette page n’existe pas ou plus. Repartez de l’accueil ou choisissez une "
+"rubrique."
+msgstr ""
+"Esta página no existe o ya no existe. Vuelva a la página de inicio o elija "
+"una sección."
 
 #: 404.php:15
 msgid "Retour à l’accueil"
@@ -127,8 +134,7 @@ msgstr "Rendez-vous à"
 msgid "Rubriques"
 msgstr "Secciones"
 
-#: header.php:34
-#: inc/post-types.php:24
+#: header.php:34 inc/post-types.php:24
 msgid "Pass Nantes"
 msgstr "Pass Nantes"
 
@@ -176,7 +182,7 @@ msgstr ""
 msgid "Accueil"
 msgstr "Inicio"
 
-#: inc/template-tags.php:215
+#: inc/template-tags.php:203
 msgid "Autres rubriques"
 msgstr "Otras secciones"
 
@@ -189,10 +195,8 @@ msgstr "Sin contenido."
 msgid "Rubrique — page d'infos"
 msgstr ""
 
-#: page-templates/infos.php:22
-#: single-rdv_quartier.php:50
-#: single-rdv_quartier.php:62
-#: single.php:17
+#: page-templates/infos.php:21 single-rdv_quartier.php:53
+#: single-rdv_quartier.php:65 single.php:17
 msgid "Itinéraire"
 msgstr "Itinerario"
 
@@ -201,7 +205,7 @@ msgstr "Itinerario"
 msgid "Rubrique — liste d'adresses"
 msgstr ""
 
-#: page-templates/liste.php:25
+#: page-templates/liste.php:19
 msgid "Voir"
 msgstr "Ver"
 
@@ -212,49 +216,24 @@ msgstr ""
 
 #. Template Name of the theme
 #: page-templates/rubrique-quartiers.php:3
-msgid "Rubrique — quartiers avec carte"
+msgid "Rubrique — quartiers"
 msgstr ""
 
-#: page-templates/rubrique-quartiers.php:19
-msgid "Plan du centre de Nantes et de l’Île de Nantes"
-msgstr "Plano del centro de Nantes y de la Île de Nantes"
-
-#: page-templates/rubrique-quartiers.php:20
-msgid "La Loire"
-msgstr "El Loira"
-
-#: page-templates/rubrique-quartiers.php:21
-msgid "Île de Nantes"
-msgstr "Île de Nantes"
-
-#: page-templates/rubrique-quartiers.php:22
-msgid "Château"
-msgstr "Castillo"
-
-#: page-templates/rubrique-quartiers.php:23
-msgid "Cité des Congrès"
-msgstr "Cité des Congrès"
-
-#: page-templates/rubrique-quartiers.php:37
-msgid "© OpenStreetMap contributors · Les guinguettes sont réparties en ville et aux environs."
-msgstr "© OpenStreetMap contributors · Las guinguettes están repartidas por la ciudad y alrededores."
-
-#: single-rdv_quartier.php:27
+#: single-rdv_quartier.php:30
 msgid "Étapes incontournables"
 msgstr "Paradas imprescindibles"
 
-#: single-rdv_quartier.php:67
+#: single-rdv_quartier.php:71
 msgid "Tous les quartiers"
 msgstr "Todos los barrios"
 
-#: single-rdv_quartier.php:69
+#: single-rdv_quartier.php:73
 msgid "Revenir au début"
 msgstr "Volver al principio"
 
 #. translators: %s: ambiance du quartier suivant
 #. translators: %s: fiche suivante
-#: single-rdv_quartier.php:69
-#: single.php:42
+#: single-rdv_quartier.php:73 single.php:47
 #, php-format
 msgid "Suivant : %s"
 msgstr "Siguiente: %s"

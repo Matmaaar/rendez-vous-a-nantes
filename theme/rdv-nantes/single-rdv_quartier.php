@@ -12,7 +12,6 @@ list( $rdv_cat, $rdv_cat_url ) = rdv_rubrique_info( 'rdv_quartier' );
 $rdv_items                     = rdv_items( 'rdv_quartier' );
 list( $rdv_i, $rdv_n, $rdv_next ) = rdv_position( $rdv_items, get_the_ID() );
 $rdv_infos                     = rdv_lines( rdv_meta( 'infos' ) );
-$rdv_has_map                   = rdv_meta( 'map_x' ) && rdv_meta( 'map_y' );
 
 rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
 ?>
@@ -63,7 +62,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
   <?php
   rdv_aside(
 	  rdv_meta( 'infos' ),
-	  ( $rdv_has_map && $rdv_infos ) ? rdv_btn( rdv_gmaps( $rdv_infos[0][1] . ' Nantes' ), __( 'Itinéraire', 'rdv-nantes' ), 'btn plein' ) : ''
+	  rdv_meta( 'maps' ) ? rdv_btn( rdv_meta( 'maps' ), __( 'Itinéraire', 'rdv-nantes' ), 'btn plein' ) : ''
   );
   ?>
   </div>
