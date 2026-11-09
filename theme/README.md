@@ -26,13 +26,13 @@ Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quell
 | --- | --- | --- | --- | --- |
 | Accueil | `front-page.php` | `/` | `/en/` | `/es/` |
 | Prendre un verre (4 quartiers) | Rubrique — quartiers | `/prendre-un-verre/` | `/en/have-a-drink/` | `/es/tomar-una-copa/` |
-| 02 Manger | Rubrique — liste d'adresses | `/manger/` | `/en/eat/` | `/es/comer/` |
-| 03 Incontournables (10 fiches) | Rubrique — liste de fiches | `/incontournable/` | `/en/unmissable/` | `/es/imprescindibles/` |
-| 04 Footing | Rubrique — liste d'adresses | `/footing/` | `/en/jogging/` | `/es/footing/` |
-| 05 Shopping (5 fiches) | Rubrique — liste de fiches | `/shopping/` | `/en/shopping/` | `/es/shopping/` |
-| 06 Se déplacer | Rubrique — page d'infos | `/access/` | `/en/getting-around/` | `/es/desplazarse/` |
-| 07 Aide | Rubrique — page d'infos | `/aide/` | `/en/need-a-hand/` | `/es/ayuda/` |
-| 08 Pass Nantes (3 fiches) | Rubrique — liste de fiches | `/24h-de-plus/` | `/en/24h-more/` | `/es/24h-mas/` |
+| Manger | Rubrique — liste d'adresses | `/manger/` | `/en/eat/` | `/es/comer/` |
+| Incontournables (10 fiches) | Rubrique — liste de fiches | `/incontournable/` | `/en/unmissable/` | `/es/imprescindibles/` |
+| Footing | Rubrique — liste d'adresses | `/footing/` | `/en/jogging/` | `/es/footing/` |
+| Shopping (5 fiches) | Rubrique — liste de fiches | `/shopping/` | `/en/shopping/` | `/es/shopping/` |
+| Se déplacer | Rubrique — page d'infos | `/access/` | `/en/getting-around/` | `/es/desplazarse/` |
+| Aide | Rubrique — page d'infos | `/aide/` | `/en/need-a-hand/` | `/es/ayuda/` |
+| Pass Nantes (3 fiches) | Rubrique — liste de fiches | `/24h-de-plus/` | `/en/24h-more/` | `/es/24h-mas/` |
 | Mentions légales, cookies | `page.php` | `/mentions-legales/`, `/cookiespolicy/` | `/en/legal-information/` | `/es/mentions-legales/` |
 
 Fiches : types de contenu `rdv_quartier` (`/prendre-un-verre/…`), `rdv_incontournable` (`/incontournable/…`), `rdv_shopping` (`/shopping/…`), `rdv_pass` (`/24h-de-plus/…`). Une rubrique est une page dont le slug est la base d'URL de ses fiches.
