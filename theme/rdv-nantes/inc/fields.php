@@ -61,7 +61,7 @@ function rdv_field_groups() {
 			'fields' => array(
 				array( 'cta', 'Bouton sous le chapô', 'text', 'Libellé | lien (facultatif)' ),
 				array( 'list_title', 'Titre de la liste', 'text', '' ),
-				array( 'items', 'Éléments', 'textarea', 'Une ligne par élément : Titre | précision (facultatif) | description (facultatif) | lien' ),
+				array( 'items', 'Éléments', 'textarea', 'Une ligne par élément : Titre | précision (facultatif) | description (facultatif) | lien | photo (facultatif : numéro du média, visible dans la médiathèque). Avec des photos, la liste devient illustrée.' ),
 				array( 'link_label', 'Libellé des boutons', 'text', 'Ex. « Voir la fiche ».' ),
 				array( 'after_title', 'Encadré final : titre', 'text', '' ),
 				array( 'after_text', 'Encadré final : texte', 'textarea', '' ),

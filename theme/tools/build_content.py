@@ -202,11 +202,45 @@ def manger_items(lang):
         items.append([m.group(1).strip(), '', re.sub(r'\s+', ' ', m.group(3)).strip(' *'), m.group(2)])
     return items
 
+# Page Manger : restaurants retirés (fiche disparue du guide Les Tables de Nantes) et photos, dans l'ordre
+# de la liste (repérées par l'adresse de la fiche du guide, identique dans les 3 langues hors préfixe de langue).
+MANGER_RETIRES = ('maison-bagarre',)
+MANGER_PHOTOS = {
+    'roza': 'tables-de-nantes/roza.jpg',
+    'creperie-heb-ken': 'tables-de-nantes/creperie-heb-ken.jpg',
+    'balthazar': 'tables-de-nantes/balthazar.jpg',
+    'brasserie-la-cigale': 'tables-de-nantes/brasserie-la-cigale.jpg',
+    'little-atlantique-brewery': 'uploads/2019/11/LAB.png',
+}
+
+def manger_photo(url):
+    """Photo d'un restaurant (contenu/images/…), copiée en JPEG 1200 px dans import/images ; renvoie le jeton d'import."""
+    from PIL import Image
+    key = url.rstrip('/').rsplit('/', 1)[-1]
+    src = MANGER_PHOTOS.get(key)
+    if not src:
+        return ''
+    name = 'manger--' + key + '.jpg'
+    im = Image.open(os.path.join(CONTENU, 'images', src)).convert('RGB')
+    im.thumbnail((1200, 1200))
+    im.save(os.path.join(THEME, 'import', 'images', name), 'JPEG', quality=78, optimize=True)
+    return 'import:' + name
+
+def manger_rows(rows):
+    """Retire les restaurants disparus et ajoute la colonne photo."""
+    out = []
+    for r in rows:
+        if any(k in r[3] for k in MANGER_RETIRES):
+            continue
+        out.append(list(r[:4]) + [manger_photo(r[3])])
+    return out
+
 def liste_meta(cid, lang):
     d = M['LISTES'][cid]
     if lang == 'fr':
         meta = {'lead': d['lead'], 'list_title': d['title'], 'link_label': d['linkLabel'],
-                'items': '\n'.join(' | '.join([it['t'], it.get('m', ''), it.get('d', ''), it['u']]) for it in d['items'])}
+                'items': '\n'.join(' | '.join(r) for r in (manger_rows([[it['t'], it.get('m', ''), it.get('d', ''), it['u']] for it in d['items']]) if cid == 'manger'
+                                                             else [[it['t'], it.get('m', ''), it.get('d', ''), it['u']] for it in d['items']]))}
         if d.get('cta'):
             meta['cta'] = d['cta'][0] + ' | ' + d['cta'][1]
         a = d['after']
@@ -216,7 +250,7 @@ def liste_meta(cid, lang):
         return meta
     meta = dict(LISTES_TR[cid][lang])
     if cid == 'manger':
-        meta['items'] = '\n'.join(' | '.join(i) for i in manger_items(lang))
+        meta['items'] = '\n'.join(' | '.join(i) for i in manger_rows(manger_items(lang)))
     else:
         meta['items'] = '\n'.join(' | '.join([it['t'], FOOTING_META[lang][i], '', it['u']]) for i, it in enumerate(d['items']))
         a = d['after']

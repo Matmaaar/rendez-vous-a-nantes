@@ -137,6 +137,11 @@ function rdv_import_post( $item, $lang, $l ) {
 		update_post_meta( $id, '_wp_page_template', $item['template'] );
 	}
 	foreach ( $l['meta'] as $k => $v ) {
+		// « import:fichier.jpg » (photos des listes, ex. restaurants) → identifiant du média téléversé.
+		$v = preg_replace_callback( '/import:([\w.-]+)/', function ( $m ) use ( $id ) {
+			$att = rdv_import_media( $m[1], $id );
+			return $att ? (string) $att : '';
+		}, $v );
 		update_post_meta( $id, '_rdv_' . $k, wp_slash( $v ) );
 	}
 	// Réglages SEO du site actuel, au format Yoast (lus aussi par le thème si Yoast est absent).
@@ -154,6 +159,24 @@ function rdv_import_post( $item, $lang, $l ) {
  * @param array  $meta    alt / caption.
  */
 function rdv_import_thumbnail( $post_id, $file, $meta = array() ) {
+	$att = rdv_import_media( $file, $post_id );
+	if ( $att ) {
+		set_post_thumbnail( $post_id, $att );
+		rdv_import_media_meta( $att, $meta );
+	}
+}
+
+/**
+ * Téléverse une image de import/images (une seule fois) et renvoie l'identifiant du média.
+ *
+ * @param string $file    Nom du fichier.
+ * @param int    $post_id Contenu auquel rattacher le média.
+ * @return int 0 en cas d'échec.
+ */
+function rdv_import_media( $file, $post_id = 0 ) {
+	if ( ! file_exists( RDV_DIR . '/import/images/' . $file ) ) {
+		return 0;
+	}
 	$found = get_posts( array(
 		'post_type'      => 'attachment',
 		'post_status'    => 'inherit',
@@ -164,9 +187,7 @@ function rdv_import_thumbnail( $post_id, $file, $meta = array() ) {
 		'suppress_filters' => true,
 	) );
 	if ( $found ) {
-		set_post_thumbnail( $post_id, $found[0] );
-		rdv_import_media_meta( $found[0], $meta );
-		return;
+		return (int) $found[0];
 	}
 	require_once ABSPATH . 'wp-admin/includes/file.php';
 	require_once ABSPATH . 'wp-admin/includes/media.php';
@@ -175,11 +196,10 @@ function rdv_import_thumbnail( $post_id, $file, $meta = array() ) {
 	copy( RDV_DIR . '/import/images/' . $file, $tmp );
 	$att = media_handle_sideload( array( 'name' => $file, 'tmp_name' => $tmp ), $post_id );
 	if ( is_wp_error( $att ) ) {
-		return;
+		return 0;
 	}
 	update_post_meta( $att, '_rdv_import_file', $file );
-	set_post_thumbnail( $post_id, $att );
-	rdv_import_media_meta( $att, $meta );
+	return (int) $att;
 }
 
 /**

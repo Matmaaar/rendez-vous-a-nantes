@@ -49,6 +49,10 @@ Les grilles de cases (accueil, Prendre un verre, Incontournables, Shopping, Pass
 
 La photo d'une case est l'**image à la une** de la fiche ou de la page de rubrique ; la même photo s'affiche en tête de la fiche, avec sa légende (crédit) (sans image : fond gris foncé). L'import en pose une pour chaque fiche et rubrique, reprise du diaporama du site actuel, avec le crédit en légende.
 
+## Page Manger : liste illustrée
+
+Les restaurants de la page Manger s'affichent en **liste illustrée** (photo, nom, description, bouton vers la fiche du guide Les Tables de Nantes), sur 2 colonnes. La photo est la 5e colonne du champ « Éléments » (numéro du média) ; une liste sans photo (Footing) reste en lignes simples. Photos reprises des fiches du guide (voir `contenu/images/tables-de-nantes/`). Maison Bagarre a été retiré : sa fiche n'existe plus sur le guide.
+
 ## Édition du contenu
 
 Tout se modifie dans l'admin, dans les encadrés sous l'éditeur :
