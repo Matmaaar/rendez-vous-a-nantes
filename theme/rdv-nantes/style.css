@@ -242,3 +242,10 @@ footer p{margin:0}
 .fiche-photo{margin:0 0 28px}
 .fiche-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
 .fiche-photo figcaption{margin-top:8px;font-size:13px;color:var(--gris-txt)}
+
+/* En-tête de fiche au-dessus des deux colonnes : l'encadré d'infos démarre à hauteur de la photo.
+   Largeur calée sur la colonne de gauche (340px d'encadré + 64px d'écart). */
+.fiche-head{max-width:calc(100% - 404px)}
+.fiche-head .big{margin-bottom:0}
+.fiche-head + .qgrid{margin-top:0}
+@media (max-width:1180px){.fiche-head{max-width:none}}

@@ -16,12 +16,15 @@ $rdv_has_map                   = rdv_meta( 'map_x' ) && rdv_meta( 'map_y' );
 
 rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
 ?>
-<section style="padding:44px 0 72px"><div class="wrap qgrid">
-  <div style="min-width:0">
+<section style="padding:44px 0 72px"><div class="wrap">
+  <div class="fiche-head">
     <p class="label" style="margin-bottom:16px"><?php echo esc_html( $rdv_cat . ' · ' . rdv_meta( 'amb' ) ); ?></p>
     <h1 class="big" style="font-size:clamp(40px,5vw,60px);line-height:1.02"><?php the_title(); ?></h1>
-    <?php if ( rdv_meta( 'lead' ) ) : ?><p style="margin:22px 0 0;font-size:19px;max-width:640px"><?php echo esc_html( rdv_meta( 'lead' ) ); ?></p><?php endif; ?>
-    <?php rdv_fiche_photo( 'margin-top:28px' ); ?>
+    <?php if ( rdv_meta( 'lead' ) ) : ?><p style="margin:22px 0 28px;font-size:19px;max-width:640px"><?php echo esc_html( rdv_meta( 'lead' ) ); ?></p><?php endif; ?>
+  </div>
+  <div class="qgrid">
+  <div style="min-width:0">
+    <?php rdv_fiche_photo(); ?>
 
     <?php $rdv_musts = rdv_lines( rdv_meta( 'musts' ) ); ?>
     <?php if ( $rdv_musts ) : ?>
@@ -63,6 +66,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
 	  ( $rdv_has_map && $rdv_infos ) ? rdv_btn( rdv_gmaps( $rdv_infos[0][1] . ' Nantes' ), __( 'Itinéraire', 'rdv-nantes' ), 'btn plein' ) : ''
   );
   ?>
+  </div>
 </div></section>
 <section class="pager"><div class="wrap">
   <a class="btn" href="<?php echo esc_url( $rdv_cat_url ); ?>">← <?php esc_html_e( 'Tous les quartiers', 'rdv-nantes' ); ?></a>
