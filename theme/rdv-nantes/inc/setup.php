@@ -76,12 +76,18 @@ add_filter( 'wp_robots', function ( $robots ) {
  * Ils ne sont pas versionnés (licence) ; à défaut, la pile de polices de style.css retombe sur Inter.
  */
 function rdv_font_faces() {
-	$weights = array( 400 => 'Regular', 500 => 'Medium', 600 => 'SemiBold', 700 => 'Bold' );
-	$css     = '';
-	foreach ( $weights as $w => $name ) {
-		$file = '/assets/fonts/SuisseIntl-' . $name . '.woff2';
+	$faces = array(
+		array( 'Regular', 400, 'normal' ),
+		array( 'RegularItalic', 400, 'italic' ),
+		array( 'Medium', 500, 'normal' ),
+		array( 'SemiBold', 600, 'normal' ),
+		array( 'Bold', 700, 'normal' ),
+	);
+	$css   = '';
+	foreach ( $faces as $f ) {
+		$file = '/assets/fonts/SuisseIntl-' . $f[0] . '.woff2';
 		if ( file_exists( RDV_DIR . $file ) ) {
-			$css .= "@font-face{font-family:\"Suisse Int'l\";src:url(" . esc_url( RDV_URI . $file ) . ") format(\"woff2\");font-weight:{$w};font-style:normal;font-display:swap}";
+			$css .= "@font-face{font-family:\"Suisse Int'l\";src:url(" . esc_url( RDV_URI . $file ) . ") format(\"woff2\");font-weight:{$f[1]};font-style:{$f[2]};font-display:swap}";
 		}
 	}
 	return $css;
