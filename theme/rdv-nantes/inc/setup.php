@@ -16,8 +16,13 @@ add_action( 'after_setup_theme', function () {
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
-	wp_enqueue_style( 'rdv-inter', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', array(), null );
-	wp_enqueue_style( 'rdv-nantes', get_stylesheet_uri(), array( 'rdv-inter' ), RDV_VERSION );
+	// Inter (Google Fonts) seulement en secours, si les fichiers Suisse Int'l ne sont pas déposés.
+	$deps = array();
+	if ( ! rdv_font_faces() ) {
+		wp_enqueue_style( 'rdv-inter', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', array(), null );
+		$deps[] = 'rdv-inter';
+	}
+	wp_enqueue_style( 'rdv-nantes', get_stylesheet_uri(), $deps, RDV_VERSION );
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'rdv-nantes', RDV_URI . '/assets/js/rdv.js', array(), RDV_VERSION, array( 'in_footer' => true, 'strategy' => 'defer' ) );
 	}
@@ -65,3 +70,26 @@ add_filter( 'wp_robots', function ( $robots ) {
 	}
 	return $robots;
 } );
+
+/*
+ * Suisse Int'l (police de la charte) : chargée depuis assets/fonts/ si les fichiers y sont déposés.
+ * Ils ne sont pas versionnés (licence) ; à défaut, la pile de polices de style.css retombe sur Inter.
+ */
+function rdv_font_faces() {
+	$weights = array( 400 => 'Regular', 500 => 'Medium', 600 => 'SemiBold', 700 => 'Bold' );
+	$css     = '';
+	foreach ( $weights as $w => $name ) {
+		$file = '/assets/fonts/SuisseIntl-' . $name . '.woff2';
+		if ( file_exists( RDV_DIR . $file ) ) {
+			$css .= "@font-face{font-family:\"Suisse Int'l\";src:url(" . esc_url( RDV_URI . $file ) . ") format(\"woff2\");font-weight:{$w};font-style:normal;font-display:swap}";
+		}
+	}
+	return $css;
+}
+
+add_action( 'wp_enqueue_scripts', function () {
+	$css = rdv_font_faces();
+	if ( $css ) {
+		wp_add_inline_style( 'rdv-nantes', $css );
+	}
+}, 20 );

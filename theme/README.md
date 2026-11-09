@@ -73,7 +73,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 - La maquette prévoyait une description courte par bar (« [Description courte à rédiger…] ») : la colonne existe (4e colonne du champ Bars) mais est vide, rien ne s'affiche tant qu'elle n'est pas remplie.
 - Les vignettes de quartiers utilisent une photo du site actuel (image à la une) au lieu des cases « [Photo …] » de la maquette.
 - Lien « Accessibilité » du pied de page : affiché dès qu'une page de slug `accessibilite` existe (aucun contenu fourni).
-- Polices : la maquette appelle « Suisse Int'l » (non fournie) puis Inter (Google Fonts) ; le thème fait de même.
+- Polices : **Suisse Int'l** (licence web LVaN) est chargée depuis `rdv-nantes/assets/fonts/` si les fichiers WOFF2 y sont déposés (voir `LISEZMOI.md` du dossier) ; ils ne sont **pas versionnés** car le repo est public. Sans eux, le thème affiche Inter (Google Fonts).
 
 ## Développement
 

@@ -1,0 +1,5 @@
+# Polices sous licence : jamais dans le repo public
+*.woff2
+*.woff
+*.otf
+*.ttf
