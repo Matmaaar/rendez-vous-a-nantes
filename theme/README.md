@@ -47,7 +47,7 @@ Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/sh
 
 Les grilles de cases (accueil, Prendre un verre, Incontournables, Shopping, Pass Nantes) sont des **mosaïques photo** : photo pleine case en 3/2, cases collées, titre et accroche en blanc sur un halo sombre très diffus, soulignement vert fluo au survol. 4 colonnes à partir de 8 cases (et pour les 4 quartiers), sinon 3 ; 2 colonnes sur tablette, 1 sur mobile. Fonction : `rdv_mosaic()` dans `inc/template-tags.php`.
 
-La photo d'une case est l'**image à la une** de la fiche ou de la page de rubrique (sans image : fond gris foncé). L'import en pose une pour chaque fiche et rubrique, reprise du diaporama du site actuel, avec le crédit en légende.
+La photo d'une case est l'**image à la une** de la fiche ou de la page de rubrique ; la même photo s'affiche en tête de la fiche, avec sa légende (crédit) (sans image : fond gris foncé). L'import en pose une pour chaque fiche et rubrique, reprise du diaporama du site actuel, avec le crédit en légende.
 
 ## Édition du contenu
 
@@ -69,7 +69,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 
 ## Points à valider
 
-- Mentions éditoriales de la maquette reprises telles quelles : « [X] min à pied de la Cité des Congrès », « Dates 2024 à mettre à jour », « 2025 à mettre à jour ».
+- Mentions éditoriales de la maquette reprises telles quelles : « Dates 2024 à mettre à jour », « 2025 à mettre à jour » (« [X] min à pied de la Cité des Congrès » a été retiré).
 - La maquette prévoyait une description courte par bar (« [Description courte à rédiger…] ») : la colonne existe (4e colonne du champ Bars) mais est vide, rien ne s'affiche tant qu'elle n'est pas remplie.
 - Les vignettes de quartiers utilisent une photo du site actuel (image à la une) au lieu des cases « [Photo …] » de la maquette.
 - Lien « Accessibilité » du pied de page : affiché dès qu'une page de slug `accessibilite` existe (aucun contenu fourni).

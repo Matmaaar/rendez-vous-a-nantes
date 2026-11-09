@@ -237,3 +237,8 @@ footer p{margin:0}
 .mosaic[style*="--cols:4"] .mtile .d{font-size:13px}
 @media (max-width:1000px){.mosaic{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.mosaic{grid-template-columns:minmax(0,1fr)}}
+
+/* Photo en tête de fiche (même image que la case de la mosaïque) */
+.fiche-photo{margin:0 0 28px}
+.fiche-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.fiche-photo figcaption{margin-top:8px;font-size:13px;color:var(--gris-txt)}

@@ -342,3 +342,22 @@ function rdv_mosaic( $tiles, $cols = 0 ) {
 	}
 	echo '</div>';
 }
+
+/**
+ * Photo d'une fiche : la même image à la une que sa case dans la mosaïque, avec le crédit en légende.
+ *
+ * @param string $style Style en ligne facultatif (marges).
+ */
+function rdv_fiche_photo( $style = '' ) {
+	if ( ! has_post_thumbnail() ) {
+		return;
+	}
+	$id      = get_post_thumbnail_id();
+	$caption = wp_get_attachment_caption( $id );
+	echo '<figure class="fiche-photo"' . ( $style ? ' style="' . esc_attr( $style ) . '"' : '' ) . '>';
+	echo wp_get_attachment_image( $id, 'large', false, array( 'sizes' => '(max-width:1180px) 92vw, 740px', 'fetchpriority' => 'high' ) );
+	if ( $caption ) {
+		echo '<figcaption>' . esc_html( $caption ) . '</figcaption>';
+	}
+	echo '</figure>';
+}

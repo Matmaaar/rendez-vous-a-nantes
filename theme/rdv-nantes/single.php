@@ -31,6 +31,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
     <p class="label" style="margin-bottom:16px"><?php echo esc_html( sprintf( /* translators: 1: rubrique, 2: position, 3: total */ __( '%1$s · %2$d sur %3$d', 'rdv-nantes' ), $rdv_cat, $rdv_i + 1, $rdv_n ) ); ?></p>
     <h1 class="big" style="font-size:clamp(40px,5vw,60px);line-height:1.02"><?php the_title(); ?></h1>
     <?php if ( rdv_meta( 'subtitle' ) ) : ?><p style="margin:18px 0 28px;font-size:21px;font-weight:500;max-width:640px"><?php echo esc_html( rdv_meta( 'subtitle' ) ); ?></p><?php endif; ?>
+    <?php rdv_fiche_photo(); ?>
     <div class="prose"><?php the_content(); ?></div>
     <?php if ( count( $rdv_link ) >= 2 && $rdv_link[0] ) : ?><p style="margin-top:24px"><?php echo rdv_btn( $rdv_link[1], $rdv_link[0] . ' →', 'btn' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></p><?php endif; ?>
   </div>

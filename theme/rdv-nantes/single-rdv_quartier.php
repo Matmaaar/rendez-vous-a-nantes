@@ -21,6 +21,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
     <p class="label" style="margin-bottom:16px"><?php echo esc_html( $rdv_cat . ' · ' . rdv_meta( 'amb' ) ); ?></p>
     <h1 class="big" style="font-size:clamp(40px,5vw,60px);line-height:1.02"><?php the_title(); ?></h1>
     <?php if ( rdv_meta( 'lead' ) ) : ?><p style="margin:22px 0 0;font-size:19px;max-width:640px"><?php echo esc_html( rdv_meta( 'lead' ) ); ?></p><?php endif; ?>
+    <?php rdv_fiche_photo( 'margin-top:28px' ); ?>
 
     <?php $rdv_musts = rdv_lines( rdv_meta( 'musts' ) ); ?>
     <?php if ( $rdv_musts ) : ?>

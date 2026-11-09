@@ -395,6 +395,10 @@ def paragraphs(md):
         out.append(t)
     return out
 
+def badges_text(badges):
+    """Étiquettes des quartiers, sans la mention « [X] min à pied de la Cité des Congrès » (retirée à la demande)."""
+    return '\n'.join(b for b in badges if '[X]' not in b)
+
 def groups_text(groups):
     out = []
     for g in groups:
@@ -407,7 +411,7 @@ for order, q in enumerate(M['QUARTIERS'], start=1):
     fr_path = '/prendre-un-verre/%s/' % QUARTIER_SLUGS[q['id']]
     common = {'num': q['n'], 'map_x': q.get('x', ''), 'map_y': q.get('y', '')}
     langs = {'fr': {'title': q['t'], 'slug': QUARTIER_SLUGS[q['id']], 'content': '', 'meta': dict(common, **{
-        'amb': q['amb'], 'where': q['where'], 'img_alt': q['img'], 'badges': '\n'.join(q['badges']), 'lead': q['lead'],
+        'amb': q['amb'], 'where': q['where'], 'img_alt': q['img'], 'badges': badges_text(q['badges']), 'lead': q['lead'],
         'musts': '\n'.join(' | '.join([m['t'], m['d'], m.get('tag', '')]).rstrip(' |') for m in q.get('musts', [])),
         'infos': infos_lines(q['infos']), 'groups': groups_text(q['groups']), 'note': q.get('note', '')})}}
     for lang in ('en', 'es'):
@@ -427,7 +431,7 @@ for order, q in enumerate(M['QUARTIERS'], start=1):
         if q['id'] == 'bouffay':
             note = paras[-1] if len(paras) > 1 else ''
         langs[lang] = {'title': sp['h1'], 'slug': SLUG_FIX.get(slug_of(sp['url']), slug_of(sp['url'])), 'content': '', 'meta': dict(common, **{
-            'amb': t['amb'], 'where': t['where'], 'img_alt': '', 'badges': '\n'.join(t['badges']), 'lead': paras[0] if paras else '',
+            'amb': t['amb'], 'where': t['where'], 'img_alt': '', 'badges': badges_text(t['badges']), 'lead': paras[0] if paras else '',
             'musts': '\n'.join(' | '.join(m).rstrip(' |') for m in t.get('musts', [])),
             'infos': infos_lines(t['infos']), 'groups': groups_text(groups), 'note': note})}
     img, img_meta = item_image(fr_path)
