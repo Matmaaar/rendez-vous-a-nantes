@@ -62,7 +62,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 
 ## Traductions
 
-- **Contenus** : FR = textes de la maquette ; EN / ES = textes du site actuel, transposés dans la structure de la maquette. Les textes courts propres à la maquette (accroches des tuiles, ambiances, étiquettes, encadrés, parcours de l'accueil) ont été traduits pour l'occasion : **à faire relire**.
+- **Contenus** : FR = textes de la maquette ; EN / ES = **textes du site actuel** partout où ils existent (fiches, quartiers, chapôs, encadrés, listes, noms de rubriques, coquilles évidentes du site corrigées). Seuls les textes **créés par la maquette**, sans équivalent sur le site actuel (accroche et parcours de l'accueil, textes des tuiles, ambiances et localisations des quartiers…), ont été traduits : liste à faire relire dans [`TRADUCTIONS-A-RELIRE.md`](TRADUCTIONS-A-RELIRE.md).
 - **SEO** : titre et meta description de l'accueil (FR/EN/ES) et `noindex` des mentions légales repris du site actuel (champs Yoast). Sans Yoast, le thème affiche quand même la meta description et le `noindex`.
 - **Crédits photo** : les images à la une importées portent leur texte alternatif et leur crédit en légende (export WordPress du site actuel). Graslin n'a pas de crédit connu ; celui de l'Île de Nantes est déduit du nom de fichier : à vérifier.
 - **Interface** (pied de page, boutons, carte…) : `languages/en_US.mo` et `es_ES.mo` (sources `.po`, modèle `.pot`). Modifiables aussi via WPML String Translation.

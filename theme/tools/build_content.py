@@ -123,11 +123,11 @@ T = {
     'cats': {  # id: (titre court, texte de tuile, grand titre) par langue
         'prendre-un-verre': {'en': ('Have a drink', 'Terraces, cocktails, pubs: four atmospheres', 'Have a drink'), 'es': ('Tomar una copa', 'Terrazas, cócteles, pubs: cuatro ambientes', 'Tomar una copa')},
         'manger': {'en': ('Eat', 'A selection of good Nantes restaurants', 'Eat'), 'es': ('Comer', 'Una selección de buenos restaurantes', 'Comer')},
-        'incontournables': {'en': ('Unmissables', '10 good reasons to make the Voyage to Nantes', 'The unmissables'), 'es': ('Imprescindibles', '10 buenas razones para hacer el Voyage à Nantes', 'Los imprescindibles')},
+        'incontournables': {'en': ('Unmissable', '10 good reasons to make the Voyage to Nantes', 'The unmissables'), 'es': ('Imprescindibles', '10 buenas razones para hacer el Voyage à Nantes', 'Los imprescindibles')},
         'footing': {'en': ('Jogging', 'From 5 to 15 km, for all levels', 'Jogging'), 'es': ('Footing', 'De 5 a 15 km, para todos los niveles', 'Footing')},
         'shopping': {'en': ('Shopping', 'Arcades, shopping streets and market', 'Shopping'), 'es': ('Shopping', 'Pasajes, calles comerciales y mercado', 'Shopping')},
         'se-deplacer': {'en': ('Getting around', 'Airport shuttle, tram, taxis', 'Getting around'), 'es': ('Desplazarse', 'Lanzadera aeropuerto, tranvía, taxis', 'Desplazarse')},
-        'aide': {'en': ('Help', 'Le Voyage à Nantes visitor centre', 'Need a hand?'), 'es': ('Ayuda', 'La oficina del Voyage à Nantes', '¿Ayuda?')},
+        'aide': {'en': ('Need a hand?', 'Le Voyage à Nantes visitor centre', 'Need a hand?'), 'es': ('¿Ayuda?', 'La oficina del Voyage à Nantes', '¿Ayuda?')},
         'pass-nantes': {'en': ('Pass Nantes', 'From €27, from 24 hours to 7 days', 'Buy a City Pass'), 'es': ('Pass Nantes', 'Desde 27 €, de 24 h a 7 días', 'Comprar un City Pass')},
     },
 }
@@ -146,7 +146,7 @@ CAT_PAGE = {  # id maquette -> (slug FR, gabarit, type listé)
 LEADS = {
     'prendre-un-verre': {'en': 'Our selection of bars and unusual places for a drink in Nantes, depending on the atmosphere you are looking for.',
                          'es': 'Nuestra selección de bares y lugares insólitos para tomar una copa en Nantes, según el ambiente que busque.'},
-    'incontournables': {'en': 'To make sure you don’t miss any of the destination’s must-sees, nothing could be simpler: in Nantes, just follow the green line drawn on the ground. A 22-kilometre trail bringing together the cultural stops, main monuments, works of art and tourist sites of the city.',
+    'incontournables': {'en': 'It couldn’t be easier to see everything you’d want to in Nantes and not miss a thing. In town, just follow the green line drawn on the ground. A 22-kilometer route that connects the cultural sights, the best monuments, works of art and tourist spots.',
                         'es': 'Es fácil no perderse ninguno de los imprescindibles del destino. En Nantes, basta con seguir la línea verde marcada en el suelo. Un recorrido de 22 kilómetros que reúne los hitos culturales, los principales monumentos, las obras de arte y las atracciones turísticas de la ciudad.'},
     'shopping': {'en': 'Five addresses for shopping in Nantes, from the chic shops of the Graslin district to Le Voyage à Nantes souvenirs.',
                  'es': 'Cinco direcciones para ir de compras en Nantes, de las tiendas elegantes del barrio Graslin a los recuerdos del Voyage à Nantes.'},
@@ -155,8 +155,8 @@ LEADS = {
 }
 ENCART = {
     'fr': ('Pass Nantes, voyagez librement', 'En formule de 24 h à 7 jours, il donne accès à plus de 50 prestations dont les transports en commun, la navette aéroport, les musées et sites incontournables, les visites, les croisières sur l’Erdre, etc.', 'Découvrir le Pass Nantes'),
-    'en': ('Pass Nantes, travel freely', 'Available from 24 hours to 7 days, it gives access to more than 50 services including public transport, the airport shuttle, museums and must-see sites, tours, cruises on the Erdre and more.', 'Discover the Pass Nantes'),
-    'es': ('Pass Nantes, para viajar en libertad', 'Disponible de 24 horas a 7 días, da acceso a más de 50 servicios, como el transporte público, la lanzadera al aeropuerto, museos y lugares imprescindibles, visitas, cruceros por el Erdre y mucho más.', 'Descubrir el Pass Nantes'),
+    'en': ('Pass Nantes: explore the city freely!', 'The Pass Nantes allows you to discover the town with complete peace of mind. Pick from 24h, 48h, 72h or 7 days passes and gain access to more than 50 services including public transport (including airport shuttle), excursions, museums, unmissable sites, tours, river cruises along the Erdre, etc.', 'Discover the Pass Nantes'),
+    'es': ('Pass Nantes, para viajar en libertad', 'El Pass Nantes es la forma perfecta de descubrir la ciudad. Disponible como pase de 24 horas o 7 días, le da acceso a más de 50 servicios, como transporte público, lanzadera al aeropuerto, museos y lugares de visita obligada, excursiones, cruceros por el río Erdre y mucho más.', 'Descubrir el Pass Nantes'),
 }
 
 def cat_meta(c, lang):
@@ -177,18 +177,18 @@ def cat_meta(c, lang):
 
 LISTES_TR = {
     'manger': {
-        'en': {'lead': 'Looking for a great place to eat? The Les Tables de Nantes guide book lists over one hundred tested and approved addresses. Using its well thought out search engine, you will surely find the right place: eating with colleagues, vegetarian, big groups, quirky, outdoor seating, in the heart of town… For all tastes and budgets.',
-               'cta': 'Visit lestablesdenantes.fr | https://www.lestablesdenantes.fr/en/', 'list_title': 'Some ideas for Monday evening dinner', 'link_label': 'See the listing',
-               'after_title': 'Wine bars serving food', 'after_text': 'Also find on Les Tables de Nantes our selection of wine bars and cellars serving food and drinks.', 'after_btn1': 'See the selection | https://www.lestablesdenantes.fr/en/good-tips/wine-bars-dining-cellars/'},
-        'es': {'lead': '¿Busca un buen restaurante? La guía Les Tables de Nantes reúne más de cien direcciones probadas y aprobadas. Gracias a su buscador, encontrará sin duda LA buena dirección: con compañeros, vegetariano, grupos, original, con terraza, en el centro… Para todos los gustos y presupuestos.',
+        'en': {'lead': 'Looking for a great place to eat? Les Tables de Nantes guide book lists over one hundred tested and approved addresses. Using this well thought out search engine, you will surely find the right place for you: eating with colleagues, vegetarian, big groups, quirky, out-door seating, in the heart of town, etc… For all tastes and budgets.',
+               'cta': 'Visit lestablesdenantes.fr | https://www.lestablesdenantes.fr/en/', 'list_title': 'Some ideas for Monday evenings dinner', 'link_label': 'See the listing',
+               'after_title': 'Wine bars serving food', 'after_text': 'Also find on the Tables de Nantes our selection of wine bars & cellars serving food and drinks!', 'after_btn1': 'See the selection | https://www.lestablesdenantes.fr/en/good-tips/wine-bars-dining-cellars/'},
+        'es': {'lead': 'Selección de restaurantes en Nantes. Tables de Nantes recopila y selecciona los mejores restaurantes de la ciudad (más de un centenar probados y aprobados). Seguro que encuentras el restaurante que necesitas: estrellas Michelin y Gault&Millau, gastrobares, creperías, restaurantes familiares…',
                'cta': 'Consultar lestablesdenantes.fr | https://www.lestablesdenantes.fr/', 'list_title': 'Algunas ideas para la cena del lunes', 'link_label': 'Ver la ficha',
                'after_title': 'Bares de vinos', 'after_text': 'Encuentre también en Les Tables de Nantes nuestra selección de bares de vinos y bodegas donde comer.', 'after_btn1': 'Ver la selección | https://www.lestablesdenantes.fr/bons-plans/bars-a-vin/'},
     },
     'footing': {
-        'en': {'lead': 'From 5 to 15 km, a selection of runs for all levels and all plans.', 'list_title': 'Our runs', 'link_label': 'See the run',
-               'after_title': 'Go even further', 'after_text': 'Download the Runnin’City app and discover Nantes, audio-guided, original and sporty.'},
-        'es': {'lead': 'De 5 a 15 km, una selección de recorridos para todos los niveles y todas las ganas.', 'list_title': 'Nuestros recorridos', 'link_label': 'Ver el recorrido',
-               'after_title': 'Para ir más lejos', 'after_text': 'Descargue la aplicación Runnin’City para descubrir la ciudad de forma audioguiada, original y deportiva.'},
+        'en': {'lead': 'From 5 to 15 km, a selection of runs for all levels and all plans.', 'list_title': 'Choose the run that suits you', 'link_label': 'See the run',
+               'after_title': 'Go even further', 'after_text': 'Go even further by downloading the Runnin’city app and discover Nantes, audio-guided, original and sporty.'},
+        'es': {'lead': 'De 5 a 15 km, una selección de rutas para todos los niveles y gustos.', 'list_title': 'Nuestros recorridos', 'link_label': 'Ver el recorrido',
+               'after_title': 'Para ir más lejos', 'after_text': 'Si quieres ir más allá, descárgate la app Runnin’city para descubrir la ciudad de una forma audioguiada, original y deportiva.'},
     },
 }
 FOOTING_META = {'en': ['10.6 km · our favourite', '6.5 km', '5.8 km', '12.5 km'], 'es': ['10,6 km · nuestro favorito', '6,5 km', '5,8 km', '12,5 km']}
@@ -301,13 +301,22 @@ FRONT = {
            'plan_foot': 'O déjese guiar: <a href="/24h-de-plus/la-ligne-verte/">siga la línea verde en el suelo</a>.'},
 }
 
+def fiche_title(fr_path, lang):
+    """Titre EN/ES (site actuel) de la fiche dont le chemin FR est donné."""
+    fr = PAGES.get(B + fr_path.replace('/quartier-decre/', '/uartier-decre/'))
+    t = fr and fr['traductions'].get(lang)
+    return PAGES[t]['h1'] if t and t in PAGES else ''
+
 def plans(lang):
     out = []
     for i, p in enumerate(M['PLANS']):
         out.append('# ' + (p['label'] if lang == 'fr' else PLAN_LABELS[lang][i]))
         for t, s, h in p['items']:
             if lang != 'fr':
-                t, s = PLAN_TR[lang].get(t, t), PLAN_TR[lang].get(s, s)
+                fr_page = PAGES.get(B + mockup_path(h).replace('/quartier-decre/', '/uartier-decre/'))
+                same = fr_page and fr_page['h1'].replace("'", '’') == t.replace("'", '’')
+                site_title = fiche_title(mockup_path(h), lang) if same else ''
+                t, s = site_title or PLAN_TR[lang].get(t, t), PLAN_TR[lang].get(s, s)
             out.append(' | '.join([t, s, mockup_path(h)]))
     return '\n'.join(out)
 
@@ -352,30 +361,30 @@ for order, c in enumerate(M['CATS'], start=1):
 Q_TR = {
     'ile-de-nantes': {
         'en': {'amb': 'Terraces facing the Loire', 'where': 'Île de Nantes · Hangar à bananes', 'badges': ['[X] min walk from the Cité des Congrès', 'Until 5.30 am'],
-               'musts': [['La Cantine du Voyage', 'With its table football and deckchairs facing the Loire!', 'Dates 2024 to be updated'], ['Bar l’Absence', 'The bar of the School of Architecture, an artwork by Atelier Van Lieshout.']],
-               'infos': [['Address', 'Quai des Antilles'], ['Atmosphere', 'Late night and buzzing'], ['Opening hours', 'Some bars open until 5.30 am', True]], 'group': 'A few suggestions'},
+               'musts': [['The Cantine du Voyage', 'With its table football and deckchairs facing the Loire!', 'Dates 2024 to be updated'], ['L’Absence', 'The bar of the School of Architecture, an artwork of Atelier Van Lieshout, a Dutch group of designers.']],
+               'infos': [['Address', 'Quai des Antilles'], ['Atmosphere', 'Late night and buzzing atmosphere'], ['Opening hours', 'Some are open until 5.30 am', True]], 'group': 'A few suggestions'},
         'es': {'amb': 'Terrazas frente al Loira', 'where': 'Île de Nantes · Hangar à bananes', 'badges': ['A [X] min a pie de la Cité des Congrès', 'Hasta las 5.30 h'],
                'musts': [['La Cantine du Voyage', '¡Su futbolín y sus tumbonas con vistas al Loira!', 'Fechas 2024 por actualizar'], ['Bar l’Absence', 'La obra al pie de la Escuela de Arquitectura.']],
-               'infos': [['Dirección', 'Quai des Antilles'], ['Ambiente', 'Nocturno y festivo'], ['Horarios', 'Algunos bares abren hasta las 5.30 h', True]], 'group': 'Algunas sugerencias'},
+               'infos': [['Dirección', 'Quai des Antilles'], ['Ambiente', 'Ambiente nocturno y festivo'], ['Horarios', 'Algunos abren hasta las 5.30 de la mañana', True]], 'group': 'Algunas sugerencias'},
     },
     'graslin': {
         'en': {'amb': 'Chic and cosy cocktails', 'where': 'Graslin · around the theatre', 'badges': ['[X] min walk from the Cité des Congrès', 'Cocktail bars'],
-               'infos': [['Where', 'Around the Graslin Theatre'], ['Atmosphere', 'Guaranteed chic and cosy'], ['On the menu', 'Wine bars, beer cellars, bars with music']], 'group': 'A few suggestions'},
+               'infos': [['Where', 'Around the Graslin Theatre'], ['Atmosphere', 'Guaranteed chic and cosy atmosphere'], ['On the menu', 'Wine bars, beer cellars, bars with music']], 'group': 'A few suggestions'},
         'es': {'amb': 'Cócteles elegantes y acogedores', 'where': 'Graslin · alrededor del teatro', 'badges': ['A [X] min a pie de la Cité des Congrès', 'Bares de cócteles'],
                'infos': [['Dónde', 'Alrededor del teatro Graslin'], ['Ambiente', 'El buen ambiente y la elegancia'], ['Programa', 'Vinoteca, cervecería, bar de baile']], 'group': 'Algunas sugerencias'},
     },
     'bouffay': {
         'en': {'amb': 'Terraces and lively pubs', 'where': 'Bouffay · medieval quarter', 'badges': ['[X] min walk from the Cité des Congrès', 'Match nights'],
-               'infos': [['Where', 'Around the Place du Bouffay'], ['Atmosphere', 'Young and relaxed'], ['On the menu', 'Terraces, pubs, cocktail bars']], 'groups': ['A few suggestions', 'A few Irish pubs']},
+               'infos': [['Where', 'Around the Place du Bouffay'], ['Atmosphere', 'Young and relaxed atmosphere'], ['On the menu', 'Terraces, pubs, cocktail bars']], 'groups': ['A few bars suggestions', 'A few Irish Pubs']},
         'es': {'amb': 'Terrazas y pubs animados', 'where': 'Bouffay · barrio medieval', 'badges': ['A [X] min a pie de la Cité des Congrès', 'Noches de partido'],
-               'infos': [['Dónde', 'Alrededor de la plaza del Bouffay'], ['Ambiente', 'Joven y desenfadado'], ['Programa', 'Terrazas, pubs, bares de cócteles']], 'groups': ['Algunas sugerencias', 'Algunos Irish pubs']},
+               'infos': [['Dónde', 'Alrededor de la plaza del Bouffay'], ['Ambiente', 'Un ambiente joven y desenfadado'], ['Programa', 'Terrazas, pubs, bares de copas']], 'groups': ['Algunas sugerencias', 'Algunos Irish Pubs']},
     },
     'guinguettes': {
         'en': {'amb': 'Guinguettes on sunny days', 'where': 'In town and nearby', 'badges': ['Seasonal', 'Several places'],
-               'infos': [['Where', 'In town and nearby'], ['Atmosphere', 'Holiday mood'], ['When', 'On sunny days, depending on the place']], 'group': 'A few suggestions',
+               'infos': [['Where', 'In and around Nantes'], ['Atmosphere', 'On a sunny day'], ['When', 'On sunny days, depending on the place']], 'group': 'A few suggestions',
                'tags': ['Dates 2024 to be updated', 'Reopening 2025 to be updated', 'Reopening 2025 to be updated', 'Reopening 2025 to be updated']},
         'es': {'amb': 'Guinguettes con buen tiempo', 'where': 'En la ciudad y alrededores', 'badges': ['De temporada', 'Varios lugares'],
-               'infos': [['Dónde', 'En la ciudad y alrededores'], ['Ambiente', 'Espíritu vacaciones'], ['Cuándo', 'Con buen tiempo, según el lugar']], 'group': 'Algunas sugerencias',
+               'infos': [['Dónde', 'En la ciudad y alrededores'], ['Ambiente', 'Lugares insólitos para tomar una copa'], ['Cuándo', 'De primavera a otoño, según el lugar']], 'group': 'Algunas sugerencias',
                'tags': ['Fechas 2024 por actualizar', 'Reapertura 2025 por actualizar', 'Reapertura 2025 por actualizar', 'Reapertura 2025 por actualizar']},
     },
 }
@@ -474,12 +483,12 @@ PASS_HTML = {
            'sur-le-chemin-des-plages': None},
 }
 PASS_TR = {
-    'pass-nantes': {'en': ('For 1, 2, 3 or 7 days, all the must-sees in Nantes at the best price!', [['Duration', 'From 24 hours to 7 days'], ['From', '€27'], ['Included', '50 activities and public transport', True]], 'Buy online'),
-                    'es': ('Durante un día, un fin de semana o una semana, viaje a su ritmo.', [['Duración', 'De 24 h a 7 días'], ['Desde', '27 €'], ['Incluido', '50 actividades y el transporte público', True]], 'Comprar en línea')},
-    'la-ligne-verte': {'en': ('The essence of the city, without map or guide', [['Length', '22 km'], ['Price', 'Free']], ''),
-                       'es': ('Lo esencial de la ciudad, sin plano ni guía', [['Longitud', '22 km'], ['Precio', 'Gratis']], '')},
-    'sur-le-chemin-des-plages': {'en': ('The Loire, the estuary and the ocean less than an hour away', [['Cruise duration', '2 h 45'], ['Season', 'April to October'], ['Departure', 'From Nantes or Saint-Nazaire']], 'Book the cruise'),
-                                 'es': ('El Loira, el estuario y el océano a menos de una hora', [['Duración del crucero', '2 h 45'], ['Temporada', 'De abril a octubre'], ['Salida', 'Desde Nantes o Saint-Nazaire']], 'Reservar el crucero')},
+    'pass-nantes': {'en': ('For 1, 2, 3 or 7 days, all the must-sees in Nantes at the best price!', [['Duration', 'For 1, 2, 3 or 7 days'], ['From', '27 €'], ['Included', 'More than 50 sights and sites, public transport', True]], 'Book online'),
+                    'es': ('Durante un día, un fin de semana, un puente o incluso una semana, viaje a su ritmo.', [['Duración', 'De 24 h a 7 días'], ['Desde', '27 €'], ['Incluido', '50 actividades y el transporte público', True]], 'Comprar en línea')},
+    'la-ligne-verte': {'en': ('Let yourself be carried along to the rhythm of the city, lose yourself like a real Nantais…', [['Length', '22 km'], ['Price', 'Free']], ''),
+                       'es': ('¡Siguiendo la línea verde!', [['Longitud', '22 km'], ['Precio', 'Gratis']], '')},
+    'sur-le-chemin-des-plages': {'en': ('The Loire, the estuary and the ocean less than an hour away', [['Duration', '2 hours 45 mins'], ['Season', 'From April to October'], ['Departure', 'From Nantes or Saint-Nazaire']], 'Book now'),
+                                 'es': ('El Loira, el estuario y el océano a menos de una hora', [['Duración', '2h45'], ['Temporada', 'De abril a octubre'], ['Salida', 'Desde Nantes o Saint-Nazaire']], 'Reservar')},
 }
 
 for cid, (ptype, base) in CAT_BASE.items():
