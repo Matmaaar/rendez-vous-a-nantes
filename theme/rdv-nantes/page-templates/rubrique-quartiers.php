@@ -36,20 +36,19 @@ rdv_head( rdv_rubrique_label( get_the_ID() ), rdv_meta( 'h1' ) ? rdv_meta( 'h1' 
   </div>
   <p class="credit"><?php esc_html_e( '© OpenStreetMap contributors · Les guinguettes sont réparties en ville et aux environs.', 'rdv-nantes' ); ?></p>
 </div></section>
-<section style="padding:0 0 72px"><div class="wrap qgrid-cards">
-  <?php foreach ( $rdv_items as $rdv_q ) : ?>
-    <a class="qcard" href="<?php echo esc_url( get_permalink( $rdv_q ) ); ?>">
-      <span class="ph"><?php
-		if ( has_post_thumbnail( $rdv_q ) ) {
-			echo get_the_post_thumbnail( $rdv_q, 'rdv-card', array( 'alt' => '', 'loading' => 'lazy' ) );
-		} else {
-			echo esc_html( rdv_meta( 'img_alt', $rdv_q->ID ) );
-		}
-		?><span class="num"><?php echo esc_html( rdv_meta( 'num', $rdv_q->ID ) ); ?></span></span>
-      <span class="body"><span class="amb"><?php echo esc_html( rdv_meta( 'amb', $rdv_q->ID ) ); ?></span><span class="where"><?php echo esc_html( rdv_meta( 'where', $rdv_q->ID ) ); ?></span>
-        <span class="badges"><?php foreach ( rdv_lines( rdv_meta( 'badges', $rdv_q->ID ) ) as $rdv_b ) : ?><span><?php echo esc_html( $rdv_b[0] ); ?></span><?php endforeach; ?></span></span>
-    </a>
-  <?php endforeach; ?>
+<section style="padding:0 0 72px"><div class="wrap">
+  <?php
+  rdv_mosaic( array_map( function ( $rdv_q ) {
+	  return array(
+		  'url'   => get_permalink( $rdv_q ),
+		  'title' => rdv_meta( 'amb', $rdv_q->ID ),
+		  'desc'  => rdv_meta( 'where', $rdv_q->ID ),
+		  'post'  => $rdv_q,
+		  'num'   => rdv_meta( 'num', $rdv_q->ID ), // renvoie au repère de la carte
+		  'tags'  => wp_list_pluck( rdv_lines( rdv_meta( 'badges', $rdv_q->ID ) ), 0 ),
+	  );
+  }, $rdv_items ), count( $rdv_items ) === 4 ? 4 : 0 );
+  ?>
 </div></section>
 <?php
 rdv_others( get_the_ID() );

@@ -305,3 +305,40 @@ function rdv_resolve_links( $html ) {
 	}, (string) $html );
 }
 add_filter( 'the_content', 'rdv_resolve_links', 20 );
+
+/**
+ * Mosaïque photo : cases collées, photo pleine case, titre et accroche sur un halo diffus.
+ *
+ * @param array $tiles Cases : [ 'url', 'title', 'desc', 'post' (contenu dont on prend l'image à la une),
+ *                     'num' (pastille facultative), 'tags' (étiquettes facultatives) ].
+ * @param int   $cols  Colonnes sur grand écran ; 0 = automatique (4 à partir de 8 cases, sinon 3).
+ */
+function rdv_mosaic( $tiles, $cols = 0 ) {
+	if ( ! $tiles ) {
+		return;
+	}
+	$cols = $cols ? (int) $cols : ( count( $tiles ) >= 8 ? 4 : 3 );
+	echo '<div class="mosaic" style="--cols:' . (int) $cols . '">';
+	foreach ( $tiles as $t ) {
+		echo '<a class="mtile" href="' . esc_url( $t['url'] ) . '">';
+		if ( ! empty( $t['post'] ) && has_post_thumbnail( $t['post'] ) ) {
+			echo get_the_post_thumbnail( $t['post'], 'rdv-card', array( 'alt' => '', 'loading' => 'lazy', 'sizes' => '(max-width:640px) 100vw, (max-width:1000px) 50vw, ' . ( 4 === $cols ? '25vw' : '33vw' ) ) );
+		}
+		if ( ! empty( $t['num'] ) ) {
+			echo '<span class="num">' . esc_html( $t['num'] ) . '</span>';
+		}
+		echo '<span class="body"><span class="t">' . esc_html( $t['title'] ) . '</span>';
+		if ( ! empty( $t['desc'] ) ) {
+			echo '<span class="d">' . esc_html( $t['desc'] ) . '</span>';
+		}
+		if ( ! empty( $t['tags'] ) ) {
+			echo '<span class="tags">';
+			foreach ( $t['tags'] as $tag ) {
+				echo '<span>' . esc_html( $tag ) . '</span>';
+			}
+			echo '</span>';
+		}
+		echo '</span></a>';
+	}
+	echo '</div>';
+}

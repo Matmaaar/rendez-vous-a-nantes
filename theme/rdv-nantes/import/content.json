@@ -79,8 +79,11 @@
    "type": "page",
    "template": "page-templates/rubrique-quartiers.php",
    "order": 1,
-   "image": "",
-   "image_meta": {},
+   "image": "prendre-un-verre.jpg",
+   "image_meta": {
+    "alt": "L'Absence",
+    "caption": "Jocelyn Cottencin, Echoes, ensa Nantes, dans le cadre du Voyage à Nantes 2015 © Franck Tomps / LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Prendre un verre",
@@ -131,8 +134,11 @@
    "type": "page",
    "template": "page-templates/liste.php",
    "order": 2,
-   "image": "",
-   "image_meta": {},
+   "image": "manger.jpg",
+   "image_meta": {
+    "alt": "Tables de Nantes 2025",
+    "caption": "Tables de Nantes 2025"
+   },
    "langs": {
     "fr": {
      "title": "Manger",
@@ -201,8 +207,11 @@
    "type": "page",
    "template": "page-templates/rubrique-lieux.php",
    "order": 3,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable.jpg",
+   "image_meta": {
+    "alt": "Chateau",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Incontournables",
@@ -262,8 +271,11 @@
    "type": "page",
    "template": "page-templates/liste.php",
    "order": 4,
-   "image": "",
-   "image_meta": {},
+   "image": "footing.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Footing",
@@ -332,8 +344,11 @@
    "type": "page",
    "template": "page-templates/rubrique-lieux.php",
    "order": 5,
-   "image": "",
-   "image_meta": {},
+   "image": "shopping.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Shopping",
@@ -384,8 +399,11 @@
    "type": "page",
    "template": "page-templates/infos.php",
    "order": 6,
-   "image": "",
-   "image_meta": {},
+   "image": "access.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Se déplacer",
@@ -436,8 +454,11 @@
    "type": "page",
    "template": "page-templates/infos.php",
    "order": 7,
-   "image": "",
-   "image_meta": {},
+   "image": "aide.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "bureau accueil"
+   },
    "langs": {
     "fr": {
      "title": "Aide",
@@ -491,8 +512,11 @@
    "type": "page",
    "template": "page-templates/rubrique-lieux.php",
    "order": 8,
-   "image": "",
-   "image_meta": {},
+   "image": "24h-de-plus.jpg",
+   "image_meta": {
+    "alt": "24h de plus",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Pass Nantes",
@@ -543,7 +567,7 @@
    "type": "rdv_quartier",
    "template": "",
    "order": 1,
-   "image": "quartier-ile-de-nantes.jpg",
+   "image": "prendre-un-verre--quartier-ile-de-nantes.jpg",
    "image_meta": {
     "alt": "",
     "caption": "© Chama Chereau / Les Tables de Nantes"
@@ -613,7 +637,7 @@
    "type": "rdv_quartier",
    "template": "",
    "order": 2,
-   "image": "quartier-graslin.jpg",
+   "image": "prendre-un-verre--quartier-graslin.jpg",
    "image_meta": {
     "alt": "",
     "caption": ""
@@ -683,7 +707,7 @@
    "type": "rdv_quartier",
    "template": "",
    "order": 3,
-   "image": "quartier-bouffay.jpg",
+   "image": "prendre-un-verre--quartier-bouffay.jpg",
    "image_meta": {
     "alt": "Bouffay",
     "caption": "Nantes, Quartier Bouffay © Xavier Saint-Hillier / LVAN"
@@ -753,7 +777,7 @@
    "type": "rdv_quartier",
    "template": "",
    "order": 4,
-   "image": "les-guinguettes.jpg",
+   "image": "prendre-un-verre--les-guinguettes.jpg",
    "image_meta": {
     "alt": "",
     "caption": "Station Nuage, Yok Yok, Le Voyage à Nantes 2021 © Philippe Piron / LVAN"
@@ -823,8 +847,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 1,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--le-chateau-des-ducs-de-bretagne.jpg",
+   "image_meta": {
+    "alt": "Chateau",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Le Château des ducs de Bretagne",
@@ -872,8 +899,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 2,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--le-musee-darts.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Le Musée d’arts",
@@ -921,8 +951,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 3,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--quartier-bouffay.jpg",
+   "image_meta": {
+    "alt": "Bouffay",
+    "caption": "Nantes, Quartier Bouffay © Xavier Saint-Hillier / LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Quartier Bouffay",
@@ -973,8 +1006,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 4,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--le-lieu-unique.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Le Lieu Unique",
@@ -1022,8 +1058,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 5,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--le-jardin-des-plantes.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Le Jardin des Plantes",
@@ -1071,8 +1110,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 6,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--le-passage-pommeraye.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Le Passage Pommeraye",
@@ -1120,8 +1162,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 7,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--les-machines-de-lile.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Les Machines de l’Île",
@@ -1169,8 +1214,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 8,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--quartier-creation-ile-nantes.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "© Franck Tomps / LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Le Parc des Chantiers",
@@ -1221,8 +1269,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 9,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--quartier-chantenay.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "Belvédère de Kawamata - Le Voyage à Nantes"
+   },
    "langs": {
     "fr": {
      "title": "Quartier Chantenay",
@@ -1270,8 +1321,11 @@
    "type": "rdv_incontournable",
    "template": "",
    "order": 10,
-   "image": "",
-   "image_meta": {},
+   "image": "incontournable--le-memorial-de-labolition-de-lesclavage.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "Mémorial de l'abolition de l'esclavage. Nantes (Loire-Atlantique). © Franck Tomps/LVAN."
+   },
    "langs": {
     "fr": {
      "title": "Le Mémorial de l’abolition de l’esclavage",
@@ -1319,8 +1373,11 @@
    "type": "rdv_shopping",
    "template": "",
    "order": 1,
-   "image": "",
-   "image_meta": {},
+   "image": "shopping--quartier-graslin.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Le quartier Graslin",
@@ -1368,8 +1425,11 @@
    "type": "rdv_shopping",
    "template": "",
    "order": 2,
-   "image": "",
-   "image_meta": {},
+   "image": "shopping--quartier-decre.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Quartier Decré",
@@ -1417,8 +1477,11 @@
    "type": "rdv_shopping",
    "template": "",
    "order": 3,
-   "image": "",
-   "image_meta": {},
+   "image": "shopping--rue-dorleans.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Rue d’Orléans",
@@ -1466,8 +1529,11 @@
    "type": "rdv_shopping",
    "template": "",
    "order": 4,
-   "image": "",
-   "image_meta": {},
+   "image": "shopping--marche-de-talensac.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Marché de Talensac",
@@ -1515,8 +1581,11 @@
    "type": "rdv_shopping",
    "template": "",
    "order": 5,
-   "image": "",
-   "image_meta": {},
+   "image": "shopping--bazar-officiel-voyage.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "Accueil Nantes.Tourisme, rue des États (Nantes) - Le Voyage à Nantes © Philippe Piron / LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Le Bazar officiel du Voyage à Nantes",
@@ -1564,8 +1633,11 @@
    "type": "rdv_pass",
    "template": "",
    "order": 1,
-   "image": "",
-   "image_meta": {},
+   "image": "24h-de-plus--pass-nantes.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "Pass Nantes Voyage à Nantes"
+   },
    "langs": {
     "fr": {
      "title": "Pass Nantes dès 27 €",
@@ -1613,8 +1685,11 @@
    "type": "rdv_pass",
    "template": "",
    "order": 2,
-   "image": "",
-   "image_meta": {},
+   "image": "24h-de-plus--la-ligne-verte.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": "© Nautilus Nantes/LVAN"
+   },
    "langs": {
     "fr": {
      "title": "Suivez la ligne verte au sol !",
@@ -1662,8 +1737,11 @@
    "type": "rdv_pass",
    "template": "",
    "order": 3,
-   "image": "",
-   "image_meta": {},
+   "image": "24h-de-plus--sur-le-chemin-des-plages.jpg",
+   "image_meta": {
+    "alt": "",
+    "caption": ""
+   },
    "langs": {
     "fr": {
      "title": "Sur le chemin des plages",

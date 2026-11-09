@@ -238,6 +238,40 @@ def infos_content_scraped(fr_path, lang):
     html = html.replace('https://rdv.nantes-tourisme.com', B)
     return html
 
+# ---------------------------------------------------------------- images à la une
+# 1re photo du diaporama de la page du site actuel, sauf choix plus parlant : (page source, n° de photo).
+IMAGE_SOURCE = {
+    '/prendre-un-verre/quartier-bouffay/': ('/incontournable/quartier-bouffay/', 0),
+    '/incontournable/quartier-chantenay/': ('/incontournable/quartier-chantenay/', 1),  # Belvédère de Kawamata
+    '/shopping/quartier-graslin/': ('/shopping/quartier-graslin/', 3),  # place Graslin (le passage Pommeraye est déjà aux incontournables)
+    '/shopping/quartier-decre/': ('/shopping/uartier-decre/', 0),
+}
+# Crédits remis en forme quand l'export n'a que le nom de fichier (contenu/images/_credits.json).
+IMAGE_CREDIT = {
+    'prendre-un-verre--quartier-ile-de-nantes.jpg': '© Chama Chereau / Les Tables de Nantes',
+    'prendre-un-verre--les-guinguettes.jpg': 'Station Nuage, Yok Yok, Le Voyage à Nantes 2021 © Philippe Piron / LVAN',
+}
+
+def item_image(fr_path):
+    """Photo d'un contenu (chemin FR) copiée en JPEG 1200 px dans import/images ; renvoie (fichier, {alt, caption})."""
+    from PIL import Image
+    src_path, n = IMAGE_SOURCE.get(fr_path, (fr_path, 0))
+    imgs = page(src_path).get('images') or []
+    if len(imgs) <= n:
+        return '', {}
+    src = imgs[n]['src'].replace('rdv.nantes-tourisme.com', 'rdv.levoyageanantes.fr')
+    local = MANIFEST.get(src)
+    if not local:
+        return '', {}
+    name = fr_path.strip('/').replace('/', '--') + '.jpg'
+    os.makedirs(os.path.join(THEME, 'import', 'images'), exist_ok=True)
+    im = Image.open(os.path.join(CONTENU, local)).convert('RGB')
+    im.thumbnail((1200, 1200))
+    im.save(os.path.join(THEME, 'import', 'images', name), 'JPEG', quality=78, optimize=True)
+    c = CREDITS.get(local, {})
+    credit = IMAGE_CREDIT.get(name) or c.get('legende') or ''
+    return name, {'alt': c.get('alt') or imgs[n].get('alt', ''), 'caption': credit}
+
 # ---------------------------------------------------------------- 1. accueil
 PLAN_LABELS = {'en': ['1 h', '2 h', 'Half a day'], 'es': ['1 h', '2 h', 'Media jornada']}
 PLAN_TR = {
@@ -311,7 +345,8 @@ for order, c in enumerate(M['CATS'], start=1):
         if c['type'] == 'liste':
             meta.update(liste_meta(c['id'], lang))
         langs[lang] = {'title': title, 'slug': slug, 'content': content, 'meta': meta}
-    add('rubrique-' + c['id'], 'page', order, langs, tpl)
+    img, img_meta = item_image('/' + slug_fr + '/')
+    add('rubrique-' + c['id'], 'page', order, langs, tpl, image=img, image_meta=img_meta)
 
 # ---------------------------------------------------------------- 3. quartiers (prendre un verre)
 Q_TR = {
@@ -360,33 +395,6 @@ def paragraphs(md):
         out.append(t)
     return out
 
-# Image à la une : 1re photo du diaporama du site actuel, sauf choix plus parlant.
-IMAGE_SOURCE = {'/prendre-un-verre/quartier-bouffay/': '/incontournable/quartier-bouffay/'}
-# Crédits remis en forme quand l'export n'a que le nom de fichier (contenu/images/_credits.json).
-IMAGE_CREDIT = {
-    'quartier-ile-de-nantes.jpg': '© Chama Chereau / Les Tables de Nantes',
-    'les-guinguettes.jpg': 'Station Nuage, Yok Yok, Le Voyage à Nantes 2021 © Philippe Piron / LVAN',
-}
-
-def quartier_image(fr_path):
-    """Copie (redimensionnée en JPEG 1600 px) la photo d'un quartier dans import/images."""
-    from PIL import Image
-    imgs = page(IMAGE_SOURCE.get(fr_path, fr_path)).get('images') or []
-    if not imgs:
-        return '', {}
-    src = imgs[0]['src'].replace('rdv.nantes-tourisme.com', 'rdv.levoyageanantes.fr')
-    local = MANIFEST.get(src)
-    if not local:
-        return '', {}
-    name = fr_path.strip('/').split('/')[-1] + '.jpg'
-    os.makedirs(os.path.join(THEME, 'import', 'images'), exist_ok=True)
-    im = Image.open(os.path.join(CONTENU, local)).convert('RGB')
-    im.thumbnail((1600, 1600))
-    im.save(os.path.join(THEME, 'import', 'images', name), 'JPEG', quality=82, optimize=True)
-    c = CREDITS.get(local, {})
-    credit = IMAGE_CREDIT.get(name) or c.get('legende') or ''
-    return name, {'alt': c.get('alt') or imgs[0].get('alt', ''), 'caption': credit}
-
 def groups_text(groups):
     out = []
     for g in groups:
@@ -422,7 +430,7 @@ for order, q in enumerate(M['QUARTIERS'], start=1):
             'amb': t['amb'], 'where': t['where'], 'img_alt': '', 'badges': '\n'.join(t['badges']), 'lead': paras[0] if paras else '',
             'musts': '\n'.join(' | '.join(m).rstrip(' |') for m in t.get('musts', [])),
             'infos': infos_lines(t['infos']), 'groups': groups_text(groups), 'note': note})}
-    img, img_meta = quartier_image(fr_path)
+    img, img_meta = item_image(fr_path)
     add('quartier-' + q['id'], 'rdv_quartier', order, langs, image=img, image_meta=img_meta)
 
 # ---------------------------------------------------------------- 4. fiches lieux
@@ -495,7 +503,8 @@ for cid, (ptype, base) in CAT_BASE.items():
                 m2['link'] = LINK_TR[l['link'][0]][lang] + ' | ' + mockup_path(l['link'][1])
             s = slug_of(sp['url'])
             langs[lang] = {'title': sp['h1'], 'slug': SLUG_FIX.get(s, s), 'content': body, 'meta': m2}
-        add('%s-%s' % (cid, l['id']), ptype, order, langs)
+        img, img_meta = item_image('/%s/%s/' % (base, langs['fr']['slug']))
+        add('%s-%s' % (cid, l['id']), ptype, order, langs, image=img, image_meta=img_meta)
 
 # ---------------------------------------------------------------- 5. pages légales
 for key, fr_path in (('mentions-legales', '/mentions-legales/'), ('cookies', '/cookiespolicy/')):

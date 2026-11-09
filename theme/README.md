@@ -43,6 +43,12 @@ Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/sh
 
 **Redirections 301** : [`redirections.csv`](redirections.csv) (29 règles, à importer dans le plugin *Redirection* : Outils → Redirection → Import/Export). Elles couvrent les anciens slugs mémorisés par WordPress, les slugs corrigés, les pages événementielles et JO 2024 non reprises (→ accueil de la langue) et le lien cassé `/24h-mas/`. Le site actuel n'en avait aucune.
 
+## Mosaïque photo
+
+Les grilles de cases (accueil, Prendre un verre, Incontournables, Shopping, Pass Nantes) sont des **mosaïques photo** : photo pleine case en 3/2, cases collées, titre et accroche en blanc sur un halo sombre très diffus, soulignement vert fluo au survol. 4 colonnes à partir de 8 cases (et pour les 4 quartiers), sinon 3 ; 2 colonnes sur tablette, 1 sur mobile. Fonction : `rdv_mosaic()` dans `inc/template-tags.php`.
+
+La photo d'une case est l'**image à la une** de la fiche ou de la page de rubrique (sans image : fond gris foncé). L'import en pose une pour chaque fiche et rubrique, reprise du diaporama du site actuel, avec le crédit en légende.
+
 ## Édition du contenu
 
 Tout se modifie dans l'admin, dans les encadrés sous l'éditeur :

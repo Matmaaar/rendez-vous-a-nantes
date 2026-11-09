@@ -24,11 +24,11 @@ $rdv_plans = rdv_sections( rdv_meta( 'plans' ), '#' );
 
 <section style="padding:8px 0 80px"><div class="wrap">
   <?php if ( rdv_meta( 'tiles_title' ) ) : ?><h2 class="h2"><?php echo esc_html( rdv_meta( 'tiles_title' ) ); ?></h2><?php endif; ?>
-  <div class="grid3">
-    <?php foreach ( rdv_rubriques( 'home' ) as $rdv_r ) : ?>
-      <a class="tile" href="<?php echo esc_url( get_permalink( $rdv_r ) ); ?>"><span class="n"><?php echo esc_html( rdv_meta( 'num', $rdv_r->ID ) ); ?></span><span style="flex:1"><span class="t"><?php echo esc_html( get_the_title( $rdv_r ) ); ?></span><span class="d"><?php echo esc_html( rdv_meta( 'tile_desc', $rdv_r->ID ) ); ?></span></span><span class="fl" aria-hidden="true">→</span></a>
-    <?php endforeach; ?>
-  </div>
+  <?php
+  rdv_mosaic( array_map( function ( $rdv_r ) {
+	  return array( 'url' => get_permalink( $rdv_r ), 'title' => get_the_title( $rdv_r ), 'desc' => rdv_meta( 'tile_desc', $rdv_r->ID ), 'post' => $rdv_r );
+  }, rdv_rubriques( 'home' ) ), 3 );
+  ?>
 </div></section>
 
 <?php if ( $rdv_plans ) : ?>
