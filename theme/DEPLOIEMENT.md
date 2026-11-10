@@ -33,7 +33,9 @@ Ce que fait l'import : pages, rubriques et fiches FR / EN / ES (reliées entre e
 - [ ] **WPML** → Sélecteur de langue : rien à configurer, le thème affiche son propre sélecteur FR · EN · ES.
 - [ ] **Redirection** → Import/Export → importer `theme/redirections.csv` (29 règles).
 - [ ] Anciennes pages d'accueil événementielles (Marathon 2023, Open de squash, Rendez-vous en France, page japonaise) : les passer en **brouillon** (les redirections renvoient déjà leurs adresses vers l'accueil).
-- [ ] Réglages → Lecture : « Demander aux moteurs de recherche de ne pas indexer ce site » selon la décision prise (le site actuel n'est pas indexé).
+- [ ] Réglages → Lecture : laisser **cochée** « Demander aux moteurs de recherche de ne pas indexer ce site » (décision : le site reste masqué, comme aujourd'hui).
+- [ ] Pas de bandeau cookies à ajouter : le site n'utilise pas d'outil de mesure d'audience ni de cookie publicitaire. Si un outil est ajouté un jour, il faudra un bandeau de consentement.
+- [ ] Hébergeur : vérifier que la **compression** (gzip ou brotli) et le **cache navigateur** des fichiers statiques (images, CSS, polices) sont activés. C'est ce qui reste à gagner en vitesse, et ça se règle côté serveur, pas dans le thème.
 - [ ] Vider les caches (extension de cache, hébergeur, CDN).
 
 ## 5. Recette (15 minutes, en navigation privée)

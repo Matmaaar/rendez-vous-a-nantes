@@ -8,7 +8,6 @@
 defined( 'ABSPATH' ) || exit;
 get_header();
 the_post();
-$rdv_plans = rdv_sections( rdv_meta( 'plans' ), '#' );
 ?>
 <?php if ( rdv_meta( 'bonplan_text' ) ) : ?>
 <section class="bonplan"><div class="wrap">
@@ -30,25 +29,5 @@ $rdv_plans = rdv_sections( rdv_meta( 'plans' ), '#' );
   }, rdv_rubriques( 'home' ) ), 3 );
   ?>
 </div></section>
-
-<?php if ( $rdv_plans ) : ?>
-<section class="parcours"><div class="wrap">
-  <h2 class="h2"><?php echo esc_html( rdv_meta( 'parcours_title' ) ); ?></h2>
-  <p class="sub"><?php echo esc_html( rdv_meta( 'parcours_sub' ) ); ?></p>
-  <div class="seg" role="group" aria-label="<?php esc_attr_e( 'Temps disponible', 'rdv-nantes' ); ?>">
-    <?php foreach ( $rdv_plans as $rdv_i => $rdv_p ) : ?>
-      <button type="button" data-d="<?php echo (int) $rdv_i; ?>" class="<?php echo 0 === $rdv_i ? 'on' : ''; ?>" aria-pressed="<?php echo 0 === $rdv_i ? 'true' : 'false'; ?>"><?php echo esc_html( $rdv_p['title'] ); ?></button>
-    <?php endforeach; ?>
-  </div>
-  <?php foreach ( $rdv_plans as $rdv_i => $rdv_p ) : ?>
-    <ol class="plan" data-plan="<?php echo (int) $rdv_i; ?>"<?php echo $rdv_i ? ' hidden' : ''; ?>>
-      <?php foreach ( $rdv_p['lines'] as $rdv_l ) : ?>
-        <li><a href="<?php echo esc_url( rdv_link( isset( $rdv_l[2] ) ? $rdv_l[2] : '' ) ); ?>"><?php echo esc_html( $rdv_l[0] ); ?><span><?php echo esc_html( isset( $rdv_l[1] ) ? $rdv_l[1] : '' ); ?></span></a></li>
-      <?php endforeach; ?>
-    </ol>
-  <?php endforeach; ?>
-  <?php if ( rdv_meta( 'plan_foot' ) ) : ?><p class="plan-foot"><?php echo wp_kses_post( rdv_resolve_links( rdv_meta( 'plan_foot' ) ) ); ?></p><?php endif; ?>
-</div></section>
-<?php endif; ?>
 <?php
 get_footer();

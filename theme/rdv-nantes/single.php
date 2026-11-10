@@ -28,7 +28,6 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
 ?>
 <section style="padding:44px 0 72px"><div class="wrap">
   <div class="fiche-head">
-    <p class="label" style="margin-bottom:16px"><?php echo esc_html( sprintf( /* translators: 1: rubrique, 2: position, 3: total */ __( '%1$s · %2$d sur %3$d', 'rdv-nantes' ), $rdv_cat, $rdv_i + 1, $rdv_n ) ); ?></p>
     <h1 class="big" style="font-size:clamp(40px,5vw,60px);line-height:1.02"><?php the_title(); ?></h1>
     <?php if ( rdv_meta( 'subtitle' ) ) : ?><p style="margin:18px 0 28px;font-size:21px;font-weight:500;max-width:640px"><?php echo esc_html( rdv_meta( 'subtitle' ) ); ?></p><?php endif; ?>
   </div>

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rendez-vous à Nantes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rdv-nantes\n"
-"POT-Creation-Date: 2026-11-09T15:57:11+00:00\n"
+"POT-Creation-Date: 2026-11-10T08:34:49+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,10 +114,6 @@ msgstr "Accesibilidad"
 msgid "Cookies"
 msgstr "Cookies"
 
-#: front-page.php:38
-msgid "Temps disponible"
-msgstr "Tiempo disponible"
-
 #: header.php:19
 msgid "Aller au contenu"
 msgstr "Ir al contenido"
@@ -195,8 +191,8 @@ msgstr "Sin contenido."
 msgid "Rubrique — page d'infos"
 msgstr ""
 
-#: page-templates/infos.php:21 single-rdv_quartier.php:53
-#: single-rdv_quartier.php:65 single.php:17
+#: page-templates/infos.php:21 single-rdv_quartier.php:52
+#: single-rdv_quartier.php:64 single.php:17
 msgid "Itinéraire"
 msgstr "Itinerario"
 
@@ -219,21 +215,21 @@ msgstr ""
 msgid "Rubrique — quartiers"
 msgstr ""
 
-#: single-rdv_quartier.php:30
+#: single-rdv_quartier.php:29
 msgid "Étapes incontournables"
 msgstr "Paradas imprescindibles"
 
-#: single-rdv_quartier.php:71
+#: single-rdv_quartier.php:70
 msgid "Tous les quartiers"
 msgstr "Todos los barrios"
 
-#: single-rdv_quartier.php:73
+#: single-rdv_quartier.php:72
 msgid "Revenir au début"
 msgstr "Volver al principio"
 
 #. translators: %s: ambiance du quartier suivant
 #. translators: %s: fiche suivante
-#: single-rdv_quartier.php:73 single.php:47
+#: single-rdv_quartier.php:72 single.php:46
 #, php-format
 msgid "Suivant : %s"
 msgstr "Siguiente: %s"
@@ -245,9 +241,3 @@ msgstr "Comprar en línea"
 #: single.php:23
 msgid "En savoir plus"
 msgstr "Más información"
-
-#. translators: 1: rubrique, 2: position, 3: total
-#: single.php:31
-#, php-format
-msgid "%1$s · %2$d sur %3$d"
-msgstr "%1$s · %2$d de %3$d"

@@ -28,10 +28,6 @@
     <custom-field action="translate">_rdv_hero_title</custom-field>
     <custom-field action="translate">_rdv_hero_lead</custom-field>
     <custom-field action="translate">_rdv_tiles_title</custom-field>
-    <custom-field action="translate">_rdv_parcours_title</custom-field>
-    <custom-field action="translate">_rdv_parcours_sub</custom-field>
-    <custom-field action="translate">_rdv_plans</custom-field>
-    <custom-field action="translate">_rdv_plan_foot</custom-field>
     <custom-field action="translate">_rdv_amb</custom-field>
     <custom-field action="translate">_rdv_where</custom-field>
     <custom-field action="translate">_rdv_img_alt</custom-field>

@@ -307,10 +307,17 @@ function rdv_mosaic( $tiles, $cols = 0 ) {
 	}
 	$cols = $cols ? (int) $cols : ( count( $tiles ) >= 8 ? 4 : 3 );
 	echo '<div class="mosaic" style="--cols:' . (int) $cols . '">';
-	foreach ( $tiles as $t ) {
+	foreach ( array_values( $tiles ) as $i => $t ) {
 		echo '<a class="mtile" href="' . esc_url( $t['url'] ) . '">';
 		if ( ! empty( $t['post'] ) && has_post_thumbnail( $t['post'] ) ) {
-			echo get_the_post_thumbnail( $t['post'], 'rdv-card', array( 'alt' => '', 'loading' => 'lazy', 'sizes' => '(max-width:640px) 100vw, (max-width:1000px) 50vw, ' . ( 4 === $cols ? '25vw' : '33vw' ) ) );
+			// 1re photo : chargée en priorité (c'est la plus grande image visible à l'arrivée, sur mobile).
+			// Les suivantes en différé : le navigateur charge tout de suite celles déjà à l'écran.
+			echo get_the_post_thumbnail( $t['post'], 'rdv-card', array(
+				'alt'           => '',
+				'loading'       => 0 === $i ? 'eager' : 'lazy',
+				'fetchpriority' => 0 === $i ? 'high' : 'auto',
+				'sizes'         => '(max-width:640px) 92vw, (max-width:1000px) 46vw, ' . ( 4 === $cols ? '300px' : '400px' ),
+			) );
 		}
 		if ( ! empty( $t['num'] ) ) {
 			echo '<span class="num">' . esc_html( $t['num'] ) . '</span>';

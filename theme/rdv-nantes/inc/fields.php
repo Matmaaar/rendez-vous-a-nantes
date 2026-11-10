@@ -36,10 +36,6 @@ function rdv_field_groups() {
 				array( 'hero_title', 'Grand titre', 'html', 'Retour à la ligne : <br>' ),
 				array( 'hero_lead', 'Sous-titre', 'text', '' ),
 				array( 'tiles_title', 'Titre des tuiles', 'text', 'Ex. « Que voulez-vous faire ? »' ),
-				array( 'parcours_title', 'Parcours : titre', 'text', '' ),
-				array( 'parcours_sub', 'Parcours : sous-titre', 'text', '' ),
-				array( 'plans', 'Parcours : étapes par durée', 'textarea', "Une durée par ligne « # 1 h », puis ses étapes : Titre | précision | lien." ),
-				array( 'plan_foot', 'Parcours : texte sous la liste', 'html', '' ),
 			),
 		),
 		'rubrique'      => array(

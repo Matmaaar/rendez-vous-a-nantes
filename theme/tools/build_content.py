@@ -323,57 +323,18 @@ def item_image(fr_path):
     return name, {'alt': c.get('alt') or imgs[n].get('alt', ''), 'caption': credit}
 
 # ---------------------------------------------------------------- 1. accueil
-PLAN_LABELS = {'en': ['1 h', '2 h', 'Half a day'], 'es': ['1 h', '2 h', 'Media jornada']}
-PLAN_TR = {
-    'en': {'Le Château des ducs de Bretagne': 'The Château des ducs de Bretagne', 'Quartier Bouffay': 'Bouffay district', 'Le Passage Pommeraye': 'Passage Pommeraye',
-           'Le Mémorial de l’abolition de l’esclavage': 'The Memorial to the abolition of slavery', 'Les Machines de l’Île': 'The Machines de l’Île', 'Un verre au Hangar à bananes': 'A drink at the Hangar à bananes',
-           'cour et remparts en accès libre': 'courtyard and ramparts free of charge', 'quartier médiéval, à 5 min': 'medieval quarter, 5 min away', 'galerie du XIXe siècle': '19th-century arcade',
-           'quartier médiéval': 'medieval quarter', 'quai de la Fosse': 'quai de la Fosse', 'le musée d’histoire de Nantes': 'the Nantes history museum',
-           'traversée vers l’Île de Nantes': 'across to the Île de Nantes', 'face à la Loire': 'facing the Loire'},
-    'es': {'Le Château des ducs de Bretagne': 'El Castillo de los duques de Bretaña', 'Quartier Bouffay': 'Barrio Bouffay', 'Le Passage Pommeraye': 'El Passage Pommeraye',
-           'Le Mémorial de l’abolition de l’esclavage': 'El Memorial de la abolición de la esclavitud', 'Les Machines de l’Île': 'Les Machines de l’Île', 'Un verre au Hangar à bananes': 'Una copa en el Hangar à bananes',
-           'cour et remparts en accès libre': 'patio y murallas de acceso libre', 'quartier médiéval, à 5 min': 'barrio medieval, a 5 min', 'galerie du XIXe siècle': 'galería del siglo XIX',
-           'quartier médiéval': 'barrio medieval', 'quai de la Fosse': 'quai de la Fosse', 'le musée d’histoire de Nantes': 'el museo de historia de Nantes',
-           'traversée vers l’Île de Nantes': 'cruzando a la Île de Nantes', 'face à la Loire': 'frente al Loira'},
-}
 FRONT = {
     'fr': {'title': 'Accueil', 'slug': 'accueil', 'bonplan_label': 'Le bon plan', 'bonplan_text': 'Pass Nantes dès 27 € : 50 activités et les transports, de 24 h à 7 jours.', 'bonplan_btn': 'Découvrir le Pass Nantes | /24h-de-plus/pass-nantes/',
-           'hero_title': 'Nantes en une heure<br>ou une demi-journée', 'hero_lead': 'Bars, tables, incontournables : notre sélection, sans détour.', 'tiles_title': 'Que voulez-vous faire ?',
-           'parcours_title': 'Visiter Nantes à pied', 'parcours_sub': 'Un parcours tout prêt, selon le temps dont vous disposez.',
-           'plan_foot': 'Ou laissez-vous guider : <a href="/24h-de-plus/la-ligne-verte/">suivez la ligne verte au sol</a>.'},
+           'hero_title': 'Nantes en une heure<br>ou une demi-journée', 'hero_lead': 'Bars, tables, incontournables : notre sélection, sans détour.', 'tiles_title': 'Que voulez-vous faire ?'},
     'en': {'title': 'Home', 'slug': 'home', 'bonplan_label': 'Good deal', 'bonplan_text': 'Pass Nantes from €27: 50 activities and public transport, from 24 hours to 7 days.', 'bonplan_btn': 'Discover the Pass Nantes | /24h-de-plus/pass-nantes/',
-           'hero_title': 'Nantes in an hour<br>or half a day', 'hero_lead': 'Bars, restaurants, must-sees: our selection, straight to the point.', 'tiles_title': 'What would you like to do?',
-           'parcours_title': 'Explore Nantes on foot', 'parcours_sub': 'A ready-made route, depending on how much time you have.',
-           'plan_foot': 'Or let yourself be guided: <a href="/24h-de-plus/la-ligne-verte/">follow the green line on the ground</a>.'},
+           'hero_title': 'Nantes in an hour<br>or half a day', 'hero_lead': 'Bars, restaurants, must-sees: our selection, straight to the point.', 'tiles_title': 'What would you like to do?'},
     'es': {'title': 'Inicio', 'slug': 'inicio', 'bonplan_label': 'El buen plan', 'bonplan_text': 'Pass Nantes desde 27 €: 50 actividades y el transporte, de 24 h a 7 días.', 'bonplan_btn': 'Descubrir el Pass Nantes | /24h-de-plus/pass-nantes/',
-           'hero_title': 'Nantes en una hora<br>o media jornada', 'hero_lead': 'Bares, restaurantes, imprescindibles: nuestra selección, sin rodeos.', 'tiles_title': '¿Qué quiere hacer?',
-           'parcours_title': 'Visitar Nantes a pie', 'parcours_sub': 'Un recorrido listo, según el tiempo del que disponga.',
-           'plan_foot': 'O déjese guiar: <a href="/24h-de-plus/la-ligne-verte/">siga la línea verde en el suelo</a>.'},
+           'hero_title': 'Nantes en una hora<br>o media jornada', 'hero_lead': 'Bares, restaurantes, imprescindibles: nuestra selección, sin rodeos.', 'tiles_title': '¿Qué quiere hacer?'},
 }
-
-def fiche_title(fr_path, lang):
-    """Titre EN/ES (site actuel) de la fiche dont le chemin FR est donné."""
-    fr = PAGES.get(B + fr_path.replace('/quartier-decre/', '/uartier-decre/'))
-    t = fr and fr['traductions'].get(lang)
-    return PAGES[t]['h1'] if t and t in PAGES else ''
-
-def plans(lang):
-    out = []
-    for i, p in enumerate(M['PLANS']):
-        out.append('# ' + (p['label'] if lang == 'fr' else PLAN_LABELS[lang][i]))
-        for t, s, h in p['items']:
-            if lang != 'fr':
-                fr_page = PAGES.get(B + mockup_path(h).replace('/quartier-decre/', '/uartier-decre/'))
-                same = fr_page and fr_page['h1'].replace("'", '’') == t.replace("'", '’')
-                site_title = fiche_title(mockup_path(h), lang) if same else ''
-                t, s = site_title or PLAN_TR[lang].get(t, t), PLAN_TR[lang].get(s, s)
-            out.append(' | '.join([t, s, mockup_path(h)]))
-    return '\n'.join(out)
 
 langs = {}
 for lang, f in FRONT.items():
     meta = {k: v for k, v in f.items() if k not in ('title', 'slug')}
-    meta['plans'] = plans(lang)
     langs[lang] = {'title': f['title'], 'slug': f['slug'], 'content': '', 'meta': meta, 'seo': SEO.get(SEO_FRONT[lang], {})}
 add('accueil', 'page', 0, langs)
 

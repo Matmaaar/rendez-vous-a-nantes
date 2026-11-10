@@ -49,6 +49,9 @@ Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/sh
 
 - Pas de surtitre au-dessus du titre des rubriques et des pages d'infos (il répétait le titre). Les fiches gardent le leur (rubrique · position, ou rubrique · ambiance).
 - Pas de carte sur Prendre un verre : les quartiers sont présentés en mosaïque photo.
+- Pas de parcours « Visiter Nantes à pied » sur l'accueil : bandeau Pass Nantes, titre, puis la mosaïque des rubriques.
+- Favicon : pictogramme repère de la maquette, vert fluo sur noir (`assets/img/`). Une icône définie dans Personnaliser → Identité du site le remplace.
+- Performance : pas de styles de l'éditeur de blocs ni d'emojis WordPress, images en WebP (si le serveur sait les produire) avec une taille dédiée aux téléphones, 1re photo des mosaïques chargée en priorité. Audit Lighthouse mobile (serveur local) : accessibilité 100, bonnes pratiques 100, SEO 100, performance 90 à 99.
 
 ## Mosaïque photo
 

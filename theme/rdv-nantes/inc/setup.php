@@ -13,6 +13,7 @@ add_action( 'after_setup_theme', function () {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'html5', array( 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 	add_image_size( 'rdv-card', 800, 500, true );
+	add_image_size( 'rdv-card-s', 480, 300, true ); // même format, pour les téléphones (srcset)
 } );
 
 add_action( 'wp_enqueue_scripts', function () {
@@ -23,9 +24,6 @@ add_action( 'wp_enqueue_scripts', function () {
 		$deps[] = 'rdv-inter';
 	}
 	wp_enqueue_style( 'rdv-nantes', get_stylesheet_uri(), $deps, RDV_VERSION );
-	if ( is_front_page() ) {
-		wp_enqueue_script( 'rdv-nantes', RDV_URI . '/assets/js/rdv.js', array(), RDV_VERSION, array( 'in_footer' => true, 'strategy' => 'defer' ) );
-	}
 } );
 
 add_filter( 'wp_resource_hints', function ( $urls, $relation ) {
@@ -51,14 +49,21 @@ add_filter( 'document_title_separator', function () {
 } );
 
 /*
- * Sans Yoast SEO : on reprend quand même la meta description et le « noindex » importés
- * du site actuel (champs _yoast_wpseo_metadesc et _yoast_wpseo_meta-robots-noindex).
+ * Sans Yoast SEO : meta description (celle importée du site actuel, sinon le chapô ou l'accroche
+ * de la page) et « noindex » importé (champs _yoast_wpseo_metadesc et _yoast_wpseo_meta-robots-noindex).
  */
 add_action( 'wp_head', function () {
 	if ( defined( 'WPSEO_VERSION' ) || ! is_singular() ) {
 		return;
 	}
-	$desc = get_post_meta( get_queried_object_id(), '_yoast_wpseo_metadesc', true );
+	$id   = get_queried_object_id();
+	$desc = get_post_meta( $id, '_yoast_wpseo_metadesc', true );
+	foreach ( array( 'lead', 'subtitle', 'hero_lead', 'tile_desc' ) as $k ) {
+		$desc = $desc ? $desc : rdv_meta( $k, $id );
+	}
+	if ( ! $desc ) {
+		$desc = wp_trim_words( wp_strip_all_tags( strip_shortcodes( get_post_field( 'post_content', $id ) ) ), 28, '…' );
+	}
 	if ( $desc ) {
 		echo '<meta name="description" content="' . esc_attr( $desc ) . '">' . "\n";
 	}
@@ -99,3 +104,40 @@ add_action( 'wp_enqueue_scripts', function () {
 		wp_add_inline_style( 'rdv-nantes', $css );
 	}
 }, 20 );
+
+/*
+ * Favicon du thème (pictogramme repère de la maquette), sauf si une icône de site
+ * est définie dans l'admin (Personnaliser → Identité du site), qui reste prioritaire.
+ */
+add_action( 'wp_head', function () {
+	if ( has_site_icon() ) {
+		return;
+	}
+	$img = RDV_URI . '/assets/img/';
+	echo '<link rel="icon" href="' . esc_url( $img . 'favicon.svg' ) . '" type="image/svg+xml">' . "\n";
+	echo '<link rel="icon" href="' . esc_url( $img . 'favicon-32.png' ) . '" sizes="32x32" type="image/png">' . "\n";
+	echo '<link rel="apple-touch-icon" href="' . esc_url( $img . 'apple-touch-icon.png' ) . '">' . "\n";
+}, 2 );
+
+// Le thème n'utilise pas l'éditeur de blocs : on ne charge pas ses feuilles de style (≈ 100 Ko bloquants).
+add_action( 'wp_enqueue_scripts', function () {
+	foreach ( array( 'wp-block-library', 'wp-block-library-theme', 'classic-theme-styles', 'global-styles' ) as $h ) {
+		wp_dequeue_style( $h );
+	}
+}, 100 );
+remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
+remove_action( 'wp_footer', 'wp_enqueue_global_styles', 1 );
+remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
+
+// Emojis WordPress (script + styles) inutiles ici.
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+// Images téléversées : tailles intermédiaires en WebP (plus légères), si le serveur sait les produire.
+add_filter( 'image_editor_output_format', function ( $formats ) {
+	if ( wp_image_editor_supports( array( 'mime_type' => 'image/webp' ) ) ) {
+		$formats['image/jpeg'] = 'image/webp';
+		$formats['image/png']  = 'image/webp';
+	}
+	return $formats;
+} );
