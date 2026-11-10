@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rendez-vous à Nantes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rdv-nantes\n"
-"POT-Creation-Date: 2026-11-10T08:34:49+00:00\n"
+"POT-Creation-Date: 2026-11-10T08:46:18+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,6 +181,14 @@ msgstr "Inicio"
 #: inc/template-tags.php:203
 msgid "Autres rubriques"
 msgstr "Otras secciones"
+
+#: inc/template-tags.php:236
+msgid "Langue"
+msgstr "Idioma"
+
+#: inc/template-tags.php:240 inc/template-tags.php:241
+msgid "Disponible une fois WPML activé"
+msgstr "Disponible cuando WPML esté activado"
 
 #: index.php:17
 msgid "Aucun contenu."

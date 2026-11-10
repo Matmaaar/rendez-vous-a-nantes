@@ -232,9 +232,13 @@ function rdv_aside( $infos, $btns = '' ) {
  */
 function rdv_language_switcher() {
 	$langs = apply_filters( 'wpml_active_languages', null, array( 'skip_missing' => 0, 'orderby' => 'custom' ) );
-	echo '<div class="langs desk">';
+	// Visible sur tous les écrans (la maquette le masquait sur mobile).
+	echo '<div class="langs" role="navigation" aria-label="' . esc_attr__( 'Langue', 'rdv-nantes' ) . '">';
 	if ( empty( $langs ) ) {
+		// Sans WPML (démo, serveur de test) : seul le français existe ; EN et ES sont affichés grisés.
 		echo '<a href="' . esc_url( home_url( '/' ) ) . '" class="on" aria-current="true">FR</a>';
+		echo '<span class="off" title="' . esc_attr__( 'Disponible une fois WPML activé', 'rdv-nantes' ) . '">EN</span>';
+		echo '<span class="off" title="' . esc_attr__( 'Disponible une fois WPML activé', 'rdv-nantes' ) . '">ES</span>';
 	} else {
 		foreach ( $langs as $l ) {
 			$on = ! empty( $l['active'] );

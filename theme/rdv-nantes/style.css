@@ -17,7 +17,7 @@ License: Propriétaire
 body{margin:0;background:#fff;color:#000;font-family:"Suisse Int'l",Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
 a{color:#000}
 :where(body) button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0;text-align:left}
-button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--fluo);outline-offset:2px}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #000;outline-offset:3px}
 .wrap{width:92%;max-width:1240px;margin:0 auto}
 .label{margin:0;font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.04em;color:var(--gris-txt)}
 .maj{display:inline-block;background:var(--jaune);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#000}
@@ -31,7 +31,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .brand b{font-size:22px;font-weight:700;letter-spacing:-.01em;text-transform:uppercase}
 .navbar{display:flex;gap:0}
 .navlink{font-size:15px;font-weight:500;padding:10px 10px;position:relative;white-space:nowrap;text-decoration:none}
-.navlink::after{content:"";position:absolute;left:10px;right:10px;bottom:4px;height:3px;background:var(--fluo);transform:scaleX(0);transform-origin:left;transition:transform var(--e)}
+.navlink::after{content:"";position:absolute;left:10px;right:10px;bottom:4px;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform var(--e)}
 .navlink:hover::after,.navlink.on::after{transform:none}
 .tools{display:flex;align-items:center;gap:16px}
 .langs{display:flex;gap:8px;font-size:13px;font-weight:500}
@@ -42,7 +42,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .btn{display:inline-flex;align-items:center;gap:8px;border:2px solid #000;padding:11px 22px;font-weight:700;font-size:15px;min-height:44px;text-decoration:none;transition:background var(--e),color var(--e),border-color var(--e)}
 .btn:hover{background:#000;color:#fff}
 .btn.plein{background:#000;color:#fff}
-.btn.plein:hover{background:var(--fluo);color:#000;border-color:var(--fluo)}
+.btn.plein:hover{background:#333;color:#fff;border-color:#333}
 .btn.sm{padding:8px 16px;min-height:40px;font-size:14px}
 .btns{display:flex;gap:10px;flex-wrap:wrap}
 .seg{display:inline-flex;border:2px solid #000}
@@ -67,7 +67,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 /* Tuiles */
 .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px}
 .tile{background:var(--gris-fond);padding:26px 24px 22px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;width:100%;text-decoration:none;transition:background var(--e)}
-.tile:hover{background:var(--fluo)}
+.tile:hover{background:var(--gris)}
 .tile .n{font-size:13px;font-weight:500;color:#333}
 .tile .t{font-size:24px;font-weight:500;line-height:1.15;display:block}
 .tile .d{font-size:15px;display:block;margin-top:6px}
@@ -80,14 +80,14 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .parcours .sub{margin:0 0 28px;font-size:17px}
 .plan{list-style:none;padding:0;margin:28px auto 0;max-width:680px;text-align:left;border-top:1px solid #000}
 .plan a{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:16px 4px;border-bottom:1px solid #000;font-size:18px;font-weight:500;text-decoration:none;transition:background var(--e),padding var(--e)}
-.plan a:hover{background:var(--fluo);padding-left:14px}
+.plan a:hover{background:var(--gris);padding-left:14px}
 .plan a span{font-size:14px;font-weight:400;color:#333;text-align:right}
 .plan-foot{margin:22px 0 0;font-size:15px}
 
 /* Fil d'Ariane */
 .crumb{padding-top:22px;font-size:14px;display:flex;gap:8px;flex-wrap:wrap}
 .crumb a{text-underline-offset:3px}
-.crumb a:hover{text-decoration-color:var(--fluo);text-decoration-thickness:3px}
+.crumb a:hover{text-decoration-thickness:2px}
 
 /* Plan Nantes */
 .map{position:relative;width:100%;max-width:900px;margin:0 auto;aspect-ratio:1840/1600;background:rgb(246,246,244);overflow:hidden;border:1px solid #000}
@@ -98,14 +98,14 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .pin{position:absolute;display:inline-flex;align-items:center;gap:8px;transform:translate(-15px,-15px);min-height:44px;text-decoration:none}
 .pin-n{width:30px;height:30px;border-radius:50%;background:#000;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex:none;transition:background var(--e),color var(--e)}
 .pin-l{background:#fff;border:2px solid #000;padding:4px 10px;font-size:14px;font-weight:600;white-space:nowrap;transition:background var(--e)}
-.pin:hover .pin-n{background:var(--fluo);color:#000}
-.pin:hover .pin-l{background:var(--fluo)}
+.pin:hover .pin-n{background:#333}
+.pin:hover .pin-l{background:var(--gris)}
 .credit{margin:10px auto 0;max-width:900px;font-size:13px;color:var(--gris-txt)}
 
 /* Cartes quartiers */
 .qgrid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
 .qcard{display:flex;flex-direction:column;background:#fff;border:2px solid #000;text-decoration:none;transition:background var(--e)}
-.qcard:hover{background:var(--fluo)}
+.qcard:hover{background:var(--gris)}
 .qcard .ph{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:var(--gris-fond);color:var(--gris-txt);font-size:14px;position:relative;text-align:center;padding:0 12px}
 .qcard .num{position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:50%;background:#000;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
 .qcard .body{display:flex;flex-direction:column;gap:6px;padding:20px 20px 22px}
@@ -117,7 +117,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .others{background:var(--gris);padding:48px 0}
 .others .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
 .chip{display:inline-flex;align-items:center;border:1px solid #000;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500;min-height:36px;text-decoration:none;transition:background var(--e)}
-.chip:hover{background:var(--fluo)}
+.chip:hover{background:#000;color:#fff}
 
 /* Encadrés */
 .encart{border:2px solid #000;padding:28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 28px}
@@ -142,7 +142,7 @@ header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid 
 .bar{border-bottom:1px solid #000}
 .bar summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 4px;font-size:19px;font-weight:500;cursor:pointer;min-height:44px;transition:background var(--e)}
 .bar summary::-webkit-details-marker{display:none}
-.bar summary:hover{background:var(--fluo)}
+.bar summary:hover{background:var(--gris)}
 .bar summary .sa{font-size:14px;font-weight:400;color:#333;margin-left:auto;text-align:right}
 .bar summary::after{content:"+";font-size:24px;font-weight:400;line-height:1;flex:none}
 .bar[open] summary::after{content:"–"}
@@ -226,10 +226,10 @@ footer p{margin:0}
 .mtile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform var(--e)}
 .mtile .body{position:relative;isolation:isolate;display:flex;flex-direction:column;gap:4px;padding:0 20px 16px}
 .mtile .body::before{content:"";position:absolute;z-index:-1;left:-40px;right:-50px;top:-36px;bottom:-40px;border-radius:50%;background:rgba(0,0,0,.55);filter:blur(30px);pointer-events:none}
-.mtile .t{font-size:22px;font-weight:600;line-height:1.12;align-self:flex-start;text-shadow:0 1px 3px rgba(0,0,0,.35);background-image:linear-gradient(var(--fluo),var(--fluo));background-size:0 3px;background-position:0 100%;background-repeat:no-repeat;transition:background-size var(--e)}
+.mtile .t{font-size:22px;font-weight:600;line-height:1.12;align-self:flex-start;text-shadow:0 1px 3px rgba(0,0,0,.35);background-image:linear-gradient(currentColor,currentColor);background-size:0 2px;background-position:0 100%;background-repeat:no-repeat;transition:background-size var(--e)}
 .mtile .d{font-size:14px;line-height:1.3;font-weight:500;text-shadow:0 1px 3px rgba(0,0,0,.35)}
 .mtile:hover img{transform:scale(1.04)}
-.mtile:hover .t,.mtile:focus-visible .t{background-size:100% 3px}
+.mtile:hover .t,.mtile:focus-visible .t{background-size:100% 2px}
 .mtile .num{position:absolute;left:14px;top:14px;width:30px;height:30px;border-radius:50%;background:#000;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}
 .mtile .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 .mtile .tags span{border:1px solid #fff;border-radius:999px;padding:3px 10px;font-size:12px;font-weight:500}
@@ -260,3 +260,6 @@ a.rph:hover img{transform:scale(1.03)}
 .rtx p{margin:8px 0 14px;font-size:16px;max-width:520px}
 .rtx p.meta{margin:4px 0 0;font-size:14px;color:#333}
 @media (max-width:640px){.rlist{grid-template-columns:minmax(0,1fr)}}
+
+/* Sélecteur de langue : langue indisponible (sans WPML) */
+.langs .off{color:var(--gris-txt);opacity:.5;cursor:default}
