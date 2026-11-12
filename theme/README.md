@@ -7,7 +7,7 @@ Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quell
 
 ## Démo en ligne
 
-[Ouvrir dans WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/matmaaar/rendez-vous-a-nantes/claude/elegant-ride-bswwdv/blueprint.json) : WordPress jetable dans le navigateur, thème installé et contenu FR importé (WPML n'étant pas disponible sur Playground, seul le français y est visible). Configuration : [`blueprint.json`](../blueprint.json). Le blueprint installe `theme/rdv-nantes.zip` : le régénérer après chaque modification du thème.
+[Ouvrir dans WordPress Playground](https://playground.wordpress.net/?mode=seamless&blueprint-url=https://raw.githubusercontent.com/matmaaar/rendez-vous-a-nantes/claude/elegant-ride-bswwdv/blueprint.json) : WordPress jetable dans le navigateur, thème installé et contenu FR importé (WPML n'étant pas disponible sur Playground, seul le français y est visible). Configuration : [`blueprint.json`](../blueprint.json). Le blueprint installe `theme/rdv-nantes.zip` : le régénérer après chaque modification du thème.
 
 > **Mise en ligne sur le site actuel** : suivre [`DEPLOIEMENT.md`](DEPLOIEMENT.md) (sauvegarde, simulation d'import, réglages WPML, redirections, recette, retour arrière).
 

@@ -6,20 +6,42 @@
     "author": "Le Voyage à Nantes"
   },
   "landingPage": "/",
-  "preferredVersions": { "php": "8.3", "wp": "latest" },
-  "features": { "networking": true },
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
   "steps": [
-    { "step": "login", "username": "admin", "password": "password" },
-    { "step": "setSiteLanguage", "language": "fr_FR" },
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "setSiteLanguage",
+      "language": "fr_FR"
+    },
     {
       "step": "installTheme",
-      "themeData": { "resource": "url", "url": "https://raw.githubusercontent.com/matmaaar/rendez-vous-a-nantes/claude/elegant-ride-bswwdv/theme/rdv-nantes.zip" },
-      "options": { "activate": true }
+      "themeData": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/matmaaar/rendez-vous-a-nantes/claude/elegant-ride-bswwdv/theme/rdv-nantes.zip"
+      },
+      "options": {
+        "activate": true
+      }
     },
-    { "step": "setSiteOptions", "options": { "permalink_structure": "/%postname%/" } },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "permalink_structure": "/%postname%/"
+      }
+    },
     {
       "step": "runPHP",
-      "code": "<?php require_once '/wordpress/wp-load.php'; foreach ( array( 1, 2, 3 ) as $id ) { wp_delete_post( $id, true ); } rdv_import(); flush_rewrite_rules();"
+      "code": "<?php require_once '/wordpress/wp-load.php'; foreach ( array( 1, 2, 3 ) as $id ) { wp_delete_post( $id, true ); } rdv_import(); flush_rewrite_rules(); update_user_meta( 1, 'show_admin_bar_front', 'false' );"
     }
   ]
 }
