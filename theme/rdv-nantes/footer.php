@@ -37,6 +37,23 @@ defined( 'ABSPATH' ) || exit;
   </div>
 </footer>
 
+<?php
+$rdv_active = rdv_current_rubrique_id();
+$rdv_icon   = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
+?>
+<button class="mfab" type="button" aria-expanded="false" aria-controls="rdv-menu" data-close-label="<?php esc_attr_e( 'Fermer', 'rdv-nantes' ); ?>" data-menu-label="<?php esc_attr_e( 'Menu', 'rdv-nantes' ); ?>"><span class="ic"><?php echo $rdv_icon; // phpcs:ignore WordPress.Security.EscapeOutput ?></span><span class="lab"><?php esc_html_e( 'Menu', 'rdv-nantes' ); ?></span></button>
+<div class="mscrim" hidden></div>
+<div id="rdv-menu" class="msheet" role="dialog" aria-modal="true" aria-label="<?php esc_attr_e( 'Menu', 'rdv-nantes' ); ?>" hidden>
+  <nav aria-label="<?php esc_attr_e( 'Rubriques', 'rdv-nantes' ); ?>">
+    <ul>
+      <?php foreach ( rdv_rubriques( 'nav' ) as $rdv_r ) : ?>
+        <li><a href="<?php echo esc_url( get_permalink( $rdv_r ) ); ?>"<?php echo (int) $rdv_r->ID === (int) $rdv_active ? ' aria-current="page"' : ''; ?>><?php echo esc_html( get_the_title( $rdv_r ) ); ?><span aria-hidden="true">→</span></a></li>
+      <?php endforeach; ?>
+    </ul>
+    <a class="btn plein pass" href="<?php echo esc_url( rdv_link( '/24h-de-plus/pass-nantes/' ) ); ?>"><?php esc_html_e( 'Pass Nantes', 'rdv-nantes' ); ?></a>
+  </nav>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

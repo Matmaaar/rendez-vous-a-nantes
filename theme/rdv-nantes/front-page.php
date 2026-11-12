@@ -22,7 +22,7 @@ the_post();
 </div></section>
 
 <section style="padding:8px 0 80px"><div class="wrap">
-  <?php if ( rdv_meta( 'tiles_title' ) ) : ?><h2 class="h2"><?php echo esc_html( rdv_meta( 'tiles_title' ) ); ?></h2><?php endif; ?>
+  <?php if ( rdv_meta( 'tiles_title' ) ) : ?><h2 class="h2"><?php echo rdv_nbsp( esc_html( rdv_meta( 'tiles_title' ) ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?></h2><?php endif; ?>
   <?php
   rdv_mosaic( array_map( function ( $rdv_r ) {
 	  return array( 'url' => get_permalink( $rdv_r ), 'title' => get_the_title( $rdv_r ), 'desc' => rdv_meta( 'tile_desc', $rdv_r->ID ), 'post' => $rdv_r );

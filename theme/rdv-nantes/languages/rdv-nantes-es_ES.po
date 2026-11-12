@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Rendez-vous à Nantes 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/rdv-nantes\n"
-"POT-Creation-Date: 2026-11-10T08:46:18+00:00\n"
+"POT-Creation-Date: 2026-11-12T15:02:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,6 +114,22 @@ msgstr "Accesibilidad"
 msgid "Cookies"
 msgstr "Cookies"
 
+#: footer.php:44
+msgid "Fermer"
+msgstr "Cerrar"
+
+#: footer.php:44 footer.php:46
+msgid "Menu"
+msgstr "Menú"
+
+#: footer.php:47 header.php:27
+msgid "Rubriques"
+msgstr "Secciones"
+
+#: footer.php:53 header.php:34 inc/post-types.php:24
+msgid "Pass Nantes"
+msgstr "Pass Nantes"
+
 #: header.php:19
 msgid "Aller au contenu"
 msgstr "Ir al contenido"
@@ -125,14 +141,6 @@ msgstr "Inicio Rendez-vous à Nantes"
 #: header.php:25
 msgid "Rendez-vous à"
 msgstr "Rendez-vous à"
-
-#: header.php:27
-msgid "Rubriques"
-msgstr "Secciones"
-
-#: header.php:34 inc/post-types.php:24
-msgid "Pass Nantes"
-msgstr "Pass Nantes"
 
 #: inc/post-types.php:21
 msgid "Prendre un verre"

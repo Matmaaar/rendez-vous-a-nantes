@@ -184,8 +184,8 @@ footer p{margin:0}
 /* Responsive */
 @media (max-width:1180px){
   .desk{display:none}
-  .navbar{order:3;width:100%;overflow-x:auto;scrollbar-width:none;margin-bottom:4px}
-  .hdr{padding-top:10px}
+  .navbar{display:none} /* sur mobile et tablette : menu flottant en bas à droite (voir « Menu mobile ») */
+  .hdr{flex-wrap:nowrap;min-height:64px}
   .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .qgrid{grid-template-columns:minmax(0,1fr);gap:40px}
 }
@@ -263,3 +263,23 @@ a.rph:hover img{transform:scale(1.03)}
 
 /* Sélecteur de langue : langue indisponible (sans WPML) */
 .langs .off{color:var(--gris-txt);opacity:.5;cursor:default}
+
+/* ===== Menu mobile : pastille « Menu » flottante en bas à droite + panneau qui monte du bas ===== */
+.mfab,.msheet,.mscrim{display:none}
+@media (max-width:1180px){
+  body{padding-bottom:84px}
+  .mfab{position:fixed;z-index:60;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;border:0;border-radius:999px;background:#000;color:#fff;font:inherit;font-size:17px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
+  .mfab .ic{display:inline-flex}
+  .mfab:hover{background:#333}
+  .mscrim:not([hidden]){display:block;position:fixed;inset:0;z-index:55;background:rgba(0,0,0,.45)}
+  .msheet:not([hidden]){display:block;position:fixed;z-index:58;left:0;right:0;bottom:0;max-height:88vh;overflow:auto;background:#fff;padding:14px 18px calc(92px + env(safe-area-inset-bottom));border-top:1px solid #000;animation:rdv-monte .25s ease-out}
+  .msheet ul{list-style:none;margin:0;padding:0}
+  .msheet li a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid #000;font-size:22px;font-weight:500;color:#000;text-decoration:none}
+  .msheet li a:hover,.msheet li a[aria-current]{text-decoration:underline;text-underline-offset:4px}
+  .msheet .pass{width:100%;justify-content:center;margin-top:18px}
+}
+@keyframes rdv-monte{from{transform:translateY(100%)}to{transform:none}}
+@media (prefers-reduced-motion:reduce){.msheet{animation:none!important}}
+
+/* Titre de l'accueil sur mobile : plus petit, tient en deux lignes */
+@media (max-width:640px){ .hero .big{font-size:34px;line-height:1.05} .hero{padding:36px 0 32px} .h2{font-size:26px;margin-bottom:20px} }

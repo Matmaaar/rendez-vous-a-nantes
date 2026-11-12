@@ -151,7 +151,7 @@ function rdv_rubrique_for_type( $type ) {
  * @return int ID de page ou 0.
  */
 function rdv_current_rubrique_id() {
-	if ( is_page() && rdv_meta( 'num' ) ) {
+	if ( is_page() && isset( rdv_rubrique_templates()[ get_page_template_slug() ] ) ) {
 		return get_the_ID();
 	}
 	if ( is_singular( rdv_post_types() ) ) {
@@ -187,7 +187,7 @@ function rdv_crumb( $items ) {
  * @param string $lead  Chapô.
  */
 function rdv_head( $title, $lead = '' ) {
-	echo '<section class="pagehead"><div class="wrap"><h1 class="big">' . esc_html( $title ) . '</h1>';
+	echo '<section class="pagehead"><div class="wrap"><h1 class="big">' . rdv_nbsp( esc_html( $title ) ) . '</h1>';
 	if ( $lead ) {
 		echo '<p class="lead" style="margin-top:22px">' . wp_kses_post( $lead ) . '</p>';
 	}
@@ -359,4 +359,14 @@ function rdv_fiche_photo( $style = '' ) {
 		echo '<figcaption>' . esc_html( $caption ) . '</figcaption>';
 	}
 	echo '</figure>';
+}
+
+/**
+ * Typographie française : espace insécable avant ? ! : ; (évite un signe seul en début de ligne).
+ *
+ * @param string $html Texte déjà échappé.
+ * @return string
+ */
+function rdv_nbsp( $html ) {
+	return preg_replace( '/ ([?!:;])/u', '&nbsp;$1', $html );
 }

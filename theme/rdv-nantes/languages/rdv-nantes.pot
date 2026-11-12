@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-10T08:46:18+00:00\n"
+"POT-Creation-Date: 2026-11-12T15:02:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: rdv-nantes\n"
@@ -106,6 +106,26 @@ msgstr ""
 msgid "Cookies"
 msgstr ""
 
+#: footer.php:44
+msgid "Fermer"
+msgstr ""
+
+#: footer.php:44
+#: footer.php:46
+msgid "Menu"
+msgstr ""
+
+#: footer.php:47
+#: header.php:27
+msgid "Rubriques"
+msgstr ""
+
+#: footer.php:53
+#: header.php:34
+#: inc/post-types.php:24
+msgid "Pass Nantes"
+msgstr ""
+
 #: header.php:19
 msgid "Aller au contenu"
 msgstr ""
@@ -116,15 +136,6 @@ msgstr ""
 
 #: header.php:25
 msgid "Rendez-vous à"
-msgstr ""
-
-#: header.php:27
-msgid "Rubriques"
-msgstr ""
-
-#: header.php:34
-#: inc/post-types.php:24
-msgid "Pass Nantes"
 msgstr ""
 
 #: inc/post-types.php:21

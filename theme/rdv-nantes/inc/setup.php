@@ -24,6 +24,7 @@ add_action( 'wp_enqueue_scripts', function () {
 		$deps[] = 'rdv-inter';
 	}
 	wp_enqueue_style( 'rdv-nantes', get_stylesheet_uri(), $deps, RDV_VERSION );
+	wp_enqueue_script( 'rdv-menu', RDV_URI . '/assets/js/menu.js', array(), RDV_VERSION, array( 'in_footer' => true, 'strategy' => 'defer' ) );
 } );
 
 add_filter( 'wp_resource_hints', function ( $urls, $relation ) {
