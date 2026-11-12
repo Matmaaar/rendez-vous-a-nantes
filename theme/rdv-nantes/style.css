@@ -23,7 +23,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #00
 .maj{display:inline-block;background:var(--accent);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;color:#000}
 
 /* Header */
-header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #000}
+header{position:relative;z-index:20;background:#fff;border-bottom:1px solid #000} /* en haut de page, ne suit pas le défilement */
 .hdr{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;column-gap:20px;min-height:76px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .brand span{display:flex;flex-direction:column;line-height:1}
@@ -216,8 +216,6 @@ footer p{margin:0}
 .page-simple .big{font-size:clamp(40px,5vw,60px);line-height:1.02;margin-bottom:28px}
 .e404{padding:96px 0;text-align:center}
 .e404 .btns{justify-content:center;margin-top:28px}
-.admin-bar header{top:32px}
-@media (max-width:782px){.admin-bar header{top:46px}}
 
 /* ===== Mosaïque photo (cases des rubriques, de l'accueil et des quartiers) =====
    Photo pleine case 3/2, cases collées, texte en bas à gauche sur un halo sombre très diffus. */
