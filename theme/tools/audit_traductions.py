@@ -42,6 +42,7 @@ def pieces(v):
 L = ['# Traductions EN / ES à faire relire', '',
      'Textes du thème qui **n\'existent pas sur le site actuel** : ce sont des textes nouveaux de la maquette, traduits pour l\'import.',
      'Tout le reste du contenu EN / ES (fiches, quartiers, pages d\'infos, pages légales…) reprend le texte du site actuel.',
+     'Dans les tableaux, « — » signifie que le texte de cette langue est repris du site actuel : rien à relire.',
      'Régénérer : `python3 -I theme/tools/audit_traductions.py`.', '']
 total = 0
 for it in C['items']:

@@ -2,6 +2,7 @@
 
 Textes du thème qui **n'existent pas sur le site actuel** : ce sont des textes nouveaux de la maquette, traduits pour l'import.
 Tout le reste du contenu EN / ES (fiches, quartiers, pages d'infos, pages légales…) reprend le texte du site actuel.
+Dans les tableaux, « — » signifie que le texte de cette langue est repris du site actuel : rien à relire.
 Régénérer : `python3 -I theme/tools/audit_traductions.py`.
 
 ## Accueil
@@ -14,10 +15,6 @@ Régénérer : `python3 -I theme/tools/audit_traductions.py`.
 | Grand titre | Nantes en une heure ou une demi-journée | Nantes in an hour or half a day | Nantes en una hora o media jornada |
 | Sous-titre | Bars, tables, incontournables : notre sélection, sans détour. | Bars, restaurants, must-sees: our selection, straight to the point. | Bares, restaurantes, imprescindibles: nuestra selección, sin rodeos. |
 | Titre des tuiles | Que voulez-vous faire ? | What would you like to do? | ¿Qué quiere hacer? |
-| Parcours : titre | Visiter Nantes à pied | Explore Nantes on foot | Visitar Nantes a pie |
-| Parcours : sous-titre | Un parcours tout prêt, selon le temps dont vous disposez. | A ready-made route, depending on how much time you have. | Un recorrido listo, según el tiempo del que disponga. |
-| Parcours : texte | Ou laissez-vous guider : <a href="/24h-de-plus/la-ligne-verte/">suivez la ligne verte au sol</a>. | Or let yourself be guided: <a href="/24h-de-plus/la-ligne-verte/">follow the green line on the ground</a>. | O déjese guiar: <a href="/24h-de-plus/la-ligne-verte/">siga la línea verde en el suelo</a>. |
-| Parcours : étapes | Le Château des ducs de Bretagne / cour et remparts en accès libre / Quartier Bouffay / quartier médiéval, à 5 min / Le Passage Pommeraye / galerie du XIXe siècle / Le Château des ducs de Bretagne / cour et remparts en accès libre / Quartier Bouffay / quartier médiéval / Le Passage Pommeraye / galerie du XIXe siècle / Le Mémorial de l’abolition de l’esclavage / quai de la Fosse / Demi-journée / Le Château des ducs de Bretagne / le musée d’histoire de Nantes / Quartier Bouffay / quartier médiéval / Le Mémorial de l’abolition de l’esclavage / quai de la Fosse / Les Machines de l’Île / traversée vers l’Île de Nantes / Un verre au Hangar à bananes / face à la Loire | courtyard and ramparts free of charge / medieval quarter, 5 min away / 19th-century arcade / courtyard and ramparts free of charge / 19th-century arcade / Half a day / across to the Île de Nantes / A drink at the Hangar à bananes | patio y murallas de acceso libre / barrio medieval, a 5 min / galería del siglo XIX / patio y murallas de acceso libre / galería del siglo XIX / quai de la Fosse / Media jornada / quai de la Fosse / cruzando a la Île de Nantes / Una copa en el Hangar à bananes / frente al Loira |
 
 ## Prendre un verre
 

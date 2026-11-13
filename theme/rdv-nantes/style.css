@@ -2,8 +2,8 @@
 Theme Name: Rendez-vous à Nantes
 Theme URI: https://rdv.levoyageanantes.fr/
 Author: Le Voyage à Nantes
-Description: Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : prendre un verre (quartiers + carte), manger, incontournables, footing, shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES).
-Version: 1.0.0
+Description: Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : prendre un verre (quartiers), manger, incontournables, footing, shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES).
+Version: 1.1.0
 Requires at least: 6.2
 Requires PHP: 7.4
 Text Domain: rdv-nantes
@@ -11,8 +11,8 @@ Domain Path: /languages
 License: Propriétaire
 */
 
-/* ===== Styles de la maquette V1 (repris tels quels) ===== */
-:root{--accent:#e6e6f2;--noir:#000;--blanc:#fff;--gris-txt:#6b6b6b;--fluo:rgb(0,255,0);--vert:var(--accent);--jaune:var(--accent);--rose:rgb(255,218,207);--gris:rgb(246,246,246);--gris-fond:rgb(239,238,236);--e:500ms cubic-bezier(.035,.625,0,1)}
+/* ===== Styles de la maquette V1, adaptés (couleurs, mosaïque, menu mobile) ===== */
+:root{--accent:#e6e6f2;--gris-txt:#6b6b6b;--gris:rgb(246,246,246);--gris-fond:rgb(239,238,236);--e:500ms cubic-bezier(.035,.625,0,1)}
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#000;font-family:"Suisse Int'l",Inter,"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased}
 a{color:#000}

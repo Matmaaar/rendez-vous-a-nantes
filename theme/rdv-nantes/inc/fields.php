@@ -24,15 +24,15 @@ function rdv_field_groups() {
 		array( 'home', 'Afficher en tuile sur l\'accueil et dans « Autres rubriques »', 'check', '' ),
 		array( 'nav', 'Afficher dans le menu principal', 'check', '' ),
 	);
-	$infos = array( 'infos', 'Encadré « infos pratiques »', 'textarea', 'Une ligne par info : Libellé | Valeur | 1 (facultatif : pastille verte « en direct »).' );
+	$infos = array( 'infos', 'Encadré « infos pratiques »', 'textarea', 'Une ligne par info : Libellé | Valeur | 1 (facultatif : pastille « en direct »).' );
 
 	return array(
 		'front'         => array(
 			'title'  => 'Page d\'accueil',
 			'fields' => array(
-				array( 'bonplan_label', 'Bandeau jaune : pastille', 'text', 'Ex. « Le bon plan ».' ),
-				array( 'bonplan_text', 'Bandeau jaune : texte', 'text', '' ),
-				array( 'bonplan_btn', 'Bandeau jaune : bouton', 'text', 'Libellé | lien' ),
+				array( 'bonplan_label', 'Bandeau du haut : pastille', 'text', 'Ex. « Le bon plan ».' ),
+				array( 'bonplan_text', 'Bandeau du haut : texte', 'text', '' ),
+				array( 'bonplan_btn', 'Bandeau du haut : bouton', 'text', 'Libellé | lien' ),
 				array( 'hero_title', 'Grand titre', 'html', 'Retour à la ligne : <br>' ),
 				array( 'hero_lead', 'Sous-titre', 'text', '' ),
 				array( 'tiles_title', 'Titre des tuiles', 'text', 'Ex. « Que voulez-vous faire ? »' ),
@@ -46,9 +46,9 @@ function rdv_field_groups() {
 			'title'  => 'Liste de fiches',
 			'fields' => array(
 				array( 'post_type', 'Fiches à lister', 'select', '', 'post_types' ),
-				array( 'encart_title', 'Encadré jaune : titre', 'text', 'Laisser vide pour ne pas afficher d\'encadré.' ),
-				array( 'encart_text', 'Encadré jaune : texte', 'textarea', '' ),
-				array( 'encart_btn', 'Encadré jaune : bouton', 'text', 'Libellé | lien' ),
+				array( 'encart_title', 'Encadré de mise en avant : titre', 'text', 'Laisser vide pour ne pas afficher d\'encadré.' ),
+				array( 'encart_text', 'Encadré de mise en avant : texte', 'textarea', '' ),
+				array( 'encart_btn', 'Encadré de mise en avant : bouton', 'text', 'Libellé | lien' ),
 			),
 		),
 		'liste'         => array(
@@ -80,9 +80,9 @@ function rdv_field_groups() {
 				array( 'img_alt', 'Texte si pas d\'image à la une', 'text', 'Ex. « [Photo quartier Graslin] ».' ),
 				array( 'badges', 'Étiquettes de la vignette', 'textarea', 'Une par ligne.' ),
 				array( 'lead', 'Chapô', 'textarea', '' ),
-				array( 'musts', 'Étapes incontournables', 'textarea', 'Une ligne par étape : Titre | description | mention jaune (facultatif)' ),
+				array( 'musts', 'Étapes incontournables', 'textarea', 'Une ligne par étape : Titre | description | mention en étiquette (facultatif)' ),
 				$infos,
-				array( 'groups', 'Bars', 'textarea', "Une ligne « ## Titre du groupe », puis un bar par ligne : Nom | adresse | mention jaune | description (colonnes facultatives)." ),
+				array( 'groups', 'Bars', 'textarea', "Une ligne « ## Titre du groupe », puis un bar par ligne : Nom | adresse | mention en étiquette | description (colonnes facultatives)." ),
 				array( 'note', 'Note grise en bas de page', 'textarea', '' ),
 			),
 		),

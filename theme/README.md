@@ -47,17 +47,18 @@ Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/sh
 
 ## Choix de mise en page par rapport à la maquette
 
-- Pas de surtitre au-dessus du titre des rubriques et des pages d'infos (il répétait le titre). Les fiches gardent le leur (rubrique · position, ou rubrique · ambiance).
+- Aucun surtitre au-dessus des titres (rubriques, pages d'infos, fiches) : il répétait le titre ou le fil d'Ariane.
 - Pas de carte sur Prendre un verre : les quartiers sont présentés en mosaïque photo.
 - Menu mobile et tablette (≤ 1180 px) : plus de bandeau de rubriques en haut ; une pastille « ☰ Menu » flotte en bas à droite et fait monter un panneau avec les rubriques et Pass Nantes (`footer.php`, `assets/js/menu.js`). Le menu horizontal reste sur ordinateur.
 - Couleurs : plus de couleur d'accent (jaune, vert, vert fluo). Un seul fond de mise en avant, `--accent: #e6e6f2` dans `style.css` (bandeau Pass Nantes, encadrés, étiquettes, pied de page), à ajuster à un seul endroit.
 - Pas de parcours « Visiter Nantes à pied » sur l'accueil : bandeau Pass Nantes, titre, puis la mosaïque des rubriques.
-- Favicon : pictogramme repère de la maquette, vert fluo sur noir (`assets/img/`). Une icône définie dans Personnaliser → Identité du site le remplace.
+- Favicon : pictogramme repère de la maquette (`assets/img/`). Une icône définie dans Personnaliser → Identité du site le remplace.
+- Survols sobres : soulignement noir, léger zoom des photos, gris. Pas de couleur vive.
 - Performance : pas de styles de l'éditeur de blocs ni d'emojis WordPress, images en WebP (si le serveur sait les produire) avec une taille dédiée aux téléphones, 1re photo des mosaïques chargée en priorité. Audit Lighthouse mobile (serveur local) : accessibilité 100, bonnes pratiques 100, SEO 100, performance 90 à 99.
 
 ## Mosaïque photo
 
-Les grilles de cases (accueil, Prendre un verre, Incontournables, Shopping, Pass Nantes) sont des **mosaïques photo** : photo pleine case en 3/2, cases collées, titre et accroche en blanc sur un halo sombre très diffus, soulignement vert fluo au survol. 4 colonnes à partir de 8 cases (et pour les 4 quartiers), sinon 3 ; 2 colonnes sur tablette, 1 sur mobile. Fonction : `rdv_mosaic()` dans `inc/template-tags.php`.
+Les grilles de cases (accueil, Prendre un verre, Incontournables, Shopping, Pass Nantes) sont des **mosaïques photo** : photo pleine case en 3/2, cases collées, titre et accroche en blanc sur un halo sombre très diffus, sans numéro ; au survol, léger zoom de la photo et titre souligné. 4 colonnes à partir de 8 cases (et pour les 4 quartiers), sinon 3 ; 2 colonnes sur tablette, 1 sur mobile. Fonction : `rdv_mosaic()` dans `inc/template-tags.php`.
 
 La photo d'une case est l'**image à la une** de la fiche ou de la page de rubrique ; la même photo s'affiche en tête de la fiche, avec sa légende (crédit) (sans image : fond gris foncé). L'import en pose une pour chaque fiche et rubrique, reprise du diaporama du site actuel, avec le crédit en légende.
 
@@ -70,22 +71,22 @@ Les restaurants de la page Manger s'affichent en **liste illustrée** (photo, no
 Tout se modifie dans l'admin, dans les encadrés sous l'éditeur :
 
 - **Pages de rubrique** : choisir le gabarit, enregistrer, puis remplir « Rubrique » (grand titre, chapô, texte de tuile, cases « accueil » et « menu ») et l'encadré propre au gabarit. Le **titre de la page** est le libellé court (menu, fil d'Ariane, tuiles). L'ordre des rubriques = champ **Ordre** de la page.
-- **Accueil** : bandeau jaune, grand titre, parcours « Visiter Nantes à pied ».
+- **Accueil** : bandeau du haut (Pass Nantes), grand titre et sous-titre. La mosaïque reprend automatiquement les rubriques.
 - **Fiches** : sous-titre, infos pratiques, liens Itinéraire / En savoir plus / achat. Ordre = champ **Ordre**.
 - **Quartiers** : ambiance, localisation, lien Itinéraire (facultatif), étiquettes, bars, image à la une (vignette).
 
-Conventions des champs multi-lignes : **une ligne = un élément**, colonnes séparées par `|`, par ex. infos pratiques `Adresse | 4 place Marc Elder | 1` (le `1` final affiche la pastille verte). Les liens internes s'écrivent en **chemin français** (`/incontournable/quartier-bouffay/`) : le thème les convertit vers la bonne langue.
+Conventions des champs multi-lignes : **une ligne = un élément**, colonnes séparées par `|`, par ex. infos pratiques `Adresse | 4 place Marc Elder | 1` (le `1` final affiche une pastille « en direct »). Les liens internes s'écrivent en **chemin français** (`/incontournable/quartier-bouffay/`) : le thème les convertit vers la bonne langue.
 
 ## Traductions
 
 - **Contenus** : FR = textes de la maquette ; EN / ES = **textes du site actuel** partout où ils existent (fiches, quartiers, chapôs, encadrés, listes, noms de rubriques, coquilles évidentes du site corrigées). Seuls les textes **créés par la maquette**, sans équivalent sur le site actuel (accroche et parcours de l'accueil, textes des tuiles, ambiances et localisations des quartiers…), ont été traduits : liste à faire relire dans [`TRADUCTIONS-A-RELIRE.md`](TRADUCTIONS-A-RELIRE.md).
 - **SEO** : titre et meta description de l'accueil (FR/EN/ES) et `noindex` des mentions légales repris du site actuel (champs Yoast). Sans Yoast, le thème affiche quand même la meta description et le `noindex`.
 - **Crédits photo** : les images à la une importées portent leur texte alternatif et leur crédit en légende (export WordPress du site actuel). Graslin n'a pas de crédit connu ; celui de l'Île de Nantes est déduit du nom de fichier : à vérifier.
-- **Interface** (pied de page, boutons…) : `languages/en_US.mo` et `es_ES.mo` (sources `.po`, modèle `.pot`). Modifiables aussi via WPML String Translation.
+- **Interface** (pied de page, boutons…) : textes écrits en français dans le thème ; `languages/en_US.mo` et `es_ES.mo` (sources `.po`, modèle `.pot`) ne sont chargés que pour les pages EN / ES de WPML. Un WordPress réglé en anglais affiche donc bien la version FR en français. Modifiables aussi via WPML String Translation.
 
 ## Points à valider
 
-- Mentions éditoriales de la maquette reprises telles quelles : « Dates 2024 à mettre à jour », « 2025 à mettre à jour » (« [X] min à pied de la Cité des Congrès » a été retiré).
+- Mentions éditoriales provisoires : dates des guinguettes (fiche Île de Nantes) et horaires d'été de l'Accueil (page Aide), marquées « à mettre à jour ».
 - La maquette prévoyait une description courte par bar (« [Description courte à rédiger…] ») : la colonne existe (4e colonne du champ Bars) mais est vide, rien ne s'affiche tant qu'elle n'est pas remplie.
 - Les vignettes de quartiers utilisent une photo du site actuel (image à la une) au lieu des cases « [Photo …] » de la maquette.
 - Lien « Accessibilité » du pied de page : affiché dès qu'une page de slug `accessibilite` existe (aucun contenu fourni).
@@ -96,6 +97,13 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 - `tools/extract_maquette.py` : maquette HTML → `tools/maquette.json`.
 - `tools/build_content.py` : `maquette.json` + `../contenu/` → `rdv-nantes/import/content.json` et images des quartiers.
 - `../contenu/outils/wxr_extract.py <export.xml> <acf.json>` : exploite l'export WordPress / ACF du site actuel (crédits, SEO, redirections, contenus non publiés). Les exports bruts ne sont pas versionnés.
-- Zip d'installation : `cd theme && zip -r rdv-nantes.zip rdv-nantes`.
+- Zip d'installation (polices exclues, le repo étant public) : `cd theme && rm -f rdv-nantes.zip && zip -qr rdv-nantes.zip rdv-nantes -x 'rdv-nantes/assets/fonts/*'`.
 
-Testé sur WordPress 6.4 (sans WPML) : toutes les pages répondent, rendu identique à la maquette à 1280 px et 390 px (écart < 0,5 % des pixels, hors photos des quartiers), import rejouable, enregistrement des champs dans l'admin.
+## Tests
+
+Dernière recette (novembre 2026) : **WordPress 7.1, PHP 8.3**, sans WPML (EN / ES simulés), contenu importé.
+
+- 34 pages FR contrôlées à 1280 px et 390 px : aucune erreur PHP ni JavaScript, aucun lien interne ni image cassés, aucun débordement horizontal sur mobile, un seul `h1` par page.
+- Import rejouable (aucun doublon), enregistrement des champs dans l'admin (jeton de sécurité et droits vérifiés).
+- Interface du thème : FR quel que soit le réglage de langue de WordPress, EN / ES chargés seulement sur les pages WPML de ces langues.
+- **Pas encore testé avec WPML** (extension payante) : à faire sur une copie du site, voir [`DEPLOIEMENT.md`](DEPLOIEMENT.md).

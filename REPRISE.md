@@ -33,6 +33,7 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 - **Police Suisse Int'l** (licence web LVaN) : chargée depuis `theme/rdv-nantes/assets/fonts/` si les WOFF2 y sont ; **jamais dans le repo** (public). Inter en secours.
 - **Pass Nantes** : 27/36/44/67 € au lieu de 30/40/49/75 €, promo −10 % jusqu'au 31 mars 2027.
 - **Pas de mesure d'audience** → pas de bandeau cookies.
+- Interface du thème écrite en **français** : les traductions EN/ES (`languages/`) ne se chargent que sur les pages EN/ES de WPML (un WordPress en anglais affiche bien le FR en français).
 - Multilingue : **WPML** (comme le site actuel). Sans WPML (Playground, test local), seul le FR existe et EN/ES sont grisés dans le sélecteur. La compatibilité Polylang pour la démo a été proposée puis mise de côté.
 
 ## Reste à faire / en attente
@@ -47,7 +48,7 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 
 ## Tester en local (environnement cloud)
 
-L'environnement « rendez-vous-a-nantes » autorise `rdv.levoyageanantes.fr` et `lestablesdenantes.fr`. Pour un WordPress de test : `apt-get install mariadb-server wordpress`, WP-CLI via `composer require wp-cli/wp-cli-bundle`, copie de `/usr/share/wordpress`, thème lié en symlink, site en `fr_FR` (sinon l'interface s'affiche en anglais), `wp rdv import` (ou `--dry-run`), serveur `php -S localhost:8080`. Captures et contrôles avec Playwright (préinstallé). Après chaque modif du thème : `cd theme && zip -qr rdv-nantes.zip rdv-nantes -x 'rdv-nantes/assets/fonts/*'`.
+Dernière recette : thème v1.1.0 sur **WordPress 7.1 / PHP 8.3** (novembre 2026), sans erreur. WordPress récent : `composer create-project johnpbloch/wordpress-core` (wordpress.org est bloqué par le réseau, donc pas de pack de langue fr_FR : sans incidence pour le thème). WP-CLI : `php vendor/wp-cli/wp-cli/php/boot-fs.php`. Sinon : L'environnement « rendez-vous-a-nantes » autorise `rdv.levoyageanantes.fr` et `lestablesdenantes.fr`. Pour un WordPress de test : `apt-get install mariadb-server wordpress`, WP-CLI via `composer require wp-cli/wp-cli-bundle`, copie de `/usr/share/wordpress`, thème lié en symlink, site en `fr_FR` (sinon l'interface s'affiche en anglais), `wp rdv import` (ou `--dry-run`), serveur `php -S localhost:8080`. Captures et contrôles avec Playwright (préinstallé). Après chaque modif du thème : `cd theme && zip -qr rdv-nantes.zip rdv-nantes -x 'rdv-nantes/assets/fonts/*'`.
 
 ## Habitudes de travail avec l'utilisateur
 

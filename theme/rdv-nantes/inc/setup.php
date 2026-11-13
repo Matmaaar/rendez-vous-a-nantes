@@ -8,6 +8,15 @@
 defined( 'ABSPATH' ) || exit;
 
 add_action( 'after_setup_theme', function () {
+	// Les textes du thème sont écrits en français. Côté site, on ne charge une traduction que pour une page
+	// EN ou ES (langue WPML) : un WordPress réglé en anglais n'affiche donc pas la version FR en anglais.
+	add_filter( 'override_load_textdomain', function ( $override, $domain ) {
+		if ( 'rdv-nantes' !== $domain || is_admin() ) {
+			return $override;
+		}
+		$lang = apply_filters( 'wpml_current_language', null );
+		return ( ! $lang || 'fr' === $lang ) ? true : $override;
+	}, 10, 2 );
 	load_theme_textdomain( 'rdv-nantes', RDV_DIR . '/languages' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
