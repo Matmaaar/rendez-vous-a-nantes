@@ -101,7 +101,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 
 ## Tests
 
-Dernière recette (novembre 2026) : **WordPress 7.1, PHP 8.3**, sans WPML (EN / ES simulés), contenu importé.
+Dernière recette (novembre 2026) : **WordPress 7.1.4** (version du site actuel) sous **PHP 7.4.33** (version du site actuel, hébergeur o2switch) et **PHP 8.3**, sans WPML (EN / ES simulés), contenu importé. Analyse de compatibilité du code (PHPCompatibility) : rien d'incompatible de PHP 7.4 à 8.5.
 
 - 34 pages FR contrôlées à 1280 px et 390 px : aucune erreur PHP ni JavaScript, aucun lien interne ni image cassés, aucun débordement horizontal sur mobile, un seul `h1` par page.
 - Import rejouable (aucun doublon), enregistrement des champs dans l'admin (jeton de sécurité et droits vérifiés).

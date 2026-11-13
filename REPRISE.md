@@ -36,6 +36,10 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 - Interface du thème écrite en **français** : les traductions EN/ES (`languages/`) ne se chargent que sur les pages EN/ES de WPML (un WordPress en anglais affiche bien le FR en français).
 - Multilingue : **WPML** (comme le site actuel). Sans WPML (Playground, test local), seul le FR existe et EN/ES sont grisés dans le sélecteur. La compatibilité Polylang pour la démo a été proposée puis mise de côté.
 
+## Site actuel (relevé dans Outils → Santé du site, 13 nov. 2026)
+
+WordPress **7.1.4**, PHP **7.4.33** (o2switch, Apache/LiteSpeed, pas d'Imagick), WPML 4.9.7, Yoast 28.7, langue fr_FR, permaliens `/%postname%/`, moteurs de recherche découragés. L'utilisateur a un **compte administrateur**. Le thème est testé sur ces versions exactes (PHP 7.4 via Docker `mirror.gcr.io/library/php:7.4-cli`). PHP 7.4 n'a plus de correctifs de sécurité depuis fin 2022 : passer en 8.3 est recommandé, mais à tester d'abord sur une copie (ancien thème et extensions).
+
 ## Reste à faire / en attente
 
 - Retour de l'ancienne agence sur la maquette.
@@ -44,7 +48,7 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 - Mentions légales et page cookies à vérifier par l'équipe ; page Accessibilité facultative.
 - 6e restaurant pour Manger (facultatif).
 - **WPML jamais testé** avec le thème : à tester sur une copie (WP Staging) avant le live, voir `DEPLOIEMENT.md`.
-- Mise en ligne par quelqu'un qui a l'accès admin (je n'y ai pas accès).
+- Mise en ligne : l'utilisateur a un compte administrateur (à confirmer : accès FTP pour les polices).
 
 ## Tester en local (environnement cloud)
 
