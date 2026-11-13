@@ -38,7 +38,9 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 
 ## Site actuel (relevé dans Outils → Santé du site, 13 nov. 2026)
 
-WordPress **7.1.4**, PHP **7.4.33** (o2switch, Apache/LiteSpeed, pas d'Imagick), WPML 4.9.7, Yoast 28.7, langue fr_FR, permaliens `/%postname%/`, moteurs de recherche découragés. L'utilisateur a un **compte administrateur**. Le thème est testé sur ces versions exactes (PHP 7.4 via Docker `mirror.gcr.io/library/php:7.4-cli`). PHP 7.4 n'a plus de correctifs de sécurité depuis fin 2022 : passer en 8.3 est recommandé, mais à tester d'abord sur une copie (ancien thème et extensions).
+WordPress **7.1.4**, PHP **7.4.33** (o2switch, Apache/LiteSpeed, pas d'Imagick), WPML 4.9.7, Yoast 28.7, langue fr_FR, permaliens `/%postname%/`, moteurs de recherche découragés. L'utilisateur a un **compte administrateur**.
+
+Extensions actives (13, mises à jour automatiques toutes désactivées) : WPML 4.9.7 + Media Translation 3.1.2, SEO 2.2.5, String Translation 3.5.4, ACF Multilingual 2.2.4 (toute la suite WPML est en 5.2.0), ACF PRO 6.3.1 (6.8.11 dispo), ACF Font Awesome 6.2.0, ACF Content Analysis for Yoast 3.2, Yoast 28.7 (28.8), AIOS 5.4.10 (5.5.1), UpdraftPlus 1.26.13, Redirection 5.10.1, Classic Editor 1.7.0. Aucune ne déclare les anciens types de contenu (ils viennent de l'ancien thème `rdvnantes`) : l'import ne sera pas bloqué. Redirection et UpdraftPlus déjà là (redirections et sauvegarde prêtes). Les 4 extensions ACF ne servent qu'à l'ancien thème : les garder pour le retour arrière, les désactiver une fois le nouveau thème validé. Le thème est testé sur ces versions exactes (PHP 7.4 via Docker `mirror.gcr.io/library/php:7.4-cli`). PHP 7.4 n'a plus de correctifs de sécurité depuis fin 2022 : passer en 8.3 est recommandé, mais à tester d'abord sur une copie (ancien thème et extensions).
 
 ## Reste à faire / en attente
 
