@@ -1,12 +1,18 @@
 # Déploiement sur le site live (sans préprod)
 
-Durée : environ 1 h. Le site a peu de trafic : on déploie directement, avec une sauvegarde et un retour arrière prêts.
+Trois phases, **un seul changement à la fois**, avec une sauvegarde avant chacune et une vérification après :
 
-> **Option recommandée, 15 minutes de plus : « préprod express ».** Installer l'extension gratuite **WP Staging**, cloner le site (il crée une copie dans un sous-dossier, accessible aux seuls administrateurs), dérouler les étapes 2 à 5 sur la copie et regarder les pages EN / ES. C'est le seul moyen de tester WPML avant le live : le thème n'a jamais pu être testé avec WPML (payant). Puis refaire les mêmes étapes sur le live.
+1. **Changer de thème** (ce document, étapes 1 à 5) : environ 1 h, sans rien mettre à jour d'autre (le thème est testé sur les versions actuelles du site : WordPress 7.1.4, PHP 7.4.33, ACF PRO 6.3.1, WPML 4.9.7).
+2. **Mettre à jour les extensions**, quelques jours plus tard si tout va bien (voir « Phase 2 »).
+3. **Passer PHP en 8.3**, encore quelques jours plus tard (voir « Phase 3 »).
+
+Le site a peu de trafic : on déploie directement, avec une sauvegarde et un retour arrière prêts.
+
+> **Option recommandée, 15 minutes de plus : « préprod express ».** Installer l'extension gratuite **WP Staging**, cloner le site (il crée une copie dans un sous-dossier, accessible aux seuls administrateurs), dérouler les étapes 2 à 5 sur la copie et regarder les pages EN / ES. Le thème a été testé avec ACF PRO et WPML aux versions du site, mais pas avec les anciens contenus du vrai site : c'est ce que la copie permet de vérifier. Puis refaire les mêmes étapes sur le live.
 
 ## 1. Avant
 
-- [ ] **Sauvegarde complète** (base de données + fichiers) : via l'hébergeur, ou l'extension UpdraftPlus. Vérifier qu'elle est téléchargeable.
+- [ ] **Sauvegarde complète** (base de données + fichiers) : Réglages → Sauvegardes UpdraftPlus → « Sauvegarder maintenant », **base de données cochée** (elle n'est plus sauvegardée automatiquement depuis mars 2024). Vérifier que la sauvegarde du jour apparaît avec le bouton « Base de données ».
 - [ ] Noter le **thème actif** actuel (Apparence → Thèmes) : c'est le retour arrière.
 - [ ] Vérifier dans **Extensions** si une extension déclare les anciens types de contenu (ex. *Custom Post Type UI*). Si oui, la désactiver : sinon l'import s'arrête (voir étape 3) parce que les adresses `/incontournable/`, `/shopping/`… seraient en conflit.
 - [ ] Vérifier qu'**ACF PRO** et **ACF Multilingual** sont actifs (Extensions) : ils servent à la saisie des champs du nouveau thème. Le reste des mises à jour (WPML, ACF…) se fait après la mise en ligne, une étape à la fois.
@@ -56,3 +62,27 @@ Ce que fait l'import : pages, rubriques et fiches FR / EN / ES (reliées entre e
 ## Après la mise en ligne
 
 Les corrections se font ensuite directement dans l'admin (textes, photos, ordre des fiches) : voir [`README.md`](README.md), partie « Édition du contenu ».
+
+## Phase 2 : mettre à jour les extensions (quelques jours après)
+
+Seulement si la phase 1 n'a montré aucun problème.
+
+- [ ] **Sauvegarde complète** (UpdraftPlus, base de données cochée).
+- [ ] Extensions → mettre à jour **une par une**, en vérifiant l'accueil et une fiche après chacune : d'abord la suite **WPML** (WPML Multilingual CMS, String Translation, Media Translation, SEO, ACF Multilingual ; licence WPML active nécessaire), puis **ACF PRO** (licence ACF active nécessaire), **Yoast SEO**, **All-In-One Security**, **UpdraftPlus**.
+- [ ] Recette rapide : accueil FR / EN / ES, une fiche, un quartier, l'écran de modification d'une fiche dans l'admin.
+- **En cas de problème** : restaurer la sauvegarde de cette phase (UpdraftPlus → « Restaurer »).
+
+## Phase 3 : passer PHP en 8.3 (quelques jours après)
+
+PHP 7.4 ne reçoit plus de correctifs de sécurité depuis fin 2022. Le thème fonctionne sous 7.4 et sous 8.3.
+
+- [ ] **Sauvegarde complète** (UpdraftPlus, base de données cochée).
+- [ ] Espace client **o2switch** (cPanel) → « Sélectionner une version de PHP » → **8.3** → appliquer.
+- [ ] Recette rapide (navigation privée) : accueil FR / EN / ES, une fiche, un quartier, l'admin (tableau de bord, modification d'une fiche). Outils → Santé du site → Informations → Serveur : la version de PHP doit indiquer 8.3.
+- **En cas de problème** : remettre **7.4** au même endroit (effet immédiat), puis chercher l'extension en cause.
+
+## Phase 4 : ranger (quand tout est stable)
+
+- [ ] Désactiver les extensions qui ne servaient qu'à l'ancien thème : ACF Font Awesome, ACF Content Analysis for Yoast. Garder **ACF PRO** et **ACF Multilingual** (le nouveau thème s'en sert).
+- [ ] Programmer la sauvegarde automatique de la **base de données** : Sauvegardes UpdraftPlus → Réglages → « Planification de la sauvegarde de la base de données » : chaque semaine.
+
