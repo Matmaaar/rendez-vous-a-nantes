@@ -11,7 +11,6 @@ the_post();
 list( $rdv_cat, $rdv_cat_url ) = rdv_rubrique_info( 'rdv_quartier' );
 $rdv_items                     = rdv_items( 'rdv_quartier' );
 list( $rdv_i, $rdv_n, $rdv_next ) = rdv_position( $rdv_items, get_the_ID() );
-$rdv_infos                     = rdv_lines( rdv_meta( 'infos' ) );
 
 rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
 ?>
@@ -24,7 +23,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
   <div style="min-width:0">
     <?php rdv_fiche_photo(); ?>
 
-    <?php $rdv_musts = rdv_lines( rdv_meta( 'musts' ) ); ?>
+    <?php $rdv_musts = rdv_rows( 'musts', array( 'title', 'desc', 'tag' ) ); ?>
     <?php if ( $rdv_musts ) : ?>
       <h2 class="label sec-title"><?php esc_html_e( 'Étapes incontournables', 'rdv-nantes' ); ?></h2>
       <div class="musts">
@@ -37,7 +36,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
       </div>
     <?php endif; ?>
 
-    <?php foreach ( rdv_sections( rdv_meta( 'groups' ), '##' ) as $rdv_g ) : ?>
+    <?php foreach ( rdv_bar_groups() as $rdv_g ) : ?>
       <h2 class="label sec-title line"><?php echo esc_html( $rdv_g['title'] ); ?></h2>
       <div>
         <?php
@@ -60,7 +59,7 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
   </div>
   <?php
   rdv_aside(
-	  rdv_meta( 'infos' ),
+	  rdv_infos(),
 	  rdv_meta( 'maps' ) ? rdv_btn( rdv_meta( 'maps' ), __( 'Itinéraire', 'rdv-nantes' ), 'btn plein' ) : ''
   );
   ?>

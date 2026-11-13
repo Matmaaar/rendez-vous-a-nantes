@@ -1,0 +1,244 @@
+{
+    "key": "group_rdv_lieu",
+    "title": "Fiche",
+    "fields": [
+        {
+            "key": "field_rdv_lieu_subtitle",
+            "label": "Sous-titre",
+            "name": "rdv_subtitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Affiché sous le titre, et sur la case de la mosaïque.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_lieu_infos",
+            "label": "Encadré « infos pratiques »",
+            "name": "rdv_infos",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Une ligne par information, dans l’ordre d’affichage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter une information",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_rdv_lieu_infos_label",
+                    "label": "Libellé",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Ex. « Adresse », « Horaires ».",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "28",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_lieu_infos"
+                },
+                {
+                    "key": "field_rdv_lieu_infos_value",
+                    "label": "Valeur",
+                    "name": "value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "52",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_lieu_infos"
+                },
+                {
+                    "key": "field_rdv_lieu_infos_live",
+                    "label": "En direct",
+                    "name": "live",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Rond noir devant la valeur.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_rdv_lieu_infos"
+                }
+            ]
+        },
+        {
+            "key": "field_rdv_lieu_maps",
+            "label": "Lien « Itinéraire »",
+            "name": "rdv_maps",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Lien Google Maps.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_rdv_lieu_buy",
+            "label": "Lien d’achat / réservation",
+            "name": "rdv_buy",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_rdv_lieu_buy_label",
+            "label": "Texte du bouton d’achat",
+            "name": "rdv_buy_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Par défaut : « Acheter en ligne ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_lieu_more",
+            "label": "Lien « En savoir plus »",
+            "name": "rdv_more",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_rdv_lieu_link",
+            "label": "Bouton vers une autre page",
+            "name": "rdv_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Facultatif. Ex. « Prendre un verre au Bouffay ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "rdv_incontournable"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "rdv_shopping"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "rdv_pass"
+            }
+        ]
+    ],
+    "menu_order": 6,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Thème Rendez-vous à Nantes.",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1794564501
+}

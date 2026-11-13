@@ -82,8 +82,7 @@
       "lead": "Notre sélection de bars et de lieux insolites où prendre un verre à Nantes, selon l’ambiance que vous cherchez.",
       "tile_desc": "Terrasses, cocktails, pubs : quatre ambiances",
       "home": "1",
-      "nav": "1",
-      "post_type": "rdv_quartier"
+      "nav": "1"
      }
     },
     "en": {
@@ -95,8 +94,7 @@
       "lead": "Our selection of bars and unusual places for a drink in Nantes, depending on the atmosphere you are looking for.",
       "tile_desc": "Terraces, cocktails, pubs: four atmospheres",
       "home": "1",
-      "nav": "1",
-      "post_type": "rdv_quartier"
+      "nav": "1"
      }
     },
     "es": {
@@ -108,8 +106,7 @@
       "lead": "Nuestra selección de bares y lugares insólitos para tomar una copa en Nantes, según el ambiente que busque.",
       "tile_desc": "Terrazas, cócteles, pubs: cuatro ambientes",
       "home": "1",
-      "nav": "1",
-      "post_type": "rdv_quartier"
+      "nav": "1"
      }
     }
    }

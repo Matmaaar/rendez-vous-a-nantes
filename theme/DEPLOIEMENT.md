@@ -9,7 +9,7 @@ Durée : environ 1 h. Le site a peu de trafic : on déploie directement, avec un
 - [ ] **Sauvegarde complète** (base de données + fichiers) : via l'hébergeur, ou l'extension UpdraftPlus. Vérifier qu'elle est téléchargeable.
 - [ ] Noter le **thème actif** actuel (Apparence → Thèmes) : c'est le retour arrière.
 - [ ] Vérifier dans **Extensions** si une extension déclare les anciens types de contenu (ex. *Custom Post Type UI*). Si oui, la désactiver : sinon l'import s'arrête (voir étape 3) parce que les adresses `/incontournable/`, `/shopping/`… seraient en conflit.
-- [ ] Mettre à jour WordPress, WPML et Yoast si besoin.
+- [ ] Vérifier qu'**ACF PRO** et **ACF Multilingual** sont actifs (Extensions) : ils servent à la saisie des champs du nouveau thème. Le reste des mises à jour (WPML, ACF…) se fait après la mise en ligne, une étape à la fois.
 
 ## 2. Installer le thème
 
@@ -28,6 +28,8 @@ Durée : environ 1 h. Le site a peu de trafic : on déploie directement, avec un
 Ce que fait l'import : pages, rubriques et fiches FR / EN / ES (reliées entre elles sous WPML), photos, page d'accueil, permaliens `/%postname%/`. Les anciens contenus (anciennes fiches incontournables, bars, shopping, JO…) **ne sont ni modifiés ni supprimés** : ils restent en base, simplement plus affichés.
 
 ## 4. Réglages
+
+- [ ] **ACF** → Groupes de champs : la liste « Synchronisation disponible » montre les 7 groupes du thème (Page d'accueil, Rubrique, Liste de fiches, Liste d'adresses, Page d'infos, Quartier, Fiche) → les **synchroniser**. Les groupes de l'ancien thème restent dans la liste, inchangés ; ils sont simplement masqués sur les écrans des nouvelles pages.
 
 - [ ] **WPML** → Paramètres → Types de contenu : vérifier que Quartiers, Incontournables, Shopping et Pass Nantes sont « traduisibles », puis « Traduire les slugs » : `incontournable` → `unmissable` / `imprescindibles`, `prendre-un-verre` → `have-a-drink` / `tomar-una-copa`, `24h-de-plus` → `24h-more` / `24h-mas`.
 - [ ] **WPML** → Sélecteur de langue : rien à configurer, le thème affiche son propre sélecteur FR · EN · ES.

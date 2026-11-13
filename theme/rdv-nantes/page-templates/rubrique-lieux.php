@@ -23,7 +23,7 @@ rdv_head( rdv_meta( 'h1' ) ? rdv_meta( 'h1' ) : get_the_title(), rdv_meta( 'lead
   ?>
 </div></section>
 <?php if ( rdv_meta( 'encart_title' ) ) : ?>
-<section style="padding:0 0 48px"><div class="wrap"><div class="encart jaune"><div class="txt"><h2><?php echo esc_html( rdv_meta( 'encart_title' ) ); ?></h2><p><?php echo wp_kses_post( rdv_resolve_links( rdv_meta( 'encart_text' ) ) ); ?></p></div><?php echo rdv_btn_field( rdv_meta( 'encart_btn' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div></div></section>
+<section style="padding:0 0 48px"><div class="wrap"><div class="encart jaune"><div class="txt"><h2><?php echo esc_html( rdv_meta( 'encart_title' ) ); ?></h2><p><?php echo wp_kses_post( rdv_resolve_links( rdv_meta( 'encart_text' ) ) ); ?></p></div><?php echo rdv_btn_field( rdv_field( 'encart_btn' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div></div></section>
 <?php endif; ?>
 <?php if ( trim( get_the_content() ) ) : ?>
 <section style="padding:0 0 48px"><div class="wrap"><div class="prose"><?php the_content(); ?></div></div></section>

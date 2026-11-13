@@ -184,7 +184,7 @@ def cat_meta(c, lang):
         lead = LEADS.get(c['id'], {}).get(lang, '')
     meta = {'h1': h1, 'lead': lead, 'tile_desc': tile, 'home': '1' if c.get('home') else '0', 'nav': '1' if c.get('nav') else '0'}
     pt = CAT_PAGE[c['id']][2]
-    if pt:
+    if pt and pt != 'rdv_quartier':  # les quartiers ont leur propre gabarit de rubrique
         meta['post_type'] = pt
     if c['id'] == 'incontournables':
         e = ENCART[lang]

@@ -1,0 +1,513 @@
+{
+    "key": "group_rdv_rdv_quartier",
+    "title": "Quartier",
+    "fields": [
+        {
+            "key": "field_rdv_rdv_quartier_amb",
+            "label": "Ambiance (titre de la case)",
+            "name": "rdv_amb",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Ex. « Cocktails chic et cosy ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_rdv_quartier_where",
+            "label": "Localisation",
+            "name": "rdv_where",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Ex. « Graslin · autour du théâtre ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_rdv_quartier_badges",
+            "label": "Étiquettes de la case",
+            "name": "rdv_badges",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Une étiquette par ligne. Ex. « Soirs de match ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_rdv_rdv_quartier_lead",
+            "label": "Chapô",
+            "name": "rdv_lead",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_rdv_rdv_quartier_musts",
+            "label": "Étapes incontournables",
+            "name": "rdv_musts",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter une étape",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_rdv_rdv_quartier_musts_title",
+                    "label": "Titre",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "30",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_musts"
+                },
+                {
+                    "key": "field_rdv_rdv_quartier_musts_desc",
+                    "label": "Description",
+                    "name": "desc",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_musts"
+                },
+                {
+                    "key": "field_rdv_rdv_quartier_musts_tag",
+                    "label": "Mention en étiquette",
+                    "name": "tag",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Facultatif.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_musts"
+                }
+            ]
+        },
+        {
+            "key": "field_rdv_rdv_quartier_infos",
+            "label": "Encadré « infos pratiques »",
+            "name": "rdv_infos",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Une ligne par information, dans l’ordre d’affichage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter une information",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_rdv_rdv_quartier_infos_label",
+                    "label": "Libellé",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Ex. « Adresse », « Horaires ».",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "28",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_infos"
+                },
+                {
+                    "key": "field_rdv_rdv_quartier_infos_value",
+                    "label": "Valeur",
+                    "name": "value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "52",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_infos"
+                },
+                {
+                    "key": "field_rdv_rdv_quartier_infos_live",
+                    "label": "En direct",
+                    "name": "live",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Rond noir devant la valeur.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_infos"
+                }
+            ]
+        },
+        {
+            "key": "field_rdv_rdv_quartier_maps",
+            "label": "Lien « Itinéraire »",
+            "name": "rdv_maps",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Lien Google Maps. Laisser vide pour ne pas afficher de bouton (lieux répartis dans la ville).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_rdv_rdv_quartier_groups",
+            "label": "Bars",
+            "name": "rdv_groups",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Un groupe par titre (ex. « Nos suggestions »), avec ses bars.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter un groupe",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_rdv_rdv_quartier_groups_title",
+                    "label": "Titre du groupe",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_rdv_quartier_groups"
+                },
+                {
+                    "key": "field_rdv_rdv_quartier_groups_bars",
+                    "label": "Bars",
+                    "name": "bars",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Ajouter un bar",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_rdv_rdv_quartier_groups_bars_name",
+                            "label": "Nom",
+                            "name": "name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "24",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_rdv_rdv_quartier_groups_bars"
+                        },
+                        {
+                            "key": "field_rdv_rdv_quartier_groups_bars_addr",
+                            "label": "Adresse",
+                            "name": "addr",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Sans « Nantes ».",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "26",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_rdv_rdv_quartier_groups_bars"
+                        },
+                        {
+                            "key": "field_rdv_rdv_quartier_groups_bars_tag",
+                            "label": "Mention en étiquette",
+                            "name": "tag",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "Facultatif.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "18",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_rdv_rdv_quartier_groups_bars"
+                        },
+                        {
+                            "key": "field_rdv_rdv_quartier_groups_bars_desc",
+                            "label": "Description",
+                            "name": "desc",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "Facultatif.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "32",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "new_lines": "",
+                            "parent_repeater": "field_rdv_rdv_quartier_groups_bars"
+                        }
+                    ],
+                    "parent_repeater": "field_rdv_rdv_quartier_groups"
+                }
+            ]
+        },
+        {
+            "key": "field_rdv_rdv_quartier_note",
+            "label": "Note grise en bas de page",
+            "name": "rdv_note",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 2,
+            "new_lines": ""
+        },
+        {
+            "key": "field_rdv_rdv_quartier_img_alt",
+            "label": "Texte si pas d’image à la une",
+            "name": "rdv_img_alt",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Affiché à la place de la photo. Ex. « [Photo quartier Graslin] ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "rdv_quartier"
+            }
+        ]
+    ],
+    "menu_order": 5,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Thème Rendez-vous à Nantes.",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1794564501
+}

@@ -1,10 +1,14 @@
 <?php
 /**
- * Champs personnalisés natifs (méta-boxes), sans plugin.
+ * Champs personnalisés : ACF PRO.
  *
- * Formats « une ligne = un élément » : les colonnes sont séparées par « | ».
- * Les liens internes s'écrivent sous forme de chemin français (/incontournable/quartier-bouffay/) :
- * le thème les convertit vers la bonne URL dans la langue affichée.
+ * Les cases sont définies dans acf-json/ (« Local JSON » d'ACF, généré par tools/build_acf.py) : elles apparaissent
+ * dans l'admin dès qu'ACF PRO est actif, et se modifient dans ACF → Groupes de champs.
+ * L'affichage du site lit directement les valeurs enregistrées par ACF : il fonctionne même si ACF est désactivé
+ * (seule la saisie dans l'admin a besoin d'ACF).
+ *
+ * Les liens internes s'écrivent sous forme de chemin français (/incontournable/quartier-bouffay/) ou d'adresse
+ * complète du site : le thème les convertit vers la bonne URL dans la langue affichée.
  *
  * @package rdv-nantes
  */
@@ -12,93 +16,27 @@
 defined( 'ABSPATH' ) || exit;
 
 /**
- * Groupes de champs. Chaque champ : [clé, libellé, type (text|textarea|html|check|select), aide, options].
+ * Groupes de champs ACF du thème, lus dans acf-json/.
  *
- * @return array
+ * @return array groupe => liste de champs ACF (avec sous-champs)
  */
 function rdv_field_groups() {
-	$rubrique = array(
-		array( 'h1', 'Grand titre', 'text', 'Titre affiché en tête de page. Le titre WordPress sert de libellé court (menu, fil d\'Ariane, tuiles).' ),
-		array( 'lead', 'Chapô', 'textarea', '' ),
-		array( 'tile_desc', 'Texte de la tuile d\'accueil', 'text', 'Ex. « 10 bonnes raisons de faire le Voyage à Nantes ».' ),
-		array( 'home', 'Afficher en tuile sur l\'accueil et dans « Autres rubriques »', 'check', '' ),
-		array( 'nav', 'Afficher dans le menu principal', 'check', '' ),
-	);
-	$infos = array( 'infos', 'Encadré « infos pratiques »', 'textarea', 'Une ligne par info : Libellé | Valeur | 1 (facultatif : pastille « en direct »).' );
-
-	return array(
-		'front'         => array(
-			'title'  => 'Page d\'accueil',
-			'fields' => array(
-				array( 'bonplan_label', 'Bandeau du haut : pastille', 'text', 'Ex. « Le bon plan ».' ),
-				array( 'bonplan_text', 'Bandeau du haut : texte', 'text', '' ),
-				array( 'bonplan_btn', 'Bandeau du haut : bouton', 'text', 'Libellé | lien' ),
-				array( 'hero_title', 'Grand titre', 'html', 'Retour à la ligne : <br>' ),
-				array( 'hero_lead', 'Sous-titre', 'text', '' ),
-				array( 'tiles_title', 'Titre des tuiles', 'text', 'Ex. « Que voulez-vous faire ? »' ),
-			),
-		),
-		'rubrique'      => array(
-			'title'  => 'Rubrique',
-			'fields' => $rubrique,
-		),
-		'rubrique-lieux' => array(
-			'title'  => 'Liste de fiches',
-			'fields' => array(
-				array( 'post_type', 'Fiches à lister', 'select', '', 'post_types' ),
-				array( 'encart_title', 'Encadré de mise en avant : titre', 'text', 'Laisser vide pour ne pas afficher d\'encadré.' ),
-				array( 'encart_text', 'Encadré de mise en avant : texte', 'textarea', '' ),
-				array( 'encart_btn', 'Encadré de mise en avant : bouton', 'text', 'Libellé | lien' ),
-			),
-		),
-		'liste'         => array(
-			'title'  => 'Liste d\'adresses',
-			'fields' => array(
-				array( 'cta', 'Bouton sous le chapô', 'text', 'Libellé | lien (facultatif)' ),
-				array( 'list_title', 'Titre de la liste', 'text', '' ),
-				array( 'items', 'Éléments', 'textarea', 'Une ligne par élément : Titre | précision (facultatif) | description (facultatif) | lien | photo (facultatif : numéro du média, visible dans la médiathèque). Avec des photos, la liste devient illustrée.' ),
-				array( 'link_label', 'Libellé des boutons', 'text', 'Ex. « Voir la fiche ».' ),
-				array( 'after_title', 'Encadré final : titre', 'text', '' ),
-				array( 'after_text', 'Encadré final : texte', 'textarea', '' ),
-				array( 'after_btn1', 'Encadré final : bouton principal', 'text', 'Libellé | lien' ),
-				array( 'after_btn2', 'Encadré final : bouton secondaire', 'text', 'Libellé | lien' ),
-			),
-		),
-		'infos'         => array(
-			'title'  => 'Page d\'infos',
-			'fields' => array(
-				$infos,
-				array( 'maps', 'Lien du bouton « Itinéraire »', 'text', 'Facultatif.' ),
-			),
-		),
-		'rdv_quartier'  => array(
-			'title'  => 'Quartier',
-			'fields' => array(
-				array( 'amb', 'Ambiance (titre de la vignette)', 'text', 'Ex. « Cocktails chic et cosy ».' ),
-				array( 'where', 'Localisation', 'text', 'Ex. « Graslin · autour du théâtre ».' ),
-				array( 'maps', 'Lien « Itinéraire »', 'text', 'Lien Google Maps. Laisser vide pour ne pas afficher de bouton (ex. lieux répartis dans la ville).' ),
-				array( 'img_alt', 'Texte si pas d\'image à la une', 'text', 'Ex. « [Photo quartier Graslin] ».' ),
-				array( 'badges', 'Étiquettes de la vignette', 'textarea', 'Une par ligne.' ),
-				array( 'lead', 'Chapô', 'textarea', '' ),
-				array( 'musts', 'Étapes incontournables', 'textarea', 'Une ligne par étape : Titre | description | mention en étiquette (facultatif)' ),
-				$infos,
-				array( 'groups', 'Bars', 'textarea', "Une ligne « ## Titre du groupe », puis un bar par ligne : Nom | adresse | mention en étiquette | description (colonnes facultatives)." ),
-				array( 'note', 'Note grise en bas de page', 'textarea', '' ),
-			),
-		),
-		'lieu'          => array(
-			'title'  => 'Fiche',
-			'fields' => array(
-				array( 'subtitle', 'Sous-titre', 'text', '' ),
-				$infos,
-				array( 'maps', 'Lien « Itinéraire »', 'text', '' ),
-				array( 'buy', 'Lien d\'achat / réservation', 'text', '' ),
-				array( 'buy_label', 'Libellé du bouton d\'achat', 'text', 'Par défaut : « Acheter en ligne ».' ),
-				array( 'more', 'Lien « En savoir plus »', 'text', '' ),
-				array( 'link', 'Bouton vers une autre page', 'text', 'Libellé | lien' ),
-			),
-		),
-	);
+	static $groups = null;
+	if ( null === $groups ) {
+		$groups = array();
+		foreach ( (array) glob( RDV_DIR . '/acf-json/group_rdv_*.json' ) as $file ) {
+			$g = json_decode( (string) file_get_contents( $file ), true ); // phpcs:ignore WordPress.WP.AlternativeFunctions
+			if ( $g ) {
+				$groups[ str_replace( '_', '-', substr( $g['key'], strlen( 'group_rdv_' ) ) ) ] = $g['fields'];
+			}
+		}
+		// Les identifiants de groupe gardent leur tiret historique (rubrique-lieux) ; rdv_quartier garde le sien.
+		if ( isset( $groups['rdv-quartier'] ) ) {
+			$groups['rdv_quartier'] = $groups['rdv-quartier'];
+			unset( $groups['rdv-quartier'] );
+		}
+	}
+	return $groups;
 }
 
 /**
@@ -118,10 +56,11 @@ function rdv_rubrique_templates() {
 /**
  * Groupes applicables à un contenu.
  *
- * @param WP_Post $post Contenu.
+ * @param WP_Post   $post     Contenu.
+ * @param bool|null $is_front Forcer « page d'accueil » (import) ; null = d'après les réglages.
  * @return string[]
  */
-function rdv_groups_for( $post ) {
+function rdv_groups_for( $post, $is_front = null ) {
 	if ( 'rdv_quartier' === $post->post_type ) {
 		return array( 'rdv_quartier' );
 	}
@@ -132,7 +71,7 @@ function rdv_groups_for( $post ) {
 		return array();
 	}
 	$groups = array();
-	if ( (int) get_option( 'page_on_front' ) === (int) $post->ID || rdv_is_front_translation( $post->ID ) ) {
+	if ( null === $is_front ? ( (int) get_option( 'page_on_front' ) === (int) $post->ID || rdv_is_front_translation( $post->ID ) ) : $is_front ) {
 		$groups[] = 'front';
 	}
 	$tpl = get_page_template_slug( $post );
@@ -161,106 +100,137 @@ function rdv_is_front_translation( $id ) {
 	return $trid && (int) apply_filters( 'wpml_element_trid', null, $id, 'post_page' ) === (int) $trid;
 }
 
+// Aide dans l'admin : gabarit à choisir, ou ACF absent.
 add_action( 'add_meta_boxes', function ( $post_type, $post ) {
 	if ( ! $post instanceof WP_Post ) {
 		return;
 	}
 	$groups = rdv_groups_for( $post );
-	$all    = rdv_field_groups();
-	foreach ( $groups as $g ) {
-		add_meta_box( 'rdv-' . $g, $all[ $g ]['title'], 'rdv_render_box', null, 'normal', 'high', array( 'group' => $g ) );
-	}
 	if ( 'page' === $post_type && ! $groups ) {
 		add_meta_box( 'rdv-help', 'Rendez-vous à Nantes', function () {
 			echo '<p>Choisissez un gabarit de rubrique (Attributs de la page → Modèle) puis enregistrez pour faire apparaître les champs de rubrique.</p>';
 		}, null, 'side' );
 	}
+	if ( $groups && ! function_exists( 'acf_get_field_groups' ) ) {
+		add_meta_box( 'rdv-acf', 'Rendez-vous à Nantes', function () {
+			echo '<p><strong>Les champs de cette page ne sont pas modifiables :</strong> activez l’extension Advanced Custom Fields PRO. Le site, lui, s’affiche normalement.</p>';
+		}, null, 'normal', 'high' );
+	}
 }, 10, 2 );
 
 /**
- * Affiche une méta-box.
- *
- * @param WP_Post $post Contenu.
- * @param array   $box  Arguments.
+ * Groupes ACF de l'ancien thème : ceux qui existaient avant l'activation de ce thème.
+ * Notés une fois (à l'activation, ou au premier passage dans l'admin avec ACF actif), puis masqués sur les écrans
+ * des pages et fiches gérées par ce thème, pour ne pas mélanger anciennes et nouvelles cases.
+ * Ils ne sont ni modifiés ni supprimés : l'ancien thème les retrouve tels quels en cas de retour arrière.
+ * Les groupes créés ensuite (par ex. par la personne qui fait évoluer le site) restent visibles.
  */
-function rdv_render_box( $post, $box ) {
-	$group = $box['args']['group'];
-	$defs  = rdv_field_groups()[ $group ]['fields'];
-	wp_nonce_field( 'rdv_save', 'rdv_nonce' );
-	echo '<table class="form-table" role="presentation"><tbody>';
-	foreach ( $defs as $f ) {
-		list( $key, $label, $type ) = $f;
-		$help  = isset( $f[3] ) ? $f[3] : '';
-		$name  = 'rdv[' . $key . ']';
-		$id    = 'rdv-' . $group . '-' . $key;
-		$value = get_post_meta( $post->ID, '_rdv_' . $key, true );
-		echo '<tr><th scope="row"><label for="' . esc_attr( $id ) . '">' . esc_html( $label ) . '</label></th><td>';
-		switch ( $type ) {
-			case 'textarea':
-			case 'html':
-				$rows = max( 3, min( 16, substr_count( (string) $value, "\n" ) + 2 ) );
-				echo '<textarea class="large-text code" rows="' . (int) $rows . '" id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '">' . esc_textarea( $value ) . '</textarea>';
-				break;
-			case 'check':
-				echo '<input type="hidden" name="' . esc_attr( $name ) . '" value="0"><input type="checkbox" id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '" value="1"' . checked( $value, '1', false ) . '>';
-				break;
-			case 'select':
-				echo '<select id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '"><option value="">—</option>';
-				foreach ( rdv_post_type_defs() as $pt => $def ) {
-					echo '<option value="' . esc_attr( $pt ) . '"' . selected( $value, $pt, false ) . '>' . esc_html( $def[1] ) . '</option>';
-				}
-				echo '</select>';
-				break;
-			default:
-				echo '<input type="text" class="large-text" id="' . esc_attr( $id ) . '" name="' . esc_attr( $name ) . '" value="' . esc_attr( $value ) . '">';
-		}
-		if ( $help ) {
-			echo '<p class="description">' . esc_html( $help ) . '</p>';
-		}
-		echo '</td></tr>';
+function rdv_note_legacy_acf_groups() {
+	if ( false !== get_option( 'rdv_legacy_acf_groups' ) || ! function_exists( 'acf_get_field_groups' ) ) {
+		return;
 	}
-	echo '</tbody></table>';
+	$keys = array();
+	foreach ( acf_get_field_groups() as $g ) {
+		if ( 0 !== strpos( $g['key'], 'group_rdv_' ) ) {
+			$keys[] = $g['key'];
+		}
+	}
+	update_option( 'rdv_legacy_acf_groups', $keys, false );
+}
+add_action( 'after_switch_theme', 'rdv_note_legacy_acf_groups' );
+add_action( 'admin_init', 'rdv_note_legacy_acf_groups' );
+
+add_filter( 'acf/load_field_groups', function ( $groups ) {
+	$legacy = get_option( 'rdv_legacy_acf_groups' );
+	if ( ! $legacy || ! is_admin() || ! function_exists( 'get_current_screen' ) ) {
+		return $groups;
+	}
+	$screen = get_current_screen();
+	$post   = get_post();
+	if ( ! $screen || 'post' !== $screen->base || ! $post || ! rdv_groups_for( $post ) ) {
+		return $groups;
+	}
+	return array_values( array_filter( $groups, function ( $g ) use ( $legacy ) {
+		return ! in_array( $g['key'], (array) $legacy, true );
+	} ) );
+}, 30 ); // après le chargement des groupes du thème (acf-json, priorité 20)
+
+/**
+ * Valeur brute d'un champ du thème, telle qu'ACF l'enregistre (méta « rdv_<clé> »).
+ *
+ * @param string   $key Clé (sans le préfixe rdv_).
+ * @param int|null $id  Contenu (courant par défaut).
+ * @return mixed
+ */
+function rdv_field( $key, $id = null ) {
+	return get_post_meta( $id ? $id : get_the_ID(), 'rdv_' . $key, true );
 }
 
-add_action( 'save_post', function ( $post_id, $post ) {
-	if ( ! isset( $_POST['rdv_nonce'], $_POST['rdv'] ) || ! wp_verify_nonce( sanitize_key( $_POST['rdv_nonce'] ), 'rdv_save' ) ) {
-		return;
-	}
-	if ( ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) || ! current_user_can( 'edit_post', $post_id ) ) {
-		return;
-	}
-	$types = array();
-	foreach ( rdv_groups_for( $post ) as $g ) {
-		foreach ( rdv_field_groups()[ $g ]['fields'] as $f ) {
-			$types[ $f[0] ] = $f[2];
-		}
-	}
-	$data = wp_unslash( $_POST['rdv'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
-	foreach ( $types as $key => $type ) {
-		if ( ! isset( $data[ $key ] ) ) {
-			continue;
-		}
-		$v = $data[ $key ];
-		if ( 'html' === $type ) {
-			$v = wp_kses_post( $v );
-		} elseif ( 'textarea' === $type ) {
-			$v = sanitize_textarea_field( $v );
-		} else {
-			$v = sanitize_text_field( $v );
-		}
-		update_post_meta( $post_id, '_rdv_' . $key, $v );
-	}
-}, 10, 2 );
-
 /**
- * Lit un champ du thème.
+ * Champ texte du thème.
  *
  * @param string   $key Clé.
  * @param int|null $id  Contenu (courant par défaut).
  * @return string
  */
 function rdv_meta( $key, $id = null ) {
-	return (string) get_post_meta( $id ? $id : get_the_ID(), '_rdv_' . $key, true );
+	$v = rdv_field( $key, $id );
+	return is_scalar( $v ) ? (string) $v : '';
+}
+
+/**
+ * Lignes d'un champ « répéteur » ACF, lues directement dans les métadonnées (fonctionne sans ACF).
+ * Chaque ligne est une liste de valeurs dans l'ordre de $subs.
+ *
+ * @param string   $key  Clé du répéteur (ex. « infos », ou « groups_0_bars » pour un répéteur imbriqué).
+ * @param string[] $subs Sous-champs.
+ * @param int|null $id   Contenu.
+ * @return array[]
+ */
+function rdv_rows( $key, $subs, $id = null ) {
+	$id   = $id ? $id : get_the_ID();
+	$n    = (int) get_post_meta( $id, 'rdv_' . $key, true );
+	$rows = array();
+	for ( $i = 0; $i < $n; $i++ ) {
+		$row = array();
+		foreach ( $subs as $sub ) {
+			$v     = get_post_meta( $id, 'rdv_' . $key . '_' . $i . '_' . $sub, true );
+			$row[] = is_scalar( $v ) ? trim( (string) $v ) : '';
+		}
+		if ( array_filter( $row, 'strlen' ) ) {
+			$rows[] = $row;
+		}
+	}
+	return $rows;
+}
+
+/**
+ * Infos pratiques : [libellé, valeur, en direct].
+ *
+ * @param int|null $id Contenu.
+ * @return array[]
+ */
+function rdv_infos( $id = null ) {
+	return rdv_rows( 'infos', array( 'label', 'value', 'live' ), $id );
+}
+
+/**
+ * Groupes de bars d'un quartier : [ ['title' => …, 'lines' => [ [nom, adresse, mention, description] ] ] ].
+ *
+ * @param int|null $id Contenu.
+ * @return array[]
+ */
+function rdv_bar_groups( $id = null ) {
+	$id  = $id ? $id : get_the_ID();
+	$out = array();
+	$n   = (int) get_post_meta( $id, 'rdv_groups', true );
+	for ( $i = 0; $i < $n; $i++ ) {
+		$out[] = array(
+			'title' => (string) get_post_meta( $id, 'rdv_groups_' . $i . '_title', true ),
+			'lines' => rdv_rows( 'groups_' . $i . '_bars', array( 'name', 'addr', 'tag', 'desc' ), $id ),
+		);
+	}
+	return $out;
 }
 
 /**

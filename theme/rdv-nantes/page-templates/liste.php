@@ -12,10 +12,8 @@ get_header();
 the_post();
 rdv_crumb( array( array( get_the_title() ) ) );
 rdv_head( rdv_meta( 'h1' ) ? rdv_meta( 'h1' ) : get_the_title(), rdv_meta( 'lead' ) );
-$rdv_cta    = rdv_btn_field( rdv_meta( 'cta' ) );
-$rdv_rows   = array_map( function ( $r ) {
-	return array_pad( $r, 5, '' );
-}, rdv_lines( rdv_meta( 'items' ) ) );
+$rdv_cta    = rdv_btn_field( rdv_field( 'cta' ) );
+$rdv_rows   = rdv_rows( 'items', array( 'title', 'precision', 'desc', 'link', 'photo' ) );
 $rdv_label  = rdv_meta( 'link_label' ) ? rdv_meta( 'link_label' ) : __( 'Voir', 'rdv-nantes' );
 $rdv_photos = (bool) array_filter( wp_list_pluck( $rdv_rows, 4 ) ); // liste illustrée si au moins une photo
 ?>
@@ -51,7 +49,7 @@ $rdv_photos = (bool) array_filter( wp_list_pluck( $rdv_rows, 4 ) ); // liste ill
   <?php endif; ?>
   <?php if ( trim( get_the_content() ) ) : ?><div class="prose" style="margin-top:40px"><?php the_content(); ?></div><?php endif; ?>
   <?php if ( rdv_meta( 'after_title' ) ) : ?>
-    <div class="encart" style="margin-top:40px"><div class="txt"><h2><?php echo esc_html( rdv_meta( 'after_title' ) ); ?></h2><p><?php echo wp_kses_post( rdv_resolve_links( rdv_meta( 'after_text' ) ) ); ?></p></div><div class="btns"><?php echo rdv_btn_field( rdv_meta( 'after_btn1' ) ) . rdv_btn_field( rdv_meta( 'after_btn2' ), 'btn' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div></div>
+    <div class="encart" style="margin-top:40px"><div class="txt"><h2><?php echo esc_html( rdv_meta( 'after_title' ) ); ?></h2><p><?php echo wp_kses_post( rdv_resolve_links( rdv_meta( 'after_text' ) ) ); ?></p></div><div class="btns"><?php echo rdv_btn_field( rdv_field( 'after_btn1' ) ) . rdv_btn_field( rdv_field( 'after_btn2' ), 'btn' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></div></div>
   <?php endif; ?>
 </div></section>
 <?php

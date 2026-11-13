@@ -1,0 +1,135 @@
+{
+    "key": "group_rdv_infos",
+    "title": "Page d’infos",
+    "fields": [
+        {
+            "key": "field_rdv_infos_infos",
+            "label": "Encadré « infos pratiques »",
+            "name": "rdv_infos",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Une ligne par information, dans l’ordre d’affichage.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter une information",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_rdv_infos_infos_label",
+                    "label": "Libellé",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Ex. « Adresse », « Horaires ».",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "28",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_infos_infos"
+                },
+                {
+                    "key": "field_rdv_infos_infos_value",
+                    "label": "Valeur",
+                    "name": "value",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "52",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_infos_infos"
+                },
+                {
+                    "key": "field_rdv_infos_infos_live",
+                    "label": "En direct",
+                    "name": "live",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Rond noir devant la valeur.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "parent_repeater": "field_rdv_infos_infos"
+                }
+            ]
+        },
+        {
+            "key": "field_rdv_infos_maps",
+            "label": "Lien du bouton « Itinéraire »",
+            "name": "rdv_maps",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "Facultatif : lien Google Maps.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/infos.php"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Thème Rendez-vous à Nantes.",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1794564501
+}

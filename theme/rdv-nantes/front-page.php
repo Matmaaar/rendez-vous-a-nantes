@@ -12,12 +12,12 @@ the_post();
 <?php if ( rdv_meta( 'bonplan_text' ) ) : ?>
 <section class="bonplan"><div class="wrap">
   <div class="l"><span class="pastille"><?php echo esc_html( rdv_meta( 'bonplan_label' ) ); ?></span><p><?php echo esc_html( rdv_meta( 'bonplan_text' ) ); ?></p></div>
-  <?php echo rdv_btn_field( rdv_meta( 'bonplan_btn' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
+  <?php echo rdv_btn_field( rdv_field( 'bonplan_btn' ) ); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 </div></section>
 <?php endif; ?>
 
 <section class="hero"><div class="wrap">
-  <h1 class="big"><?php echo wp_kses( rdv_meta( 'hero_title' ) ? rdv_meta( 'hero_title' ) : get_the_title(), array( 'br' => array() ) ); ?></h1>
+  <h1 class="big"><?php echo wp_kses( rdv_meta( 'hero_title' ) ? nl2br( rdv_meta( 'hero_title' ), false ) : get_the_title(), array( 'br' => array() ) ); ?></h1>
   <?php if ( rdv_meta( 'hero_lead' ) ) : ?><p class="lead"><?php echo esc_html( rdv_meta( 'hero_lead' ) ); ?></p><?php endif; ?>
 </div></section>
 

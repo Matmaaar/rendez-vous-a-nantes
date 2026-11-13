@@ -20,6 +20,11 @@ const RDV_ICON_PIN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none
  */
 function rdv_link( $link ) {
 	$link = trim( (string) $link );
+	$home = untrailingslashit( home_url() );
+	if ( '' !== $link && 0 === strpos( $link, $home . '/' ) ) {
+		// Adresse complète du site (lien choisi dans la liste d'ACF) : traitée comme un chemin interne.
+		$link = substr( $link, strlen( $home ) );
+	}
 	if ( '' === $link || '/' !== $link[0] ) {
 		return $link;
 	}
@@ -84,15 +89,20 @@ function rdv_btn( $url, $label, $cls = 'btn sm' ) {
 }
 
 /**
- * Bouton à partir d'un champ « Libellé | lien ».
+ * Bouton à partir d'un champ « Lien » d'ACF (texte + adresse), ou d'un texte « Libellé | lien ».
  *
- * @param string $field Valeur du champ.
- * @param string $cls   Classes.
+ * @param array|string $field  Valeur du champ.
+ * @param string       $cls    Classes.
+ * @param string       $suffix Ajouté au libellé (ex. « → »).
  * @return string
  */
-function rdv_btn_field( $field, $cls = 'btn plein' ) {
-	$p = array_map( 'trim', explode( '|', (string) $field ) );
-	return ( count( $p ) >= 2 && $p[0] && $p[1] ) ? rdv_btn( $p[1], $p[0], $cls ) : '';
+function rdv_btn_field( $field, $cls = 'btn plein', $suffix = '' ) {
+	if ( is_array( $field ) ) {
+		$p = array( isset( $field['title'] ) ? trim( $field['title'] ) : '', isset( $field['url'] ) ? trim( $field['url'] ) : '' );
+	} else {
+		$p = array_pad( array_map( 'trim', explode( '|', (string) $field ) ), 2, '' );
+	}
+	return ( $p[0] && $p[1] ) ? rdv_btn( $p[1], $p[0] . $suffix, $cls ) : '';
 }
 
 /**
@@ -123,7 +133,7 @@ function rdv_rubriques( $flag = '' ) {
 		),
 	);
 	if ( $flag ) {
-		$args['meta_query'][] = array( 'key' => '_rdv_' . $flag, 'value' => '1' );
+		$args['meta_query'][] = array( 'key' => 'rdv_' . $flag, 'value' => '1' );
 	}
 	return get_posts( $args );
 }
@@ -135,11 +145,21 @@ function rdv_rubriques( $flag = '' ) {
  * @return WP_Post|null
  */
 function rdv_rubrique_for_type( $type ) {
+	if ( 'rdv_quartier' === $type ) { // Les quartiers ont leur propre gabarit de rubrique.
+		$pages = get_posts( array(
+			'post_type'        => 'page',
+			'posts_per_page'   => 1,
+			'suppress_filters' => false,
+			'meta_key'         => '_wp_page_template', // phpcs:ignore WordPress.DB.SlowDBQuery
+			'meta_value'       => 'page-templates/rubrique-quartiers.php', // phpcs:ignore WordPress.DB.SlowDBQuery
+		) );
+		return $pages ? $pages[0] : null;
+	}
 	$pages = get_posts( array(
 		'post_type'        => 'page',
 		'posts_per_page'   => 1,
 		'suppress_filters' => false,
-		'meta_key'         => '_rdv_post_type', // phpcs:ignore WordPress.DB.SlowDBQuery
+		'meta_key'         => 'rdv_post_type', // phpcs:ignore WordPress.DB.SlowDBQuery
 		'meta_value'       => $type, // phpcs:ignore WordPress.DB.SlowDBQuery
 	) );
 	return $pages ? $pages[0] : null;
@@ -212,12 +232,12 @@ function rdv_others( $exclude ) {
 /**
  * Encadré d'infos pratiques (maquette : asideInfos()).
  *
- * @param string $infos Champ infos (Libellé | Valeur | 1).
- * @param string $btns  HTML des boutons.
+ * @param array[] $infos Lignes [libellé, valeur, en direct] (voir rdv_infos()).
+ * @param string  $btns  HTML des boutons.
  */
 function rdv_aside( $infos, $btns = '' ) {
 	echo '<aside class="infos">';
-	foreach ( rdv_lines( $infos ) as $row ) {
+	foreach ( $infos as $row ) {
 		$live = ! empty( $row[2] );
 		echo '<div><p class="label" style="font-size:12px">' . esc_html( $row[0] ) . '</p><p class="v">' . ( $live ? '<span class="dot"></span>' : '' ) . esc_html( isset( $row[1] ) ? $row[1] : '' ) . '</p></div>';
 	}
@@ -232,6 +252,15 @@ function rdv_aside( $infos, $btns = '' ) {
  */
 function rdv_language_switcher() {
 	$langs = apply_filters( 'wpml_active_languages', null, array( 'skip_missing' => 0, 'orderby' => 'custom' ) );
+	if ( is_array( $langs ) ) {
+		// Toujours FR · EN · ES, quel que soit l'ordre réglé dans WPML (les autres langues éventuelles à la suite).
+		$rank = array_flip( array( 'fr', 'en', 'es' ) );
+		uasort( $langs, function ( $a, $b ) use ( $rank ) {
+			$ra = isset( $rank[ $a['code'] ] ) ? $rank[ $a['code'] ] : 99;
+			$rb = isset( $rank[ $b['code'] ] ) ? $rank[ $b['code'] ] : 99;
+			return $ra - $rb;
+		} );
+	}
 	// Visible sur tous les écrans (la maquette le masquait sur mobile).
 	echo '<div class="langs" role="navigation" aria-label="' . esc_attr__( 'Langue', 'rdv-nantes' ) . '">';
 	if ( empty( $langs ) ) {

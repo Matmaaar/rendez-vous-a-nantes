@@ -1,0 +1,152 @@
+{
+    "key": "group_rdv_rubrique",
+    "title": "Rubrique",
+    "fields": [
+        {
+            "key": "field_rdv_rubrique_h1",
+            "label": "Grand titre",
+            "name": "rdv_h1",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Titre affiché en tête de page. Le titre WordPress (tout en haut) sert de libellé court : menu, fil d’Ariane, tuiles.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_rubrique_lead",
+            "label": "Chapô",
+            "name": "rdv_lead",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "Texte d’introduction sous le grand titre.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_rdv_rubrique_tile_desc",
+            "label": "Texte de la tuile d’accueil",
+            "name": "rdv_tile_desc",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Ex. « 10 bonnes raisons de faire le Voyage à Nantes ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_rubrique_home",
+            "label": "Afficher en tuile sur l’accueil et dans « Autres rubriques »",
+            "name": "rdv_home",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_rdv_rubrique_nav",
+            "label": "Afficher dans le menu principal",
+            "name": "rdv_nav",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/rubrique-quartiers.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/rubrique-lieux.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/liste.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/infos.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Thème Rendez-vous à Nantes.",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1794563735
+}

@@ -84,7 +84,7 @@ function rdv_import( $with_images = true, $dry_run = false ) {
 				$log[] = sprintf( '%s (%s) : %s « %s »%s', $item['key'], $lang, $how, $l['title'], $found ? ' (#' . $found . ')' : '' );
 				continue;
 			}
-			$id = rdv_import_post( $item, $lang, $l );
+			$id = rdv_import_post( $item, $lang, $l, $item['key'] === $data['front'] );
 			if ( is_wp_error( $id ) ) {
 				$log[] = sprintf( 'Erreur %s (%s) : %s', $item['key'], $lang, $id->get_error_message() );
 				continue;
@@ -113,6 +113,9 @@ function rdv_import( $with_images = true, $dry_run = false ) {
 	}
 	if ( $dry_run ) {
 		return $log;
+	}
+	foreach ( rdv_import_warnings() as $w ) {
+		$log[] = 'Attention : ' . $w;
 	}
 
 	if ( ! empty( $ids[ $data['front'] ]['fr'] ) ) {
@@ -182,12 +185,13 @@ function rdv_import_find( $item, $lang, $l ) {
 /**
  * Crée ou met à jour un contenu.
  *
- * @param array  $item Élément.
- * @param string $lang Langue.
- * @param array  $l    Données de la langue.
+ * @param array  $item     Élément.
+ * @param string $lang     Langue.
+ * @param array  $l        Données de la langue.
+ * @param bool   $is_front Page d'accueil.
  * @return int|WP_Error
  */
-function rdv_import_post( $item, $lang, $l ) {
+function rdv_import_post( $item, $lang, $l, $is_front = false ) {
 	list( $found ) = rdv_import_find( $item, $lang, $l );
 	$post = array(
 		'post_type'    => $item['type'],
@@ -210,14 +214,15 @@ function rdv_import_post( $item, $lang, $l ) {
 	if ( ! empty( $item['template'] ) ) {
 		update_post_meta( $id, '_wp_page_template', $item['template'] );
 	}
+	$meta = array();
 	foreach ( $l['meta'] as $k => $v ) {
 		// « import:fichier.jpg » (photos des listes, ex. restaurants) → identifiant du média téléversé.
-		$v = preg_replace_callback( '/import:([\w.-]+)/', function ( $m ) use ( $id ) {
+		$meta[ $k ] = preg_replace_callback( '/import:([\w.-]+)/', function ( $m ) use ( $id ) {
 			$att = rdv_import_media( $m[1], $id );
 			return $att ? (string) $att : '';
 		}, $v );
-		update_post_meta( $id, '_rdv_' . $k, wp_slash( $v ) );
 	}
+	rdv_import_fields( $id, rdv_groups_for( get_post( $id ), $is_front ), $meta );
 	// Réglages SEO du site actuel, au format Yoast (lus aussi par le thème si Yoast est absent).
 	foreach ( ( isset( $l['seo'] ) ? $l['seo'] : array() ) as $k => $v ) {
 		update_post_meta( $id, '_yoast_wpseo_' . $k, wp_slash( $v ) );

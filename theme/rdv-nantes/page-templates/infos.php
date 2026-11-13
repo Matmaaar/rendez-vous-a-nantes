@@ -18,7 +18,7 @@ rdv_crumb( array( array( get_the_title() ) ) );
     <?php if ( rdv_meta( 'lead' ) ) : ?><p style="margin:18px 0 12px;font-size:21px;font-weight:500;max-width:640px"><?php echo esc_html( rdv_meta( 'lead' ) ); ?></p><?php endif; ?>
     <div class="prose"><?php the_content(); ?></div>
   </div>
-  <?php rdv_aside( rdv_meta( 'infos' ), rdv_meta( 'maps' ) ? rdv_btn( rdv_meta( 'maps' ), __( 'Itinéraire', 'rdv-nantes' ), 'btn plein' ) : '' ); ?>
+  <?php rdv_aside( rdv_infos(), rdv_meta( 'maps' ) ? rdv_btn( rdv_meta( 'maps' ), __( 'Itinéraire', 'rdv-nantes' ), 'btn plein' ) : '' ); ?>
 </div></section>
 <?php
 rdv_others( get_the_ID() );

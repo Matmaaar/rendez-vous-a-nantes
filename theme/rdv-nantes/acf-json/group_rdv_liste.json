@@ -1,0 +1,298 @@
+{
+    "key": "group_rdv_liste",
+    "title": "Liste d’adresses",
+    "fields": [
+        {
+            "key": "field_rdv_liste_cta",
+            "label": "Bouton sous le chapô",
+            "name": "rdv_cta",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Facultatif.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        },
+        {
+            "key": "field_rdv_liste_list_title",
+            "label": "Titre de la liste",
+            "name": "rdv_list_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_liste_items",
+            "label": "Adresses",
+            "name": "rdv_items",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Une ligne par adresse. Avec au moins une photo, la liste s’affiche illustrée (photo, nom, description, bouton).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Ajouter une adresse",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_rdv_liste_items_title",
+                    "label": "Nom",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_liste_items"
+                },
+                {
+                    "key": "field_rdv_liste_items_precision",
+                    "label": "Précision",
+                    "name": "precision",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Facultatif. Ex. « 10,6 km · notre coup de cœur ».",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_rdv_liste_items"
+                },
+                {
+                    "key": "field_rdv_liste_items_desc",
+                    "label": "Description",
+                    "name": "desc",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 2,
+                    "new_lines": "",
+                    "parent_repeater": "field_rdv_liste_items"
+                },
+                {
+                    "key": "field_rdv_liste_items_link",
+                    "label": "Lien",
+                    "name": "link",
+                    "aria-label": "",
+                    "type": "url",
+                    "instructions": "Adresse de la page vers laquelle mène le bouton.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "placeholder": "",
+                    "parent_repeater": "field_rdv_liste_items"
+                },
+                {
+                    "key": "field_rdv_liste_items_photo",
+                    "label": "Photo",
+                    "name": "photo",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "Facultatif.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "return_format": "id",
+                    "library": "all",
+                    "preview_size": "medium",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "parent_repeater": "field_rdv_liste_items"
+                }
+            ]
+        },
+        {
+            "key": "field_rdv_liste_link_label",
+            "label": "Texte des boutons",
+            "name": "rdv_link_label",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Ex. « Voir la fiche ».",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_liste_after_title",
+            "label": "Encadré final : titre",
+            "name": "rdv_after_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Laisser vide pour ne pas afficher d’encadré.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_rdv_liste_after_text",
+            "label": "Encadré final : texte",
+            "name": "rdv_after_text",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_rdv_liste_after_btn1",
+            "label": "Encadré final : bouton principal",
+            "name": "rdv_after_btn1",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Texte du bouton et lien. Pour une page du site, cherchez-la dans la liste.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        },
+        {
+            "key": "field_rdv_liste_after_btn2",
+            "label": "Encadré final : bouton secondaire",
+            "name": "rdv_after_btn2",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Texte du bouton et lien. Pour une page du site, cherchez-la dans la liste.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-templates/liste.php"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Thème Rendez-vous à Nantes.",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1794563735
+}

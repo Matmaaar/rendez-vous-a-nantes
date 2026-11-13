@@ -22,7 +22,6 @@ if ( rdv_meta( 'buy' ) ) {
 if ( rdv_meta( 'more' ) ) {
 	$rdv_btns .= rdv_btn( rdv_meta( 'more' ), __( 'En savoir plus', 'rdv-nantes' ), 'btn' );
 }
-$rdv_link = array_map( 'trim', explode( '|', rdv_meta( 'link' ) ) );
 
 rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
 ?>
@@ -35,9 +34,10 @@ rdv_crumb( array( array( $rdv_cat, $rdv_cat_url ), array( get_the_title() ) ) );
   <div style="min-width:0">
     <?php rdv_fiche_photo(); ?>
     <div class="prose"><?php the_content(); ?></div>
-    <?php if ( count( $rdv_link ) >= 2 && $rdv_link[0] ) : ?><p style="margin-top:24px"><?php echo rdv_btn( $rdv_link[1], $rdv_link[0] . ' →', 'btn' ); // phpcs:ignore WordPress.Security.EscapeOutput ?></p><?php endif; ?>
+    <?php $rdv_link = rdv_btn_field( rdv_field( 'link' ), 'btn', ' →' ); ?>
+    <?php if ( $rdv_link ) : ?><p style="margin-top:24px"><?php echo $rdv_link; // phpcs:ignore WordPress.Security.EscapeOutput ?></p><?php endif; ?>
   </div>
-  <?php rdv_aside( rdv_meta( 'infos' ), $rdv_btns ); ?>
+  <?php rdv_aside( rdv_infos(), $rdv_btns ); ?>
   </div>
 </div></section>
 <section class="pager"><div class="wrap">

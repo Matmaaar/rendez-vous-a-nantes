@@ -34,6 +34,7 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 - **Pass Nantes** : 27/36/44/67 € au lieu de 30/40/49/75 €, promo −10 % jusqu'au 31 mars 2027.
 - **Pas de mesure d'audience** → pas de bandeau cookies.
 - Interface du thème écrite en **français** : les traductions EN/ES (`languages/`) ne se chargent que sur les pages EN/ES de WPML (un WordPress en anglais affiche bien le FR en français).
+- **Champs en ACF PRO** (décision du 13 nov. 2026, pour que la personne qui reprendra le site puisse ajouter des cases en cliquant) : 7 groupes en Local JSON (`theme/rdv-nantes/acf-json/`, générés par `theme/tools/build_acf.py`), listes en répéteurs, boutons en champs « Lien ». L'affichage lit les métas directement : le site marche sans ACF (Playground). Groupes ACF de l'ancien thème masqués sur nos écrans, pas supprimés.
 - Multilingue : **WPML** (comme le site actuel). Sans WPML (Playground, test local), seul le FR existe et EN/ES sont grisés dans le sélecteur. La compatibilité Polylang pour la démo a été proposée puis mise de côté.
 
 ## Site actuel (relevé dans Outils → Santé du site, 13 nov. 2026)
@@ -49,12 +50,19 @@ Extensions actives (13, mises à jour automatiques toutes désactivées) : WPML 
 - Mentions provisoires : dates Cantine du Voyage / guinguettes, horaires d'été de l'Accueil (« à mettre à jour »).
 - Mentions légales et page cookies à vérifier par l'équipe ; page Accessibilité facultative.
 - 6e restaurant pour Manger (facultatif).
-- **WPML jamais testé** avec le thème : à tester sur une copie (WP Staging) avant le live, voir `DEPLOIEMENT.md`.
+- WPML testé avec les versions du site (import, 97 pages FR/EN/ES). Reste à vérifier sur une copie du vrai site (WP Staging) : anciens contenus, anciens groupes ACF, slugs traduits des fiches.
+- 11 fiches EN/ES sans infos pratiques (adresse) alors que la version FR en a : absentes du site actuel. À compléter (traduction des libellés).
 - Mise en ligne : l'utilisateur a un compte administrateur (à confirmer : accès FTP pour les polices).
 
 ## Tester en local (environnement cloud)
 
-Dernière recette : thème v1.1.0 sur **WordPress 7.1 / PHP 8.3** (novembre 2026), sans erreur. WordPress récent : `composer create-project johnpbloch/wordpress-core` (wordpress.org est bloqué par le réseau, donc pas de pack de langue fr_FR : sans incidence pour le thème). WP-CLI : `php vendor/wp-cli/wp-cli/php/boot-fs.php`. Sinon : L'environnement « rendez-vous-a-nantes » autorise `rdv.levoyageanantes.fr` et `lestablesdenantes.fr`. Pour un WordPress de test : `apt-get install mariadb-server wordpress`, WP-CLI via `composer require wp-cli/wp-cli-bundle`, copie de `/usr/share/wordpress`, thème lié en symlink, site en `fr_FR` (sinon l'interface s'affiche en anglais), `wp rdv import` (ou `--dry-run`), serveur `php -S localhost:8080`. Captures et contrôles avec Playwright (préinstallé). Après chaque modif du thème : `cd theme && zip -qr rdv-nantes.zip rdv-nantes -x 'rdv-nantes/assets/fonts/*'`.
+Dernière recette : thème v1.2.0 (ACF) sur **WordPress 7.1.4 / PHP 7.4.33 + ACF PRO + WPML**, les versions du site (novembre 2026), sans erreur ; voir `theme/README.md`, section Tests. WordPress récent : `composer create-project johnpbloch/wordpress-core` (wordpress.org est bloqué par le réseau, donc pas de pack de langue fr_FR : sans incidence pour le thème). WP-CLI : `php vendor/wp-cli/wp-cli/php/boot-fs.php`. Sinon : L'environnement « rendez-vous-a-nantes » autorise `rdv.levoyageanantes.fr` et `lestablesdenantes.fr`. Pour un WordPress de test : `apt-get install mariadb-server wordpress`, WP-CLI via `composer require wp-cli/wp-cli-bundle`, copie de `/usr/share/wordpress`, thème lié en symlink, site en `fr_FR` (sinon l'interface s'affiche en anglais), `wp rdv import` (ou `--dry-run`), serveur `php -S localhost:8080`. Captures et contrôles avec Playwright (préinstallé). Après chaque modif du thème : `cd theme && zip -qr rdv-nantes.zip rdv-nantes -x 'rdv-nantes/assets/fonts/*'`.
+
+### Environnement de test complet (ACF PRO + WPML)
+
+- Extensions du site : sauvegarde UpdraftPlus « Extensions » du 9 nov. 2026 dans le Google Drive de l'utilisateur (`backup_2026-11-09-0926_…-plugins.zip`, 44 Mo). Téléchargement via `drive.usercontent.google.com` (hôte autorisé dans l'environnement) avec un partage par lien **temporaire** (à retirer ensuite). **Jamais dans le dépôt** (extensions payantes).
+- PHP 7.4 : image Docker `mirror.gcr.io/library/php:7.4-cli` (+ `docker-php-ext-install mysqli`), serveur `PHP_CLI_SERVER_WORKERS=8 php -S localhost:8080` (plusieurs processus : WPML s'appelle lui-même). `WP_HTTP_BLOCK_EXTERNAL` à `true` dans wp-config (sinon WPML attend ses serveurs). WP-CLI tourne avec le PHP 8.3 de la machine.
+- WPML sans l'assistant : `make( \WPML\Setup\Endpoint\SetOriginalLanguage::class )->run( wpml_collect( [ 'languageCode' => 'fr' ] ) )`, puis `SetSecondaryLanguages` (`en`, `es`), `AddressStep` (`directory`), `FinishStep`, via `wp eval-file --user=admin`.
 
 ## Habitudes de travail avec l'utilisateur
 

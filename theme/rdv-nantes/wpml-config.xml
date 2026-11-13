@@ -6,45 +6,44 @@
     <custom-type translate="1">rdv_pass</custom-type>
   </custom-types>
   <custom-fields>
-    <!-- Textes : à traduire -->
-    <custom-field action="translate">_rdv_h1</custom-field>
-    <custom-field action="translate">_rdv_lead</custom-field>
-    <custom-field action="translate">_rdv_tile_desc</custom-field>
-    <custom-field action="translate">_rdv_encart_title</custom-field>
-    <custom-field action="translate">_rdv_encart_text</custom-field>
-    <custom-field action="translate">_rdv_encart_btn</custom-field>
-    <custom-field action="translate">_rdv_cta</custom-field>
-    <custom-field action="translate">_rdv_list_title</custom-field>
-    <custom-field action="translate">_rdv_items</custom-field>
-    <custom-field action="translate">_rdv_link_label</custom-field>
-    <custom-field action="translate">_rdv_after_title</custom-field>
-    <custom-field action="translate">_rdv_after_text</custom-field>
-    <custom-field action="translate">_rdv_after_btn1</custom-field>
-    <custom-field action="translate">_rdv_after_btn2</custom-field>
-    <custom-field action="translate">_rdv_infos</custom-field>
-    <custom-field action="translate">_rdv_bonplan_label</custom-field>
-    <custom-field action="translate">_rdv_bonplan_text</custom-field>
-    <custom-field action="translate">_rdv_bonplan_btn</custom-field>
-    <custom-field action="translate">_rdv_hero_title</custom-field>
-    <custom-field action="translate">_rdv_hero_lead</custom-field>
-    <custom-field action="translate">_rdv_tiles_title</custom-field>
-    <custom-field action="translate">_rdv_amb</custom-field>
-    <custom-field action="translate">_rdv_where</custom-field>
-    <custom-field action="translate">_rdv_img_alt</custom-field>
-    <custom-field action="translate">_rdv_badges</custom-field>
-    <custom-field action="translate">_rdv_musts</custom-field>
-    <custom-field action="translate">_rdv_groups</custom-field>
-    <custom-field action="translate">_rdv_note</custom-field>
-    <custom-field action="translate">_rdv_subtitle</custom-field>
-    <custom-field action="translate">_rdv_buy_label</custom-field>
-    <custom-field action="translate">_rdv_link</custom-field>
-    <custom-field action="translate">_rdv_maps</custom-field>
-    <custom-field action="translate">_rdv_more</custom-field>
-    <custom-field action="translate">_rdv_buy</custom-field>
-    <!-- Réglages : copiés depuis le français -->
-    <custom-field action="copy">_rdv_home</custom-field>
-    <custom-field action="copy">_rdv_nav</custom-field>
-    <custom-field action="copy">_rdv_post_type</custom-field>
+    <!-- Généré par tools/build_acf.py : textes à traduire, réglages copiés depuis le français -->
+    <custom-field action="translate">rdv_after_btn1</custom-field>
+    <custom-field action="translate">rdv_after_btn2</custom-field>
+    <custom-field action="translate">rdv_after_text</custom-field>
+    <custom-field action="translate">rdv_after_title</custom-field>
+    <custom-field action="translate">rdv_amb</custom-field>
+    <custom-field action="translate">rdv_badges</custom-field>
+    <custom-field action="translate">rdv_bonplan_btn</custom-field>
+    <custom-field action="translate">rdv_bonplan_label</custom-field>
+    <custom-field action="translate">rdv_bonplan_text</custom-field>
+    <custom-field action="translate">rdv_buy</custom-field>
+    <custom-field action="translate">rdv_buy_label</custom-field>
+    <custom-field action="translate">rdv_cta</custom-field>
+    <custom-field action="translate">rdv_encart_btn</custom-field>
+    <custom-field action="translate">rdv_encart_text</custom-field>
+    <custom-field action="translate">rdv_encart_title</custom-field>
+    <custom-field action="translate">rdv_groups</custom-field>
+    <custom-field action="translate">rdv_h1</custom-field>
+    <custom-field action="translate">rdv_hero_lead</custom-field>
+    <custom-field action="translate">rdv_hero_title</custom-field>
+    <custom-field action="translate">rdv_img_alt</custom-field>
+    <custom-field action="translate">rdv_infos</custom-field>
+    <custom-field action="translate">rdv_items</custom-field>
+    <custom-field action="translate">rdv_lead</custom-field>
+    <custom-field action="translate">rdv_link</custom-field>
+    <custom-field action="translate">rdv_link_label</custom-field>
+    <custom-field action="translate">rdv_list_title</custom-field>
+    <custom-field action="translate">rdv_maps</custom-field>
+    <custom-field action="translate">rdv_more</custom-field>
+    <custom-field action="translate">rdv_musts</custom-field>
+    <custom-field action="translate">rdv_note</custom-field>
+    <custom-field action="translate">rdv_subtitle</custom-field>
+    <custom-field action="translate">rdv_tile_desc</custom-field>
+    <custom-field action="translate">rdv_tiles_title</custom-field>
+    <custom-field action="translate">rdv_where</custom-field>
+    <custom-field action="copy">rdv_home</custom-field>
+    <custom-field action="copy">rdv_nav</custom-field>
+    <custom-field action="copy">rdv_post_type</custom-field>
     <custom-field action="ignore">_rdv_import_key</custom-field>
   </custom-fields>
 </wpml-config>

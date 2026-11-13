@@ -3,7 +3,7 @@
 Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quelle la maquette V1** ([`maquette/rdv-nantes-v1.html`](../maquette/rdv-nantes-v1.html)) : mêmes styles, mêmes gabarits, même contenu FR. Arborescence calée sur le sitemap du site actuel (sans les pages événementielles : JO 2024 / Rugby 2023, Marathon, Squash, Rendez-vous en France, page japonaise).
 
 - WordPress ≥ 6.2, PHP ≥ 7.4
-- **Aucun plugin requis** (champs personnalisés natifs). **WPML** recommandé pour EN / ES.
+- **ACF PRO** (Advanced Custom Fields) pour modifier les champs dans l'admin ; le site s'affiche aussi sans (démo, ACF désactivé). **WPML** + **ACF Multilingual** pour EN / ES.
 
 ## Démo en ligne
 
@@ -15,7 +15,7 @@ Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quell
 
 1. Copier le dossier `rdv-nantes/` dans `wp-content/themes/` (ou téléverser `rdv-nantes.zip` via Apparence → Thèmes → Ajouter).
 2. Si multilingue : installer **WPML** (+ String Translation), langues **FR (par défaut), EN, ES**, format d'URL « répertoire » (`/en/`, `/es/`).
-3. Activer le thème.
+3. Activer le thème, puis **ACF → Groupes de champs → « Synchronisation disponible » → Synchroniser** les 7 groupes du thème (une seule fois : ils deviennent modifiables dans l'admin).
 4. Importer le contenu : **Outils → Import Rendez-vous à Nantes**, ou en ligne de commande :
    ```bash
    wp rdv import
@@ -64,18 +64,27 @@ La photo d'une case est l'**image à la une** de la fiche ou de la page de rubri
 
 ## Page Manger : liste illustrée
 
-Les restaurants de la page Manger s'affichent en **liste illustrée** (photo, nom, description, bouton vers la fiche du guide Les Tables de Nantes), sur 2 colonnes. La photo est la 5e colonne du champ « Éléments » (numéro du média) ; une liste sans photo (Footing) reste en lignes simples. Photos reprises des fiches du guide (voir `contenu/images/tables-de-nantes/`). Maison Bagarre a été retiré : sa fiche n'existe plus sur le guide.
+Les restaurants de la page Manger s'affichent en **liste illustrée** (photo, nom, description, bouton vers la fiche du guide Les Tables de Nantes), sur 2 colonnes. La photo est la case « Photo » de chaque adresse ; une liste sans photo (Footing) reste en lignes simples. Photos reprises des fiches du guide (voir `contenu/images/tables-de-nantes/`). Maison Bagarre a été retiré : sa fiche n'existe plus sur le guide.
 
 ## Édition du contenu
 
-Tout se modifie dans l'admin, dans les encadrés sous l'éditeur :
+Tout se modifie dans l'admin, dans les encadrés **ACF** sous l'éditeur :
 
 - **Pages de rubrique** : choisir le gabarit, enregistrer, puis remplir « Rubrique » (grand titre, chapô, texte de tuile, cases « accueil » et « menu ») et l'encadré propre au gabarit. Le **titre de la page** est le libellé court (menu, fil d'Ariane, tuiles). L'ordre des rubriques = champ **Ordre** de la page.
 - **Accueil** : bandeau du haut (Pass Nantes), grand titre et sous-titre. La mosaïque reprend automatiquement les rubriques.
 - **Fiches** : sous-titre, infos pratiques, liens Itinéraire / En savoir plus / achat. Ordre = champ **Ordre**.
 - **Quartiers** : ambiance, localisation, lien Itinéraire (facultatif), étiquettes, bars, image à la une (vignette).
 
-Conventions des champs multi-lignes : **une ligne = un élément**, colonnes séparées par `|`, par ex. infos pratiques `Adresse | 4 place Marc Elder | 1` (le `1` final affiche une pastille « en direct »). Les liens internes s'écrivent en **chemin français** (`/incontournable/quartier-bouffay/`) : le thème les convertit vers la bonne langue.
+Les listes (infos pratiques, adresses de Manger et Footing, étapes et bars des quartiers) ont une ligne par élément, avec un bouton « Ajouter ». Les boutons se règlent avec un champ « Lien » (texte + adresse) : pour une page du site, la choisir dans la liste ou écrire son **chemin français** (`/incontournable/quartier-bouffay/`) ; le thème convertit le lien vers la langue affichée.
+
+### Champs ACF
+
+- Définis dans `rdv-nantes/acf-json/` (« Local JSON » d'ACF), 7 groupes : Page d'accueil, Rubrique, Liste de fiches, Liste d'adresses, Page d'infos, Quartier, Fiche. Noms des champs préfixés `rdv_`.
+- **Ajouter ou modifier une case** : ACF → Groupes de champs → le groupe → enregistrer. ACF réécrit le fichier du groupe dans `acf-json/` (le dossier doit être inscriptible) : récupérer ce fichier pour le garder dans le dépôt. L'afficher sur le site demande ensuite de modifier le gabarit correspondant (lecture : `rdv_meta()`, `rdv_field()`, `rdv_rows()` dans `inc/fields.php`).
+- `tools/build_acf.py` génère ces fichiers et la liste des champs de `wpml-config.xml`. Une fois des cases ajoutées dans l'admin, **reporter la modification dans le script** avant de le relancer, sinon il écrase les fichiers.
+- L'affichage lit directement les valeurs enregistrées par ACF (méta `rdv_<nom>`, lignes `rdv_<liste>_<n>_<sous-champ>`) : le site reste identique si ACF est désactivé.
+- Traductions (ACF Multilingual, mode « Expert ») : textes et liens traduits, réglages (cases à cocher, type de fiches, photos) copiés depuis le français.
+- Groupes ACF de l'ancien thème : notés à l'activation du thème et **masqués** sur les écrans des pages et fiches du thème (option `rdv_legacy_acf_groups`). Ils ne sont ni modifiés ni supprimés (retour arrière possible) ; les groupes créés ensuite restent visibles.
 
 ## Traductions
 
@@ -87,7 +96,7 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 ## Points à valider
 
 - Mentions éditoriales provisoires : dates des guinguettes (fiche Île de Nantes) et horaires d'été de l'Accueil (page Aide), marquées « à mettre à jour ».
-- La maquette prévoyait une description courte par bar (« [Description courte à rédiger…] ») : la colonne existe (4e colonne du champ Bars) mais est vide, rien ne s'affiche tant qu'elle n'est pas remplie.
+- La maquette prévoyait une description courte par bar (« [Description courte à rédiger…] ») : la case « Description » de chaque bar existe mais est vide, rien ne s'affiche tant qu'elle n'est pas remplie.
 - Les vignettes de quartiers utilisent une photo du site actuel (image à la une) au lieu des cases « [Photo …] » de la maquette.
 - Lien « Accessibilité » du pied de page : affiché dès qu'une page de slug `accessibilite` existe (aucun contenu fourni).
 - Polices : **Suisse Int'l** (licence web LVaN) est chargée depuis `rdv-nantes/assets/fonts/` si les fichiers WOFF2 y sont déposés (voir `LISEZMOI.md` du dossier) ; ils ne sont **pas versionnés** car le repo est public. Sans eux, le thème affiche Inter (Google Fonts).
@@ -95,15 +104,19 @@ Conventions des champs multi-lignes : **une ligne = un élément**, colonnes sé
 ## Développement
 
 - `tools/extract_maquette.py` : maquette HTML → `tools/maquette.json`.
-- `tools/build_content.py` : `maquette.json` + `../contenu/` → `rdv-nantes/import/content.json` et images des quartiers.
+- `tools/build_content.py` : `maquette.json` + `../contenu/` → `rdv-nantes/import/content.json` et images des quartiers. Le contenu reste au format texte (« Libellé | lien », une ligne par élément) ; l'import le convertit en champs ACF (`inc/import-fields.php`).
+- `tools/build_acf.py` : champs ACF (`rdv-nantes/acf-json/`) et liste des champs de `wpml-config.xml`.
 - `../contenu/outils/wxr_extract.py <export.xml> <acf.json>` : exploite l'export WordPress / ACF du site actuel (crédits, SEO, redirections, contenus non publiés). Les exports bruts ne sont pas versionnés.
 - Zip d'installation (polices exclues, le repo étant public) : `cd theme && rm -f rdv-nantes.zip && zip -qr rdv-nantes.zip rdv-nantes -x 'rdv-nantes/assets/fonts/*'`.
 
 ## Tests
 
-Dernière recette (novembre 2026) : **WordPress 7.1.4** (version du site actuel) sous **PHP 7.4.33** (version du site actuel, hébergeur o2switch) et **PHP 8.3**, sans WPML (EN / ES simulés), contenu importé. Analyse de compatibilité du code (PHPCompatibility) : rien d'incompatible de PHP 7.4 à 8.5.
+Dernière recette (novembre 2026, thème v1.2.0) sur les versions du site actuel : **WordPress 7.1.4, PHP 7.4.33**, **ACF PRO 6.3.1, WPML 4.9.7, WPML String Translation 3.5.4, ACF Multilingual 2.2.4** (extensions reprises de la sauvegarde du site, jamais versionnées).
 
-- 34 pages FR contrôlées à 1280 px et 390 px : aucune erreur PHP ni JavaScript, aucun lien interne ni image cassés, aucun débordement horizontal sur mobile, un seul `h1` par page.
-- Import rejouable (aucun doublon), enregistrement des champs dans l'admin (jeton de sécurité et droits vérifiés).
+- WPML configuré (FR par défaut, EN, ES, adresses en répertoires), import : 32 contenus EN et 32 ES créés et reliés aux 33 FR. Import rejoué : aucun doublon.
+- 97 pages (FR, EN, ES) à 1280 px et 390 px : aucune erreur PHP ni JavaScript, aucun lien interne (98) ni image cassés, aucun débordement horizontal sur mobile, un seul `h1` par page.
+- Admin : les 7 groupes ACF s'affichent sur les bons écrans, remplis par l'import ; modification d'une liste et enregistrement vérifiés (la traduction n'est pas touchée) ; synchronisation des groupes vérifiée ; groupes de l'ancien thème masqués.
+- Sans ACF (et sans WPML, comme sur Playground) : HTML des pages identique à celui avec ACF ; rendu identique à la version précédente du thème.
 - Interface du thème : FR quel que soit le réglage de langue de WordPress, EN / ES chargés seulement sur les pages WPML de ces langues.
-- **Pas encore testé avec WPML** (extension payante) : à faire sur une copie du site, voir [`DEPLOIEMENT.md`](DEPLOIEMENT.md).
+- Analyse de compatibilité du code (PHPCompatibility) : rien d'incompatible de PHP 7.4 à 8.5.
+- Non testé : les slugs traduits des fiches EN / ES (réglage WPML, voir plus haut), et le site réel avec ses anciens contenus : à vérifier sur une copie (WP Staging), voir [`DEPLOIEMENT.md`](DEPLOIEMENT.md).
