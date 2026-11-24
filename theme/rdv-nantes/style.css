@@ -3,7 +3,7 @@ Theme Name: Rendez-vous à Nantes
 Theme URI: https://rdv.levoyageanantes.fr/
 Author: Le Voyage à Nantes
 Description: Thème du site Rendez-vous à Nantes (refonte 2026, maquette V1). Rubriques : prendre un verre (quartiers), manger, incontournables, footing, shopping, se déplacer, aide, Pass Nantes. Compatible WPML (FR / EN / ES).
-Version: 1.2.0
+Version: 1.2.1
 Requires at least: 6.2
 Requires PHP: 7.4
 Text Domain: rdv-nantes
@@ -182,10 +182,19 @@ footer p{margin:0}
 .legal{margin-top:40px;padding-top:18px;border-top:1px solid #000;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;font-weight:700}
 
 /* Responsive */
-@media (max-width:1180px){
+/* En-tête : menu sur une ligne au-delà de 1180 px ; de 901 à 1180 px, rubriques sur une 2e ligne ;
+   900 px et moins (téléphone, tablette en portrait) : pastille « Menu » en bas à droite (voir « Menu mobile »). */
+@media (min-width:901px) and (max-width:1180px){
+  .hdr{flex-wrap:wrap;row-gap:0;padding-top:10px}
+  .hdr .tools{order:2}
+  .hdr .navbar{order:3;flex:1 1 100%;flex-wrap:wrap;margin:2px 0 0 -10px;padding-bottom:4px}
+}
+@media (max-width:900px){
   .desk{display:none}
-  .navbar{display:none} /* sur mobile et tablette : menu flottant en bas à droite (voir « Menu mobile ») */
+  .navbar{display:none}
   .hdr{flex-wrap:nowrap;min-height:64px}
+}
+@media (max-width:1180px){
   .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
   .qgrid{grid-template-columns:minmax(0,1fr);gap:40px}
 }
@@ -264,7 +273,7 @@ a.rph:hover img{transform:scale(1.03)}
 
 /* ===== Menu mobile : pastille « Menu » flottante en bas à droite + panneau qui monte du bas ===== */
 .mfab,.msheet,.mscrim{display:none}
-@media (max-width:1180px){
+@media (max-width:900px){
   footer{padding-bottom:calc(28px + 84px)} /* place pour la pastille Menu, dans le fond du pied de page */
   .mfab{position:fixed;z-index:60;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));display:inline-flex;align-items:center;gap:10px;min-height:54px;padding:0 24px;border:0;border-radius:999px;background:#000;color:#fff;font:inherit;font-size:17px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer}
   .mfab .ic{display:inline-flex}

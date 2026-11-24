@@ -49,7 +49,7 @@ Slugs corrigés par rapport au site actuel : `/shopping/uartier-decre/` → `/sh
 
 - Aucun surtitre au-dessus des titres (rubriques, pages d'infos, fiches) : il répétait le titre ou le fil d'Ariane.
 - Pas de carte sur Prendre un verre : les quartiers sont présentés en mosaïque photo.
-- Menu mobile et tablette (≤ 1180 px) : plus de bandeau de rubriques en haut ; une pastille « ☰ Menu » flotte en bas à droite et fait monter un panneau avec les rubriques et Pass Nantes (`footer.php`, `assets/js/menu.js`). Le menu horizontal reste sur ordinateur.
+- Menu : sur ordinateur, rubriques en haut (sur une ligne au-delà de 1180 px, sur une 2e ligne sous le logo de 901 à 1180 px). Téléphone et tablette en portrait (≤ 900 px) : plus de bandeau de rubriques ; une pastille « ☰ Menu » flotte en bas à droite et fait monter un panneau avec les rubriques et Pass Nantes (`footer.php`, `assets/js/menu.js`).
 - Couleurs : plus de couleur d'accent (jaune, vert, vert fluo). Un seul fond de mise en avant, `--accent: #e6e6f2` dans `style.css` (bandeau Pass Nantes, encadrés, étiquettes, pied de page), à ajuster à un seul endroit.
 - Pas de parcours « Visiter Nantes à pied » sur l'accueil : bandeau Pass Nantes, titre, puis la mosaïque des rubriques.
 - Favicon : pictogramme repère de la maquette (`assets/img/`). Une icône définie dans Personnaliser → Identité du site le remplace.
