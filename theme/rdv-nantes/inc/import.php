@@ -201,6 +201,11 @@ function rdv_import_post( $item, $lang, $l, $is_front = false ) {
 		'post_content' => $l['content'],
 		'menu_order'   => (int) $item['order'],
 	);
+	if ( 'page' === $item['type'] ) {
+		// Gabarit du nouveau thème : à la reprise d'une page existante, WordPress garderait sinon le gabarit
+		// de l'ancien thème, qui n'existe plus, et refuserait l'enregistrement (« Modèle de page non valide »).
+		$post['page_template'] = ! empty( $item['template'] ) ? $item['template'] : 'default';
+	}
 	if ( $found ) {
 		$post['ID'] = $found;
 		$id         = wp_update_post( wp_slash( $post ), true );
@@ -330,7 +335,7 @@ add_action( 'admin_menu', function () {
 			$ko  = in_array( 'IMPORT BLOQUÉ :', $log, true );
 			echo '<div class="notice notice-' . ( $ko ? 'error' : 'success' ) . '"><p>' . esc_html( $ko ? 'Import bloqué.' : ( $dry ? 'Simulation terminée : rien n’a été modifié.' : 'Import terminé.' ) ) . '</p></div><pre style="max-height:420px;overflow:auto;background:#fff;padding:12px">' . esc_html( implode( "\n", $log ) ) . '</pre>';
 		}
-		echo '<p>Crée (ou met à jour) les pages, rubriques et fiches du site à partir du contenu de la maquette (FR) et du site actuel (EN / ES).</p>';
+		echo '<p>Crée (ou met à jour) les pages, rubriques et fiches du site à partir du contenu préparé pour le nouveau site (FR) et du site actuel (EN / ES).</p>';
 		echo '<p>' . ( rdv_wpml_active() ? 'WPML est actif : les versions EN et ES seront créées et reliées aux pages françaises.' : '<strong>WPML n’est pas actif</strong> : seul le français sera importé. Activez WPML et ses langues (FR par défaut, EN, ES) avant l’import pour tout récupérer.' ) . '</p>';
 		echo '<form method="post">';
 		wp_nonce_field( 'rdv_import' );
