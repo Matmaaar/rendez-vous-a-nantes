@@ -1,4 +1,4 @@
-# Thème WordPress « Rendez-vous à Nantes »
+# Thème WordPress « Rdv à Nantes V2 »
 
 Thème de la refonte de https://rdv.levoyageanantes.fr/, reprenant **telle quelle la maquette V1** ([`maquette/rdv-nantes-v1.html`](../maquette/rdv-nantes-v1.html)) : mêmes styles, mêmes gabarits, même contenu FR. Arborescence calée sur le sitemap du site actuel (sans les pages événementielles : JO 2024 / Rugby 2023, Marathon, Squash, Rendez-vous en France, page japonaise).
 

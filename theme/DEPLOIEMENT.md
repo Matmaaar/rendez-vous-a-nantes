@@ -24,7 +24,7 @@ Le site a peu de trafic : on déploie directement, avec une sauvegarde et un ret
 
 ## 3. Activer et importer
 
-- [ ] Activer le thème « Rendez-vous à Nantes ».
+- [ ] Activer le thème « Rdv à Nantes V2 » (à ne pas confondre avec l'ancien thème du site).
 - [ ] Outils → Import Rendez-vous à Nantes : laisser **« Simulation » cochée** et lancer. Lire le rapport :
   - « reprise de la page existante » : les pages actuelles (Manger, Aide, Mentions légales…) seront mises à jour, **leurs adresses ne changent pas** ;
   - « création de » : nouvelles pages et fiches ;
