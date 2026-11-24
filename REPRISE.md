@@ -27,7 +27,7 @@ Refonte de https://rdv.levoyageanantes.fr/ (WordPress + WPML + Yoast, ancien th�
 - Fiches : **photo de la case** en tête, encadré d'infos aligné sur le haut de la photo. **Aucun surtitre** (ni rubriques ni fiches).
 - **Manger** : liste illustrée (photo, nom, description, bouton), photos du guide Les Tables de Nantes ; **Maison Bagarre retiré** (disparu du guide).
 - **Pas de carte** sur Prendre un verre ; « X min à pied » retiré. **Pas de parcours** « Visiter Nantes à pied » sur l'accueil.
-- **Couleurs** : plus de couleur d'accent (ni jaune, ni vert, ni vert fluo). Un seul fond de mise en avant `--accent: #e6e6f2` (provisoire, choisi par l'utilisateur). Le **noir en aplat a été jugé trop agressif**.
+- **Couleurs** : une seule couleur de mise en avant, le **vert de la ligne verte** `--accent: rgb(0,255,0)` (choix de l'utilisateur, 24 nov. 2026, après un essai en `#e6e6f2`). Texte toujours noir dessus. Le **noir en aplat a été jugé trop agressif**.
 - **Survols** sobres (soulignement noir, zoom photo, gris), pas de vert.
 - **En-tête** en haut de page, **pas collant**. **Mobile/tablette** : pas de menu en haut, **pastille arrondie « ☰ Menu » flottante en bas à droite** qui fait monter un panneau (rubriques + Pass Nantes).
 - **Police Suisse Int'l** (licence web LVaN) : chargée depuis `theme/rdv-nantes/assets/fonts/` si les WOFF2 y sont ; **jamais dans le repo** (public). Inter en secours.
