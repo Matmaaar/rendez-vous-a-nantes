@@ -54,6 +54,7 @@ Thème « Rdv à Nantes V2 » v1.2.5 activé sur le site live, import réussi (0
 - Titres corrigés à la main dans l'admin : « Mercado de Talensac » (ES), « Bouffay district » (EN).
 - v1.2.6 (non installée, rien d'urgent) : retire 2 groupes ACF de test (« Nouveau groupe (successeur) », « Page classique (ancien thème) ») qui apparaissent dans « Synchronisation disponible » ; ne pas les synchroniser.
 - À décider : page « Accueil_Congrès » (`/rendez-vous-a-nantes/`) encore publiée en FR.
+- **Mise à jour globale des photos** (demande du 25 nov. 2026) : beaucoup d'images sont obsolètes, par ex. l'image Les Tables de Nantes, le tram de « Se déplacer ». Faire l'inventaire de toutes les photos (accueil, cases des mosaïques, fiches, Manger, pages d'infos), repérer celles à remplacer, récupérer des visuels récents (photothèque LVaN, crédits à jour) et les changer directement dans l'admin (champ photo de chaque fiche/case, texte alternatif compris). Pas besoin de nouvelle version du thème.
 - Suite : phase 2 (extensions, WPML d'abord) dans quelques jours, puis PHP 8.3, puis rangement (voir theme/DEPLOIEMENT.md). Supprimer la préprod WP Staging.
 
 ## Accessibilité (audit du 24-25 nov. 2026, thème v1.2.5)
