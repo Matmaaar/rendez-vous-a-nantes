@@ -47,6 +47,15 @@ Extensions actives (13, mises à jour automatiques toutes désactivées) : WPML 
 
 Faite le 13 nov. 2026 : https://claude.ai/artifact/YGYC7pRjZn236Q6igo66j6 (privée). Onglets : L'essentiel, Vocabulaire (24 mots), Décisions, Comment c'est fait, Lancement (phases 0 à 4), Questions (28, en liste ou une par une, progression gardée dans le navigateur), Parler de l'IA. À tenir à jour si le projet évolue.
 
+## Mise en production (25 nov. 2026) : FAITE
+
+Thème « Rdv à Nantes V2 » v1.2.5 activé sur le site live, import réussi (0 erreur), groupes ACF synchronisés, 29 redirections importées, pages Marathon et Squash en brouillon, site toujours en noindex. Vérifié à la main et via le connecteur Jetpack (lecture seule).
+- Slugs WPML non traduits : pas gênant, WordPress redirige seul les anciennes adresses (`/en/unmissable/…` → `/en/incontournable/…`).
+- Titres corrigés à la main dans l'admin : « Mercado de Talensac » (ES), « Bouffay district » (EN).
+- v1.2.6 (non installée, rien d'urgent) : retire 2 groupes ACF de test (« Nouveau groupe (successeur) », « Page classique (ancien thème) ») qui apparaissent dans « Synchronisation disponible » ; ne pas les synchroniser.
+- À décider : page « Accueil_Congrès » (`/rendez-vous-a-nantes/`) encore publiée en FR.
+- Suite : phase 2 (extensions, WPML d'abord) dans quelques jours, puis PHP 8.3, puis rangement (voir theme/DEPLOIEMENT.md). Supprimer la préprod WP Staging.
+
 ## Accessibilité (audit du 24-25 nov. 2026, thème v1.2.5)
 
 WCAG 2.1 AA : axe-core sur 18 pages FR/EN/ES à 1280 et 390 px, aucune infraction. Textes sur photos des mosaïques mesurés pixel par pixel (halo compris) : 160/160 conformes (titres des cases en gras 700, donc « grand texte » à 3:1 ; plus faible 4,04). Affichage à 320 px sans débordement (97 pages). Photo de tête des fiches : texte alternatif = celui de l'image, sinon le nom de la fiche ; photos de Manger volontairement décoratives. Clavier : lien d'évitement, focus visible, menu mobile (aria-expanded, Échap). Non couvert : test avec un vrai lecteur d'écran. À vérifier en interne : obligation RGAA et déclaration d'accessibilité (LVaN est une SPL). Scripts d'audit non versionnés (axe-core + mesure de contraste par capture).
