@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'RDV_VERSION', '1.2.4' );
+define( 'RDV_VERSION', '1.2.5' );
 define( 'RDV_DIR', get_template_directory() );
 define( 'RDV_URI', get_template_directory_uri() );
 

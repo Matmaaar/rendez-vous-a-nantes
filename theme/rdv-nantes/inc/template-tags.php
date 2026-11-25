@@ -382,8 +382,14 @@ function rdv_fiche_photo( $style = '' ) {
 	}
 	$id      = get_post_thumbnail_id();
 	$caption = wp_get_attachment_caption( $id );
+	// Texte alternatif : celui de la photo s'il existe, sinon le nom de la fiche (la photo montre le lieu).
+	$alt = trim( (string) get_post_meta( $id, '_wp_attachment_image_alt', true ) );
 	echo '<figure class="fiche-photo"' . ( $style ? ' style="' . esc_attr( $style ) . '"' : '' ) . '>';
-	echo wp_get_attachment_image( $id, 'large', false, array( 'sizes' => '(max-width:1180px) 92vw, 740px', 'fetchpriority' => 'high' ) );
+	echo wp_get_attachment_image( $id, 'large', false, array(
+		'alt'           => $alt ? $alt : get_the_title(),
+		'sizes'         => '(max-width:1180px) 92vw, 740px',
+		'fetchpriority' => 'high',
+	) );
 	if ( $caption ) {
 		echo '<figcaption>' . esc_html( $caption ) . '</figcaption>';
 	}
