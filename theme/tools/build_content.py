@@ -548,6 +548,13 @@ for key, fr_path in (('mentions-legales', '/mentions-legales/'), ('cookies', '/c
                        'seo': SEO.get(sp['url'].replace(B, ''), {})}
     add(key, 'page', 90, langs)
 
+# Fautes reprises du site actuel dans les titres traduits.
+TITLE_FIX = {'Mercato de Talensac': 'Mercado de Talensac',
+             'Bouffay distric also known as Decré district': 'Bouffay district, also known as Decré district'}
+for it in ITEMS:
+    for l in it['langs'].values():
+        l['title'] = TITLE_FIX.get(l['title'], l['title'])
+
 out = os.path.join(THEME, 'import', 'content.json')
 json.dump({'front': 'accueil', 'items': ITEMS}, open(out, 'w'), ensure_ascii=False, indent=1)
 print(len(ITEMS), 'éléments ->', out)
